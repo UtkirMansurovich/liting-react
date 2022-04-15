@@ -12,6 +12,7 @@ const AppProvider = ({ children }) => {
   //Page
   const [page, setPage] = useState('');
   const [getId, setGetId] = useState('');
+  // const [getTitle, setGetTitle] = useState('')
 
   const navbarList = () => {
     axios
@@ -36,15 +37,17 @@ const AppProvider = ({ children }) => {
         console.log(err);
       });
     setGetId(id);
+    // setGetTitle(pageTitle)
   };
   const id = localStorage.getItem('id');
+  const pageTitle = localStorage.getItem('pageTitle');
 
   useEffect(() => {
     navbarList();
     findId(id);
   }, [getId]);
 
-  const value = { navParent, page, findId };
+  const value = { navParent, page, findId, pageTitle };
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 };
 

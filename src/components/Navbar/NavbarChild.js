@@ -5,10 +5,12 @@ import { AppContext } from '../../context';
 
 const NavbarChild = ({ navText }) => {
   const { findId } = useContext(AppContext);
-  function setId(id) {
+  function setId(id, pageTitle) {
     localStorage.setItem('id', id);
-    findId(id);
+    localStorage.setItem('pageTitle', pageTitle);
+    findId(id, pageTitle);
   }
+  console.log(navText)
   return (
     <li className='menu-item menu-item-has-children'>
       <Link
@@ -22,7 +24,7 @@ const NavbarChild = ({ navText }) => {
             : ''
         }
         className='text-theme fs-14'
-        onClick={() => setId(navText.id)}
+        onClick={() => setId(navText.id, navText.name_oz)}
       >
         {navText.name_uz}
       </Link>

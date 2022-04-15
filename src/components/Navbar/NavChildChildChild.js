@@ -5,15 +5,16 @@ import NavChildChildChildChild from "./NavChildChildChildChild";
 
 const NavChildChildChild = ({subChild}) => {
     const {findId} = useContext(AppContext);
-    function setId(id){
+    function setId(id, pageTitle){
         localStorage.setItem('id', id);
-        findId(id);
+        localStorage.setItem('pageTitle', pageTitle);
+        findId(id, pageTitle);
     }
 
     return(
         <li className="menu-item menu-item-has-children">
             <Link to={subChild.type === 'PAGE' ? "/page" : subChild.type === 'BLOGS' ? "/blogs" : subChild.type === "PARENT" ? "" : "" }
-                  onClick={()=>setId(subChild.id)}
+                  onClick={()=>setId(subChild.id, subChild.name_oz)}
                   className="text-theme"
             >{subChild.name_uz}</Link>
             <ul className='custom sub-menu'>

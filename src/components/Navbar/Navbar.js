@@ -32,16 +32,7 @@ const Navbar = () => {
                                             )}
                                         </ul>
                                     </nav>
-                                    <div className="logon-parent">
-                                        <div className="logon">
-                                            <img src="../../assets/images/iqnet.png"
-                                                  className="logon-img" alt="Logo"/>
-                                        </div>
-                                        <div className="logon">
-                                            <img src="../../assets/images/russian.png"
-                                                  className="logon-img" alt="Logo"/>
-                                        </div>
-                                    </div>
+
                                    </div>
                                 <div className="hamburger-menu">
                                     <div className="menu-btn">
@@ -52,10 +43,14 @@ const Navbar = () => {
                                 </div>
                             </div>
                             <div className="right-side-2">
-                                <div className="cta-btn">
-                                    <div className="cta-text">
-                                        <a href="contact-style-1.html"
-                                           className="addlisting-btn btn-first btn-border">Cовет</a>
+                                <div className="logon-parent">
+                                    <div className="logon">
+                                        <img src="../../assets/images/iqnet.png"
+                                             className="logon-img" alt="Logo"/>
+                                    </div>
+                                    <div className="logon">
+                                        <img src="../../assets/images/russian.png"
+                                             className="logon-img" alt="Logo"/>
                                     </div>
                                 </div>
                             </div>

@@ -4,14 +4,15 @@ import {AppContext} from "../../context";
 
 const NavChildChildChildChild = ({lastChild}) => {
     const {findId} = useContext(AppContext);
-    function setId(id){
+    function setId(id, pageTitle){
         localStorage.setItem('id', id);
-        findId(id)
+        localStorage.setItem('pageTitle', pageTitle)
+        findId(id, pageTitle)
     }
     return(
         <li className="menu-item">
             <Link to={lastChild.type === 'PAGE' ? "/page" : lastChild.type === "BLOGS" ? "/blogs" : lastChild.type === "PARENT" ? "" : "" }
-                  onClick={()=>setId(lastChild.id)}
+                  onClick={()=>setId(lastChild.id, lastChild.name_oz)}
                   className="text-theme"
             >{lastChild.name_uz}</Link>
         </li>

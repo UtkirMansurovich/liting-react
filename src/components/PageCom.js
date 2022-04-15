@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import {AppContext} from "../context";
 
 const PageCom = () => {
-    const {page} = useContext(AppContext);
+    const {page, pageTitle} = useContext(AppContext);
     // console.log(page);
     return(
         <div>
@@ -14,14 +14,14 @@ const PageCom = () => {
                             {page && page.map((title, index) =>
                                 <div key={index} className="breadcrumb-wrapper">
                                     <div className="page-title">
-                                        <h1 className="text-theme fw-500 text-capitalize">{title.title_oz}</h1>
+                                        <h1 className="text-theme fw-500 text-capitalize">{pageTitle}</h1>
                                     </div>
                                     <ul className="custom breadcrumb">
                                         <li>
                                             <Link to="/">Главная страница</Link>
                                         </li>
                                         <li className="active">
-                                            {title.title_oz}
+                                            {pageTitle}
                                         </li>
                                     </ul>
                                 </div>
