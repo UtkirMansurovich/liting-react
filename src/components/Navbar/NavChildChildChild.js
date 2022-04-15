@@ -1,0 +1,29 @@
+import React, {useContext} from 'react';
+import {Link} from "react-router-dom";
+import {AppContext} from "../../context";
+import NavChildChildChildChild from "./NavChildChildChildChild";
+
+const NavChildChildChild = ({subChild}) => {
+    const {findId} = useContext(AppContext);
+    function setId(id){
+        localStorage.setItem('id', id);
+        findId(id);
+    }
+
+    return(
+        <li className="menu-item menu-item-has-children">
+            <Link to={subChild.type === 'PAGE' ? "/page" : subChild.type === 'BLOGS' ? "/blogs" : subChild.type === "PARENT" ? "" : "" }
+                  onClick={()=>setId(subChild.id)}
+                  className="text-theme"
+            >{subChild.name_uz}</Link>
+            <ul className='custom sub-menu'>
+                {subChild.children && subChild.children.map((lastChild, lastChildNumber) =>
+                    <NavChildChildChildChild lastChild={lastChild} key={lastChildNumber}/>
+                )}
+            </ul>
+
+        </li>
+    )
+}
+
+export default NavChildChildChild
