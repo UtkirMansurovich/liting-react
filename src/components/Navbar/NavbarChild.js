@@ -10,7 +10,7 @@ const NavbarChild = ({ navText }) => {
     localStorage.setItem('pageTitle', pageTitle);
     findId(id, pageTitle);
   }
-  console.log(navText)
+  // console.log(navText)
   return (
     <li className='menu-item menu-item-has-children'>
       <Link
