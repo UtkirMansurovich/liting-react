@@ -1,10 +1,11 @@
 import React, {useContext} from 'react';
 import {Link} from "react-router-dom";
 import {AppContext} from "../context";
+import { BASE_URL_PHOTO } from '../utills/constant';
 
 const PageCom = () => {
     const {page, pageTitle} = useContext(AppContext);
-    // console.log(page);
+    console.log(page[0]);
     return(
         <div>
             <div className="subheader section-padding">
@@ -37,7 +38,11 @@ const PageCom = () => {
                             <div className="row">
                                 <div className="col-lg-12">
                                     {page && page.map((text, index) =>
-                                        <div dangerouslySetInnerHTML={{__html: text.text_oz}} key={index} className="textDecorate flex-column mb-xl-20 p-4"/>
+                                        <div key={index}>
+                                            <img src={BASE_URL_PHOTO + text.mainImage.hashId} alt="imagePhoto" className="pageImg"/>
+                                            <h3 className="listing-detail-heading no-margin ">{text.title_oz}</h3>
+                                            <div dangerouslySetInnerHTML={{__html: text.text_oz}} className="textDecorate flex-column mb-xl-20 p-4"/>
+                                        </div>
                                     )}
                                 </div>
                             </div>
