@@ -11,10 +11,20 @@ const NavChildChildChildChild = ({lastChild}) => {
     }
     return(
         <li className="menu-item">
-            <Link to={lastChild.type === 'PAGE' ? "/page" : lastChild.type === "BLOGS" ? "/blogs" : lastChild.type === "PARENT" ? "" : "" }
-                  onClick={()=>setId(lastChild.id, lastChild.name_oz)}
-                  className="text-theme"
-            >{lastChild.name_uz}</Link>
+            <Link to={
+                lastChild.type === 'PAGE' 
+                ? "/page" 
+                : lastChild.type === "BLOGS" 
+                ? "/blogs" 
+                : lastChild.type === "PARENT" 
+                ? "/" 
+                : "" 
+            }
+                onClick={()=>setId(lastChild.id, lastChild.name_oz)}
+                className="text-theme"
+            >
+                {lastChild.name_uz}
+            </Link>
         </li>
     )
 }

@@ -13,10 +13,20 @@ const NavChildChildChild = ({subChild}) => {
 
     return(
         <li className="menu-item menu-item-has-children">
-            <Link to={subChild.type === 'PAGE' ? "/page" : subChild.type === 'BLOGS' ? "/blogs" : subChild.type === "PARENT" ? "" : "" }
-                  onClick={()=>setId(subChild.id, subChild.name_oz)}
-                  className="text-theme"
-            >{subChild.name_uz}</Link>
+            <Link to={
+                subChild.type === 'PAGE' 
+                ? "/page" 
+                : subChild.type === 'BLOGS' 
+                ? "/blogs" 
+                : subChild.type === "PARENT" 
+                ? "/" 
+                : "" 
+            }
+                onClick={()=>setId(subChild.id, subChild.name_oz)}
+                className="text-theme"
+            >
+                {subChild.name_uz}
+            </Link>
             <ul className='custom sub-menu'>
                 {subChild.children && subChild.children.map((lastChild, lastChildNumber) =>
                     <NavChildChildChildChild lastChild={lastChild} key={lastChildNumber}/>
