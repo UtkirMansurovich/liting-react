@@ -38,8 +38,13 @@ const PageCom = () => {
                             <div className="row">
                                 <div className="col-lg-12">
                                     {page && page.map((text, index) =>
-                                        <div key={index}>
-                                            <img src={BASE_URL_PHOTO + text.mainImage.hashId} alt="imagePhoto" className="pageImg"/>
+                                        <div key={index} className="blogsParent">
+                                            <div class="post-date">
+                                                <a href="blog-single.html" className='post-data-blogs-a' id="date">2022-04-20T06:54:49.426+00:00</a>
+                                            </div>
+                                            <div className='pageImgPar'>
+                                                <img src={BASE_URL_PHOTO + text.mainImage.hashId} alt="imagePhoto" className="pageImg"/>
+                                            </div>
                                             <h3 className="listing-detail-heading no-margin ">{text.title_oz}</h3>
                                             <div dangerouslySetInnerHTML={{__html: text.text_oz}} className="textDecorate flex-column mb-xl-20 p-4"/>
                                         </div>
