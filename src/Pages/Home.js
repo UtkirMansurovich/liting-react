@@ -38,7 +38,7 @@ const Home = () => {
                 <StartService/>
                 <StartTeam/>
                 <StartClient/>
-                <StartFaqs/>
+                {/* <StartFaqs/> */}
                 <StartNewsLetter/>
                 <StartFooter/>
                 <LoginRegister/>

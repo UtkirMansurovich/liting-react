@@ -5,7 +5,7 @@ import { BASE_URL_PHOTO } from '../utills/constant';
 
 const PageCom = () => {
     const {page, pageTitle} = useContext(AppContext);
-    console.log(page[0]);
+    // console.log(page[0]);
     return(
         <div>
             <div className="subheader section-padding">

@@ -12,8 +12,8 @@ const AppProvider = ({ children }) => {
   //Page
   const [page, setPage] = useState('');
   const [getId, setGetId] = useState('');
-  // const [getTitle, setGetTitle] = useState('')
-
+  // const [getTitle, setGetTitle] = useState('');
+  
   const navbarList = () => {
     axios
       .get(BASE_URL + '/api/category/all/sort')
@@ -31,7 +31,7 @@ const AppProvider = ({ children }) => {
       .get(BASE_URL + '/api/blog/all/' + id)
       .then((res) => {
         setPage(res.data.object);
-        // console.log(res.data.object);
+        console.log(res.data.object);
       })
       .catch((err) => {
         console.log(err);
