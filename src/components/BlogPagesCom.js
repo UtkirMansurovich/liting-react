@@ -29,47 +29,24 @@ const BlogPagesCom = () => {
                     </div>
                 </div>
             </div>
-            <div className="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="card">
-                        <img src="" class="card-img-top" alt=""/>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div className="container section-padding">
+                <div className="row">
+                    {page && page.map((texts, index) => 
+                        <div className="col-lg-4 col-md-6 col-sm-12" key={index}>
+                            <div className="card blogsCard">
+                                <img src={BASE_URL_PHOTO + texts.mainImage.hashId} class="card-img-top blogsImage" alt="imagePhoto"/>
+                                <div className="card-body blogsBody">
+                                    <h5 className="card-title">{texts.title_oz}</h5>
+                                    <p className="card-text">{texts.anons_oz}</p>
+                                </div>
+                                <div className="post-link" style={{padding:'1.25rem'}}>
+                                    <a href="blog-single.html" className="link-btn text-custom-blue fw-600 fs-14">Читать далее</a>                   
+                                </div>
+                            </div>
                         </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card">
-                        <img src="..." class="card-img-top" alt="..."/>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card">
-                        <img src="..." class="card-img-top" alt="..."/>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card">
-                        <img src="..." class="card-img-top" alt="..."/>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                        </div>
-                    </div>
+                    )}
                 </div>
             </div>
-            
         </div>
     )
 }

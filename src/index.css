@@ -251,5 +251,24 @@ body {
   object-position: center;
   margin-bottom: 20px;
 }
+/* blogsPage */
+.blogsImage{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+.blogsBody{
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+.blogsCard{
+  box-shadow: 0 2px 4px #7c8a97;
+  transition: 1s ease-in;
+}
+.blogsCard:hover{
+  box-shadow: 0 4px 16px #7c8a97;
+}
 
 
