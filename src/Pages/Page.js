@@ -6,12 +6,12 @@ import PageCom from "../components/PageCom";
 import {useParams} from "react-router-dom";
 
 const Page = () => {
-    const {blogId}=useParams();
+    const {blogId,catId}=useParams();
     return(
         <div>
             <TopBar/>
             <Navbar/>
-            <PageCom blogId={blogId}/>
+            <PageCom catId={catId} blogId={blogId}/>
             <StartFooter/>
         </div>
     )

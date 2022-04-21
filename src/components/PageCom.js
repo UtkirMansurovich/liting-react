@@ -10,18 +10,30 @@ const PageCom = (props) => {
     const [blog,setBlog] = useState(null)
     // console.log(page[0]);
     const getBlog = () => {
-        axios.get(BASE_URL+"/api/blog/one/"+props.blogId)
-            .then(r=>{
-                console.log(r)
-                setBlog(r.data.object?r.data.object:null)
-            })
-            .catch(e=>{
-                setBlog(null)
-            })
+        if (props.blogId){
+            axios.get(BASE_URL+"/api/blog/one/"+props.blogId)
+                .then(r=>{
+                    console.log(r)
+                    setBlog(r.data.object?r.data.object:null)
+                })
+                .catch(e=>{
+                    setBlog(null)
+                })
+        }else {
+            axios.get(BASE_URL+"/api/blog/all/"+props.catId)
+                .then(r=>{
+                    console.log(r)
+                    setBlog(r.data.object?r.data.object[0]:null)
+                })
+                .catch(e=>{
+                    setBlog(null)
+                })
+        }
+
     }
     useEffect(async () => {
         await getBlog()
-    }, [props.blogId]);
+    }, [props.catId,props.blogId]);
     return(
         <div>
             <div className="subheader section-padding">

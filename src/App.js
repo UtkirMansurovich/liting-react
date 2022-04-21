@@ -8,8 +8,9 @@ function App() {
     <Router>
         <Routes>
             <Route exact path='/' element={<Home/>}/>
-            <Route exact path='/page/:blogId' element={<Page/>}/>
+            <Route exact path='/page/:catId' element={<Page/>}/>
             <Route exact path='/blogs/:catId' element={<BlogPages/>}/>
+            <Route exact path='/blogs/:catId/:blogId' element={<Page/>}/>
         </Routes>
     </Router>
   );

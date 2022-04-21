@@ -67,7 +67,7 @@ const BlogPagesCom = (props) => {
                                     <p className="card-text">{texts.anons_oz}</p>
                                 </div>
                                 <div className="post-link" style={{padding:'1.25rem'}}>
-                                    <Link to={`/page/${texts.id}`} 
+                                    <Link to={`/blogs/${props.catId}/${texts.id}`}
                                           className="link-btn text-custom-blue fw-600 fs-14"
                                           // onClick={() => sendId(texts.id)}
                                     >Читать далее</Link>                   
