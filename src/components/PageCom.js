@@ -15,6 +15,9 @@ const PageCom = (props) => {
                 console.log(r)
                 setBlog(r.data.object?r.data.object:null)
             })
+            .catch(e=>{
+                setBlog(null)
+            })
     }
     useEffect(async () => {
         await getBlog()
