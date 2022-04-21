@@ -13,7 +13,7 @@ const NavChildChildChildChild = ({lastChild}) => {
         <li className="menu-item">
             <Link to={
                 lastChild.type === 'PAGE' 
-                ? "/page" 
+                ? "/page/:id" 
                 : lastChild.type === "BLOGS" 
                 ? "/blogs" 
                 : lastChild.type === "PARENT" 

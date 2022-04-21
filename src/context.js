@@ -19,7 +19,7 @@ const AppProvider = ({ children }) => {
       .get(BASE_URL + '/api/category/all/sort')
       .then((res) => {
         setNavParent(res.data.object);
-        // console.log(res.data);
+        console.log(res.data);
       })
       .catch((err) => {
         console.log(err);

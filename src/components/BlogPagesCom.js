@@ -4,8 +4,12 @@ import { AppContext } from '../context';
 import { BASE_URL_PHOTO } from '../utills/constant';
 
 const BlogPagesCom = () => {
-    const {page, pageTitle} = useContext(AppContext);
-    console.log(page)
+    const {page, pageTitle, findId} = useContext(AppContext);
+    console.log(page);
+    function sendId(id){
+        localStorage.setItem('id', id);
+        findId(id);
+    }
     return(
         <div className="bg-light-white">
             <div className="subheader section-padding">
@@ -49,7 +53,10 @@ const BlogPagesCom = () => {
                                     <p className="card-text">{texts.anons_oz}</p>
                                 </div>
                                 <div className="post-link" style={{padding:'1.25rem'}}>
-                                    <a href="blog-single.html" className="link-btn text-custom-blue fw-600 fs-14">Читать далее</a>                   
+                                    <Link to={`/page/${texts.id}`} 
+                                          className="link-btn text-custom-blue fw-600 fs-14"
+                                          onClick={() => sendId(texts.id)}
+                                    >Читать далее</Link>                   
                                 </div>
                             </div>
                         </div>

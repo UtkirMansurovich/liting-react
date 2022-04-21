@@ -1,7 +1,9 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState, useEffect} from 'react';
+import {useParams} from 'react-router-dom';
 import {Link} from "react-router-dom";
 import {AppContext} from "../context";
-import { BASE_URL_PHOTO } from '../utills/constant';
+import { BASE_URL_PHOTO, BASE_URL } from '../utills/constant';
+import axios from 'axios';
 
 const PageCom = () => {
     const {page, pageTitle} = useContext(AppContext);
@@ -12,21 +14,19 @@ const PageCom = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
-                            {page && page.map((title, index) =>
-                                <div key={index} className="breadcrumb-wrapper">
-                                    <div className="page-title">
-                                        <h1 className="text-theme fw-500 text-capitalize">{pageTitle}</h1>
-                                    </div>
-                                    <ul className="custom breadcrumb">
-                                        <li>
-                                            <Link to="/">Главная страница</Link>
-                                        </li>
-                                        <li className="active">
-                                            {pageTitle}
-                                        </li>
-                                    </ul>
+                            <div className="breadcrumb-wrapper">
+                                <div className="page-title">
+                                    <h1 className="text-theme fw-500 text-capitalize">{pageTitle}</h1>
                                 </div>
-                            )}
+                                <ul className="custom breadcrumb">
+                                    <li>
+                                        <Link to="/">Главная страница</Link>
+                                    </li>
+                                    <li className="active">
+                                        {pageTitle}
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -39,7 +39,7 @@ const PageCom = () => {
                                 <div className="col-lg-12">
                                     {page && page.map((text, index) =>
                                         <div key={index} className="blogsParent">
-                                            <div class="post-date">
+                                            <div className="post-date">
                                                 <a href="blog-single.html" className='post-data-blogs-a' id="date">2022-04-20T06:54:49.426+00:00</a>
                                             </div>
                                             <div className='pageImgPar'>
