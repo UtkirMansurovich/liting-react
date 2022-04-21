@@ -1,15 +1,29 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import {Link} from "react-router-dom";
 import { AppContext } from '../context';
-import { BASE_URL_PHOTO } from '../utills/constant';
+import {BASE_URL, BASE_URL_PHOTO} from '../utills/constant';
+import axios from "axios";
 
-const BlogPagesCom = () => {
+const BlogPagesCom = (props) => {
     const {page, pageTitle, findId} = useContext(AppContext);
+    const [blogs,setBlogs]=useState([])
     console.log(page);
     function sendId(id){
         localStorage.setItem('id', id);
         findId(id);
     }
+
+    const getBlogs = () => {
+        axios.get(BASE_URL+"/api/blog/all/"+props.catId)
+            .then(r=>{
+                console.log("AAAAAAAA")
+                console.log(r)
+                setBlogs(r.data.object?r.data.object:null)
+            })
+    }
+    useEffect(async () => {
+        await getBlogs()
+    }, [props.catId]);
     return(
         <div className="bg-light-white">
             <div className="subheader section-padding">
@@ -35,11 +49,11 @@ const BlogPagesCom = () => {
             </div>
             <div className="container section-padding">
                 <div className="row">
-                    {page && page.map((texts, index) => 
+                    {blogs && blogs.map((texts, index) =>
                         <div className="col-lg-4 col-md-6 col-sm-12" key={index}>
                             <div className="card blogsCard">
                                 <div className='blogsImagePar'>
-                                    <img src={BASE_URL_PHOTO + texts.mainImage.hashId} class="card-img-top blogsImage" alt="imagePhoto"/>
+                                    <img src={BASE_URL_PHOTO + texts.mainImage.hashId} className="card-img-top blogsImage" alt="imagePhoto"/>
                                 </div>
                                 <div className="post-date">
                                     <a href="blog-single.html" className="post-data-a">09 Dec 2022</a>
@@ -55,7 +69,7 @@ const BlogPagesCom = () => {
                                 <div className="post-link" style={{padding:'1.25rem'}}>
                                     <Link to={`/page/${texts.id}`} 
                                           className="link-btn text-custom-blue fw-600 fs-14"
-                                          onClick={() => sendId(texts.id)}
+                                          // onClick={() => sendId(texts.id)}
                                     >Читать далее</Link>                   
                                 </div>
                             </div>

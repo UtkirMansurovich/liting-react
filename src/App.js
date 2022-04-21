@@ -8,8 +8,8 @@ function App() {
     <Router>
         <Routes>
             <Route exact path='/' element={<Home/>}/>
-            <Route exact path='/page' element={<Page/>}/>
-            <Route exact path='/blogs' element={<BlogPages/>}/>
+            <Route exact path='/page/:blogId' element={<Page/>}/>
+            <Route exact path='/blogs/:catId' element={<BlogPages/>}/>
         </Routes>
     </Router>
   );

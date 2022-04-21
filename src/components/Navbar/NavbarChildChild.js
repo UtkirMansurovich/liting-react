@@ -14,9 +14,9 @@ const NavbarChildChild = ({sub}) => {
         <li className="menu-item menu-item-has-children" >
             <Link to={
                 sub.type === 'PAGE' 
-                ? "/page" 
+                ? "/page/"+sub.id
                 : sub.type === 'BLOGS' 
-                ? "/blogs" 
+                ? "/blogs/"+sub.id
                 : sub.type === "PARENT" 
                 ? "/" 
                 : "" 

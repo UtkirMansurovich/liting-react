@@ -16,9 +16,9 @@ const NavbarChild = ({ navText }) => {
       <Link
         to={
           navText.type === 'PAGE'
-            ? `/page`
+            ? `/page/`+navText.id
             : navText.type === 'BLOGS'
-            ? '/blogs'
+            ? '/blogs/'+navText.id
             : navText.type === 'PARENT'
             ? '/'
             : ''

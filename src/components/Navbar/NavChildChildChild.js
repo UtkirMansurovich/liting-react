@@ -15,9 +15,9 @@ const NavChildChildChild = ({subChild}) => {
         <li className="menu-item menu-item-has-children">
             <Link to={
                 subChild.type === 'PAGE' 
-                ? "/page" 
+                ? "/page/"+subChild.id
                 : subChild.type === 'BLOGS' 
-                ? "/blogs" 
+                ? "/blogs/"+subChild.id
                 : subChild.type === "PARENT" 
                 ? "/" 
                 : "" 

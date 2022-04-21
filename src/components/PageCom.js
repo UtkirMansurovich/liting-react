@@ -5,9 +5,20 @@ import {AppContext} from "../context";
 import { BASE_URL_PHOTO, BASE_URL } from '../utills/constant';
 import axios from 'axios';
 
-const PageCom = () => {
+const PageCom = (props) => {
     const {page, pageTitle} = useContext(AppContext);
+    const [blog,setBlog] = useState(null)
     // console.log(page[0]);
+    const getBlog = () => {
+        axios.get(BASE_URL+"/api/blog/one/"+props.blogId)
+            .then(r=>{
+                console.log(r)
+                setBlog(r.data.object?r.data.object:null)
+            })
+    }
+    useEffect(async () => {
+        await getBlog()
+    }, [props.blogId]);
     return(
         <div>
             <div className="subheader section-padding">
@@ -37,18 +48,18 @@ const PageCom = () => {
                         <div className="col-lg-12">
                             <div className="row">
                                 <div className="col-lg-12">
-                                    {page && page.map((text, index) =>
-                                        <div key={index} className="blogsParent">
+                                    {blog?
+                                        <div className="blogsParent">
                                             <div className="post-date">
                                                 <a href="blog-single.html" className='post-data-blogs-a' id="date">2022-04-20T06:54:49.426+00:00</a>
                                             </div>
                                             <div className='pageImgPar'>
-                                                <img src={BASE_URL_PHOTO + text.mainImage.hashId} alt="imagePhoto" className="pageImg"/>
+                                                <img src={BASE_URL_PHOTO + blog.mainImage.hashId} alt="imagePhoto" className="pageImg"/>
                                             </div>
-                                            <h3 className="listing-detail-heading no-margin ">{text.title_oz}</h3>
-                                            <div dangerouslySetInnerHTML={{__html: text.text_oz}} className="textDecorate flex-column mb-xl-20 p-4"/>
-                                        </div>
-                                    )}
+                                            <h3 className="listing-detail-heading no-margin ">{blog.title_oz}</h3>
+                                            <div dangerouslySetInnerHTML={{__html: blog.text_oz}} className="textDecorate flex-column mb-xl-20 p-4"/>
+                                        </div>:""
+                                    }
                                 </div>
                             </div>
                         </div>
