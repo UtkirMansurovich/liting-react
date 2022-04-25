@@ -20,7 +20,7 @@ const NavbarChild = ({ navText }) => {
             : navText.type === 'BLOGS'
             ? '/blogs/'+navText.id
             : navText.type === 'PARENT'
-            ? '/'
+            ? '#'
             : ''
         }
         className='text-theme fs-14'

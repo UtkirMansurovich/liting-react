@@ -19,7 +19,7 @@ const NavChildChildChild = ({subChild}) => {
                 : subChild.type === 'BLOGS' 
                 ? "/blogs/"+subChild.id
                 : subChild.type === "PARENT" 
-                ? "/" 
+                ? "#"
                 : "" 
             }
                 onClick={()=>setId(subChild.id, subChild.name_oz)}

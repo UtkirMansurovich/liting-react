@@ -18,7 +18,7 @@ const NavbarChildChild = ({sub}) => {
                 : sub.type === 'BLOGS' 
                 ? "/blogs/"+sub.id
                 : sub.type === "PARENT" 
-                ? "/" 
+                ? "#"
                 : "" 
             }
                 onClick={()=>setId(sub.id, sub.name_oz)}
