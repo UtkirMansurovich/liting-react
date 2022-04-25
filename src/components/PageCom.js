@@ -1,12 +1,9 @@
-import React, {useContext, useState, useEffect} from 'react';
-import {useParams} from 'react-router-dom';
+import React, {useState, useEffect} from 'react';
 import {Link} from "react-router-dom";
-import {AppContext} from "../context";
 import { BASE_URL_PHOTO, BASE_URL } from '../utills/constant';
 import axios from 'axios';
 
 const PageCom = (props) => {
-    const {page, pageTitle} = useContext(AppContext);
     const [blog,setBlog] = useState(null)
     // console.log(page[0]);
     const getBlog = () => {
@@ -42,14 +39,14 @@ const PageCom = (props) => {
                         <div className="col-lg-6">
                             <div className="breadcrumb-wrapper">
                                 <div className="page-title">
-                                    <h1 className="text-theme fw-500 text-capitalize">{pageTitle}</h1>
+                                    <h1 className="text-theme fw-500 text-capitalize">{blog ? blog.category.name_oz : ""}</h1>
                                 </div>
                                 <ul className="custom breadcrumb">
                                     <li>
                                         <Link to="/">Главная страница</Link>
                                     </li>
                                     <li className="active">
-                                        {pageTitle}
+                                        {blog ? blog.category.name_oz : ""}
                                     </li>
                                 </ul>
                             </div>

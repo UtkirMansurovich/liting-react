@@ -1,22 +1,15 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Link} from "react-router-dom";
-import { AppContext } from '../context';
 import {BASE_URL, BASE_URL_PHOTO} from '../utills/constant';
 import axios from "axios";
 
 const BlogPagesCom = (props) => {
-    const {page, pageTitle, findId} = useContext(AppContext);
     const [blogs,setBlogs]=useState([])
-    console.log(page);
-    function sendId(id){
-        localStorage.setItem('id', id);
-        findId(id);
-    }
 
     const getBlogs = () => {
         axios.get(BASE_URL+"/api/blog/all/"+props.catId)
             .then(r=>{
-                console.log("AAAAAAAA")
+                // console.log("AAAAAAAA")
                 console.log(r)
                 setBlogs(r.data.object?r.data.object:null)
             })
@@ -32,14 +25,14 @@ const BlogPagesCom = (props) => {
                         <div className="col-lg-6">
                             <div className="breadcrumb-wrapper">
                                 <div className="page-title">
-                                    <h1 className="text-theme fw-500">{pageTitle}</h1>
+                                    <h1 className="text-theme fw-500">{blogs[0] ? blogs[0].category.name_oz : ""}</h1>
                                 </div>
                                 <ul className="custom breadcrumb">
                                     <li>
                                         <Link to="/">Главная страница</Link>
                                     </li>
                                     <li className="active">
-                                        {pageTitle}
+                                        {blogs[0] ? blogs[0].category.name_oz : ""}
                                     </li>
                                 </ul>
                             </div>
@@ -69,8 +62,7 @@ const BlogPagesCom = (props) => {
                                 <div className="post-link" style={{padding:'1.25rem'}}>
                                     <Link to={`/blogs/${props.catId}/${texts.id}`}
                                           className="link-btn text-custom-blue fw-600 fs-14"
-                                          // onClick={() => sendId(texts.id)}
-                                    >Читать далее</Link>                   
+                                    >Читать далее</Link>
                                 </div>
                             </div>
                         </div>

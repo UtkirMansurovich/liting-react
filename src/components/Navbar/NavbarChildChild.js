@@ -1,15 +1,8 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import {Link} from "react-router-dom";
-import {AppContext} from "../../context";
 import NavChildChildChild from "./NavChildChildChild";
 
 const NavbarChildChild = ({sub}) => {
-    const {findId} = useContext(AppContext);
-    function setId(id, pageTitle){
-        localStorage.setItem('id', id);
-        localStorage.setItem('pageTitle', pageTitle);
-        findId(id, pageTitle);
-    }
     return(
         <li className="menu-item menu-item-has-children" >
             <Link to={
@@ -21,7 +14,6 @@ const NavbarChildChild = ({sub}) => {
                 ? "#"
                 : "" 
             }
-                onClick={()=>setId(sub.id, sub.name_oz)}
                 className="text-theme"
             >
                 {sub.name_uz}
