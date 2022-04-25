@@ -75,13 +75,6 @@ const StartBlock = ({slidesBlock}) => {
                                        <a href="#">
                                            <img src={slides.image} className="slidesOurBlockImg" />
                                        </a>
-                                       {slides.video && slides.video.length >= 1 ? <div className="post-video">
-                                           <div className="video-btn-wrapper">
-                                               <a href="https://www.youtube.com/watch?v=KH1pcNUTa6U" className="text-custom-blue popup-video">
-                                                   <i className="far fa-play-circle"></i>
-                                               </a>
-                                           </div>
-                                       </div> : ""}
                                        <div className="post-date">
                                            <a href="blog-single.html" className="post-data-a">09 Dec 2022</a>
                                        </div>

@@ -10,7 +10,7 @@ const PageCom = (props) => {
         if (props.blogId){
             axios.get(BASE_URL+"/api/blog/one/"+props.blogId)
                 .then(r=>{
-                    console.log(r)
+                    // console.log(r)
                     setBlog(r.data.object?r.data.object:null)
                 })
                 .catch(e=>{
@@ -19,7 +19,7 @@ const PageCom = (props) => {
         }else {
             axios.get(BASE_URL+"/api/blog/all/"+props.catId)
                 .then(r=>{
-                    console.log(r)
+                    // console.log(r)
                     setBlog(r.data.object?r.data.object[0]:null)
                 })
                 .catch(e=>{

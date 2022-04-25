@@ -10,12 +10,12 @@ const BlogPagesCom = (props) => {
         axios.get(BASE_URL+"/api/blog/all/"+props.catId)
             .then(r=>{
                 // console.log("AAAAAAAA")
-                console.log(r)
+                console.log(r.data.object)
                 setBlogs(r.data.object?r.data.object:null)
             })
     }
     useEffect(async () => {
-        await getBlogs()
+        await getBlogs();
     }, [props.catId]);
     return(
         <div className="bg-light-white">
@@ -49,11 +49,11 @@ const BlogPagesCom = (props) => {
                                     <img src={BASE_URL_PHOTO + texts.mainImage.hashId} className="card-img-top blogsImage" alt="imagePhoto"/>
                                 </div>
                                 <div className="post-date">
-                                    <a href="blog-single.html" className="post-data-a">09 Dec 2022</a>
+                                    <a href="#" className="post-data-a">{texts.createdAt.slice(0,10)}</a>
                                 </div>
                                 <div className="blogCats">
-                                    <a href="#" className="cats-office">Office</a>
-                                    <a href="#" className="cats-rent">News</a>
+                                    <a href="#" className="cats-office">{blogs[0].category.name_oz}</a>
+                                    {/*<a href="#" className="cats-rent">News</a>*/}
                                 </div>
                                 <div className="card-body blogsBody">
                                     <h5 className="card-title">{texts.title_oz}</h5>
