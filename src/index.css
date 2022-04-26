@@ -37,6 +37,12 @@ body {
   color: #FFFFFF;
   font-size: 18px;
   width: 70%;
+  max-height: 105px;
+  overflow: hidden;
+  z-index: 11;
+}
+.slideP p{
+  color: #fff!important;
 }
 .h1Span{
   color: #fd5d14;

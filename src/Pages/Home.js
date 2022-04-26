@@ -15,20 +15,15 @@ import StartFaqs from "../components/StartFaqs";
 import StartNewsLetter from "../components/StartNewsLetter";
 import StartFooter from "../components/StartFooter";
 import LoginRegister from "../components/LoginRegister";
-import {SliderData, SliderOurCategory, SliderOurBlock} from "../components/SliderData";
+import {SliderOurCategory, SliderOurBlock} from "../components/SliderData";
 import StartBanner from "../components/StartBanner";
 
 const Home = () => {
-    if(!SliderData) {
-        return (
-            <Preloader/>
-        )
-    }else {
         return(
             <div>
                 <TopBar/>
                 <Navbar/>
-                <StartBanner slideBanner={SliderData}/>
+                <StartBanner/>
                 <StartAbout/>
                 <StartOurCategory slidesOurCategory={SliderOurCategory}/>
                 <StartFullWidth/>
@@ -44,7 +39,5 @@ const Home = () => {
                 <LoginRegister/>
             </div>
         )
-    }
-
 }
 export default Home
