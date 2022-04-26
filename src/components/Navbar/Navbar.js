@@ -5,7 +5,7 @@ import NavbarChild from "./NavbarChild";
 
 const Navbar = () => {
     const {navParent} = useContext(AppContext);
-    console.log(navParent);
+    // console.log(navParent);
 
     return(
         <header className="menu-style">

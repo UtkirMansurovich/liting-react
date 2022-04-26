@@ -1,7 +1,10 @@
-import React from "react";
+import React, {useContext} from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
+import {AppContext} from "../context";
+import {BASE_URL_PHOTO} from "../utills/constant";
+import {Link} from 'react-router-dom';
 
 function SampleNextArrow(props){
     const { className, style, onClick } = props;
@@ -26,6 +29,7 @@ function SamplePrevArrow(props){
 }
 
 const StartBlock = ({slidesBlock}) => {
+    const {allBlogs} = useContext(AppContext);
         const settings = {
             infinite: true,
             slidesToShow: 3,
@@ -69,39 +73,39 @@ const StartBlock = ({slidesBlock}) => {
                         </div>
                     </div>
                     <Slider {...settings}>
-                            {slidesBlock.map((slides, index) =>
+                            {allBlogs && allBlogs.map((slides, index) =>
                                <div key={index} className="sliderBlockContainer">
                                    <div className="sliderBlockContainerChild">
-                                       <a href="#">
-                                           <img src={slides.image} className="slidesOurBlockImg" />
-                                       </a>
+                                       <div className="slidesOurBlockImgBox">
+                                           <img src={BASE_URL_PHOTO + slides.mainImage.hashId} className="slidesOurBlockImg" />
+                                       </div>
                                        <div className="post-date">
-                                           <a href="blog-single.html" className="post-data-a">09 Dec 2022</a>
+                                           <a href="#" className="post-data-a">{slides.createdAt.slice(0,10)}</a>
                                        </div>
                                        <div>
                                            <div>
                                                <div className="cats">
-                                                   <a href="#" className="cats-office">{slides.office}</a>
-                                                   <a href="#" className="cats-rent">{slides.rent}</a>
+                                                   <a href="#" className="cats-office">{slides.category.name_oz.slice(0,20)}...</a>
+                                                   {/*<a href="#" className="cats-rent">{slides.rent}</a>*/}
                                                </div>
                                            </div>
                                            <div className="post-title-parent">
                                                <h2 className="post-title">
-                                                   <a href="#" className="text-theme">{slides.title}</a>
+                                                   <a href="#" className="text-theme">{slides.title_oz}</a>
                                                </h2>
-                                               <p className="text-light-white no-margin">{slides.text}</p>
+                                               <p className="text-light-white no-margin">{slides.anons_oz}</p>
                                            </div>
                                            <div className="blog-footer-meta bg-custom-white padding-20">
-                                               <div className="post-author">
-                                                   <div className="author-img">
-                                                       <a href="blog-single.html">
-                                                           <img src="../assets/images/homepage-1/admin-1-40x40.jpg" className="rounded-circle" alt="#"/>
-                                                       </a>
-                                                   </div>
-                                                   <span className="text-theme fs-14">By <a href="blog-single.html" className="text-theme fw-500">Администратор</a></span>
-                                               </div>
+                                               {/*<div className="post-author">*/}
+                                                   {/*<div className="author-img">*/}
+                                                   {/*    <a href="blog-single.html">*/}
+                                                   {/*        <img src="../assets/images/homepage-1/admin-1-40x40.jpg" className="rounded-circle" alt="#"/>*/}
+                                                   {/*    </a>*/}
+                                                   {/*</div>*/}
+                                                   {/*<span className="text-theme fs-14">By <a href="blog-single.html" className="text-theme fw-500">Администратор</a></span>*/}
+                                               {/*</div>*/}
                                                <div className="post-link">
-                                                   <a href="blog-single.html" className="link-btn text-custom-blue fw-600 fs-14">Читать далее</a>
+                                                   <Link to={/blogs/+slides.category.id+'/'+slides.id} className="link-btn text-custom-blue fw-600 fs-14">Читать далее</Link>
                                                </div>
                                            </div>
                                        </div>
@@ -109,159 +113,6 @@ const StartBlock = ({slidesBlock}) => {
                                </div>
                             )}
                     </Slider>
-
-                    {/*<div className="row">*/}
-                    {/*    <div className="col-12">*/}
-                    {/*        <div className="swiper-container blog-slider">*/}
-                    {/*            <div className="swiper-wrapper" id="swiper-blog-main-page">*/}
-                    {/*                <div className="swiper-slide">*/}
-                    {/*                    /!*article *!/*/}
-                    {/*                    {SliderOurCategory.map((slides, index) =>*/}
-                    {/*                        <article className="post">*/}
-                    {/*                            <div className="post-wrapper">*/}
-                    {/*                                <div className="blog-img animate-img">*/}
-                    {/*                                    <a href="blog-single.html">*/}
-                    {/*                                        <img src="../assets/images/homepage-1/blog-1-350x300.jpg" className="img-fluid full-width" alt="blog"/>*/}
-                    {/*                                    </a>*/}
-                    {/*                                    <div className="post-video">*/}
-                    {/*                                        <div className="video-btn-wrapper">*/}
-                    {/*                                            <a href="https://www.youtube.com/watch?v=KH1pcNUTa6U" className="text-custom-blue popup-video">*/}
-                    {/*                                                <i className="far fa-play-circle"></i>*/}
-                    {/*                                            </a>*/}
-                    {/*                                        </div>*/}
-                    {/*                                    </div>*/}
-                    {/*                                </div>*/}
-                    {/*                                <div className="post-date">*/}
-                    {/*                                    <a href="blog-single.html">09 Dec 2022</a>*/}
-                    {/*                                </div>*/}
-                    {/*                                <div className="blog-meta bg-custom-white padding-20">*/}
-                    {/*                                    <div className="cat-box">*/}
-                    {/*                                        <div className="cats">*/}
-                    {/*                                            <a href="#">Офис</a>*/}
-                    {/*                                            <a href="#">Аренда</a>*/}
-                    {/*                                        </div>*/}
-                    {/*                                    </div>*/}
-                    {/*                                    <h2 className="post-title">*/}
-                    {/*                                        <a href="blog-single.html" className="text-theme">Цвета спальни, о которых вы никогда не пожалеете</a>*/}
-                    {/*                                    </h2>*/}
-                    {/*                                    <p className="text-light-white no-margin">Это просто текст-пустышка полиграфической и наборной индустрии.</p>*/}
-                    {/*                                </div>*/}
-                    {/*                                <div className="blog-footer-meta bg-custom-white padding-20">*/}
-                    {/*                                    <div className="post-author">*/}
-                    {/*                                        <div className="author-img">*/}
-                    {/*                                            <a href="blog-single.html">*/}
-                    {/*                                                <img src="../assets/images/homepage-1/admin-1-40x40.jpg" className="rounded-circle" alt="#"/>*/}
-                    {/*                                            </a>*/}
-                    {/*                                        </div>*/}
-                    {/*                                        <span className="text-theme fs-14">By <a href="blog-single.html" className="text-theme fw-500">Администратор</a></span>*/}
-                    {/*                                    </div>*/}
-                    {/*                                    <div className="post-link">*/}
-                    {/*                                        <a href="blog-single.html" className="link-btn text-custom-blue fw-600 fs-14">Читать далее</a>*/}
-                    {/*                                    </div>*/}
-                    {/*                                </div>*/}
-                    {/*                            </div>*/}
-                    {/*                        </article>*/}
-                    {/*                    )}*/}
-                    {/*                    /!*article*!/*/}
-                    {/*                </div>*/}
-
-
-                                    {/*<div className="swiper-slide">*/}
-                                    {/*    /!*article*!/*/}
-                                    {/*    <article className="post">*/}
-                                    {/*        <div className="post-wrapper">*/}
-                                    {/*            <div className="blog-img animate-img">*/}
-                                    {/*                <a href="blog-single.html">*/}
-                                    {/*                    <img src="../assets/images/homepage-1/blog-2-350x300.jpg" className="img-fluid full-width" alt="blog"/>*/}
-                                    {/*                </a>*/}
-                                    {/*            </div>*/}
-                                    {/*            <div className="post-date">*/}
-                                    {/*                <a href="blog-single.html">26 Oct 2022</a>*/}
-                                    {/*            </div>*/}
-                                    {/*            <div className="blog-meta bg-custom-white padding-20">*/}
-                                    {/*                <div className="cat-box">*/}
-                                    {/*                    <div className="cats">*/}
-                                    {/*                        <a href="#">Офис</a>*/}
-                                    {/*                        <a href="#">Аренда</a>*/}
-                                    {/*                    </div>*/}
-                                    {/*                </div>*/}
-                                    {/*                <h2 className="post-title">*/}
-                                    {/*                    <a href="blog-single.html" className="text-theme">Цвета спальни, о которых вы никогда не пожалеете</a></h2>*/}
-                                    {/*                <p className="text-light-white no-margin">Это просто текст-пустышка полиграфической и наборной индустрии.</p>*/}
-                                    {/*            </div>*/}
-                                    {/*            <div className="blog-footer-meta bg-custom-white padding-20">*/}
-                                    {/*                <div className="post-author">*/}
-                                    {/*                    <div className="author-img">*/}
-                                    {/*                        <a href="blog-single.html">*/}
-                                    {/*                            <img src="../assets/images/homepage-1/admin-2-40x40.jpg" className="rounded-circle" alt="#"/>*/}
-                                    {/*                        </a>*/}
-                                    {/*                    </div>*/}
-                                    {/*                    <span className="text-theme fs-14">By <a href="blog-single.html" className="text-theme fw-500">Администратор</a></span>*/}
-                                    {/*                </div>*/}
-                                    {/*                <div className="post-link">*/}
-                                    {/*                    <a href="blog-single.html" className="link-btn text-custom-blue fw-600 fs-14">Читать далее</a>*/}
-                                    {/*                </div>*/}
-                                    {/*            </div>*/}
-                                    {/*        </div>*/}
-                                    {/*    </article>*/}
-                                    {/*    /!*article*!/*/}
-                                    {/*</div>*/}
-                                    {/*<div className="swiper-slide">*/}
-                                    {/*    /!*article*!/*/}
-                                    {/*    <article className="post">*/}
-                                    {/*        <div className="post-wrapper">*/}
-                                    {/*            <div className="blog-img animate-img">*/}
-                                    {/*                <a href="blog-single.html">*/}
-                                    {/*                    <img src="../assets/images/homepage-1/blog-2-350x300.jpg" className="img-fluid full-width" alt="blog"/>*/}
-                                    {/*                </a>*/}
-                                    {/*            </div>*/}
-                                    {/*            <div className="post-date">*/}
-                                    {/*                <a href="blog-single.html">26 Oct 2022</a>*/}
-                                    {/*            </div>*/}
-                                    {/*            <div className="blog-meta bg-custom-white padding-20">*/}
-                                    {/*                <div className="cat-box">*/}
-                                    {/*                    <div className="cats">*/}
-                                    {/*                        <a href="#">Офис</a>*/}
-                                    {/*                        <a href="#">Аренда</a>*/}
-                                    {/*                    </div>*/}
-                                    {/*                </div>*/}
-                                    {/*                <h2 className="post-title"><a href="blog-single.html" className="text-theme">Что делать за год до покупки квартиры</a></h2>*/}
-                                    {/*                <p className="text-light-white no-margin">Это просто текст-пустышка полиграфической и наборной индустрии.</p>*/}
-                                    {/*            </div>*/}
-                                    {/*            <div className="blog-footer-meta bg-custom-white padding-20">*/}
-                                    {/*                <div className="post-author">*/}
-                                    {/*                    <div className="author-img">*/}
-                                    {/*                        <a href="blog-single.html">*/}
-                                    {/*                            <img src="../assets/images/homepage-1/admin-3-40x40.jpg" className="rounded-circle" alt="#"/>*/}
-                                    {/*                        </a>*/}
-                                    {/*                    </div>*/}
-                                    {/*                    <span className="text-theme fs-14">By <a href="blog-single.html" className="text-theme fw-500">Администратор</a></span>*/}
-                                    {/*                </div>*/}
-                                    {/*                <div className="post-link">*/}
-                                    {/*                    <a href="blog-single.html" className="link-btn text-custom-blue fw-600 fs-14">Читать далее</a>*/}
-                                    {/*                </div>*/}
-                                    {/*            </div>*/}
-                                    {/*        </div>*/}
-                                    {/*    </article>*/}
-                                    {/*    /!*article*!/*/}
-                                    {/*</div>*/}
-                    {/*            </div>*/}
-                    {/*            <a href="/category" className="btn-first btn-submit text-custom-black mr-1 float-right">ЧИТАТЬ ДАЛЕЕ</a>*/}
-                    {/*            /!*<a href="/category" style="background: #2596be;!important;" class="btn btn-success w-25 float-right">Read more</a>*!/*/}
-                    {/*        </div>*/}
-                    {/*        /!*Add Arrows*!/*/}
-                    {/*        <div className="slider-btn">*/}
-                    {/*            <div className="blog-button-next swiper-button-next">*/}
-                    {/*                <span className="flaticon-arrow-1"></span>*/}
-                    {/*            </div>*/}
-                    {/*            <div className="blog-button-prev swiper-button-prev">*/}
-                    {/*                <span className="flaticon-left"></span>*/}
-                    {/*            </div>*/}
-                    {/*        </div>*/}
-                    {/*        /!*Add Pagination*!/*/}
-                    {/*        <div className="blog-pagination swiper-pagination"></div>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
                 </div>
             </section>
         )

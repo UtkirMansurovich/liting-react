@@ -54,7 +54,7 @@ const StartBanner = ({slideBanner}) => {
 
     return(
         <Slider {...setting}>
-            {slider.map((slide, index) =>
+            {slider && slider.map((slide, index) =>
                 <div key={index} >
                     <div style={{width:'100%', height:'85vh', overflow:'hidden', position:'relative'}}>
                         <div style={{

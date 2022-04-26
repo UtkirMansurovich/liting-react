@@ -9,6 +9,8 @@ const AppProvider = ({ children }) => {
   const [navParent, setNavParent] = useState([]);
   //Main Slider
   const [slider, setSlider] = useState([]);
+  //All Blogs
+  const [allBlogs, setAllBlogs] = useState([]);
 
   const navbarList = () => {
     axios
@@ -27,19 +29,32 @@ const AppProvider = ({ children }) => {
         .get(BASE_URL + '/api/blog/all/main_slider')
         .then((res) => {
           setSlider(res.data.object);
-          console.log(res.data.object)
+          // console.log(res.data.object)
         })
         .catch((err) => {
           console.log(err);
         })
   }
 
+  const callAllBlogs = () => {
+      axios
+          .get(BASE_URL + '/api/blog/all')
+          .then((res) => {
+              setAllBlogs(res.data.object);
+              console.log(res.data.object);
+          })
+          .catch((err) => {
+              console.log(err);
+          })
+  }
+
   useEffect(() => {
     navbarList();
     sliderImage();
+    callAllBlogs();
   }, []);
 
-  const value = { navParent, slider };
+  const value = { navParent, slider, allBlogs };
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 };
 
