@@ -1,13 +1,20 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import ReactDOM from 'react-dom';
+import './i18next';
 import './index.css';
 import App from './App';
 import {AppProvider} from "./context";
 
 ReactDOM.render(
-    <AppProvider>
-        <App />
-    </AppProvider>
+    <Suspense fallback={
+                    <div className="preloader">
+                        <img src="../assets/images/pre-loader-1.svg" alt="img"/>
+                    </div>
+                }>
+        <AppProvider>
+            <App />
+        </AppProvider>
+    </Suspense>
     , document.getElementById('root')
 );
 

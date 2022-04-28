@@ -11,7 +11,7 @@ import StartFullWidthTwo from "../components/StartFullWidthTwo";
 import StartService from "../components/StartService";
 import StartTeam from "../components/StartTeam";
 import StartClient from "../components/StartClient";
-import StartFaqs from "../components/StartFaqs";
+// import StartFaqs from "../components/StartFaqs";
 import StartNewsLetter from "../components/StartNewsLetter";
 import StartFooter from "../components/StartFooter";
 import LoginRegister from "../components/LoginRegister";

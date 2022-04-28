@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
-const NavChildChildChildChild = ({lastChild}) => {
+const NavChildChildChildChild = ({lastChild, getCookie}) => {
     return(
         <li className="menu-item">
             <Link to={
@@ -15,7 +15,9 @@ const NavChildChildChildChild = ({lastChild}) => {
             }
                 className="text-theme"
             >
-                {lastChild.name_uz}
+                {getCookie.i18next === 'en' ? lastChild.name_en :
+                    getCookie.i18next === 'uz' ? lastChild.name_uz :
+                        getCookie.i18next === 'oz' ? lastChild.name_oz : lastChild.name_ru }
             </Link>
         </li>
     )

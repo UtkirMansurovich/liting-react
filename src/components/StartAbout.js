@@ -1,6 +1,8 @@
-import React from "react";
+import React, {useTransition} from "react";
+import {useTranslation} from "react-i18next";
 
 const StartAbout = () => {
+    const { t } = useTranslation();
     return(
         <section className="section-padding about-us">
             <div className="container">
@@ -13,7 +15,7 @@ const StartAbout = () => {
                                     <img src="../assets/images/banner-icon-01.png" className="full-width" alt="img"/>
                                 </div>
                                 <div className="meta-text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                                    <h4 className="text-custom-white no-margin fs-20">28 успешно завершенных проектов</h4>
+                                    <h4 className="text-custom-white no-margin fs-20">{t('Welcome to React')}</h4>
                                 </div>
                             </div>
                         </div>
