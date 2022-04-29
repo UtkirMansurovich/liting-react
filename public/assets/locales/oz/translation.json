@@ -4,5 +4,23 @@
   },
   "StartBanner": {
     "readMore": "Batafsil"
+  },
+  "StartAbout": {
+    "project": "28 ta loyiha muvaffaqiyatli yakunlandi",
+    "about": "Biz haqimizda",
+    "history": "Bizning hikoyamiz",
+    "text": "\"O'ZLITINEFTGAZ\" aksiyadorlik jamiyati O'zbekistondagi uglevodorod konlarini o'zlashtirish va o'zlashtirish hamda neft va gaz ob'ektlari qurilishini har tomonlama ilmiy va loyihaviy ta'minlashni ta'minlovchi O'zbekistonning tarmoqdagi yetakchi ilmiy-tadqiqot va loyiha instituti...",
+    "design": "Dizayn",
+    "development": "Rivojlanish",
+    "automation": "Avtomatlashtirish"
+  },
+  "StartOurCategory": {
+    "ourCategory": "BIZNING KATEGORIYALARIMIZ",
+    "ourLevel": "Bizning jahon darajasidagi muhandislik toifamiz",
+    "text": "Yuqori texnologiyali, yuqori sifatli loyiha hujjatlarini ishlab chiqish va amalga oshirish bilan to'liq tsikl bo'yicha loyihalash ishlari.",
+    "service": "Uyda parvarishlash",
+    "construction": "Umumiy qurilish",
+    "restructured": "Qayta tuzilgan",
+    "control": "Loyihalar boshqaruvi"
   }
 }

@@ -1,119 +1,58 @@
-export const SliderData = [
-    {
-        image: '../assets/images/birinchi.jpg',
-        title: 'Проектирование обьектов ',
-        titleSpan: 'в области нефти и газа',
-        text: 'Укрепление стабильности в обществе и обеспечение безопасности государства жизненно важны для Узбекистана.  В связи с этим, 12 января 2022 года для молодых специалистов АО «O‘ZLITINEFTGAZ» был проведен патриотический час на тему «Я –опора  Родины».',
-
-    },
-    {
-        image: '../assets/images/ikkinchi.jpg',
-        title: 'Повышения',
-        titleSpan: 'специалистов АО',
-        text: 'В целях совершенствования процесса оформления патентов на изобретения, полезные модели, повышения знаний и навыков работников АО “O‘ZLITINEFTGAZ” в сфере патентоведения, 6-8 января вступившего в силу нового 2022 года были организованы очередные   курсы повышения квалификации.',
-    },
-    {
-        image: '../assets/images/uchinchi.jpg',
-        title: 'СОВЕТЫ',
-        titleSpan: 'ПРИ АО',
-        text: 'В целях совершенствования процесса оформления патентов на изобретения, полезные модели, повышения знаний и навыков работников АО “O‘ZLITINEFTGAZ” в сфере патентоведения, 6-8 января вступившего в силу нового 2022 года были организованы очередные   курсы повышения квалификации.',
-    }
-
-]
-
 export const SliderOurCategory = [
     {
         image: '../assets/images/services/service1.jpg',
-        title: 'Моделирование',
-        text: 'Моделирование проекта'
+        title_ru: 'Моделирование',
+        title_uz: 'Моделлаштириш',
+        title_oz: 'Modellashtirish',
+        title_en: 'Modeling',
+        text_ru: 'Моделирование проекта',
+        text_uz: 'Лойиҳани моделлаштириш',
+        text_oz: 'Loyihani modellashtirish',
+        text_en: 'Project Modeling',
     },
     {
         image: '../assets/images/services/service2.jpg',
-        title: 'Проектирование',
-        text: 'Проектирование'
+        title_ru: 'Проектирование',
+        title_uz: 'Дизайн',
+        title_oz: 'Dizayn',
+        title_en: 'Design',
+        text_ru: 'Проектирование',
+        text_uz: 'Дизайн',
+        text_oz: 'Dizayn',
+        text_en: 'Design',
     },
     {
         image: '../assets/images/services/service3.jpg',
-        title: 'Научно-исследовательских',
-        text: 'Научно-исследовательских'
+        title_ru: 'Научно-исследовательских',
+        title_uz: 'Тадқиқот',
+        title_oz: 'Tadqiqot',
+        title_en: 'Research',
+        text_ru: 'Научно-исследовательских',
+        text_uz: 'Тадқиқот',
+        text_oz: 'Tadqiqot',
+        text_en: 'Research',
     },
     {
         image: '../assets/images/services/service4.jpg',
-        title: 'Проектно-изыскательских работ',
-        text: 'Проектно-изыскательских работ'
+        title_ru: 'Проектно-изыскательских работ',
+        title_uz: 'Лойиҳалаш ва тадқиқот ишлари',
+        title_oz: 'Loyihalash va tadqiqot ishlari',
+        title_en: 'Design and survey works',
+        text_ru: 'Проектно-изыскательских работ',
+        text_uz: 'Лойиҳалаш ва тадқиқот ишлари',
+        text_oz: 'Loyihalash va tadqiqot ishlari',
+        text_en: 'Design and survey works',
     },
     {
         image: '../assets/images/services/service5.jpg',
-        title: 'Техническое обслуживание',
-        text: 'Техническое обслуживание здания'
+        title_ru: 'Техническое обслуживание',
+        title_uz: 'Техник хизмат кўрсатиш',
+        title_oz: 'Texnik xizmat ko\'rsatish',
+        title_en: 'Maintenance',
+        text_ru: 'Техническое обслуживание здания',
+        text_uz: 'Бинога техник хизмат кўрсатиш',
+        text_oz: 'Binoga texnik xizmat ko\'rsatish',
+        text_en: 'Building maintenance',
     },
 ]
 
-export const SliderOurBlock = [
-    {
-        image: '../assets/images/homepage-1/blog-1-350x300.jpg',
-        date: '09 Dec 2022',
-        video: 'https://www.youtube.com/watch?v=KH1pcNUTa6U',
-        office: 'Офис',
-        rent: 'Аренда',
-        title: 'Цвета спальни, о которых вы никогда не пожалеете',
-        text: 'Это просто текст-пустышка полиграфической и наборной индустрии.',
-        imagePerson: '../assets/images/homepage-1/admin-1-40x40.jpg',
-        staff: 'Администратор'
-    },
-    {
-        image: '../assets/images/homepage-1/blog-2-350x300.jpg',
-        date: '26 Oct 2022',
-        video: '',
-        office: 'Офис',
-        rent: 'Аренда',
-        title: 'Цвета спальни, о которых вы никогда не пожалеете',
-        text: 'Это просто текст-пустышка полиграфической и наборной индустрии.',
-        imagePerson: '../assets/images/homepage-1/admin-2-40x40.jpg',
-        staff: 'Администратор'
-    },
-    {
-        image: '../assets/images/homepage-1/blog-2-350x300.jpg',
-        date: '26 Oct 2022',
-        video: 'https://www.youtube.com/watch?v=KH1pcNUTa6U',
-        office: 'Офис',
-        rent: 'Аренда',
-        title: 'Что делать за год до покупки квартиры',
-        text: 'Это просто текст-пустышка полиграфической и наборной индустрии.',
-        imagePerson: '../assets/images/homepage-1/admin-2-40x40.jpg',
-        staff: 'Администратор'
-    },
-    {
-        image: '../assets/images/homepage-1/blog-1-350x300.jpg',
-        date: '09 Dec 2022',
-        video: '',
-        office: 'Офис',
-        rent: 'Аренда',
-        title: 'Цвета спальни, о которых вы никогда не пожалеете',
-        text: 'Это просто текст-пустышка полиграфической и наборной индустрии.',
-        imagePerson: '../assets/images/homepage-1/admin-1-40x40.jpg',
-        staff: 'Администратор'
-    },
-    {
-        image: '../assets/images/homepage-1/blog-2-350x300.jpg',
-        date: '26 Oct 2022',
-        video: '',
-        office: 'Офис',
-        rent: 'Аренда',
-        title: 'Цвета спальни, о которых вы никогда не пожалеете',
-        text: 'Это просто текст-пустышка полиграфической и наборной индустрии.',
-        imagePerson: '../assets/images/homepage-1/admin-2-40x40.jpg',
-        staff: 'Администратор'
-    },
-    {
-        image: '../assets/images/homepage-1/blog-2-350x300.jpg',
-        date: '26 Oct 2022',
-        video: '',
-        office: 'Офис',
-        rent: 'Аренда',
-        title: 'Что делать за год до покупки квартиры',
-        text: 'Это просто текст-пустышка полиграфической и наборной индустрии.',
-        imagePerson: '../assets/images/homepage-1/admin-2-40x40.jpg',
-        staff: 'Администратор'
-    }
-]

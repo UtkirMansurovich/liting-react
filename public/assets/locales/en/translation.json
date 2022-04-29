@@ -4,5 +4,23 @@
   },
   "StartBanner": {
     "readMore": "Read more"
+  },
+  "StartAbout": {
+    "project": "28 successfully completed projects",
+    "about": "About Us",
+    "history": "Our history",
+    "text": "Joint-stock company \"O'ZLITINEFTGAZ\" is an industry leading research and design institute of Uzbekistan, providing comprehensive scientific and design support for the development and development of hydrocarbon deposits and the construction of oil and gas facilities in Uzbekistan.",
+    "design": "Design",
+    "development": "Development",
+    "automation": "Automation"
+  },
+  "StartOurCategory": {
+    "ourCategory": "OUR CATEGORIES",
+    "ourLevel": "Our world-class engineering category",
+    "text": "Full-cycle design work with the development and implementation of high-tech, high-quality project documentation.",
+    "service": "Home maintenance",
+    "construction": "General construction",
+    "restructured": "Restructured",
+    "control": "Project management"
   }
 }

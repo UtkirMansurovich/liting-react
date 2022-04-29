@@ -15,7 +15,7 @@ import StartClient from "../components/StartClient";
 import StartNewsLetter from "../components/StartNewsLetter";
 import StartFooter from "../components/StartFooter";
 import LoginRegister from "../components/LoginRegister";
-import {SliderOurCategory, SliderOurBlock} from "../components/SliderData";
+import {SliderOurCategory} from "../components/SliderData";
 import StartBanner from "../components/StartBanner";
 
 const Home = () => {
@@ -27,7 +27,7 @@ const Home = () => {
                 <StartAbout/>
                 <StartOurCategory slidesOurCategory={SliderOurCategory}/>
                 <StartFullWidth/>
-                <StartBlock slidesBlock={SliderOurBlock}/>
+                <StartBlock />
                 <StartOurHistory/>
                 <StartFullWidthTwo/>
                 <StartService/>

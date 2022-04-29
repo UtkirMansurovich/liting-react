@@ -1,7 +1,9 @@
-import React from "react";
+import React, {useContext} from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
+import {useTranslation} from "react-i18next";
+import {AppContext} from "../context";
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -62,17 +64,21 @@ const StartOurCategory = ({slidesOurCategory}) => {
                 },
             ]
         }
+
+        const { t } = useTranslation();
+        const { getCookie } = useContext(AppContext);
+
         return (
             <div>
                 <section className="section-padding bg-light-white our-category">
                     <div className="container">
                         <div className="section-header">
                             <div className="section-heading">
-                                <h5 className="text-custom-blue wow fadeUp" data-wow-duration="1s" data-wow-delay="0.3s">НАШИ КАТЕГОРИИ</h5>
-                                <h3 className="text-theme fw-700">Наша инженерная категория мирового уровня</h3>
+                                <h5 className="text-custom-blue wow fadeUp" data-wow-duration="1s" data-wow-delay="0.3s">{t("StartOurCategory.ourCategory")}</h5>
+                                <h3 className="text-theme fw-700">{t("StartOurCategory.ourLevel")}</h3>
                             </div>
                             <div className="section-description">
-                                <p className="text-light-white">Проектные работы по полному циклу с разработкой и реализацией высокотехнологичной, качественной проектной документации.</p>
+                                <p className="text-light-white">{t("StartOurCategory.text")}</p>
                             </div>
                         </div>
                         <Slider {...settings}>
@@ -81,8 +87,17 @@ const StartOurCategory = ({slidesOurCategory}) => {
                                     <div style={{overflow:'hidden'}}>
                                         <div className="slidesTexts" style={{background: `url(${slides.image}) no-repeat center center/cover`}}>
                                             <div className="slidesTextsChild">
-                                                <h5 className="text-custom-blue no-margin fw-600 fs-20 ourCategorySlideH5">{slides.title}</h5>
-                                                <p className="text-light-white no-margin ourCategorySlideP">{slides.text}</p>
+                                                <h5 className="text-custom-blue no-margin fw-600 fs-20 ourCategorySlideH5">
+                                                    {getCookie.i18next === 'en' ? slides.title_en :
+                                                        getCookie.i18next === 'uz' ? slides.title_uz :
+                                                            getCookie.i18next === 'oz' ? slides.title_oz : slides.title_ru }
+                                                </h5>
+                                                <p className="text-light-white no-margin ourCategorySlideP">
+                                                    {slides.text}
+                                                    {getCookie.i18next === 'en' ? slides.text_en :
+                                                        getCookie.i18next === 'uz' ? slides.text_uz :
+                                                            getCookie.i18next === 'oz' ? slides.text_oz : slides.text_ru }
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -94,22 +109,22 @@ const StartOurCategory = ({slidesOurCategory}) => {
                                  <ul className="custom nav nav-tabs">
                                      <li className="nav-item">
                                          <a className="nav-link active text-custom-black" data-toggle="tab" href="#home-maintainance">
-                                             <span><img src="../assets/images/svg/home-main.svg" className="image-fit" alt="svg"/></span>Обслуживание дома
+                                             <span><img src="../assets/images/svg/home-main.svg" className="image-fit" alt="svg"/></span>{t("StartOurCategory.service")}
                                          </a>
                                      </li>
                                      <li className="nav-item">
                                          <a className="nav-link text-custom-black" data-toggle="tab" href="#gen-construction">
-                                             <span><img src="../assets/images/svg/gen-const.svg" className="image-fit" alt="svg"/></span>Общее строительство
+                                             <span><img src="../assets/images/svg/gen-const.svg" className="image-fit" alt="svg"/></span>{t("StartOurCategory.construction")}
                                          </a>
                                      </li>
                                      <li className="nav-item">
                                          <a className="nav-link text-custom-black" data-toggle="tab" href="#restructured">
-                                             <span><img src="../assets/images/svg/restructer.svg" className="image-fit" alt="svg"/></span>Реструктурированный
+                                             <span><img src="../assets/images/svg/restructer.svg" className="image-fit" alt="svg"/></span>{t("StartOurCategory.restructured")}
                                          </a>
                                      </li>
                                      <li className="nav-item">
                                          <a className="nav-link text-custom-black" data-toggle="tab" href="#project-management">
-                                             <span><img src="../assets/images/svg/project-m.svg" className="image-fit" alt="svg"/></span>Управление проектом
+                                             <span><img src="../assets/images/svg/project-m.svg" className="image-fit" alt="svg"/></span>{t("StartOurCategory.control")}
                                          </a>
                                      </li>
                                  </ul>
