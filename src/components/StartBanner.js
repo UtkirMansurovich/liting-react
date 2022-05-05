@@ -52,6 +52,7 @@ const StartBanner = () => {
 
     const {slider, getCookie} = useContext(AppContext);
     const { t } = useTranslation();
+    // console.log(slider);
 
     return(
         <Slider {...setting}>
@@ -77,7 +78,7 @@ const StartBanner = () => {
                                         {getCookie.i18next === 'en' ? slide.title_en.slice(20, 40) :
                                             getCookie.i18next === 'uz' ? slide.title_uz.slice(20, 40) :
                                                 getCookie.i18next === 'oz' ? slide.title_oz.slice(20, 40) : slide.title_ru.slice(20, 40) }
-                                    </span>
+                                    ...</span>
                                 </h1>
                                 <p className="slideP">
                                     {getCookie.i18next === 'en' ? slide.anons_en :

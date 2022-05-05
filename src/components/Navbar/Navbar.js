@@ -28,7 +28,7 @@ const Navbar = () => {
                                     <nav>
                                         <ul className="custom main-menu" id="navbar-root">
                                             {navParent && navParent.map((navText, index) =>
-                                                <NavbarChild navText={navText} key={index} />
+                                                <NavbarChild navText={navText} key={index}/>
                                             )}
                                         </ul>
                                     </nav>
