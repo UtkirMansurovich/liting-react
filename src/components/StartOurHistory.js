@@ -1,17 +1,19 @@
 import React from "react";
+import {useTranslation} from "react-i18next";
 
 const StartOurHistory = () => {
+    const { t } = useTranslation();
     return(
         <section className="section-padding bg-light-white bg-call-to-action">
             <div className="overlay overlay-bg"></div>
             <div className="container">
                 <div className="section-header">
                     <div className="section-heading">
-                        <h5 className="text-custom-blue wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">НАША ИСТОРИЯ</h5>
-                        <h3 className="text-custom-white fw-700">Рекордный рубеж пройден</h3>
+                        <h5 className="text-custom-blue wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">{t("StartHistory.ourHistory")}</h5>
+                        <h3 className="text-custom-white fw-700">{t("StartHistory.title")}</h3>
                     </div>
                     <div className="section-description">
-                        <p className="text-custom-white">Это просто фиктивный текст полиграфической и наборной промышленности. Lorem Ipsum был стандартным фиктивным текстом в отрасли.</p>
+                        <p className="text-custom-white">{t("StartHistory.text")}</p>
                     </div>
                 </div>
                 <div className="row">
@@ -36,7 +38,7 @@ const StartOurHistory = () => {
                                     <a className="nav-link" data-toggle="tab" href="#medium">2010 - 2022</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" data-toggle="tab" href="#advance">2022 - to</a>
+                                    <a className="nav-link" data-toggle="tab" href="#advance">2022 - {t("StartHistory.and")}</a>
                                 </li>
                             </ul>
                             <div className="tab-content padding-20 bg-custom-white bx-wrapper">
@@ -50,31 +52,31 @@ const StartOurHistory = () => {
                                             </div>
                                             <div className="col-lg-6 align-self-center">
                                                 <div className="content-box">
-                                                    <h4 className="text-custom-black fw-600">Компания начала</h4>
-                                                    <p className="text-custom-blue mb-xl-20">Это просто фиктивный текст полиграфической и наборной промышленности.</p>
-                                                    <p className="text-light-white mb-xl-20">Это просто фиктивный текст полиграфической и наборной промышленности. Lorem Ipsum был стандартным фиктивным текстом в отрасли.</p>
-                                                    <p className="text-light-white mb-xl-20">Это просто фиктивный текст полиграфической и наборной промышленности. Lorem Ipsum был стандартным фиктивным текстом в отрасли.</p>
+                                                    <h4 className="text-custom-black fw-600">{t("StartHistory.cardTitle")}</h4>
+                                                    <p className="text-custom-blue mb-xl-20">{t("StartHistory.cardTextFirst")}</p>
+                                                    <p className="text-light-white mb-xl-20">{t("StartHistory.cardTextSecond")}</p>
+                                                    <p className="text-light-white mb-xl-20">{t("StartHistory.cardTextThird")}</p>
                                                     <div className="list">
                                                         <ul className="custom">
                                                             <li className="fs-14 text-custom-blue">
                                                                 <i className="fas fa-check"></i>
-                                                                <span className="text-light-white">СОТРУДНИКОВ</span>
+                                                                <span className="text-light-white"> {t("StartHistory.employees")}</span>
                                                             </li>
                                                             <li className="fs-14 text-custom-blue">
                                                                 <i className="fas fa-check"></i>
-                                                                <span className="text-light-white">ЗАВЕРШЕННЫХ ПРОЕКТОВ</span>
+                                                                <span className="text-light-white"> {t("StartHistory.project")}</span>
                                                             </li>
                                                             <li className="fs-14 text-custom-blue">
                                                                 <i className="fas fa-check"></i>
-                                                                <span className="text-light-white">ВЫПОЛНЕННЫХ РАБОТ</span>
+                                                                <span className="text-light-white"> {t("StartHistory.work")}</span>
                                                             </li>
                                                             <li className="fs-14 text-custom-blue">
                                                                 <i className="fas fa-check"></i>
-                                                                <span className="text-light-white">ЛЕТ РАБОТЫ</span>
+                                                                <span className="text-light-white"> {t("StartHistory.year")}</span>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <a href="#" className="btn-first btn-submit">ЧИТАТЬ ДАЛЕЕ</a>
+                                                    <a href="#" className="btn-first btn-submit mt-3">{t("StartHistory.readMore")}</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -90,31 +92,31 @@ const StartOurHistory = () => {
                                             </div>
                                             <div className="col-lg-6 align-self-center">
                                                 <div className="content-box">
-                                                    <h4 className="text-custom-black fw-600">Улучшенная компания</h4>
-                                                    <p className="text-custom-blue mb-xl-20">Это просто фиктивный текст полиграфической и наборной промышленности.</p>
-                                                    <p className="text-light-white mb-xl-20">Это просто фиктивный текст полиграфической и наборной промышленности. Lorem Ipsum был стандартным фиктивным текстом в отрасли.Это просто фиктивный текст полиграфической</p>
-                                                    <p className="text-light-white mb-xl-20">Это просто фиктивный текст полиграфической и наборной промышленности. Lorem Ipsum был стандартным фиктивным текстом в отрасли.</p>
+                                                    <h4 className="text-custom-black fw-600">{t("StartHistory.secondCardTitle")}</h4>
+                                                    <p className="text-custom-blue mb-xl-20">{t("StartHistory.secondCardTextFirst")}</p>
+                                                    <p className="text-light-white mb-xl-20">{t("StartHistory.secondCardTextSecond")}</p>
+                                                    <p className="text-light-white mb-xl-20">{t("StartHistory.secondCardTextThird")}</p>
                                                     <div className="list">
                                                         <ul className="custom">
                                                             <li className="fs-14 text-custom-blue">
                                                                 <i className="fas fa-check"></i>
-                                                                <span className="text-light-white">СОТРУДНИКО</span>
+                                                                <span className="text-light-white"> {t("StartHistory.secondEmployees")}</span>
                                                             </li>
                                                             <li className="fs-14 text-custom-blue">
                                                                 <i className="fas fa-check"></i>
-                                                                <span className="text-light-white">ЗАВЕРШЕННЫХ ПРОЕКТОВ</span>
+                                                                <span className="text-light-white"> {t("StartHistory.secondProject")}</span>
                                                             </li>
                                                             <li className="fs-14 text-custom-blue">
                                                                 <i className="fas fa-check"></i>
-                                                                <span className="text-light-white">ВЫПОЛНЕННЫХ РАБОТ</span>
+                                                                <span className="text-light-white"> {t("StartHistory.secondWork")}</span>
                                                             </li>
                                                             <li className="fs-14 text-custom-blue">
                                                                 <i className="fas fa-check"></i>
-                                                                <span className="text-light-white">ЛЕТ РАБОТЫ</span>
+                                                                <span className="text-light-white"> {t("StartHistory.secondYear")}</span>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <a href="#" className="btn-first btn-submit">ЧИТАТЬ ДАЛЕЕ</a>
+                                                    <a href="#" className="btn-first btn-submit mt-3">{t("StartHistory.readMore")}</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -130,31 +132,31 @@ const StartOurHistory = () => {
                                             </div>
                                             <div className="col-lg-6 align-self-center">
                                                 <div className="content-box">
-                                                    <h4 className="text-custom-black fw-600">Достижение результатов</h4>
-                                                    <p className="text-custom-blue mb-xl-20">Это просто фиктивный текст полиграфической и наборной промышленности.</p>
-                                                    <p className="text-light-white mb-xl-20">Это просто фиктивный текст полиграфической и наборной промышленности. Lorem Ipsum был стандартным фиктивным текстом в отрасли.Это просто фиктивный текст полиграфической</p>
-                                                    <p className="text-light-white mb-xl-20">Это просто фиктивный текст полиграфической и наборной промышленности. Lorem Ipsum был стандартным фиктивным текстом в отрасли.</p>
+                                                    <h4 className="text-custom-black fw-600">{t("StartHistory.thirdCardTitle")}</h4>
+                                                    <p className="text-custom-blue mb-xl-20">{t("StartHistory.thirdCardTextFirst")}</p>
+                                                    <p className="text-light-white mb-xl-20">{t("StartHistory.thirdCardTextSecond")}</p>
+                                                    <p className="text-light-white mb-xl-20">{t("StartHistory.thirdCardTextThird")}</p>
                                                     <div className="list">
                                                         <ul className="custom">
                                                             <li className="fs-14 text-custom-blue">
                                                                 <i className="fas fa-check"></i>
-                                                                <span className="text-light-white"> СОТРУДНИКО</span>
+                                                                <span className="text-light-white"> {t("StartHistory.thirdEmployees")}</span>
                                                             </li>
                                                             <li className="fs-14 text-custom-blue">
                                                                 <i className="fas fa-check"></i>
-                                                                <span className="text-light-white"> ЗАВЕРШЕННЫХ ПРОЕКТОВ</span>
+                                                                <span className="text-light-white"> {t("StartHistory.thirdProject")}</span>
                                                             </li>
                                                             <li className="fs-14 text-custom-blue">
                                                                 <i className="fas fa-check"></i>
-                                                                <span className="text-light-white"> ВЫПОЛНЕННЫХ РАБОТ</span>
+                                                                <span className="text-light-white"> {(t("StartHistory.thirdWork"))}</span>
                                                             </li>
                                                             <li className="fs-14 text-custom-blue">
                                                                 <i className="fas fa-check"></i>
-                                                                <span className="text-light-white"> ЛЕТ РАБОТЫ</span>
+                                                                <span className="text-light-white"> {t("StartHistory.thirdYear")}</span>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <a href="#" className="btn-first btn-submit">ЧИТАТЬ ДАЛЕЕ</a>
+                                                    <a href="#" className="btn-first btn-submit mt-3">{t("StartHistory.readMore")}</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -170,31 +172,31 @@ const StartOurHistory = () => {
                                             </div>
                                             <div className="col-lg-6 align-self-center">
                                                 <div className="content-box">
-                                                    <h4 className="text-custom-black fw-600">Откройте 3 новых филиала</h4>
-                                                    <p className="text-custom-blue mb-xl-20">Это просто фиктивный текст полиграфической и наборной промышленности.</p>
-                                                    <p className="text-light-white mb-xl-20">Это просто фиктивный текст полиграфической и наборной промышленности. Lorem Ipsum был стандартным фиктивным текстом в отрасли.Это просто фиктивный текст полиграфической</p>
-                                                    <p className="text-light-white mb-xl-20">Это просто фиктивный текст полиграфической и наборной промышленности. Lorem Ipsum был стандартным фиктивным текстом в отрасли.</p>
+                                                    <h4 className="text-custom-black fw-600">{t("StartHistory.fourthCardTitle")}</h4>
+                                                    <p className="text-custom-blue mb-xl-20">{t("StartHistory.fourthCardTextFirst")}</p>
+                                                    <p className="text-light-white mb-xl-20">{t("StartHistory.fourthCardTextSecond")}</p>
+                                                    <p className="text-light-white mb-xl-20">{t("StartHistory.fourthCardTextThird")}</p>
                                                     <div className="list">
                                                         <ul className="custom">
                                                             <li className="fs-14 text-custom-blue">
                                                                 <i className="fas fa-check"></i>
-                                                                <span className="text-light-white"> СОТРУДНИКО</span>
+                                                                <span className="text-light-white"> {t('StartHistory.fourthEmployees')}</span>
                                                             </li>
                                                             <li className="fs-14 text-custom-blue">
                                                                 <i className="fas fa-check"></i>
-                                                                <span className="text-light-white"> ЗАВЕРШЕННЫХ ПРОЕКТОВ</span>
+                                                                <span className="text-light-white"> {t("StartHistory.fourthProject")}</span>
                                                             </li>
                                                             <li className="fs-14 text-custom-blue">
                                                                 <i className="fas fa-check"></i>
-                                                                <span className="text-light-white"> ВЫПОЛНЕННЫХ РАБОТ</span>
+                                                                <span className="text-light-white"> {t("StartHistory.fourthWork")}</span>
                                                             </li>
                                                             <li className="fs-14 text-custom-blue">
                                                                 <i className="fas fa-check"></i>
-                                                                <span className="text-light-white">ЛЕТ РАБОТЫ</span>
+                                                                <span className="text-light-white"> {t("StartHistory.fourthYear")}</span>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <a href="#" className="btn-first btn-submit">ЧИТАТЬ ДАЛЕЕ</a>
+                                                    <a href="#" className="btn-first btn-submit mt-3">{t("StartHistory.readMore")}</a>
                                                 </div>
                                             </div>
                                         </div>

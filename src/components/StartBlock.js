@@ -5,6 +5,7 @@ import Slider from 'react-slick';
 import {AppContext} from "../context";
 import {BASE_URL_PHOTO} from "../utills/constant";
 import {Link} from 'react-router-dom';
+import {useTranslation} from "react-i18next";
 
 function SampleNextArrow(props){
     const { className, style, onClick } = props;
@@ -28,8 +29,8 @@ function SamplePrevArrow(props){
     );
 }
 
-const StartBlock = ({slidesBlock}) => {
-    const {allBlogs} = useContext(AppContext);
+const StartBlock = () => {
+    const {allBlogs, getCookie} = useContext(AppContext);
         const settings = {
             infinite: true,
             slidesToShow: 3,
@@ -60,16 +61,17 @@ const StartBlock = ({slidesBlock}) => {
                 },
             ]
         };
+        const { t } = useTranslation();
         return(
             <section className="section-padding section-padding bg-light-white our-history bg-light-white our_articles">
                 <div className="container">
                     <div className="section-header">
                         <div className="section-heading">
-                            <h5 className="text-custom-blue wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">Наш блог</h5>
-                            <h3 className="text-theme fw-700">Наш еженедельный строительный блог</h3>
+                            <h5 className="text-custom-blue wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">{t("StartBlock.ourBlock")}</h5>
+                            <h3 className="text-theme fw-700">{t("StartBlock.title")}</h3>
                         </div>
                         <div className="section-description">
-                            <p className="text-light-white">Это просто текст-пустышка полиграфической и наборной индустрии был стандартным фиктивным текстом в отрасли.</p>
+                            <p className="text-light-white">{t("StartBlock.text")}</p>
                         </div>
                     </div>
                     <Slider {...settings}>
@@ -85,15 +87,27 @@ const StartBlock = ({slidesBlock}) => {
                                        <div>
                                            <div>
                                                <div className="cats">
-                                                   <a href="#" className="cats-office">{slides.category.name_oz.slice(0,20)}...</a>
+                                                   <a href="#" className="cats-office">{
+                                                       getCookie.i18next === "en" ? slides.category.name_en.slice(0,20) :
+                                                           getCookie.i18next === "uz" ? slides.category.name_uz.slice(0, 20) :
+                                                               getCookie.i18next === "oz" ? slides.category.name_oz.slice(0, 20) : slides.category.name_ru.slice(0, 20)
+                                                   }...</a>
                                                    {/*<a href="#" className="cats-rent">{slides.rent}</a>*/}
                                                </div>
                                            </div>
                                            <div className="post-title-parent">
                                                <h2 className="post-title">
-                                                   <a href="#" className="text-theme">{slides.title_oz}</a>
+                                                   <a href="#" className="text-theme">{
+                                                        getCookie.i18next === "en" ? slides.title_en :
+                                                            getCookie.i18next === "uz" ? slides.title_uz :
+                                                                getCookie.i18next === "oz" ? slides.title_oz : slides.title_ru
+                                                   }</a>
                                                </h2>
-                                               <p className="text-light-white no-margin">{slides.anons_oz}</p>
+                                               <p className="text-light-white no-margin">{
+                                                    getCookie.i18next === "en" ? slides.anons_en :
+                                                        getCookie.i18next === "uz" ? slides.anons_uz :
+                                                            getCookie.i18next === "oz" ? slides.anons_oz : slides.anons_ru
+                                               }</p>
                                            </div>
                                            <div className="blog-footer-meta bg-custom-white padding-20">
                                                {/*<div className="post-author">*/}
@@ -105,7 +119,7 @@ const StartBlock = ({slidesBlock}) => {
                                                    {/*<span className="text-theme fs-14">By <a href="blog-single.html" className="text-theme fw-500">Администратор</a></span>*/}
                                                {/*</div>*/}
                                                <div className="post-link">
-                                                   <Link to={/blogs/+slides.category.id+'/'+slides.id} className="link-btn text-custom-blue fw-600 fs-14">Читать далее</Link>
+                                                   <Link to={/blogs/+slides.category.id+'/'+slides.id} className="link-btn text-custom-blue fw-600 fs-14">{t("StartBlock.readMore")}</Link>
                                                </div>
                                            </div>
                                        </div>

@@ -30,14 +30,14 @@ const TopBar = () => {
                             <ul className="custom">
                                 <li className="language">
                                     <select defaultValue={getCookie.i18next} onChange={(e)=>handlerSelect(e)} >
-                                        <option value="ru" >Russian</option>
-                                        <option value="oz" >Uzbek</option>
-                                        <option value="uz" >Узбек</option>
+                                        <option value="ru" >Русский</option>
+                                        <option value="oz" >O'zbek</option>
+                                        <option value="uz" >Ўзбек</option>
                                         <option value="en" >English</option>
                                     </select>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-custom-white"><i className="fab fa-facebook-f"></i></a>
+                                    <a href="https://t.me/litinguz" className="text-custom-white"><i className="fab fa-telegram-plane"></i></a>
                                 </li>
                                 <li>
                                     <a href="#" className="text-custom-white"><i className="fab fa-twitter"></i></a>
@@ -46,7 +46,7 @@ const TopBar = () => {
                                     <a href="#" className="text-custom-white"><i className="fab fa-instagram"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-custom-white"><i className="fab fa-pinterest-p"></i></a>
+                                    <a href="#" className="text-custom-white"><i className="fab fa-facebook-f"></i></a>
                                 </li>
                             </ul>
                         </div>

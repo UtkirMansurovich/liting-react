@@ -23,5 +23,67 @@
     "construction": "Umumiy qurilish",
     "restructured": "Qayta tuzilgan",
     "control": "Loyihalar boshqaruvi"
+  },
+  "StartFullWidth": {
+    "believe": "Ishonch",
+    "playVideo": "Video ijro etish",
+    "title": "Biz murakkab muammo yaratish va barcha turdagi xizmatlarni taqdim etamiz. Eng yaxshi xizmatlar uchun bugun biz bilan bog'laning.",
+    "text": "Biz murakkab muammo yaratish va barcha turdagi xizmatlarni taqdim etamiz. Eng yaxshi xizmatlar uchun bugun biz bilan bog'laning.",
+    "cardTitleFirst": "Yuqori sifatli dizayn",
+    "cardTextFirst": "bu matbaa va matn terish sanoatining soxta matni.",
+    "cardTitleSecond": "Siz hamma narsani bilib olishingiz mumkin",
+    "cardTextSecond": "bu matbaa va matn terish sanoatining soxta matni.",
+    "buttonMeet": "Uchrashuvni rejalashtirish"
+  },
+  "StartBlock": {
+    "ourBlock": "Bizning blog",
+    "title": "Bizning haftalik qurilish blogimiz",
+    "text": "Bu shunchaki matbaa va matn terish sanoatining soxta matni sanoatning standart qo'g'irchoq matni bo'lgan.",
+    "readMore": "Davomini o'qish"
+  },
+  "StartHistory": {
+    "ourHistory": "BIZNING HIKOYA",
+    "title": "Rekord marra o'tdi",
+    "text": "Bu matbaa va matn terish sanoatining uydirma matnidir. Sanoatdagi standart qo'g'irchoq matn edi.",
+    "and": "va",
+
+    "cardTitle": "Kompaniya boshlandi",
+    "cardTextFirst": "Bu matbaa va matn terish sanoatining uydirma matnidir.",
+    "cardTextSecond": "Bu matbaa va matn terish sanoatining uydirma matnidir. Sanoatdagi standart qo'g'irchoq matn edi.",
+    "cardTextThird": "Bu matbaa va matn terish sanoatining uydirma matnidir. Sanoatdagi standart qo'g'irchoq matn edi.",
+    "employees": "XODIMLAR",
+    "project": "TUGATILGAN LOYIHALAR",
+    "work": "BAJARILGAN ISHLAR",
+    "year": "ISHLASH YILLARI",
+
+    "secondCardTitle": "Yaxshilangan kompaniya",
+    "secondCardTextFirst": "Bu matbaa va matn terish sanoatining uydirma matnidir.",
+    "secondCardTextSecond": "Bu matbaa va matn terish sanoatining uydirma matnidir. Sanoatdagi standart qo'g'irchoq matn edi.",
+    "secondCardTextThird": "Bu matbaa va matn terish sanoatining uydirma matnidir. Sanoatdagi standart qo'g'irchoq matn edi.",
+    "secondEmployees": "XODIMLAR",
+    "secondProject": "TUGATILGAN LOYIHALAR",
+    "secondWork": "BAJARILGAN ISHLAR",
+    "secondYear": "ISHLASH YILLARI",
+
+    "thirdCardTitle": "Natijalarga erishish",
+    "thirdCardTextFirst": "Bu matbaa va matn terish sanoatining uydirma matnidir.",
+    "thirdCardTextSecond": "Bu matbaa va matn terish sanoatining uydirma matnidir. Sanoatdagi standart qo'g'irchoq matn edi.",
+    "thirdCardTextThird": "Bu matbaa va matn terish sanoatining uydirma matnidir. Sanoatdagi standart qo'g'irchoq matn edi.",
+    "thirdEmployees": "XODIMLAR",
+    "thirdProject": "TUGATILGAN LOYIHALAR",
+    "thirdWork": "BAJARILGAN ISHLAR",
+    "thirdYear": "ISHLASH YILLARI",
+
+    "fourthCardTitle": "3 ta yangi filialni oching",
+    "fourthCardTextFirst": "Bu matbaa va matn terish sanoatining uydirma matnidir.",
+    "fourthCardTextSecond": "Bu matbaa va matn terish sanoatining uydirma matnidir. Sanoatdagi standart qo'g'irchoq matn edi.",
+    "fourthCardTextThird": "Bu matbaa va matn terish sanoatining uydirma matnidir. Sanoatdagi standart qo'g'irchoq matn edi.",
+    "fourthEmployees": "XODIMLAR",
+    "fourthProject": "TUGATILGAN LOYIHALAR",
+    "fourthWork": "BAJARILGAN ISHLAR",
+    "fourthYear": "ISHLASH YILLARI",
+
+
+    "readMore": "Davomini o'qish"
   }
 }

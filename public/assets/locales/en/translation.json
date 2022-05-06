@@ -23,5 +23,67 @@
     "construction": "General construction",
     "restructured": "Restructured",
     "control": "Project management"
+  },
+  "StartFullWidth": {
+    "believe": "Trust",
+    "playVideo": "Play video",
+    "title": "We provide the construction of complex problems and all kinds of services. Contact us today for the best services.",
+    "text": "We provide the construction of complex problems and all kinds of services. Contact us today for the best services.",
+    "cardTitleFirst": "High quality construction",
+    "cardTextFirst": "it is just a fictitious text of the printing and typesetting industry.",
+    "cardTitleSecond": "You can learn anything",
+    "cardTextSecond": "it is just a fictitious text of the printing and typesetting industry.",
+    "buttonMeet": "Schedule a meeting"
+  },
+  "StartBlock": {
+    "ourBlock": "Our blog",
+    "title": "Our weekly construction blog",
+    "text": "It's just the dummy text of the printing and typesetting industry has been the industry's standard dummy text.",
+    "readMore": "Read more"
+  },
+  "StartHistory": {
+    "ourHistory": "OUR STORY",
+    "title": "Record milestone passed",
+    "text": "This is just a fictitious text of the printing and typesetting industry. Was the standard dummy text in the industry.",
+    "and": "and",
+
+    "cardTitle": "The company started",
+    "cardTextFirst": "This is just a fictitious text of the printing and typesetting industry.",
+    "cardTextSecond": "This is just a fictitious text of the printing and typesetting industry. Was the standard dummy text in the industry.",
+    "cardTextThird": "This is just a fictitious text of the printing and typesetting industry. Was the standard dummy text in the industry.",
+    "employees": "EMPLOYEES",
+    "project": "COMPLETED PROJECTS",
+    "work": "EXECUTED WORKS",
+    "year": "YEARS OF WORK",
+
+    "secondCardTitle": "Improved company",
+    "secondCardTextFirst": "This is just a fictitious text of the printing and typesetting industry.",
+    "secondCardTextSecond": "This is just a fictitious text of the printing and typesetting industry. Was the standard dummy text in the industry.",
+    "secondCardTextThird": "This is just a fictitious text of the printing and typesetting industry. Was the standard dummy text in the industry.",
+    "secondEmployees": "EMPLOYEES",
+    "secondProject": "COMPLETED PROJECTS",
+    "secondWork": "EXECUTED WORKS",
+    "secondYear": "YEARS OF WORK",
+
+    "thirdCardTitle": "Achieving results",
+    "thirdCardTextFirst": "This is just a fictitious text of the printing and typesetting industry.",
+    "thirdCardTextSecond": "This is just a fictitious text of the printing and typesetting industry. Was the standard dummy text in the industry.",
+    "thirdCardTextThird": "This is just a fictitious text of the printing and typesetting industry. Was the standard dummy text in the industry.",
+    "thirdEmployees": "EMPLOYEES",
+    "thirdProject": "COMPLETED PROJECTS",
+    "thirdWork": "EXECUTED WORKS",
+    "thirdYear": "YEARS OF WORK",
+
+    "fourthCardTitle": "Open 3 new branches",
+    "fourthCardTextFirst": "This is just a fictitious text of the printing and typesetting industry.",
+    "fourthCardTextSecond": "This is just a fictitious text of the printing and typesetting industry. Was the standard dummy text in the industry.",
+    "fourthCardTextThird": "This is just a fictitious text of the printing and typesetting industry. Was the standard dummy text in the industry.",
+    "fourthEmployees": "EMPLOYEES",
+    "fourthProject": "COMPLETED PROJECTS",
+    "fourthWork": "EXECUTED WORKS",
+    "fourthYear": "YEARS OF WORK",
+
+
+    "readMore": "Read more"
   }
 }
