@@ -37,7 +37,7 @@ const TopBar = () => {
                                     </select>
                                 </li>
                                 <li>
-                                    <a href="https://t.me/litinguz" className="text-custom-white"><i className="fab fa-telegram-plane"></i></a>
+                                    <a href="https://t.me/litinguz" target="_blank" className="text-custom-white"><i className="fab fa-telegram-plane"></i></a>
                                 </li>
                                 <li>
                                     <a href="#" className="text-custom-white"><i className="fab fa-twitter"></i></a>

@@ -83,7 +83,44 @@
     "fourthWork": "BAJARILGAN ISHLAR",
     "fourthYear": "ISHLASH YILLARI",
 
-
     "readMore": "Davomini o'qish"
+  },
+  "StartFullWidthTwo": {
+    "title": "Biz murakkab muammolarni va barcha turdagi xizmatlarni qurishni ta'minlaymiz. Eng yaxshi xizmatlar uchun bugun biz bilan bog'laning. ",
+    "text": "murakkab muammolar va barcha turdagi xizmatlar. Murakkab muammolar va barcha turdagi xizmatlar uchun bugun biz bilan bog'laning. ",
+    "cardTitle": "Biz sizning variantlaringizni shtat bo'yicha sanab o'tamiz",
+    "cardText": "Bu matbaa va matn terish sanoati uchun shunchaki soxta matn.",
+    "cardTitleTwo": "Mutaxassislar tomonidan yaratilgan kontent va manbalar",
+    "cardTextTwo": "Bu matbaa va matn terish sanoati uchun shunchaki soxta matn.",
+    "buttonMeet": "Uchrashuvni rejalashtiring",
+    "cardTitleThree": "Biz imkoniyatlarga ochiqmiz!",
+    "cardTextThree": "Bu matbaa va matn terish sanoati uchun shunchaki soxta matn. Sanoatdagi standart qo'g'irchoq matn edi.",
+    "buttonWatch": "Bizning ishimizni ko'ring"
+  },
+  "StartService": {
+    "ourService": "Bizning xizmatlar",
+    "title": "Biz deyarli barcha xizmatlarni qamrab oldik",
+    "text": "Bu matbaa va matn terish sanoati uchun shunchaki soxta matn. Sanoatdagi standart qo'g'irchoq matn edi.",
+    "all": "Hammasi",
+    "serviceHome": "Uyda parvarishlash",
+    "wholeConstruction": "Umumiy qurilish",
+    "restructured": "Qayta tuzilgan",
+    "manageProject": "Loyihalar boshqaruvi",
+    "cardTitle": "Yassi",
+    "cardText": "Uyda parvarishlash",
+    "cardTitleTwo": "Mehmonxonalar",
+    "cardTextTwo": "Umumiy qurilish",
+    "cardTitleThree": "Bino",
+    "cardTextThree": "Qayta tuzilgan",
+    "cardTitleFour": "Kvartiralar",
+    "cardTextFour": "Loyihalar boshqaruvi",
+    "cardTitleFive": "Maktablar",
+    "cardTextFive": "Uyda parvarishlash",
+    "cardTitleSix": "Hukumat",
+    "cardTextSix": "Umumiy qurilish",
+    "cardTitleSeven": "Stadionlar",
+    "cardTextSeven": "Qayta tuzilgan",
+    "cardTitleEight": "Kasalxonalar",
+    "cardTextEight": "Loyihalar boshqaruvi"
   }
 }

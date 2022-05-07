@@ -83,7 +83,44 @@
     "fourthWork": "EXECUTED WORKS",
     "fourthYear": "YEARS OF WORK",
 
-
     "readMore": "Read more"
+  },
+  "StartFullWidthTwo": {
+    "title": "We provide the construction of complex problems and all kinds of services. Contact us today for the best services.",
+    "text": "complex problems and all kinds of services. Contact us today for complex problems and all kinds of services. ",
+    "cardTitle": "We list your options by state",
+    "cardText": "This is just a dummy text for the printing and typesetting industry.",
+    "cardTitleTwo": "Content and resources created by experts",
+    "cardTextTwo": "This is just a dummy text for the printing and typesetting industry.",
+    "buttonMeet": "Schedule a meeting",
+    "cardTitleThree": "We are open to opportunities!",
+    "cardTextThree": "This is just a dummy text for the printing and typesetting industry. Was the standard dummy text in the industry.",
+    "buttonWatch": "View our work"
+  },
+  "StartService": {
+    "ourService": "Our Services",
+    "title": "We covered almost all services",
+    "text": "This is just a dummy text for the printing and typesetting industry. Was the standard dummy text in the industry.",
+    "all": "All",
+    "serviceHome": "Home maintenance",
+    "wholeConstruction": "General construction",
+    "restructured": "Restructured",
+    "manageProject": "Project management",
+    "cardTitle": "Flat",
+    "cardText": "Home maintenance",
+    "cardTitleTwo": "Hotels",
+    "cardTextTwo": "General construction",
+    "cardTitleThree": "Building",
+    "cardTextThree": "Restructured",
+    "cardTitleFour": "Apartments",
+    "cardTextFour": "Project management",
+    "cardTitleFive": "Schools",
+    "cardTextFive": "Home maintenance",
+    "cardTitleSix": "Government",
+    "cardTextSix": "General construction",
+    "cardTitleSeven": "Stadiums",
+    "cardTextSeven": "Restructured",
+    "cardTitleEight": "Hospitals",
+    "cardTextEight": "Project management"
   }
 }
