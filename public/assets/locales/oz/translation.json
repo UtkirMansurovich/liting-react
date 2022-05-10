@@ -155,5 +155,27 @@
     "taskThree": "Jamiyat",
     "taskFour": "Boshqa",
     "send": "YUBORISH"
+  },
+  "StartFooter": {
+    "link": "Havolalar",
+    "linkOne": "O‘zbekiston Respublikasi Energetika vazirligi",
+    "linkTwo": "АО \"O'ZLITINEFTGAZ\"",
+    "linkThree": "O‘zbekiston Respublikasi Energetika vazirligi",
+    "linkFour": "Yagona interaktiv davlat xizmatlari portali",
+    "map": "Xarita",
+    "contact": "Kontaktlar",
+    "contactOne": "Qabul qilish:",
+    "contactTwo": "Idora:",
+    "contactThree": "Ishonch telefoni:",
+    "contactFour": "Aksiyadorlar bilan aloqa:",
+    "contactFive": "Investorlar bilan aloqa:",
+    "contactSix": "Elektron pochta manzil:",
+    "contactSeven": "Ish vaqti:",
+    "phone": "Telefon",
+    "workTime": "Dush - Juma",
+    "footerBelowCopyRight": "Mualliflik huquqi",
+    "footerBelowText": "O'ZLITINEFTGAZ",
+    "footerBelowTextONe": "Barcha huquqlar himoyalangan",
+    "footerBelowTextTwo": "Ushbu saytdan materiallarni nusxalashda manbaga havola kerak"
   }
 }

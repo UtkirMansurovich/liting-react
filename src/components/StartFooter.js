@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import {useTranslation} from "react-i18next";
 
 const StartFooter = () => {
+    const { t } = useTranslation();
     return(
         <>
         <footer className="bg-custom-black section-padding footer">
@@ -10,20 +12,20 @@ const StartFooter = () => {
                     <div className="col-lg-3 col-sm-6">
                         <div className="footer-box mb-md-80">
                             <div className="footer-heading">
-                                <h4 className="text-custom-white no-margin">Ссылки</h4>
+                                <h4 className="text-custom-white no-margin">{t("StartFooter.link")}</h4>
                             </div>
                             <ul className="custom links">
                                 <li>
-                                    <a href="index-2.html" className="text-custom-white">Министерство Энергетики Республики Узбекистан</a>
+                                    <a href="index-2.html" className="text-custom-white">{t("StartFooter.linkOne")}</a>
                                 </li>
                                 <li>
-                                    <a href="about.html" className="text-custom-white">АО "Узбекнефтегаз"</a>
+                                    <a href="about.html" className="text-custom-white">{t("StartFooter.linkTwo")}</a>
                                 </li>
                                 <li>
-                                    <a href="blog.html" className="text-custom-white">Правительственный Портал Республики Узбекистан</a>
+                                    <a href="blog.html" className="text-custom-white">{t("StartFooter.linkThree")}</a>
                                 </li>
                                 <li>
-                                    <a href="faqs.html" className="text-custom-white">Единый Портал Интерактивных Государственных Услуг</a>
+                                    <a href="faqs.html" className="text-custom-white">{t("StartFooter.linkFour")}</a>
                                 </li>
                             </ul>
                         </div>
@@ -31,7 +33,7 @@ const StartFooter = () => {
                     <div className="col-lg-3 col-sm-6">
                         <div className="footer-box mb-md-80">
                             <div className="footer-heading">
-                                <h4 className="text-custom-white no-margin">Карта</h4>
+                                <h4 className="text-custom-white no-margin">{t("StartFooter.map")}</h4>
                             </div>
                             <div>
                                 <iframe
@@ -44,29 +46,29 @@ const StartFooter = () => {
                     <div className="col-lg-3 col-sm-6">
                         <div className="footer-box mb-xs-80">
                             <div className="footer-heading">
-                                <h4 className="text-custom-white no-margin">Контакты</h4>
+                                <h4 className="text-custom-white no-margin">{t("StartFooter.contact")}</h4>
                             </div>
                             <ul className="custom links">
                                 <li>
-                                    <a href="portfolio-detail.html" className="text-custom-white">Приемная:</a>
+                                    <a href="portfolio-detail.html" className="text-custom-white">{t("StartFooter.contactOne")}</a>
                                 </li>
                                 <li>
-                                    <a href="cost-calculator.html" className="text-custom-white">Канцелярия:</a>
+                                    <a href="cost-calculator.html" className="text-custom-white">{t("StartFooter.contactTwo")}</a>
                                 </li>
                                 <li>
-                                    <a href="gallery.html" className="text-custom-white">Телефон доверия:</a>
+                                    <a href="gallery.html" className="text-custom-white">{t("StartFooter.contactThree")}</a>
                                 </li>
                                 <li>
-                                    <a href="404.html" className="text-custom-white">Связь с акционерами:</a>
+                                    <a href="404.html" className="text-custom-white">{t("StartFooter.contactFour")}</a>
                                 </li>
                                 <li>
-                                    <a href="coming-soon.html" className="text-custom-white">Связь с инвесторами:</a>
+                                    <a href="coming-soon.html" className="text-custom-white">{t("StartFooter.contactFive")}</a>
                                 </li>
                                 <li>
-                                    <a href="coming-soon.html" className="text-custom-white">E-mail:</a>
+                                    <a href="coming-soon.html" className="text-custom-white">{t("StartFooter.contactSix")}</a>
                                 </li>
                                 <li>
-                                    <a href="coming-soon.html" className="text-custom-white">Время работы:</a>
+                                    <a href="coming-soon.html" className="text-custom-white">{t("StartFooter.contactSeven")}</a>
                                 </li>
                             </ul>
                         </div>
@@ -75,7 +77,7 @@ const StartFooter = () => {
                     <div className="col-lg-3 col-sm-6">
                         <div className="footer-box mb-xs-80">
                             <div className="footer-heading">
-                                <h4 className="text-custom-white no-margin ">Телефон</h4>
+                                <h4 className="text-custom-white no-margin ">{t("StartFooter.phone")}</h4>
                             </div>
                             <ul className="custom phoneContact">
                                 <li>
@@ -97,7 +99,7 @@ const StartFooter = () => {
                                     <a href="coming-soon.html" className="text-custom-white">liting@liting.uz</a>
                                 </li>
                                 <li>
-                                    <a href="coming-soon.html" className="text-custom-white">Пн - Пт: 8:00 - 17:00</a>
+                                    <a href="coming-soon.html" className="text-custom-white">{t("StartFooter.workTime")}: 8:00 - 17:00</a>
                                 </li>
                             </ul>
                         </div>
@@ -109,8 +111,8 @@ const StartFooter = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
-                        <p className="text-custom-white no-margin text-center">Copyright © {new Date().getFullYear()} <Link to="/" target="_blank" className="text-custom-white">"O'ZLITINEFTGAZ"</Link> Все права защищены </p>
-                        <p className="text-custom-white no-margin text-center">При копировании материалов сайта ссылка на источник обязательна</p>
+                        <p className="text-custom-white no-margin text-center">{t("StartFooter.footerBelowCopyRight")} © {new Date().getFullYear()} <Link to="/" target="_blank" className="text-custom-white">{t("StartFooter.footerBelowText")}</Link> {t("StartFooter.footerBelowTextOne")} </p>
+                        <p className="text-custom-white no-margin text-center">{t("StartFooter.footerBelowTextTwo")}</p>
                     </div>
                 </div>
             </div>
