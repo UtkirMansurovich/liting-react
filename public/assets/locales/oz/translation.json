@@ -122,5 +122,18 @@
     "cardTextSeven": "Qayta tuzilgan",
     "cardTitleEight": "Kasalxonalar",
     "cardTextEight": "Loyihalar boshqaruvi"
+  },
+  "StartTeam": {
+    "ourTeam": "Bizning jamoamiz",
+    "title": "Hurmatli jamoamiz bilan tanishing",
+    "text": "Bu matbaa va matn terish sanoati uchun shunchaki soxta matn. Sanoatdagi standart qo'g'irchoq matn edi.",
+    "cardNameOne": "Toni Stark",
+    "cardPositionOne": "Agent",
+    "cardNameTwo": "Bob Xarris",
+    "cardPositionTwo": "Savdo bo'yicha boshqaruvchi",
+    "cardNameThree": "Jim Kerri",
+    "cardPositionThree": "Quruvchi",
+    "cardNameFour": "Alfred Jon",
+    "cardPositionFour": "Savdo bo'yicha boshqaruvchi"
   }
 }

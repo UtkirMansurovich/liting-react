@@ -122,5 +122,18 @@
     "cardTextSeven": "Реструктурированный",
     "cardTitleEight": "Больницы",
     "cardTextEight": "Управление проектом"
+  },
+  "StartTeam": {
+    "ourTeam": "Наша команда",
+    "title": "Познакомьтесь с нашей отмеченной командой",
+    "text": "Это просто текст-пустышка полиграфической и наборной индустрии. Был стандартным фиктивным текстом в отрасли.",
+    "cardNameOne": "Тони Старк",
+    "cardPositionOne": "Агент",
+    "cardNameTwo": "Боб Харис",
+    "cardPositionTwo": "Директор по продажам",
+    "cardNameThree": "Джим Керри",
+    "cardPositionThree": "Строитель",
+    "cardNameFour": "Альфред Джон",
+    "cardPositionFour": "Директор по продажам"
   }
 }

@@ -1,16 +1,18 @@
 import React from "react";
+import {useTranslation} from "react-i18next";
 
 const StartTeam = () => {
+    const { t } = useTranslation();
     return(
         <section className="section-padding our-team arrow-shape-1">
             <div className="container">
                 <div className="section-header">
                     <div className="section-heading">
-                        <h5 className="text-custom-blue wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">Наша команда</h5>
-                        <h3 className="text-custom-white fw-700">Познакомьтесь с нашей отмеченной командой</h3>
+                        <h5 className="text-custom-blue wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">{t("StartTeam.ourTeam")}</h5>
+                        <h3 className="text-custom-white fw-700">{t("StartTeam.title")}</h3>
                     </div>
                     <div className="section-description">
-                        <p className="text-custom-white">Это просто текст-пустышка полиграфической и наборной индустрии. Lorem Ipsum был стандартным фиктивным текстом в отрасли.</p>
+                        <p className="text-custom-white">{t("StartTeam.text")}</p>
                     </div>
                 </div>
                 <div className="row">
@@ -34,8 +36,8 @@ const StartTeam = () => {
                                     <div className="icon-box fs-18 text-custom-white">
                                         <span className="fas fa-cogs"></span>
                                     </div>
-                                    <h4><a href="#" className="fw-600 fs-20" tabIndex="0">Tony Stark</a></h4>
-                                    <p className="designation text-custom-white mb-xl-20">Агент</p>
+                                    <h4><a href="#" className="fw-600 fs-20" tabIndex="0">{t("StartTeam.cardNameOne")}</a></h4>
+                                    <p className="designation text-custom-white mb-xl-20">{t("StartTeam.cardPositionOne")}</p>
                                 </div>
                             </div>
                         </div>
@@ -60,8 +62,8 @@ const StartTeam = () => {
                                     <div className="icon-box fs-18 text-custom-white">
                                         <span className="fas fa-cogs"></span>
                                     </div>
-                                    <h4><a href="#" className="fw-600 fs-20" tabIndex="0">Bob Haris</a></h4>
-                                    <p className="designation text-custom-white mb-xl-20">Директор по продажам</p>
+                                    <h4><a href="#" className="fw-600 fs-20" tabIndex="0">{t("StartTeam.cardNameTwo")}</a></h4>
+                                    <p className="designation text-custom-white mb-xl-20">{t("StartTeam.cardPositionTwo")}</p>
                                 </div>
                             </div>
                         </div>
@@ -86,8 +88,8 @@ const StartTeam = () => {
                                     <div className="icon-box fs-18 text-custom-white">
                                         <span className="fas fa-cogs"></span>
                                     </div>
-                                    <h4><a href="#" className="fw-600 fs-20" tabIndex="0">Jim Karry</a></h4>
-                                    <p className="designation text-custom-white mb-xl-20">Строитель</p>
+                                    <h4><a href="#" className="fw-600 fs-20" tabIndex="0">{t("StartTeam.cardNameThree")}</a></h4>
+                                    <p className="designation text-custom-white mb-xl-20">{t("StartTeam.cardPositionThree")}</p>
                                 </div>
                             </div>
                         </div>
@@ -112,8 +114,8 @@ const StartTeam = () => {
                                     <div className="icon-box fs-18 text-custom-white">
                                         <span className="fas fa-cogs"></span>
                                     </div>
-                                    <h4><a href="#" className="fw-600 fs-20" tabIndex="0">Alfred Jhon</a></h4>
-                                    <p className="designation text-custom-white mb-xl-20">Директор по продажам</p>
+                                    <h4><a href="#" className="fw-600 fs-20" tabIndex="0">{t("StartTeam.cardNameFour")}</a></h4>
+                                    <p className="designation text-custom-white mb-xl-20">{t("StartTeam.cardPositionFour")}</p>
                                 </div>
                             </div>
                         </div>

@@ -14,7 +14,7 @@ import StartClient from "../components/StartClient";
 // import StartFaqs from "../components/StartFaqs";
 import StartNewsLetter from "../components/StartNewsLetter";
 import StartFooter from "../components/StartFooter";
-import LoginRegister from "../components/LoginRegister";
+// import LoginRegister from "../components/LoginRegister";
 import {SliderOurCategory} from "../components/SliderData";
 import StartBanner from "../components/StartBanner";
 
@@ -36,7 +36,7 @@ const Home = () => {
                 {/* <StartFaqs/> */}
                 <StartNewsLetter/>
                 <StartFooter/>
-                <LoginRegister/>
+                {/*<LoginRegister/>*/}
             </div>
         )
 }

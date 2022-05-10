@@ -122,5 +122,18 @@
     "cardTextSeven": "Restructured",
     "cardTitleEight": "Hospitals",
     "cardTextEight": "Project management"
+  },
+  "StartTeam": {
+    "ourTeam": "Our team",
+    "title": "Meet our distinguished team",
+    "text": "This is just a dummy text for the printing and typesetting industry. Was the standard dummy text in the industry.",
+    "cardNameOne": "Tony Stark",
+    "cardPositionOne": "Agent",
+    "cardNameTwo": "Bob Harris",
+    "cardPositionTwo": "Director of Sales",
+    "cardNameThree": "Jim Carrey",
+    "cardPositionThree": "Builder",
+    "cardNameFour": "Alfred John",
+    "cardPositionFour": "Director of Sales"
   }
 }

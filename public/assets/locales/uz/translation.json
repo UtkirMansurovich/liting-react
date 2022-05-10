@@ -122,5 +122,18 @@
     "cardTextSeven": "Қайта тузилган",
     "cardTitleEight": "Касалхоналар",
     "cardTextEight": "Лойиҳалар бошқаруви"
+  },
+  "StartTeam": {
+    "ourTeam": "Бизнинг жамоамиз",
+    "title": "Ҳурматли жамоамиз билан танишинг",
+    "text": "Бу матбаа ва матн териш саноати учун шунчаки сохта матн. Саноатдаги стандарт қўғирчоқ матн эди.",
+    "cardNameOne": "Тони Старк",
+    "cardPositionOne": "Агент",
+    "cardNameTwo": "Боб Харрис",
+    "cardPositionTwo": "Савдо бўйича бошқарувчи",
+    "cardNameThree": "Жим Керри",
+    "cardPositionThree": "Қурувчи",
+    "cardNameFour": "Алфред Жон",
+    "cardPositionFour": "Савдо бўйича бошқарувчи"
   }
 }
