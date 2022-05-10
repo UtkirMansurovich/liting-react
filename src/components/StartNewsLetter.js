@@ -11,7 +11,7 @@ const StartNewsLetter = () => {
                         <h3 className="text-custom-white fw-700">Получите бесплатную поддержку</h3>
                     </div>
                     <div className="section-description">
-                        <p className="text-custom-white">Lorem Ipsum — это просто текст-пустышка полиграфической и наборной индустрии. Lorem Ipsum был стандартным фиктивным текстом в отрасли.</p>
+                        <p className="text-custom-white">Это просто текст-пустышка полиграфической и наборной индустрии. Был стандартным фиктивным текстом в отрасли.</p>
                     </div>
                 </div>
                 <div className="row consult-form">

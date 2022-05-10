@@ -135,5 +135,22 @@
     "cardPositionThree": "Quruvchi",
     "cardNameFour": "Alfred Jon",
     "cardPositionFour": "Savdo bo'yicha boshqaruvchi"
+  },
+  "StartNewLetter": {
+    "freeConsultation": "BEPUL MASLAHAT",
+    "title": "Bepul yordam oling",
+    "text": "Bu matbaa va matn terish sanoati uchun shunchaki soxta matn. Sanoatdagi standart qo'g'irchoq matn edi.",
+    "select": "Shaharingizni tanlang",
+    "selectOne": "Toshkent",
+    "selectTwo": "Toshkent vil",
+    "selectThree": "Jizzah",
+    "selectFour": "Navoiy",
+    "selectFive": "Qashqadaryo",
+    "task": "Mavzu",
+    "taskOne": "Mehmonxona",
+    "taskTwo": "Yo'l o'tkazgich",
+    "taskThree": "Jamiyat",
+    "taskFour": "Boshqa",
+    "send": "YUBORISH"
   }
 }

@@ -135,5 +135,22 @@
     "cardPositionThree": "Builder",
     "cardNameFour": "Alfred John",
     "cardPositionFour": "Director of Sales"
+  },
+  "StartNewLetter": {
+    "freeConsultation": "FREE CONSULTATION",
+    "title": "Get free support",
+    "text": "This is just a dummy text for the printing and typesetting industry. Was the standard dummy text in the industry.",
+    "select": "Choose your city",
+    "selectOne": "Tashkent",
+    "selectTwo": "Tashkent reg",
+    "selectThree": "Jizzah",
+    "selectFour": "Navoi",
+    "selectFive": "Kashkadarya",
+    "task": "Subject",
+    "taskOne": "Hotel",
+    "taskTwo": "Flyover",
+    "taskThree": "Society",
+    "taskFour": "Others",
+    "send": "SEND"
   }
 }
