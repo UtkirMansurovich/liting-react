@@ -136,10 +136,13 @@
     "cardNameFour": "Alfred Jon",
     "cardPositionFour": "Savdo bo'yicha boshqaruvchi"
   },
-  "StartNewLetter": {
+  "StartNewsLetter": {
     "freeConsultation": "BEPUL MASLAHAT",
     "title": "Bepul yordam oling",
     "text": "Bu matbaa va matn terish sanoati uchun shunchaki soxta matn. Sanoatdagi standart qo'g'irchoq matn edi.",
+    "yourName": "Ismingiz",
+    "yourEmail": "Pochta manzilingiz",
+    "yourNumber": "Telefon raqamingiz",
     "select": "Shaharingizni tanlang",
     "selectOne": "Toshkent",
     "selectTwo": "Toshkent vil",

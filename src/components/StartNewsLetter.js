@@ -1,61 +1,63 @@
 import React from "react";
+import {useTranslation} from "react-i18next";
 
 const StartNewsLetter = () => {
+    const { t } = useTranslation();
     return(
         <section className="section-padding bg-call-to-action">
             <div className="overlay overlay-bg"></div>
             <div className="container">
                 <div className="section-header">
                     <div className="section-heading">
-                        <h5 className="text-custom-blue wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</h5>
-                        <h3 className="text-custom-white fw-700">Получите бесплатную поддержку</h3>
+                        <h5 className="text-custom-blue wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">{t("StartNewsLetter.freeConsultation")}</h5>
+                        <h3 className="text-custom-white fw-700">{t("StartNewsLetter.title")}</h3>
                     </div>
                     <div className="section-description">
-                        <p className="text-custom-white">Это просто текст-пустышка полиграфической и наборной индустрии. Был стандартным фиктивным текстом в отрасли.</p>
+                        <p className="text-custom-white">{t("StartNewsLetter.text")}</p>
                     </div>
                 </div>
                 <div className="row consult-form">
                     <div className="col-lg-4 col-md-6 col-12">
                         <div className="form-group">
-                            <input type="text" name="#" className="form-control form-control-custom" placeholder="Твое имя"/>
+                            <input type="text" name="#" className="form-control form-control-custom" placeholder={t("StartNewsLetter.yourName")}/>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6 col-12">
                         <div className="form-group">
-                            <input type="email" name="#" className="form-control form-control-custom" placeholder="Ваш адрес электронной почты"/>
+                            <input type="email" name="#" className="form-control form-control-custom" placeholder={t("StartNewsLetter.yourEmail")}/>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6 col-12">
                         <div className="form-group">
-                            <input type="text" name="#" className="form-control form-control-custom" placeholder="Твой номер телефона"/>
+                            <input type="text" name="#" className="form-control form-control-custom" placeholder={t("StartNewsLetter.yourNumber")}/>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6 col-12">
                         <div className="form-group">
                             <select className="form-control form-control-custom custom-select">
-                                <option>Выберите свой город</option>
-                                <option>NewYork</option>
-                                <option>Milan</option>
-                                <option>Florida</option>
-                                <option>Miami</option>
-                                <option>Havana</option>
+                                <option>{t("StartNewsLetter.select")}</option>
+                                <option>{t("StartNewsLetter.selectOne")}</option>
+                                <option>{t("StartNewsLetter.selectTwo")}</option>
+                                <option>{t("StartNewsLetter.selectThree")}</option>
+                                <option>{t("StartNewsLetter.selectFour")}</option>
+                                <option>{t("StartNewsLetter.selectFive")}</option>
                             </select>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6 col-12">
                         <div className="form-group">
                             <select className="form-control form-control-custom custom-select">
-                                <option>Здание</option>
-                                <option>Hotel</option>
-                                <option>Flyover</option>
-                                <option>Society</option>
-                                <option>Others</option>
+                                <option>{t("StartNewsLetter.task")}</option>
+                                <option>{t("StartNewsLetter.taskOne")}</option>
+                                <option>{t("StartNewsLetter.taskTwo")}</option>
+                                <option>{t("StartNewsLetter.taskThree")}</option>
+                                <option>{t("StartNewsLetter.taskFour")}</option>
                             </select>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6 col-12">
                         <div className="form-group">
-                            <button type="submit" className="btn-first btn-submit full-width btn-height">ОТПРАВИТ</button>
+                            <button type="submit" className="btn-first btn-submit full-width btn-height">{t("StartNewsLetter.send")}</button>
                         </div>
                     </div>
                 </div>

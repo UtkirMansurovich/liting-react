@@ -136,10 +136,13 @@
     "cardNameFour": "Alfred John",
     "cardPositionFour": "Director of Sales"
   },
-  "StartNewLetter": {
+  "StartNewsLetter": {
     "freeConsultation": "FREE CONSULTATION",
     "title": "Get free support",
     "text": "This is just a dummy text for the printing and typesetting industry. Was the standard dummy text in the industry.",
+    "yourName": "Name",
+    "yourEmail": "E-mail",
+    "yourNumber": "Phone Number",
     "select": "Choose your city",
     "selectOne": "Tashkent",
     "selectTwo": "Tashkent reg",
