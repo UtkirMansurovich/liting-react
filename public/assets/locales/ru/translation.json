@@ -181,5 +181,9 @@
     "footerBelowText": "УЗЛИТИНЕФТГАЗ",
     "footerBelowTextONe": "Все права защищены",
     "footerBelowTextTwo": "При копировании материалов сайта ссылка на источник обязательна"
-    }
+    },
+  "BlogPageCom": {
+    "home": "Главная страница",
+    "readMore": "Читать далее"
+  }
 }

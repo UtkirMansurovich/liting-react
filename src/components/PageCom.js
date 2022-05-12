@@ -1,10 +1,14 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import {Link} from "react-router-dom";
 import { BASE_URL_PHOTO, BASE_URL } from '../utills/constant';
 import axios from 'axios';
+import {useTranslation} from "react-i18next";
+import {AppContext} from "../context";
 
 const PageCom = (props) => {
-    const [blog,setBlog] = useState(null)
+    const [blog,setBlog] = useState(null);
+    const { t } = useTranslation();
+    const {getCookie} = useContext(AppContext);
     // console.log(page[0]);
     const getBlog = () => {
         if (props.blogId){
@@ -39,14 +43,22 @@ const PageCom = (props) => {
                         <div className="col-lg-6">
                             <div className="breadcrumb-wrapper">
                                 <div className="page-title">
-                                    <h1 className="text-theme fw-500 text-capitalize">{blog ? blog.category.name_oz : ""}</h1>
+                                    <h1 className="text-theme fw-500 text-capitalize">
+                                        {blog && getCookie.i18next === "en" ? blog.category.name_en :
+                                            blog && getCookie.i18next === "oz" ? blog.category.name_oz :
+                                                blog && getCookie.i18next === "uz" ? blog.category.name_uz :
+                                                    blog && getCookie.i18next === "ru" ? blog.category.name_ru : ""}
+                                    </h1>
                                 </div>
                                 <ul className="custom breadcrumb">
                                     <li>
-                                        <Link to="/">Главная страница</Link>
+                                        <Link to="/">{t("BlogPageCom.home")}</Link>
                                     </li>
                                     <li className="active">
-                                        {blog ? blog.category.name_oz : ""}
+                                        {blog && getCookie.i18next === "en" ? blog.category.name_en :
+                                            blog && getCookie.i18next === "oz" ? blog.category.name_oz :
+                                                blog && getCookie.i18next === "uz" ? blog.category.name_uz :
+                                                    blog && getCookie.i18next === "ru" ? blog.category.name_ru : ""}
                                     </li>
                                 </ul>
                             </div>
@@ -68,8 +80,12 @@ const PageCom = (props) => {
                                             <div className='pageImgPar'>
                                                 <img src={BASE_URL_PHOTO + blog.mainImage.hashId} alt="imagePhoto" className="pageImg"/>
                                             </div>
-                                            <h3 className="listing-detail-heading no-margin ">{blog.title_oz}</h3>
-                                            <div dangerouslySetInnerHTML={{__html: blog.text_oz}} className="textDecorate flex-column mb-xl-20 p-4"/>
+                                            <h3 className="listing-detail-heading no-margin ">
+                                                {getCookie.i18next === "en" ? blog.title_en :
+                                                    getCookie.i18next === "oz" ? blog.title_oz :
+                                                        getCookie.i18next === "uz" ? blog.title_uz : blog.title_ru}
+                                            </h3>
+                                            <div dangerouslySetInnerHTML={{__html: getCookie.i18next === "en" ? blog.text_en : getCookie.i18next === "oz" ? blog.text_oz : getCookie.i18next === "uz" ? blog.text_uz : blog.text_ru}} className="textDecorate flex-column mb-xl-20 p-4"/>
                                         </div>:""
                                     }
                                 </div>

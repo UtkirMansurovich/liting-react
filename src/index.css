@@ -204,6 +204,11 @@ body {
 .slick-prev{
   z-index: 10;
 }
+@media (max-width: 1462px){
+  .slick-prev{
+    z-index: 0;
+  }
+}
 .slick-prev:before, .slick-next:before{
   color:#fd5d14 !important;
   font-size: 40px !important;

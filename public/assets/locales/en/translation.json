@@ -181,5 +181,9 @@
     "footerBelowText": "UZLITINEFTGAZ",
     "footerBelowTextONe": "All rights reserved",
     "footerBelowTextTwo": "When copying materials from this site link to the source is required"
+  },
+  "BlogPageCom": {
+    "home": "Main page",
+    "readMore": "Read more"
   }
 }
