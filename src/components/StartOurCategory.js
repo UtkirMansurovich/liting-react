@@ -10,7 +10,7 @@ function SampleNextArrow(props) {
     return (
         <div
             className={className}
-            style={{...style, display: "block", }}
+            style={{...style, display: "block", right: "-50px", top: "65%"}}
             onClick={onClick}
         > </div>
     );
@@ -21,7 +21,7 @@ function SamplePrevArrow(props) {
     return (
         <div
             className={className}
-            style={{...style, display: 'block', }}
+            style={{...style, display: 'block', left: "-70px", top: "65%"}}
             onClick={onClick}
         > </div>
     );
@@ -82,7 +82,7 @@ const StartOurCategory = ({slidesOurCategory}) => {
                             </div>
                         </div>
                         <Slider {...settings}>
-                            {slidesOurCategory.map((slides, index) =>
+                            {slidesOurCategory && slidesOurCategory.map((slides, index) =>
                                 <a href="#" key={index}>
                                     <div style={{overflow:'hidden'}}>
                                         <div className="slidesTexts" style={{background: `url(${slides.image}) no-repeat center center/cover`}}>

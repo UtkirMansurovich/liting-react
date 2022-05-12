@@ -17,6 +17,7 @@ import StartFooter from "../components/StartFooter";
 // import LoginRegister from "../components/LoginRegister";
 import {SliderOurCategory} from "../components/SliderData";
 import StartBanner from "../components/StartBanner";
+import {sliderClient} from '../components/SliderData';
 
 const Home = () => {
         return(
@@ -32,7 +33,7 @@ const Home = () => {
                 <StartFullWidthTwo/>
                 <StartService/>
                 <StartTeam/>
-                <StartClient/>
+                <StartClient sliderClient={sliderClient}/>
                 {/* <StartFaqs/> */}
                 <StartNewsLetter/>
                 <StartFooter/>

@@ -136,6 +136,10 @@
     "cardNameFour": "Alfred Jon",
     "cardPositionFour": "Savdo bo'yicha boshqaruvchi"
   },
+  "StartClient": {
+    "title": "Bizning mijozlarimiz yaxshi ko'radilar",
+    "text": "Bu matbaa va matn terish sanoati uchun shunchaki soxta matn. Sanoatdagi standart qo'g'irchoq matn edi."
+  },
   "StartNewsLetter": {
     "freeConsultation": "BEPUL MASLAHAT",
     "title": "Bepul yordam oling",

@@ -136,6 +136,10 @@
     "cardNameFour": "Alfred John",
     "cardPositionFour": "Director of Sales"
   },
+  "StartClient": {
+    "title": "Our clients love",
+    "text": "This is just a dummy text for the printing and typesetting industry. Was the standard dummy text in the industry."
+  },
   "StartNewsLetter": {
     "freeConsultation": "FREE CONSULTATION",
     "title": "Get free support",

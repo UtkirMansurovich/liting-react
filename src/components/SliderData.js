@@ -56,3 +56,38 @@ export const SliderOurCategory = [
     },
 ]
 
+export const sliderClient = [
+    {
+        image: "../assets/images/client1.png",
+        fullName_ru: "Закари Фармер",
+        fullName_uz: "Зачари Фермер",
+        fullName_oz: "Zachari Fermer",
+        fullName_en: "Zachary Farmer",
+        position_ru: "разработчик",
+        position_uz: "дастурчи",
+        position_oz: "dasturchi",
+        position_en: "developer",
+        text_ru: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
+        text_uz: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
+        text_oz: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
+        text_en: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
+        signature: "../assets/images/signature.png"
+    },
+    {
+        image: "../assets/images/client2.png",
+        fullName_ru: "Долор Дейл",
+        fullName_uz: "Долор Дейл",
+        fullName_oz: "Dolor Deyl",
+        fullName_en: "dolor dale",
+        position_ru: "разработчик",
+        position_uz: "дастурчи",
+        position_oz: "dasturchi",
+        position_en: "developer",
+        text_ru: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
+        text_uz: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
+        text_oz: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
+        text_en: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
+        signature: "../assets/images/signature.png"
+    }
+]
+

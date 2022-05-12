@@ -12,7 +12,7 @@ function SampleNextArrow (props) {
     return(
         <div
             className={className}
-            style={{...style, display:'block', padding:'100px'}}
+            style={{...style, display:'block', right:'80px'}}
             onClick={onClick}
         > </div>
     );
@@ -22,7 +22,7 @@ function SamplePrevArrow (props) {
     return(
         <div
             className={className}
-            style={{...style, display:'block', padding:'80px'}}
+            style={{...style, display:'block', left:'80px'}}
             onClick={onClick}
         > </div>
     )
@@ -41,7 +41,7 @@ const StartBanner = () => {
         prevArrow: <SamplePrevArrow/>,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1462,
                 settings: {
                     nextArrow: false,
                     prevArrow: false,
