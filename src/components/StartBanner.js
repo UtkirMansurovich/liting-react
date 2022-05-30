@@ -49,10 +49,20 @@ const StartBanner = () => {
             }
         ]
     }
-
     const {slider, getCookie} = useContext(AppContext);
     const { t } = useTranslation();
     // console.log(slider);
+    const divide = (text,isWhite) => {
+
+        for(let i = 20; i < 40; i++) {
+            if(text && text[i] === ' ') {
+                // console.log(text.slice(0, i))
+                if (isWhite)
+                return text.slice(0, i)
+                else return text.slice(i,40)
+            }
+        }
+    }
     return(
         <Slider {...setting}>
             {slider && slider.map((slide, index) =>
@@ -70,13 +80,13 @@ const StartBanner = () => {
                         <div className="divOpacity">
                             <div className="divText">
                                 <h1 className="slideH1">
-                                    {getCookie.i18next === 'en' ? slide.title_en.slice(0,20) :
-                                        getCookie.i18next === 'uz' ? slide.title_uz.slice(0,20) :
-                                            getCookie.i18next === 'oz' ? slide.title_oz.slice(0,20) : slide.title_ru.slice(0,20) }
+                                    {getCookie.i18next === 'en' ? divide(slide.title_en,true) :
+                                        getCookie.i18next === 'uz' ? divide(slide.title_uz, true) :
+                                            getCookie.i18next === 'oz' ? divide(slide.title_oz, true) : divide(slide.title_ru, true) }
                                     <span className="h1Span">
-                                        {getCookie.i18next === 'en' ? slide.title_en.slice(20, 40) :
-                                            getCookie.i18next === 'uz' ? slide.title_uz.slice(20, 40) :
-                                                getCookie.i18next === 'oz' ? slide.title_oz.slice(20, 40) : slide.title_ru.slice(20, 40) }
+                                        {getCookie.i18next === 'en' ? divide(slide.title_en,false) :
+                                            getCookie.i18next === 'uz' ? divide(slide.title_uz, false) :
+                                                getCookie.i18next === 'oz' ? divide(slide.title_oz, false) : divide(slide.title_ru, false) }
                                     ...</span>
                                 </h1>
                                 <p className="slideP">
