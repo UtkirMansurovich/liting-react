@@ -34,7 +34,7 @@ const AppProvider = ({ children }) => {
         .get(BASE_URL + '/api/blog/all/main_slider')
         .then((res) => {
           setSlider(res.data.object);
-          // console.log(res.data.object)
+          console.log(res.data.object)
         })
         .catch((err) => {
           console.log(err);
@@ -71,8 +71,7 @@ const AppProvider = ({ children }) => {
      }, [Title]);
 
     const getCookie = Cookie.get();
-    console.log(getCookie)
-
+    // console.log(getCookie)
 
     const value = { navParent, slider, allBlogs, handlerSelect, getCookie, selectLang };
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

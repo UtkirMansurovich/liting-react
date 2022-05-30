@@ -53,7 +53,6 @@ const StartBanner = () => {
     const {slider, getCookie} = useContext(AppContext);
     const { t } = useTranslation();
     // console.log(slider);
-
     return(
         <Slider {...setting}>
             {slider && slider.map((slide, index) =>
