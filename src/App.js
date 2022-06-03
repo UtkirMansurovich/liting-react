@@ -8,7 +8,7 @@ import Preloader from "./components/Preloader";
 
 function App() {
     const {slider} = useContext(AppContext);
-    if(slider && slider.length > 0) {
+    // if(slider && slider.length > 0) {
         return (
             <Router>
                 <Routes>
@@ -19,11 +19,11 @@ function App() {
                 </Routes>
             </Router>
         );
-    } else {
-        return (
-            <Preloader/>
-        )
-    }
+    // } else {
+    //     return (
+    //         <Preloader/>
+    //     )
+    // }
 }
 
 export default App;
