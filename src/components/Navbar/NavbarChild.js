@@ -1,14 +1,21 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState} from 'react';
 import { Link } from 'react-router-dom';
 import NavbarChildChild from './NavbarChildChild';
 import {AppContext} from "../../context";
 
-const NavbarChild = ({ navText }) => {
+const NavbarChild = ({ navText, setToggle }) => {
+
   const {getCookie} = useContext(AppContext);
   // console.log(navText);
+  const [openTog, setOpenTog] = useState(false);
+
+  const closeTog = () => {
+    setOpenTog(prev => !prev);
+    if( navText.type === 'BLOGS' || navText.type === 'PAGE') setToggle(false);
+  }
 
   return (
-    <li className='menu-item menu-item-has-children'>
+    <li onClick={closeTog} className='menu-item menu-item-has-children'>
       <Link
         to={
           navText.type === 'PAGE'
@@ -25,10 +32,10 @@ const NavbarChild = ({ navText }) => {
             getCookie.i18next === 'uz' ? navText.name_uz :
                 getCookie.i18next === 'oz' ? navText.name_oz : navText.name_ru }
       </Link>
-      <ul className='custom sub-menu'>
+      <ul className='custom sub-menu' style={openTog ? {display:'block'} : {display:'none'}}>
         {navText.children &&
           navText.children.map((sub, number) => (
-            <NavbarChildChild sub={sub} key={number} getCookie={getCookie}/>
+            <NavbarChildChild sub={sub} key={number} getCookie={getCookie} setToggle={setToggle}/>
           ))}
       </ul>
     </li>

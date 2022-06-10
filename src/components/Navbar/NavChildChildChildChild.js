@@ -1,9 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link} from "react-router-dom";
 
-const NavChildChildChildChild = ({lastChild, getCookie}) => {
+const NavChildChildChildChild = ({lastChild, getCookie, setToggle}) => {
+
+  const closeTogChildChildChild = () => {
+    if (lastChild.type === "PAGE" || lastChild.type === "BLOGS") setToggle(false);
+  }
+
     return(
-        <li className="menu-item">
+        <li onClick={closeTogChildChildChild} className="menu-item">
             <Link to={
                 lastChild.type === 'PAGE' 
                 ? "/page/:id" 

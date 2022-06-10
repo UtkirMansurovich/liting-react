@@ -1497,6 +1497,7 @@ label.custom-checkbox .checkmark:after {
 @media (max-width: 992px) {
     .navigation{
         flex-direction: column;
+        justify-content: start;
     }
 }
 .menu-style .header .right-side .navigation .logo{

@@ -6,6 +6,7 @@ import {AppContext} from "../context";
 import {BASE_URL_PHOTO} from "../utills/constant";
 import {Link} from 'react-router-dom';
 import {useTranslation} from "react-i18next";
+import Preloader from "./Preloader";
 
 function SampleNextArrow (props) {
     const { className, style, onClick } = props;
@@ -54,7 +55,7 @@ const StartBanner = () => {
     // console.log(slider);
     const divide = (text,isWhite) => {
 
-        for(let i = 20; i < 40; i++) {
+        for(let i = 5; i < 40; i++) {
             if(text && text[i] === ' ') {
                 // console.log(text.slice(0, i))
                 if (isWhite)
@@ -87,7 +88,7 @@ const StartBanner = () => {
                                         {getCookie.i18next === 'en' ? divide(slide.title_en,false) :
                                             getCookie.i18next === 'uz' ? divide(slide.title_uz, false) :
                                                 getCookie.i18next === 'oz' ? divide(slide.title_oz, false) : divide(slide.title_ru, false) }
-                                    ...</span>
+                                    </span>
                                 </h1>
                                 <p className="slideP">
                                     {getCookie.i18next === 'en' ? slide.anons_en :

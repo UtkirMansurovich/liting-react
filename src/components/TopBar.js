@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import {useTranslation} from "react-i18next";
 import {AppContext} from "../context";
+import { MdOutlineStreetview } from 'react-icons/md';
 
 const TopBar = () => {
     const {handlerSelect, getCookie} = useContext(AppContext);
@@ -37,10 +38,10 @@ const TopBar = () => {
                                     </select>
                                 </li>
                                 <li>
-                                    <a href="https://t.me/litinguz" target="_blank" className="text-custom-white"><i className="fab fa-telegram-plane"></i></a>
+                                    <a href="#" className="text-custom-white"> <MdOutlineStreetview style={{fontSize:'16px'}} /> </a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-custom-white"><i className="fab fa-twitter"></i></a>
+                                    <a href="https://t.me/litinguz" target="_blank" className="text-custom-white"><i className="fab fa-telegram-plane"></i></a>
                                 </li>
                                 <li>
                                     <a href="#" className="text-custom-white"><i className="fab fa-instagram"></i></a>

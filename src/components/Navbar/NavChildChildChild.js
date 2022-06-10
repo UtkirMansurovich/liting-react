@@ -1,10 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link} from "react-router-dom";
 import NavChildChildChildChild from "./NavChildChildChildChild";
 
-const NavChildChildChild = ({subChild, getCookie}) => {
-    return(
-        <li className="menu-item menu-item-has-children">
+const NavChildChildChild = ({subChild, getCookie, setToggle}) => {
+
+  const [openTogChildChild, setOpenChildChild] = useState(false);
+
+  const closeTogChildChild = () => {
+    setOpenChildChild(prev => !prev);
+    if(subChild.type === "PAGE" || subChild.type === "BLOGS") setToggle(false);
+  }
+
+  return(
+        <li onClick={closeTogChildChild} className="menu-item menu-item-has-children">
             <Link to={
                 subChild.type === 'PAGE' 
                 ? "/page/"+subChild.id
@@ -20,9 +28,9 @@ const NavChildChildChild = ({subChild, getCookie}) => {
                     getCookie.i18next === 'uz' ? subChild.name_uz :
                         getCookie.i18next === 'oz' ? subChild.name_oz : subChild.name_ru }
             </Link>
-            <ul className='custom sub-menu'>
+            <ul style={openTogChildChild ? {display:'block'} : {display: 'none'}} className='custom sub-menu'>
                 {subChild.children && subChild.children.map((lastChild, lastChildNumber) =>
-                    <NavChildChildChildChild lastChild={lastChild} key={lastChildNumber} getCookie={getCookie}/>
+                    <NavChildChildChildChild lastChild={lastChild} key={lastChildNumber} getCookie={getCookie} setToggle={setToggle}/>
                 )}
             </ul>
 

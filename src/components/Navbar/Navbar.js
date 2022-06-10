@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState} from 'react';
 import { Link } from "react-router-dom";
 import {AppContext} from "../../context";
 import NavbarChild from "./NavbarChild";
@@ -6,6 +6,7 @@ import NavbarChild from "./NavbarChild";
 const Navbar = () => {
     const {navParent} = useContext(AppContext);
     // console.log(navParent);
+    const [toggle, setToggle] = useState(false);
 
     return(
         <header className="menu-style">
@@ -19,7 +20,9 @@ const Navbar = () => {
                                 </Link>
                             </div>
                             <div className="right-side">
-                                <div className="navigation">
+
+                                <div className={toggle ? 'navigation active' : 'navigation'}>
+
                                     <div className="logo">
                                         <Link to="/">
                                             <img src="../../assets/images/logo.png" className="img-fluid image-fit" alt="Logo"/>
@@ -28,14 +31,14 @@ const Navbar = () => {
                                     <nav>
                                         <ul className="custom main-menu" id="navbar-root">
                                             {navParent && navParent.map((navText, index) =>
-                                                <NavbarChild navText={navText} key={index}/>
+                                                <NavbarChild navText={navText} key={index} setToggle={setToggle} />
                                             )}
                                         </ul>
                                     </nav>
 
-                                   </div>
+                                </div>
                                 <div className="hamburger-menu">
-                                    <div className="menu-btn">
+                                    <div className="menu-btn" onClick={() => setToggle(prev => !prev)}>
                                         <span></span>
                                         <span></span>
                                         <span></span>
