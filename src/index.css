@@ -352,5 +352,13 @@ body {
   width: fit-content;
   z-index: 1;
 }
-
+@media (max-width: 992px) {
+  .navigation{
+    flex-direction: column;
+    justify-content: start;
+  }
+  .openNavChild{
+    display: block!important;
+   }
+}
 

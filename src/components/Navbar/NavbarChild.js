@@ -32,7 +32,7 @@ const NavbarChild = ({ navText, setToggle }) => {
             getCookie.i18next === 'uz' ? navText.name_uz :
                 getCookie.i18next === 'oz' ? navText.name_oz : navText.name_ru }
       </Link>
-      <ul className='custom sub-menu' style={openTog ? {display:'block'} : {display:'none'}}>
+      <ul className={openTog ? "custom sub-menu openNavChild" : "custom sub-menu"}>
         {navText.children &&
           navText.children.map((sub, number) => (
             <NavbarChildChild sub={sub} key={number} getCookie={getCookie} setToggle={setToggle}/>
