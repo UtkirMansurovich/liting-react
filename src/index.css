@@ -361,4 +361,11 @@ body {
     display: block!important;
    }
 }
+.titleLogo{
+  position: absolute;
+  width: 400px;
+  top: 10%;
+  right: 10%;
+  /*transform: translateX(-50%);*/
+}
 

@@ -6,6 +6,8 @@ import {AppContext} from "../context";
 import {BASE_URL_PHOTO} from "../utills/constant";
 import {Link} from 'react-router-dom';
 import {useTranslation} from "react-i18next";
+import { GrView } from 'react-icons/gr';
+import {IconContext} from "react-icons";
 
 function SampleNextArrow(props){
     const { className, style, onClick } = props;
@@ -118,8 +120,12 @@ const StartBlock = () => {
                                                    {/*</div>*/}
                                                    {/*<span className="text-theme fs-14">By <a href="blog-single.html" className="text-theme fw-500">Администратор</a></span>*/}
                                                {/*</div>*/}
-                                               <div className="post-link">
+                                               <div className="post-link d-flex justify-content-between w-100">
                                                    <Link to={/blogs/+slides.category.id+'/'+slides.id} className="link-btn text-custom-blue fw-600 fs-14">{t("StartBlock.readMore")}</Link>
+                                                   <p className="text-light-white ">
+                                                       <GrView />
+                                                       <span className="pl-1">{slides.view_count}</span>
+                                                   </p>
                                                </div>
                                            </div>
                                        </div>
