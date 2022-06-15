@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useState, useEffect, useRef} from "react";
 import {useTranslation} from "react-i18next";
 
 const StartAbout = () => {
+
     const { t } = useTranslation();
     return(
         <section className="section-padding about-us">

@@ -3,6 +3,12 @@
   "TopBar": {
     "address": "Узбекистон, Тошкент, кучаси. T.Shevchenko, 2"
   },
+  "Contrast": {
+    "contrast": "Контраст",
+    "standard": "Стандарт",
+    "blackWhite": "Оқ-қора",
+    "fontSize": "Шрифт ҳажми"
+  },
   "StartBanner": {
     "readMore": "Батафсил"
   },

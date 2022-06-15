@@ -3,6 +3,12 @@
   "TopBar": {
     "address": "Узбекистан, г.Ташкент, ул. Т.Шевченко, 2"
   },
+  "Contrast": {
+    "contrast": "Контраст",
+    "standard": "Стандартный",
+    "blackWhite": "Черно-белый",
+    "fontSize": "Размер шрифта"
+  },
   "StartBanner": {
     "readMore": "ЧИТАТЬ ДАЛЕЕ"
   },

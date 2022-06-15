@@ -7,17 +7,19 @@ import {AppContext} from "./context";
 import Preloader from "./components/Preloader";
 
 function App() {
-    const {slider} = useContext(AppContext);
+    const {slider, selectContrast} = useContext(AppContext);
     // if(slider && slider.length > 0) {
         return (
+          <div className={!selectContrast ? "all-contrast" : ""}>
             <Router>
-                <Routes>
-                    <Route exact path='/' element={<Home/>}/>
-                    <Route exact path='/page/:catId' element={<Page/>}/>
-                    <Route exact path='/blogs/:catId' element={<BlogPages/>}/>
-                    <Route exact path='/blogs/:catId/:blogId' element={<Page/>}/>
-                </Routes>
+              <Routes>
+                <Route exact path='/' element={<Home/>}/>
+                <Route exact path='/page/:catId' element={<Page/>}/>
+                <Route exact path='/blogs/:catId' element={<BlogPages/>}/>
+                <Route exact path='/blogs/:catId/:blogId' element={<Page/>}/>
+              </Routes>
             </Router>
+          </div>
         );
     // } else {
     //     return (

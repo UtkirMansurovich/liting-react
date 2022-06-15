@@ -3,6 +3,12 @@
   "TopBar": {
     "address": "Uzbekistan, Tashkent, st. T.Shevchenko, 2"
   },
+  "Contrast": {
+    "contrast": "Contrast",
+    "standard": "Standard",
+    "blackWhite": "Black and White",
+    "fontSize": "Font size"
+  },
   "StartBanner": {
     "readMore": "Read more"
   },

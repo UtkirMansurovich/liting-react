@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState } from 'react';
+import React, { createContext, useEffect, useState, useRef, useCallback } from 'react';
 import axios from 'axios';
 import { BASE_URL } from './utills/constant';
 import i18next from "i18next";
@@ -16,6 +16,12 @@ const AppProvider = ({ children }) => {
   const [allBlogs, setAllBlogs] = useState([]);
   //Language
   const [selectLang, setSelectLang] = useState('ru');
+  // Contrast
+  const [showContrast, setShowContrast] = useState(false);
+  const [selectContrast, setSelectContrast] = useState(true);
+  const [selectFontSmall, setSelectFontSmall] = useState(true);
+  const [selectFontBig, setSelectFrontBig] = useState(false);
+  const contrastRef = useRef();
 
     const navbarList = () => {
     axios
@@ -60,6 +66,38 @@ const AppProvider = ({ children }) => {
 
     }
 
+    const openContrast = () => {
+      setShowContrast(prev => !prev);
+    }
+
+    const closeContrast = (e) => {
+      if(contrastRef.current === e.target)
+        setShowContrast(false);
+    }
+
+    const keyPress = useCallback(e =>{
+      if(e.key === "Escape" && showContrast){
+        setShowContrast(false);
+      }
+    }, [setShowContrast, showContrast])
+
+    const clickContrast = () => {
+      setSelectContrast(prev => !prev);
+    }
+
+    const clickFontSmall = () => {
+      setSelectFontSmall(true);
+      setSelectFrontBig(false);
+    }
+    const clickFontMedium = () => {
+      setSelectFontSmall(false);
+      setSelectFrontBig(false);
+    }
+    const clickFontBig = () => {
+      setSelectFontSmall(false);
+      setSelectFrontBig(true);
+    }
+
     const { t } = useTranslation();
     const Title = document.title = t("Title");
 
@@ -67,13 +105,16 @@ const AppProvider = ({ children }) => {
         navbarList();
         sliderImage();
         callAllBlogs();
+        document.addEventListener('keydown', keyPress);
+        return() => document.addEventListener('keydown', keyPress);
 
-     }, [Title]);
+     }, [Title, keyPress]);
 
     const getCookie = Cookie.get();
     // console.log(getCookie)
 
-    const value = { navParent, slider, allBlogs, handlerSelect, getCookie, selectLang };
+    const value = { navParent, slider, allBlogs, handlerSelect, getCookie, selectLang, clickContrast, selectContrast, clickFontSmall, clickFontMedium, clickFontBig, selectFontSmall,
+      selectFontBig, openContrast, showContrast, setShowContrast, contrastRef, closeContrast };
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 };
 

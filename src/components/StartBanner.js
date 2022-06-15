@@ -50,7 +50,7 @@ const StartBanner = () => {
             }
         ]
     }
-    const {slider, getCookie} = useContext(AppContext);
+    const {slider, getCookie, closeContrast} = useContext(AppContext);
     const { t } = useTranslation();
     // console.log(slider);
     const divide = (text,isWhite) => {
@@ -64,11 +64,17 @@ const StartBanner = () => {
             }
         }
     }
+
     return(
-      <Slider {...setting}>
+      <Slider {...setting} >
           {slider && slider.map((slide, index) =>
-            <div key={index} >
-                <div style={{width:'100%', height:'85vh', overflow:'hidden', position:'relative'}}>
+            <div key={index}>
+                <div style={{
+                    width:'100%',
+                    height:'85vh',
+                    overflow:'hidden',
+                    position:'relative'
+                }}>
                     <div style={{
                         background:`url(${BASE_URL_PHOTO + slide.mainImage.hashId}) no-repeat center center/cover`,
                         width:'100%',
@@ -76,14 +82,15 @@ const StartBanner = () => {
                         animation: 'scale 20s linear infinite',
                         position:'absolute',
                         top:'0',
-                        zIndex:'1'
-                    }}>
+                        zIndex:'1',
+                    }} >
                         <img src={TitleImg} alt="titleImg" className="titleLogo"/>
                     </div>
 
 
-                    <div className="divOpacity">
-                        <div className="divText">
+
+                    <div className="divOpacity" onClick={closeContrast}>
+                        <div className="divText" onClick={closeContrast}>
                             <h1 className="slideH1">
                                 {getCookie.i18next === 'en' ? divide(slide.title_en,true) :
                                   getCookie.i18next === 'uz' ? divide(slide.title_uz, true) :
@@ -108,6 +115,7 @@ const StartBanner = () => {
                                   getCookie.i18next === 'uz' ? slide.category.name_uz :
                                     getCookie.i18next === 'oz' ? slide.category.name_oz : slide.category.name_ru }
                             </Link>
+
                         </div>
                     </div>
                 </div>

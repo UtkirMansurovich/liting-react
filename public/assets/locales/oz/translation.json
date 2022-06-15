@@ -3,6 +3,12 @@
   "TopBar": {
     "address": "Oʻzbekiston, Toshkent, koʻch. T.Shevchenko, 2"
   },
+  "Contrast": {
+    "contrast": "Kontrast",
+    "standard": "Standart",
+    "blackWhite": "Oq-qora",
+    "fontSize": "Shrift hajmi"
+  },
   "StartBanner": {
     "readMore": "Batafsil"
   },

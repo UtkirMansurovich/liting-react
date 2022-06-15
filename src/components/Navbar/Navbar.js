@@ -9,8 +9,8 @@ const Navbar = () => {
     const [toggle, setToggle] = useState(false);
 
     return(
-        <header className="menu-style">
-            <div className="container-fluid custom-container">
+        <header className="menu-style" style={{overflow:'hidden'}}>
+            <div className="container-fluid custom-container up-navbar">
                 <div className="row">
                     <div className="col-12">
                         <div className="header">

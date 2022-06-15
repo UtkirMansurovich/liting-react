@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext, useRef} from 'react';
 import Navbar from "../components/Navbar/Navbar";
 import Preloader from "../components/Preloader";
 import TopBar from '../components/TopBar';
@@ -18,12 +18,16 @@ import StartFooter from "../components/StartFooter";
 import {SliderOurCategory} from "../components/SliderData";
 import StartBanner from "../components/StartBanner";
 import {sliderClient} from '../components/SliderData';
+import Contrast from "../components/Contrast";
+import {AppContext} from "../context";
 
 const Home = () => {
+        const {showContrast} = useContext(AppContext);
+
         return(
             <div>
                 <TopBar/>
-                <Navbar/>
+                {showContrast ? <Contrast/> : <Navbar/>}
                 <StartBanner/>
                 <StartAbout/>
                 <StartOurCategory slidesOurCategory={SliderOurCategory}/>

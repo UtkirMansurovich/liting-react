@@ -1,10 +1,10 @@
-import React, {Suspense} from 'react';
+import React, {Suspense, useContext} from 'react';
+import {AppContext} from "./context";
 import ReactDOM from 'react-dom';
 import './i18next';
 import './index.css';
 import App from './App';
 import {AppProvider} from "./context";
-import $ from 'jquery';
 
 ReactDOM.render(
     <Suspense fallback={
