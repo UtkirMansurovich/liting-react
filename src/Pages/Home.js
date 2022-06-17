@@ -1,13 +1,13 @@
-import React, {useContext, useRef} from 'react';
+import React, {useContext} from 'react';
 import Navbar from "../components/Navbar/Navbar";
-import Preloader from "../components/Preloader";
+// import Preloader from "../components/Preloader";
 import TopBar from '../components/TopBar';
 import StartAbout from "../components/StartAbout";
 import StartOurCategory from "../components/StartOurCategory";
 import StartFullWidth from "../components/StartFullWidth";
 import StartBlock from "../components/StartBlock";
 import StartOurHistory from "../components/StartOurHistory";
-import StartFullWidthTwo from "../components/StartFullWidthTwo";
+// import StartFullWidthTwo from "../components/StartFullWidthTwo";
 import StartService from "../components/StartService";
 import StartTeam from "../components/StartTeam";
 import StartClient from "../components/StartClient";
@@ -19,6 +19,7 @@ import {SliderOurCategory} from "../components/SliderData";
 import StartBanner from "../components/StartBanner";
 import {sliderClient} from '../components/SliderData';
 import Contrast from "../components/Contrast";
+import Training from '../components/Training'
 import {AppContext} from "../context";
 
 const Home = () => {
@@ -26,7 +27,7 @@ const Home = () => {
 
         return(
             <div>
-                <TopBar/>
+                <TopBar />
                 {showContrast ? <Contrast/> : <Navbar/>}
                 <StartBanner/>
                 <StartAbout/>
@@ -34,7 +35,8 @@ const Home = () => {
                 <StartFullWidth/>
                 <StartBlock />
                 <StartOurHistory/>
-                <StartFullWidthTwo/>
+                {/*<StartFullWidthTwo/>*/}
+                <Training/>
                 <StartService/>
                 <StartTeam/>
                 <StartClient sliderClient={sliderClient}/>

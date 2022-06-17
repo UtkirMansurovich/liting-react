@@ -3,10 +3,10 @@ import {AppContext} from "../context";
 import {useTranslation} from "react-i18next";
 
 const Contrast = () => {
-  const {clickContrast, selectContrast, clickFontSmall, clickFontMedium, clickFontBig, selectFontSmall, selectFontBig, openContrast, contrastRef, getCookie } = useContext(AppContext);
+  const {clickContrast, selectContrast, clickFontSmall, clickFontMedium, clickFontBig, selectFontSmall, selectFontBig, openContrast, contrastRef, closeContrast } = useContext(AppContext);
   const { t } = useTranslation();
   return(
-    <div className="containerContrast" ref={contrastRef}>
+    <div className="containerContrast" ref={contrastRef} onClick={closeContrast}>
       <div className="containerInside">
         <div className="boxContrast">
           <div className="box-contrast">
