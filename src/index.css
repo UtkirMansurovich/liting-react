@@ -366,10 +366,10 @@ body {
 }
 .titleLogo{
   position: absolute;
-  width: 400px;
-  top: 10%;
-  right: 10%;
-  /*transform: translateX(-50%);*/
+  width: 450px;
+  top: 5%;
+  right: 50%;
+  transform: translateX(50%);
   opacity: 0.5;
 }
 

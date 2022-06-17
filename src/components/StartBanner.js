@@ -84,12 +84,13 @@ const StartBanner = () => {
                         top:'0',
                         zIndex:'1',
                     }} >
-                        <img src={TitleImg} alt="titleImg" className="titleLogo"/>
+
                     </div>
 
 
 
                     <div className="divOpacity" >
+                        <img src={TitleImg} alt="titleImg" className="titleLogo"/>
                         <div className="divText" >
                             <h1 className="slideH1">
                                 {getCookie.i18next === 'en' ? divide(slide.title_en,true) :
