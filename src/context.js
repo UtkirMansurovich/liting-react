@@ -40,7 +40,7 @@ const AppProvider = ({ children }) => {
         .get(BASE_URL + '/api/blog/all/main_slider')
         .then((res) => {
           setSlider(res.data.object);
-          console.log(res.data.object)
+          // console.log(res.data.object)
         })
         .catch((err) => {
           console.log(err);
@@ -52,7 +52,7 @@ const AppProvider = ({ children }) => {
           .get(BASE_URL + '/api/blog/all')
           .then((res) => {
               setAllBlogs(res.data.object);
-              console.log(res.data.object);
+              // console.log(res.data.object);
           })
           .catch((err) => {
               console.log(err);
@@ -61,7 +61,7 @@ const AppProvider = ({ children }) => {
 
     const handlerSelect = (e) => {
         setSelectLang(e.target.value);
-        console.log(e.target.value);
+        // console.log(e.target.value);
         i18next.changeLanguage(e.target.value);
 
     }
@@ -81,8 +81,13 @@ const AppProvider = ({ children }) => {
       }
     }, [setShowContrast, showContrast])
 
+    const clickStandard = () => {
+      setSelectContrast(true);
+      localStorage.removeItem("selectCont");
+    }
     const clickContrast = () => {
-      setSelectContrast(prev => !prev);
+      setSelectContrast(false);
+      localStorage.setItem("selectCont", "c");
     }
 
     const clickFontSmall = () => {
@@ -102,19 +107,19 @@ const AppProvider = ({ children }) => {
     const Title = document.title = t("Title");
 
     useEffect(() => {
-        navbarList();
-        sliderImage();
-        callAllBlogs();
-        document.addEventListener('keydown', keyPress);
-        return() => document.addEventListener('keydown', keyPress);
-
-     }, [Title, keyPress]);
+      setSelectContrast(!localStorage.getItem('selectCont'));
+      navbarList();
+      sliderImage();
+      callAllBlogs();
+      document.addEventListener('keydown', keyPress);
+      return() => document.addEventListener('keydown', keyPress);
+    }, [Title, keyPress, selectContrast]);
 
     const getCookie = Cookie.get();
     // console.log(getCookie)
 
     const value = { navParent, slider, allBlogs, handlerSelect, getCookie, selectLang, clickContrast, selectContrast, clickFontSmall, clickFontMedium, clickFontBig, selectFontSmall,
-      selectFontBig, openContrast, showContrast, setShowContrast, contrastRef, closeContrast };
+      selectFontBig, openContrast, showContrast, setShowContrast, contrastRef, closeContrast, clickStandard };
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 };
 

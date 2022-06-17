@@ -3,7 +3,7 @@ import {AppContext} from "../context";
 import {useTranslation} from "react-i18next";
 
 const Contrast = () => {
-  const {clickContrast, selectContrast, clickFontSmall, clickFontMedium, clickFontBig, selectFontSmall, selectFontBig, openContrast, contrastRef, closeContrast } = useContext(AppContext);
+  const {clickContrast, selectContrast, clickFontSmall, clickFontMedium, clickFontBig, selectFontSmall, selectFontBig, openContrast, contrastRef, closeContrast, clickStandard } = useContext(AppContext);
   const { t } = useTranslation();
   return(
     <div className="containerContrast" ref={contrastRef} onClick={closeContrast}>
@@ -12,7 +12,7 @@ const Contrast = () => {
           <div className="box-contrast">
             <h5 style={{margin:'10px 0', padding:'0', color:'#555555'}}>{t("Contrast.contrast")}</h5>
             <div className="box-btn">
-              <button onClick={clickContrast} className={ selectContrast ? 'btn-contrast btn-on' : 'btn-contrast'}>{t("Contrast.standard")}</button>
+              <button onClick={clickStandard} className={ selectContrast ? 'btn-contrast btn-on' : 'btn-contrast'}>{t("Contrast.standard")}</button>
               <button  onClick={clickContrast} className={ selectContrast ? "btn-contrast" : 'btn-contrast btn-on'}>{t("Contrast.blackWhite")}</button>
             </div>
           </div>

@@ -6,7 +6,7 @@ import {AppContext} from "../context";
 import {BASE_URL_PHOTO} from "../utills/constant";
 import {Link} from 'react-router-dom';
 import {useTranslation} from "react-i18next";
-import TitleImg from "../images/logouzliti.png";
+import TitleImg from "../images/logouzliti1.png";
 
 function SampleNextArrow (props) {
     const { className, style, onClick } = props;

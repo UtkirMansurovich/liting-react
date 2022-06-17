@@ -91,6 +91,24 @@
 
     "readMore": "Read more"
   },
+  "Training": {
+    "Enhancing": "Enhancing your organizational effectiveness",
+    "Improving": "Improving individual and organizational performance",
+    "WeBuild": "We build on our years of oil and gas experience and training expertise to continually develop, customize, and update the industry’s most advanced E&amp;P training for meeting your business goals. Our training programs are designed by leading industry experts to blend theory with software tools and workflows across various disciplines.",
+    "NewHire": "New hire",
+    "NewHireSpan": "Training program",
+    "Discipline": "Discipline based",
+    "DisciplineSpan": "Training program",
+    "ThemeBased": "Theme based",
+    "ThemeBasedSpan": "Training program",
+    "Training": "Training Programs Offerings",
+    "Mentored": "Mentored",
+    "MentoredSpan": "Training program",
+    "ProjectBased": "Project based",
+    "ProjectBasedSpan": "Training program",
+    "Job": "Job profile competency based",
+    "JobSpan": "Training program"
+},
   "StartFullWidthTwo": {
     "title": "We provide the construction of complex problems and all kinds of services. Contact us today for the best services.",
     "text": "complex problems and all kinds of services. Contact us today for complex problems and all kinds of services. ",

@@ -91,6 +91,24 @@
 
     "readMore": "Davomini o'qish"
   },
+  "Training": {
+    "Enhancing": "Tashkiliy samaradorlikni oshirish",
+    "Improving": "Shaxsiy va tashkiliy samaradorlikni oshirish",
+    "WeBuild": "Sizning biznes maqsadlaringizga erishish uchun sanoatning eng ilg'or E&P kurslarini doimiy ravishda ishlab chiqish, sozlash va yangilash uchun biz neft va gaz bo'yicha ko'p yillik tajribamiz va o'qitish tajribamizga tayanamiz. Bizning o‘quv dasturlarimiz nazariyani dasturiy vositalar va fanlar bo‘yicha ish jarayonlari bilan birlashtirish uchun yetakchi soha mutaxassislari tomonidan ishlab chiqilgan.",
+    "NewHire": "Yangi xodim",
+    "NewHireSpan": "Trening dasturi",
+    "Discipline": "Intizomga asoslangan",
+    "DisciplineSpan": "Trening dasturi",
+    "ThemeBased": "Mavzuga asoslangan",
+    "ThemeBasedSpan": "Trening dasturi",
+    "Training": "O'quv dasturlari",
+    "Mentored": "Mentor",
+    "MentoredSpan": "Trening dasturi",
+    "ProjectBased": "Loyihaga asoslangan",
+    "ProjectBasedSpan": "Trening dasturi",
+    "Job": "Ish profiliga asoslangan kompetentsiya",
+    "JobSpan": "Trening dasturi"
+  },
   "StartFullWidthTwo": {
     "title": "Biz murakkab muammolarni va barcha turdagi xizmatlarni qurishni ta'minlaymiz. Eng yaxshi xizmatlar uchun bugun biz bilan bog'laning. ",
     "text": "murakkab muammolar va barcha turdagi xizmatlar. Murakkab muammolar va barcha turdagi xizmatlar uchun bugun biz bilan bog'laning. ",

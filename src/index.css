@@ -366,11 +366,12 @@ body {
 }
 .titleLogo{
   position: absolute;
-  width: 450px;
-  top: 5%;
+  width: 700px;
+  top: 10%;
   right: 50%;
   transform: translateX(50%);
   opacity: 0.5;
+  padding: 0 2%;
 }
 
 /* Navbar */
