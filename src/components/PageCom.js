@@ -75,7 +75,11 @@ const PageCom = (props) => {
                                     {blog?
                                         <div className="blogsParent">
                                             <div className="post-date">
-                                                <a href="blog-single.html" className='post-data-blogs-a' id="date">2022-04-20T06:54:49.426+00:00</a>
+                                                <p className='post-data-blogs-a' id="date">
+                                                    {blog.createdAt.slice(0, 10)}
+                                                    <i style={{marginLeft:"15px"}} className="fas fa-eye"></i>
+                                                    <span className="pl-1">{blog.view_count}</span>
+                                                </p>
                                             </div>
                                             <div className='pageImgPar'>
                                                 <img src={BASE_URL_PHOTO + blog.mainImage.hashId} alt="imagePhoto" className="pageImg"/>

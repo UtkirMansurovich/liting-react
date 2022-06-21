@@ -344,6 +344,11 @@ body {
 .blogsCard:hover{
   box-shadow: 0 2px 8px #7c8a97;
 }
+@media (max-width:576px){
+  .blogsCard{
+    margin: 0 3% 30px 3%;
+  }
+}
 .blogCats{
   position: absolute;
   top: 250px;
@@ -670,5 +675,35 @@ body {
     margin: 0 0 0 10px;
   }
 
+}
+
+/* Pagination */
+.pagination{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5%;
+  font-size: 1.2rem;
+  gap: 5px;
+}
+.pagination .page-num{
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: 400;
+  transition: .3s ease-in-out;
+  color: #111111;
+  line-height: 1.65rem;
+}
+.pagination .page-num a{
+  color: inherit;
+}
+.pagination .page-num:hover{
+  background-color: #fd5d14;
+  color: #FFFFFF;
+}
+.pagination .active{
+  background-color: #fd5d14;
+  color: #FFFFFF;
 }
 
