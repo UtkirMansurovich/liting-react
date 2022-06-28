@@ -45,7 +45,7 @@ const Training = () => {
       </div>
 
       <div className="container">
-        <div className="content">
+        <div className="contentTrain">
           <div className="box-left">
             <div className="new-hire">
               <a href="#" className="new-hire-a">

@@ -1,5 +1,4 @@
-import React, {Suspense, useContext} from 'react';
-import {AppContext} from "./context";
+import React, {Suspense} from 'react';
 import ReactDOM from 'react-dom';
 import './i18next';
 import './index.css';

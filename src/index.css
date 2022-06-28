@@ -32,10 +32,11 @@ body {
   align-items: self-start;
 }
 .slideH1{
-  color: #FFFFFF;
+  color: #fd5d14;
   font-size: 4rem;
   width: 60%;
   text-transform: uppercase;
+  opacity: 0.7;
 }
 .slideP{
   color: #FFFFFF;
@@ -371,12 +372,17 @@ body {
 }
 .titleLogo{
   position: absolute;
-  width: 700px;
+  width: 100%;
   top: 10%;
   right: 50%;
   transform: translateX(50%);
-  opacity: 0.5;
+  /*opacity: 0.7;*/
   padding: 0 2%;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #FFFFFF;
+  font-weight: 700;
+
 }
 
 /* Navbar */
@@ -535,7 +541,7 @@ body {
   min-height: 80vh;
   background: url("./images/training.jpg") no-repeat center center/cover;
 }
-.content{
+.contentTrain{
   width: 100%;
   display: flex;
   justify-content: center;

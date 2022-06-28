@@ -67,8 +67,11 @@ const StartBlock = () => {
                 <div className="container">
                     <div className="section-header">
                         <div className="section-heading">
-                            <h5 className="text-custom-blue wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">{t("StartBlock.ourBlock")}</h5>
-                            <h3 className="text-theme fw-700">{t("StartBlock.title")}</h3>
+                            {/*<h5 className="text-custom-blue wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">{t("StartBlock.ourBlock")}</h5>*/}
+                            <h3 className="text-theme fw-700">
+                                {t("StartBlock.ourBlock")}
+                                {/*{t("StartBlock.title")}*/}
+                            </h3>
                         </div>
                         <div className="section-description">
                             <p className="text-light-white">{t("StartBlock.text")}</p>

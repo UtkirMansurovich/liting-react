@@ -25,8 +25,11 @@ const StartAbout = () => {
                         <div className="about-left-side p-relative">
                             <div className="section-header">
                                 <div className="section-heading">
-                                    <h5 className="text-custom-blue wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">{t("StartAbout.about")}</h5>
-                                    <h3 className="text-theme fw-700">{t("StartAbout.history")}</h3>
+                                    {/*<h5 className="text-custom-blue wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">{t("StartAbout.about")}</h5>*/}
+                                    <h3 className="text-theme fw-700">
+                                        {t("StartAbout.about")}
+                                        {/*{t("StartAbout.history")}*/}
+                                    </h3>
                                 </div>
                             </div>
                             <div className="about-desc">
@@ -34,25 +37,25 @@ const StartAbout = () => {
                             </div>
                             <div className="company-progress">
                                 <div className="progress-item">
-                                    <label className="text-custom-black fs-16 fw-600">{t("StartAbout.design")} <span>70%</span></label>
+                                    <label className="text-custom-black fs-16 fw-600">{t("StartAbout.development")} <span>1500</span></label>
                                     <div className="progress">
                                         <div className="progress-bar progress-bar-striped active">
                                         </div>
                                     </div>
                                 </div>
                                 <div className="progress-item">
-                                    <label className="text-custom-black fs-16 fw-600">{t("StartAbout.development")} <span>80%</span></label>
+                                    <label className="text-custom-black fs-16 fw-600">{t("StartAbout.design")} <span>2000</span></label>
                                     <div className="progress">
                                         <div className="progress-bar progress-bar-striped active">
                                         </div>
                                     </div>
                                 </div>
                                 <div className="progress-item">
-                                    <label className="text-custom-black fs-16 fw-600">{t("StartAbout.automation")} <span>75%</span></label>
-                                    <div className="progress">
-                                        <div className="progress-bar progress-bar-striped active">
-                                        </div>
-                                    </div>
+                                    {/*<label className="text-custom-black fs-16 fw-600">{t("StartAbout.automation")} <span>75%</span></label>*/}
+                                    {/*<div className="progress">*/}
+                                        {/*<div className="progress-bar progress-bar-striped active">*/}
+                                        {/*</div>*/}
+                                    {/*</div>*/}
                                 </div>
                             </div>
                         </div>

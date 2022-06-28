@@ -74,8 +74,11 @@ const StartOurCategory = ({slidesOurCategory}) => {
                     <div className="container">
                         <div className="section-header">
                             <div className="section-heading">
-                                <h5 className="text-custom-blue wow fadeUp" data-wow-duration="1s" data-wow-delay="0.3s">{t("StartOurCategory.ourCategory")}</h5>
-                                <h3 className="text-theme fw-700">{t("StartOurCategory.ourLevel")}</h3>
+                                {/*<h5 className="text-custom-blue wow fadeUp" data-wow-duration="1s" data-wow-delay="0.3s">{t("StartOurCategory.ourCategory")}</h5>*/}
+                                <h3 className="text-theme fw-700">
+                                    {t("StartOurCategory.ourCategory")}
+                                    {/*{t("StartOurCategory.ourLevel")}*/}
+                                </h3>
                             </div>
                             <div className="section-description">
                                 <p className="text-light-white">{t("StartOurCategory.text")}</p>
@@ -108,23 +111,39 @@ const StartOurCategory = ({slidesOurCategory}) => {
                             <div className="categories-tabs">
                                  <ul className="custom nav nav-tabs">
                                      <li className="nav-item">
-                                         <a className="nav-link active text-custom-black" data-toggle="tab" href="#home-maintainance">
-                                             <span><img src="../assets/images/svg/home-main.svg" className="image-fit" alt="svg"/></span>{t("StartOurCategory.service")}
-                                         </a>
-                                     </li>
-                                     <li className="nav-item">
-                                         <a className="nav-link text-custom-black" data-toggle="tab" href="#gen-construction">
-                                             <span><img src="../assets/images/svg/gen-const.svg" className="image-fit" alt="svg"/></span>{t("StartOurCategory.construction")}
-                                         </a>
-                                     </li>
-                                     <li className="nav-item">
-                                         <a className="nav-link text-custom-black" data-toggle="tab" href="#restructured">
-                                             <span><img src="../assets/images/svg/restructer.svg" className="image-fit" alt="svg"/></span>{t("StartOurCategory.restructured")}
+                                         <a className="nav-link text-custom-black" data-toggle="tab" href="#home-maintainance">
+                                             <span style={{display:'flex', justifyContent:'center', alignItems:'self-end'}}>
+                                                 <img src="../assets/images/svg/1.png" className="image-fit" alt="svg"/>
+                                                 <p style={{margin:'0 0 0 5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}>447</p>
+                                             </span>
+                                             {t("StartOurCategory.service")}
                                          </a>
                                      </li>
                                      <li className="nav-item">
                                          <a className="nav-link text-custom-black" data-toggle="tab" href="#project-management">
-                                             <span><img src="../assets/images/svg/project-m.svg" className="image-fit" alt="svg"/></span>{t("StartOurCategory.control")}
+                                             <span style={{display:'flex', justifyContent:'center', alignItems:'self-end'}}>
+                                                 <img src="../assets/images/svg/4.png" className="image-fit" alt="svg"/>
+                                                 <p style={{margin:'0 0 0 5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}>55</p>
+                                             </span>
+                                             {t("StartOurCategory.control")}
+                                         </a>
+                                     </li>
+                                     <li className="nav-item">
+                                         <a className="nav-link text-custom-black" data-toggle="tab" href="#gen-construction">
+                                             <span style={{display:'flex', justifyContent:'center', alignItems:'self-end', marginBottom:'-5px'}}>
+                                                 <img src="../assets/images/svg/5.svg" className="image-fit" alt="svg" style={{marginTop:"-5px"}}/>
+                                                 <p style={{margin:'0 0 5px 5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}>440</p>
+                                             </span>
+                                             {t("StartOurCategory.construction")}
+                                         </a>
+                                     </li>
+                                     <li className="nav-item">
+                                         <a className="nav-link text-custom-black" data-toggle="tab" href="#restructured">
+                                             <span style={{display:'flex', justifyContent:'center', alignItems:'self-end'}}>
+                                                 <img src="../assets/images/svg/3.png" className="image-fit" alt="svg"/>
+                                                 <p style={{margin:'0 0 0 5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}>13500</p>
+                                             </span>
+                                             {t("StartOurCategory.restructured")}
                                          </a>
                                      </li>
                                  </ul>

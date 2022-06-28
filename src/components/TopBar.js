@@ -58,12 +58,12 @@ const TopBar = () => {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-custom-white">
+                                    <a href="https://instagram.com/uzliti.neftgaz?igshid=YmMyMTA2M2Y=" target="_blank" className="text-custom-white">
                                         <i className="fab fa-instagram"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-custom-white">
+                                    <a href="https://www.facebook.com/uzlitineftgaz/" target="_blank" className="text-custom-white">
 
                                         <i className="fab fa-facebook-f"></i>
 
