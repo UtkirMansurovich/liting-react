@@ -23,7 +23,7 @@ import Training from '../components/Training'
 const Home = () => {
         return(
             <div>
-                <TopBar />
+                {/*<TopBar />*/}
                 <Navbar/>
                 <StartBanner/>
                 <StartAbout/>

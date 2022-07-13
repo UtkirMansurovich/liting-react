@@ -10,7 +10,7 @@ const StartAbout = () => {
                 <div className="row">
                     <div className="col-xl-5 col-lg-6">
                         <div className="about-right-side p-relative mb-md-80">
-                            <img src="../assets/images/homepage-1/about-us-410x450.jpg" className="img-fluid full-width" alt="about"/>
+                            <img src="../assets/images/homepage-1/about.jpeg" className="img-fluid full-width" alt="about" style={{height:'500px'}}/>
                             <div className="about-meta">
                                 <div className="meta-icon wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
                                     <img src="../assets/images/banner-icon-01.png" className="full-width" alt="img"/>

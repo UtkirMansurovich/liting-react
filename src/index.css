@@ -38,6 +38,11 @@ body {
   text-transform: uppercase;
   opacity: 0.7;
 }
+@media(max-width: 1135px){
+  .slideH1{
+    font-size: 6vw;
+  }
+}
 .slideP{
   color: #FFFFFF;
   font-size: 18px;
@@ -382,7 +387,11 @@ body {
   letter-spacing: 5px;
   color: #FFFFFF;
   font-weight: 700;
-
+}
+@media(max-width:1135px){
+  .titleLogo{
+    font-size: 6vw;
+  }
 }
 
 /* Navbar */
@@ -646,12 +655,12 @@ body {
   .box-middle{
     display: none;
   }
-  .content{
+  .contentTrain{
     justify-content: space-evenly;
   }
 }
 @media (max-width: 767px) {
-  .content{
+  .contentTrain{
     flex-direction: column;
   }
   .box-right, .box-left{

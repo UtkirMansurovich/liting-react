@@ -1,5 +1,5 @@
 import React from 'react';
-import TopBar from "../components/TopBar";
+// import TopBar from "../components/TopBar";
 import Navbar from "../components/Navbar/Navbar";
 import StartFooter from "../components/StartFooter";
 import BlogPagesCom from "../components/BlogPagesCom";
@@ -9,7 +9,7 @@ const BlogPages = () => {
     const {catId}=useParams();
     return(
         <div>
-            <TopBar/>
+            {/*<TopBar/>*/}
             <Navbar/>
             <BlogPagesCom catId={catId}/>
             <StartFooter/>
