@@ -53,7 +53,7 @@
     "text": "Bu matbaa va matn terish sanoatining uydirma matnidir. Sanoatdagi standart qo'g'irchoq matn edi.",
     "and": "va",
 
-    "cardTitle": "Kompaniya boshlandi",
+    "cardTitle": "Tarix raqamlarda",
     "cardTextFirst": "Bu matbaa va matn terish sanoatining uydirma matnidir.",
     "cardTextSecond": "Bu matbaa va matn terish sanoatining uydirma matnidir. Sanoatdagi standart qo'g'irchoq matn edi.",
     "cardTextThird": "Bu matbaa va matn terish sanoatining uydirma matnidir. Sanoatdagi standart qo'g'irchoq matn edi.",
@@ -92,7 +92,7 @@
     "readMore": "Davomini o'qish"
   },
   "Training": {
-    "Enhancing": "Tashkiliy samaradorlikni oshirish",
+    "Enhancing": "\"NEFTGAZ MALAKA\" o'quv va tadqiqot markazi",
     "Improving": "Shaxsiy va tashkiliy samaradorlikni oshirish",
     "WeBuild": "Sizning biznes maqsadlaringizga erishish uchun sanoatning eng ilg'or E&P kurslarini doimiy ravishda ishlab chiqish, sozlash va yangilash uchun biz neft va gaz bo'yicha ko'p yillik tajribamiz va o'qitish tajribamizga tayanamiz. Bizning o‘quv dasturlarimiz nazariyani dasturiy vositalar va fanlar bo‘yicha ish jarayonlari bilan birlashtirish uchun yetakchi soha mutaxassislari tomonidan ishlab chiqilgan.",
     "NewHire": "Yangi xodim",
@@ -122,7 +122,7 @@
     "buttonWatch": "Bizning ishimizni ko'ring"
   },
   "StartService": {
-    "ourService": "Bizning xizmatlar",
+    "ourService": "Loyihaning bosh muhandislari",
     "title": "Biz deyarli barcha xizmatlarni qamrab oldik",
     "text": "Bu matbaa va matn terish sanoati uchun shunchaki soxta matn. Sanoatdagi standart qo'g'irchoq matn edi.",
     "all": "Hammasi",
@@ -161,7 +161,7 @@
     "cardPositionFour": "Savdo bo'yicha boshqaruvchi"
   },
   "StartClient": {
-    "title": "Bizning mijozlarimiz yaxshi ko'radilar",
+    "title": "Bizning hamkorlarimiz",
     "text": "Bu matbaa va matn terish sanoati uchun shunchaki soxta matn. Sanoatdagi standart qo'g'irchoq matn edi."
   },
   "StartNewsLetter": {

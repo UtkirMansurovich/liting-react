@@ -8,8 +8,11 @@ const StartService = () => {
             <div className="container">
                 <div className="section-header">
                     <div className="section-heading">
-                        <h5 className="text-custom-blue wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">{t("StartService.ourService")}</h5>
-                        <h3 className="text-theme fw-700">{t("StartService.title")}</h3>
+                        {/*<h5 className="text-custom-blue wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">{t("StartService.ourService")}</h5>*/}
+                        <h3 className="text-theme fw-700">
+                            {t("StartService.ourService")}
+                            {/*{t("StartService.title")}*/}
+                        </h3>
                     </div>
                     <div className="section-description">
                         <p className="text-light-white">{t("StartService.text")}</p>
