@@ -8,7 +8,7 @@ import StartFullWidth from "../components/StartFullWidth";
 import StartBlock from "../components/StartBlock";
 import StartOurHistory from "../components/StartOurHistory";
 // import StartFullWidthTwo from "../components/StartFullWidthTwo";
-import StartService from "../components/StartService";
+import StartService from "../components/StartService/StartService";
 import StartTeam from "../components/StartTeam";
 import StartClient from "../components/StartClient";
 // import StartFaqs from "../components/StartFaqs";
