@@ -42,7 +42,7 @@ const StartService = () => {
                         <div className="row gallery-grid">
                             <div className="col-lg-3 col-md-6 filter-box h-main">
                                 <div className="service-item animate-img mb-xl-20">
-                                    <a href="service-detail.html" tabIndex="0">
+                                    <a href="#" tabIndex="0">
                                         <img src="../assets/images/services/gipi-1.jpg" className="image-fit" alt="img"/>
                                         <div className="text-wrapper">
                                             <h5 className="text-custom-blue no-margin fw-600 fs-20">{t("StartService.cardTitle")}</h5>
@@ -53,7 +53,7 @@ const StartService = () => {
                             </div>
                             <div className="col-lg-3 col-md-6 filter-box genrl-cons">
                                 <div className="service-item animate-img mb-xl-20">
-                                    <a href="service-detail.html" tabIndex="0">
+                                    <a href="#" tabIndex="0">
                                         <img src="../assets/images/services/gipi-2.jpg" className="image-fit" alt="img"/>
                                         <div className="text-wrapper">
                                             <h5 className="text-custom-blue no-margin fw-600 fs-20">{t("StartService.cardTitleTwo")}</h5>
@@ -64,7 +64,7 @@ const StartService = () => {
                             </div>
                             <div className="col-lg-3 col-md-6 filter-box restructured">
                                 <div className="service-item animate-img mb-xl-20">
-                                    <a href="service-detail.html" tabIndex="0">
+                                    <a href="#" tabIndex="0">
                                         <img src="../assets/images/services/gipi-3.jpg" className="image-fit" alt="img"/>
                                         <div className="text-wrapper">
                                             <h5 className="text-custom-blue no-margin fw-600 fs-20">{t("StartService.cardTitleThree")}</h5>
@@ -75,7 +75,7 @@ const StartService = () => {
                             </div>
                             <div className="col-lg-3 col-md-6 filter-box pro-manage">
                                 <div className="service-item animate-img mb-xl-20">
-                                    <a href="service-detail.html" tabIndex="0">
+                                    <a href="#" tabIndex="0">
                                         <img src="../assets/images/services/gipi-4.jpg" className="image-fit" alt="img"/>
                                         <div className="text-wrapper">
                                             <h5 className="text-custom-blue no-margin fw-600 fs-20">{t("StartService.cardTitleFour")}</h5>
@@ -86,7 +86,7 @@ const StartService = () => {
                             </div>
                             <div className="col-lg-3 col-md-6 filter-box h-main">
                                 <div className="service-item animate-img mb-md-20">
-                                    <a href="service-detail.html" tabIndex="0">
+                                    <a href="#" tabIndex="0">
                                         <img src="../assets/images/services/gipi-5.jpg" className="image-fit" alt="img"/>
                                         <div className="text-wrapper">
                                             <h5 className="text-custom-blue no-margin fw-600 fs-20">{t("StartService.cardTitleFive")}</h5>
@@ -97,7 +97,7 @@ const StartService = () => {
                             </div>
                             <div className="col-lg-3 col-md-6 filter-box genrl-cons">
                                 <div className="service-item animate-img mb-md-20">
-                                    <a href="service-detail.html" tabIndex="0">
+                                    <a href="#" tabIndex="0">
                                         <img src="../assets/images/services/gipi-6.jpg" className="image-fit" alt="img"/>
                                         <div className="text-wrapper">
                                             <h5 className="text-custom-blue no-margin fw-600 fs-20">{t("StartService.cardTitleSix")}</h5>
@@ -108,7 +108,7 @@ const StartService = () => {
                             </div>
                             <div className="col-lg-3 col-md-6 filter-box restructured">
                                 <div className="service-item animate-img mb-sm-20">
-                                    <a href="service-detail.html" tabIndex="0">
+                                    <a href="#" tabIndex="0">
                                         <img src="../assets/images/services/gipi-7.jpg" className="image-fit" alt="img"/>
                                         <div className="text-wrapper">
                                             <h5 className="text-custom-blue no-margin fw-600 fs-20">{t("StartService.cardTitleSeven")}</h5>
@@ -119,7 +119,7 @@ const StartService = () => {
                             </div>
                             <div className="col-lg-3 col-md-6 filter-box pro-manage">
                                 <div className="service-item animate-img">
-                                    <a href="service-detail.html" tabIndex="0">
+                                    <a href="#" tabIndex="0">
                                         <img src="../assets/images/services/gipi-8.jpg" className="image-fit" alt="img"/>
                                         <div className="text-wrapper">
                                             <h5 className="text-custom-blue no-margin fw-600 fs-20">{t("StartService.cardTitleEight")}</h5>
