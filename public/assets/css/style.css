@@ -4905,6 +4905,8 @@ background-position: center;
 ==================================================*/
 .client .image{
     text-align: center;
+    object-fit: cover;
+    object-position: center;
 }
 .client .item .author{
     padding-bottom: 20px;

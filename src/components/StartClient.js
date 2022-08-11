@@ -67,7 +67,7 @@ const StartClient = ({sliderClient}) => {
                                                 <div className="swiper-wrapper">
                                                     <div className="swiper-slide">
                                                         <div className="image">
-                                                            <img src={slides.image} alt="Client"/>
+                                                            <img src={slides.image} alt="Client" className="image__client"/>
                                                         </div>
                                                     </div>
                                                 </div>

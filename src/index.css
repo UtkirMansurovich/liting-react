@@ -810,3 +810,16 @@ body {
   }
 }
 
+/* StartClient */
+
+.image__client {
+  width: 80%;
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 60%;
+}
+
