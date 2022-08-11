@@ -150,3 +150,138 @@ export const sliderClient = [
     }
 ]
 
+export const ourMentors = [
+    {
+        image: "../assets/images/homepage-1/pens-1.jpg",
+        fullName_ru: "Шафиев Рустам Умарович",
+        fullName_uz: "Шафиев Рустам Умарович",
+        fullName_oz: "Shafiyev Rustam Umarovich",
+        fullName_en: "Shafiev Rustam Umarovich",
+        position_ru: "Консультант-секретарь НТС",
+        position_uz: "НТС маслаҳатчиси-котиби",
+        position_oz: "NTS maslahatchisi-kotibi",
+        position_en: "Consultant-Secretary of the NTS"
+    },
+    {
+        image: "../assets/images/homepage-1/pens-2.jpg",
+        fullName_ru: "Хуртинова Наталия Анатольевна",
+        fullName_uz: "Хуртинова Наталия Анатольевна",
+        fullName_oz: "Xurtinova Natalya Anatolievna",
+        fullName_en: "Khurtinova Natalia Anatolievna",
+        position_ru: "Начальник Отдела управления контрактами",
+        position_uz: "Шартномаларни бошқариш бўлими бошлиғи",
+        position_oz: "Shartnomalarni boshqarish bo'limi boshlig'i",
+        position_en: "Head of Contract Management Department"
+    },
+    {
+        image: "../assets/images/homepage-1/pens-3.jpg",
+        fullName_ru: "Ли Роберт  Чанирович",
+        fullName_uz: "Ли Роберт  Чанирович",
+        fullName_oz: "Li Robert Chanirovich",
+        fullName_en: "Lee Robert Chanirovich",
+        position_ru: "Главный научный сотрудник Отдела сбора, подготовки и транспорта газа",
+        position_uz: "Газни йиғиш, қайта ишлаш ва ташиш бўлими бош илмий ходими",
+        position_oz: "Gazni yig‘ish, qayta ishlash va tashish bo‘limi bosh ilmiy xodimi",
+        position_en: "Chief Researcher of the Department of Gathering, Treatment and Transportation of Gas"
+    },
+    {
+        image: "../assets/images/homepage-1/pens-4.jpg",
+        fullName_ru: "Досумова Эльза Янгибаевна",
+        fullName_uz: "Досумова Эльза Янгибаевна",
+        fullName_oz: "Dosumova Elza Yangibaevna",
+        fullName_en: "Dosumova Elza Yangibaevna",
+        position_ru: "Старший научный сотрудник Отдела переработки газа и газохимии",
+        position_uz: "Газни қайта ишлаш ва газ кимёси кафедраси катта илмий ходими",
+        position_oz: "Gazni qayta ishlash va gaz kimyosi kafedrasi katta ilmiy xodimi",
+        position_en: "Senior Researcher, Department of Gas Processing and Gas Chemistry"
+    },
+    {
+        image: "../assets/images/homepage-1/pens-5.jpg",
+        fullName_ru: "Атальянц Владимир Аршакович",
+        fullName_uz: "Атальянц Владимир Аршакович",
+        fullName_oz: "Atal'yants Vladimir Arshakovich",
+        fullName_en: "Atal'yants Vladimir Arshakovich",
+        position_ru: "Главный консультант АО «O‘ZLITINEFTGAZ»",
+        position_uz: "“ЎЗЛИТИНEФТГАЗ” АЖ бош маслаҳатчиси",
+        position_oz: "“O‘ZLITINEFTGAZ” AJ bosh maslahatchisi",
+        position_en: "Chief Consultant of O‘ZLITINEFTGAZ JSC"
+    },
+    {
+        image: "../assets/images/homepage-1/pens-6.jpg",
+        fullName_ru: "Шин Алексей",
+        fullName_uz: "Шин Алексей",
+        fullName_oz: "Shin Aleksey",
+        fullName_en: "Shin Alexey",
+        position_ru: "Старший научный сотрудник Отдела газодинамических и газоконденсатных исследований и интенсификации добычи нефти и газа",
+        position_uz: "Газ динамикаси ва газ конденсатини тадқиқ этиш ва нефт ва газ қазиб олишни интенсивлаштириш бўлими катта илмий ходими",
+        position_oz: "Gaz dinamikasi va gaz kondensatini tadqiq etish va neft va gaz qazib olishni intensivlashtirish bo‘limi katta ilmiy xodimi",
+        position_en: "Senior Researcher, Department of Gas Dynamic and Gas Condensate Research and Oil and Gas Production Intensification"
+    },
+    {
+        image: "../assets/images/homepage-1/pens-7.jpg",
+        fullName_ru: "Салиджанова Нафиса Сагдуллаевна",
+        fullName_uz: "Салиджанова Нафиса Сагдуллаевна",
+        fullName_oz: "Salidjanova Nafisa Sagdullaevna",
+        fullName_en: "Salidzhanova Nafisa Sagdullaevna",
+        position_ru: "Главный научный сотрудник Группа антикорозийной защиты",
+        position_uz: "Коррозияга қарши ҳимоя гуруҳининг бош тадқиқотчиси",
+        position_oz: "Korroziyaga qarshi himoya guruhining bosh tadqiqotchisi",
+        position_en: "Chief Researcher Anti-Corrosion Protection Group"
+    },
+    {
+        image: "../assets/images/homepage-1/pens-8.jpg",
+        fullName_ru: "Адилов Джавдат",
+        fullName_uz: "Адилов Джавдат",
+        fullName_oz: "Adilov Javdat",
+        fullName_en: "Adilov Javdat",
+        position_ru: "Заведующий Группой разработки месторождений Устюртского ГДУ Отдела проектирования и мониторинга разработки месторождений углеводородов",
+        position_uz: "Устюрт ГДУнинг Углеводород конларини лойиҳалаш ва ўзлаштириш мониторинги бошқармасининг конларни ўзлаштириш гуруҳи раҳбари",
+        position_oz: "Ustyurt GDUning Uglevodorod konlarini loyihalash va o‘zlashtirish monitoringi boshqarmasining konlarni o‘zlashtirish guruhi rahbari",
+        position_en: "Head of the Field Development Group of the Ustyurt GDU of the Department for Design and Monitoring of the Development of Hydrocarbon Fields"
+    },
+    {
+        image: "../assets/images/homepage-1/pens-9.jpg",
+        fullName_ru: "Бободжанова Рано Васитовна",
+        fullName_uz: "Бободжанова Рано Васитовна",
+        fullName_oz: "Bobodjanova Ra'no Vasitovna",
+        fullName_en: "Bobodzhanova Rano Vasitovna",
+        position_ru: "Заведующий  лабораторией физико-химических исследований углеводородных смесей",
+        position_uz: "Углеводород аралашмаларини физик-кимёвий тадқиқотлар лабораторияси мудири",
+        position_oz: "Uglevodorod aralashmalarini fizik-kimyoviy tadqiqotlar laboratoriyasi mudiri",
+        position_en: "Head of the Laboratory for Physical and Chemical Research of Hydrocarbon Mixtures"
+    },
+    {
+        image: "../assets/images/homepage-1/pens-10.jpg",
+        fullName_ru: "Шевцов Владимир Михайлович",
+        fullName_uz: "Шевцов Владимир Михайлович",
+        fullName_oz: "Shevtsov Vladimir Mixaylovich",
+        fullName_en: "Shevtsov Vladimir Mikhailovich",
+        position_ru: "Ведущий научный сотрудник Отдела проектирования и мониторинга разработки месторождений углеводородов",
+        position_uz: "Углеводород конларини лойиҳалаш ва ўзлаштириш мониторинги бўлими етакчи илмий ходими",
+        position_oz: "Uglevodorod konlarini loyihalash va o‘zlashtirish monitoringi bo‘limi yetakchi ilmiy xodimi",
+        position_en: "Leading Researcher of the Department for Design and Monitoring of Development of Hydrocarbon Fields"
+    },
+    {
+        image: "../assets/images/homepage-1/pens-11.jpg",
+        fullName_ru: "Муминов Анвар Султанович",
+        fullName_uz: "Муминов Анвар Султанович",
+        fullName_oz: "Muminov Anvar Sultanovich",
+        fullName_en: "Muminov Anvar Sultanovich",
+        position_ru: "Заведующий лабораторией петрофизических исследований",
+        position_uz: "Петрофизика тадқиқотлари лабораторияси мудири",
+        position_oz: "Petrofizika tadqiqotlari laboratoriyasi mudiri",
+        position_en: "Head of the laboratory of petrophysical research"
+    },
+    {
+        image: "../assets/images/homepage-1/pens-12.jpg",
+        fullName_ru: "Прокопенко Людмила Алексеевна",
+        fullName_uz: "Прокопенко Людмила Алексеевна",
+        fullName_oz: "Prokopenko Lyudmila Alekseevna",
+        fullName_en: "Prokopenko Ludmila Alekseevna",
+        position_ru: "Заведующий  группой Отдела управления контрактами",
+        position_uz: "Жамоа раҳбари, шартномаларни бошқариш бўлими",
+        position_oz: "Jamoa rahbari, shartnomalarni boshqarish bo'limi",
+        position_en: "Team Leader, Contract Management Department"
+    },
+] 
+

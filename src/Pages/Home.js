@@ -15,9 +15,8 @@ import StartClient from "../components/StartClient";
 import StartNewsLetter from "../components/StartNewsLetter";
 import StartFooter from "../components/StartFooter";
 // import LoginRegister from "../components/LoginRegister";
-import {SliderOurCategory} from "../components/SliderData";
 import StartBanner from "../components/StartBanner";
-import {sliderClient} from '../components/SliderData';
+import {sliderClient, SliderOurCategory, ourMentors} from '../components/SliderData';
 import Training from '../components/Training'
 
 const Home = () => {
@@ -34,7 +33,7 @@ const Home = () => {
                 {/*<StartFullWidthTwo/>*/}
                 <Training/>
                 <StartService/>
-                <StartTeam/>
+                <StartTeam ourMentors={ourMentors}/>
                 <StartClient sliderClient={sliderClient}/>
                 {/* <StartFaqs/> */}
                 <StartNewsLetter/>
