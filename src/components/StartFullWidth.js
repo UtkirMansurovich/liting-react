@@ -9,7 +9,7 @@ const StartFullWidth = () => {
                 <div className="row no-gutters">
                     <div className="col-lg-6">
                         <div className="left-side animate-img full-height wow fadeInLeftBig">
-                            <img src="../assets/images/video1.jpg" className="image-fit" alt="img"/>
+                            <img src="../assets/images/scientific.jpg" className="image-fit" alt="img"/>
                             {/*<div className="service-text-2 bg-custom-black text-center">*/}
                             {/*    <h5 className="text-custom-white mb-1">{t("StartFullWidth.believe")}</h5>*/}
                             {/*    <h2 className="no-margin text-custom-white"><span className="count">15090</span><span>+</span></h2>*/}

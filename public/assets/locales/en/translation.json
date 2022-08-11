@@ -13,38 +13,38 @@
     "readMore": "Read more"
   },
   "StartAbout": {
-    "project": "28 successfully completed projects",
+    "project": "280 successfully completed projects",
     "about": "About Us",
     "history": "Our history",
-    "text": "Joint-stock company \"O'ZLITINEFTGAZ\" is an industry leading research and design institute of Uzbekistan, providing comprehensive scientific and design support for the development and development of hydrocarbon deposits and the construction of oil and gas facilities in Uzbekistan.",
-    "design": "Design",
-    "development": "Development",
+    "text": "JSC \"O'ZLITINEFTGAZ\" is an integrated scientific, technological and design company that provides support for the construction and operation of production facilities of the oil and gas complex, including oil and gas processing systems, natural gas transportation.",
+    "design": "Design and survey work",
+    "development": "Research work",
     "automation": "Automation"
   },
   "StartOurCategory": {
-    "ourCategory": "OUR CATEGORIES",
+    "ourCategory": "OUR DIVISIONS",
     "ourLevel": "Our world-class engineering category",
-    "text": "Full-cycle design work with the development and implementation of high-tech, high-quality project documentation.",
-    "service": "Home maintenance",
-    "construction": "General construction",
-    "restructured": "Restructured",
-    "control": "Project management"
+    "text": "JSC \"O'ZLITINEFTGAZ\" has 4 departments, AUP and general divisions.",
+    "service": "Employees",
+    "construction": "Patents",
+    "restructured": "Executed works",
+    "control": "Years of work"
   },
   "StartFullWidth": {
     "believe": "Trust",
     "playVideo": "Play video",
-    "title": "We provide the construction of complex problems and all kinds of services. Contact us today for the best services.",
-    "text": "We provide the construction of complex problems and all kinds of services. Contact us today for the best services.",
+    "title": "SCIENTIFIC COUNCIL DSC.23/25.08.2021.T.136.01 ON AWARDING ACADEMIC DEGREES AT O‘ZLITINEFTGAZ JSC",
+    "text": "To ensure the fulfillment of the tasks defined by the Decree of the President of the Republic of Uzbekistan dated October 29, 2020 No. UP-6097 \"On approval of the Concept for the development of science until 2030\", in accordance with the resolution of the Higher Attestation Commission (HAC) under the Cabinet of Ministers of the Republic of Uzbekistan No. 369 dated August 25, 2021 A specialized scientific council (DSc.23/25.08.2021.T.136.01) has been established in JSC \"O'ZLITINEFTGAZ\" to award the academic degrees of Doctor of Philosophy (PhD) and Doctor of Science (DSc) in the specialty 04.00.13 \"Development and operation of oil and gas fields\". The creation of this council will contribute to the training of highly qualified scientific and engineering personnel and their orientation towards scientific activities, ensuring a technological breakthrough in oil and gas operations and, taking into account the availability of qualified personnel, for accelerated training and involvement in scientific and technological activities of specialists, as well as for the accelerated formation and development of scientific directions.",
     "cardTitleFirst": "High quality construction",
     "cardTextFirst": "it is just a fictitious text of the printing and typesetting industry.",
     "cardTitleSecond": "You can learn anything",
     "cardTextSecond": "it is just a fictitious text of the printing and typesetting industry.",
-    "buttonMeet": "Schedule a meeting"
+    "buttonMeet": "Read more"
   },
   "StartBlock": {
-    "ourBlock": "Our blog",
-    "title": "Our weekly construction blog",
-    "text": "It's just the dummy text of the printing and typesetting industry has been the industry's standard dummy text.",
+    "ourBlock": "NEWS",
+    "title": "We try to provide you with fast, interesting and up-to-date information about the most important events taking place in the Company.",
+    "text": "We try to provide you with fast, interesting and up-to-date information about the most important events taking place in the Company.",
     "readMore": "Read more"
   },
   "StartHistory": {
@@ -148,9 +148,9 @@
     "cardTextEight": "Project management"
   },
   "StartTeam": {
-    "ourTeam": "Our team",
+    "ourTeam": "OUR MENTORS",
     "title": "Meet our distinguished team",
-    "text": "This is just a dummy text for the printing and typesetting industry. Was the standard dummy text in the industry.",
+    "text": "Our team consists of scientists and specialists with many years of experience. \nOur team has made a significant contribution to the extraction and development of natural raw materials - the national wealth of the Republic of Uzbekistan.\nWe strive to develop the professional potential of each employee, conduct regular practical training, improve qualifications, and support the desire of colleagues to acquire additional knowledge. \nA significant strength of our company is the mentorship of professionals. A lot of successfully completed projects, the well-deserved trust of our customers, thanks to our older generation of employees - this is what we can be proud of today.",
     "cardNameOne": "Tony Stark",
     "cardPositionOne": "Agent",
     "cardNameTwo": "Bob Harris",

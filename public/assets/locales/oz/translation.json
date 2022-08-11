@@ -13,38 +13,38 @@
     "readMore": "Batafsil"
   },
   "StartAbout": {
-    "project": "28 ta loyiha muvaffaqiyatli yakunlandi",
-    "about": "Biz haqimizda",
+    "project": "280 ta loyiha muvaffaqiyatli yakunlandi",
+    "about": "Biz to'g'rimizda",
     "history": "Bizning hikoyamiz",
-    "text": "\"O'ZLITINEFTGAZ\" aksiyadorlik jamiyati O'zbekistondagi uglevodorod konlarini o'zlashtirish va o'zlashtirish hamda neft va gaz ob'ektlari qurilishini har tomonlama ilmiy va loyihaviy ta'minlashni ta'minlovchi O'zbekistonning tarmoqdagi yetakchi ilmiy-tadqiqot va loyiha instituti...",
-    "design": "Dizayn",
-    "development": "Rivojlanish",
+    "text": "\"O'ZLITINEFTGAZ\" AJ neft-gaz majmuasining ishlab chiqarish ob'ektlarini, shu jumladan neft va gazni qayta ishlash tizimlarini, tabiiy gazni tashishni qurish va ulardan foydalanishni qo'llab-quvvatlovchi integratsiyalashgan ilmiy-texnologik va loyihalash kompaniyasidir.",
+    "design": "Dizayn va tadqiqot ishlari",
+    "development": "Tadqiqot ishi",
     "automation": "Avtomatlashtirish"
   },
   "StartOurCategory": {
-    "ourCategory": "BIZNING KATEGORIYALARIMIZ",
+    "ourCategory": "BIZNING BO'LIMLARIMIZ",
     "ourLevel": "Bizning jahon darajasidagi muhandislik toifamiz",
-    "text": "Yuqori texnologiyali, yuqori sifatli loyiha hujjatlarini ishlab chiqish va amalga oshirish bilan to'liq tsikl bo'yicha loyihalash ishlari.",
-    "service": "Uyda parvarishlash",
-    "construction": "Umumiy qurilish",
-    "restructured": "Qayta tuzilgan",
-    "control": "Loyihalar boshqaruvi"
+    "text": "\"O'ZLITINEFTGAZ\" AJ tarkibida 4 ta bo'lim, AUP va umumiy bo'limlar mavjud.",
+    "service": "Xodimlar",
+    "construction": "Patentlar",
+    "restructured": "Bajarilgan ishlar",
+    "control": "Ish yillari"
   },
   "StartFullWidth": {
     "believe": "Ishonch",
     "playVideo": "Video ijro etish",
-    "title": "Biz murakkab muammo yaratish va barcha turdagi xizmatlarni taqdim etamiz. Eng yaxshi xizmatlar uchun bugun biz bilan bog'laning.",
-    "text": "Biz murakkab muammo yaratish va barcha turdagi xizmatlarni taqdim etamiz. Eng yaxshi xizmatlar uchun bugun biz bilan bog'laning.",
+    "title": "“O‘ZLITINEFTGAZ” AK ILMIY DARAJALARI BERISH TO‘G‘RISIDA ILMIY KENGIS DSC.23/25.08.2021.T.136.01.",
+    "text": "Qaroriga muvofiq, O‘zbekiston Respublikasi Prezidentining 2020-yil 29-oktabrdagi “Ilm-fanni 2030-yilgacha rivojlantirish konsepsiyasini tasdiqlash to‘g‘risida”gi PF-6097-son qarorida belgilangan vazifalar ijrosini ta’minlash. O‘zbekiston Respublikasi Vazirlar Mahkamasi huzuridagi Oliy attestatsiya komissiyasining (OAK) 2021-yil 25-avgustdagi 369-son qarori bilan “O‘ZLITINEFTGAZ” AJ qoshida ixtisoslashtirilgan ilmiy kengash (DSc.23/25.08.2021.T.136.01) tashkil etildi. 04.00.13 “Neft va gaz konlarini o‘zlashtirish va ulardan foydalanish” ixtisosligi bo‘yicha falsafa doktori (PhD) va fan doktori (DSc) ilmiy darajalarini berish. Ushbu kengashning tashkil etilishi yuqori malakali ilmiy va muhandislik kadrlarini tayyorlash va ularni ilmiy faoliyatga yo‘naltirish, neft-gaz operatsiyalarida texnologik yutuqni ta’minlash hamda malakali kadrlar mavjudligini hisobga olgan holda, jadal o‘qitish va sohaga jalb etishga xizmat qiladi. mutaxassislarning ilmiy va texnologik faoliyati, shuningdek, ilmiy yo'nalishlarni jadal shakllantirish va rivojlantirish uchun.",
     "cardTitleFirst": "Yuqori sifatli dizayn",
     "cardTextFirst": "bu matbaa va matn terish sanoatining soxta matni.",
     "cardTitleSecond": "Siz hamma narsani bilib olishingiz mumkin",
     "cardTextSecond": "bu matbaa va matn terish sanoatining soxta matni.",
-    "buttonMeet": "Uchrashuvni rejalashtirish"
+    "buttonMeet": "Davomini o'qish"
   },
   "StartBlock": {
-    "ourBlock": "Bizning blog",
-    "title": "Bizning haftalik qurilish blogimiz",
-    "text": "Bu shunchaki matbaa va matn terish sanoatining soxta matni sanoatning standart qo'g'irchoq matni bo'lgan.",
+    "ourBlock": "YANGILIKLAR",
+    "title": "Biz sizga Kompaniyada ro'y berayotgan eng muhim voqealar haqida tezkor, qiziqarli va dolzarb ma'lumotlarni taqdim etishga harakat qilamiz.",
+    "text": "Biz sizga Kompaniyada ro'y berayotgan eng muhim voqealar haqida tezkor, qiziqarli va dolzarb ma'lumotlarni taqdim etishga harakat qilamiz.",
     "readMore": "Davomini o'qish"
   },
   "StartHistory": {
@@ -148,9 +148,9 @@
     "cardTextEight": "Loyihalar boshqaruvi"
   },
   "StartTeam": {
-    "ourTeam": "Bizning jamoamiz",
+    "ourTeam": "BIZNING MUSTATBORLARIMIZ",
     "title": "Hurmatli jamoamiz bilan tanishing",
-    "text": "Bu matbaa va matn terish sanoati uchun shunchaki soxta matn. Sanoatdagi standart qo'g'irchoq matn edi.",
+    "text": "Jamoamiz ko‘p yillik tajribaga ega olim va mutaxassislardan iborat. \nBizning jamoamiz Oʻzbekiston Respublikasining milliy boyligi boʻlgan tabiiy xomashyoni qazib olish va oʻzlashtirishga katta hissa qoʻshdi.\nBiz har bir xodimning kasbiy salohiyatini rivojlantirish, muntazam ravishda amaliy mashgʻulotlar oʻtkazish, malakasini oshirish, ularni qoʻllab-quvvatlashga intilamiz. hamkasblarning qo'shimcha bilim olish istagi. \nKompaniyamizning muhim kuchi - bu mutaxassislarning ustozligi. Muvaffaqiyatli amalga oshirilgan ko'plab loyihalar, mijozlarimizning munosib ishonchi, keksa avlod xodimlarimiz tufayli biz bugun faxrlansak arziydi.",
     "cardNameOne": "Toni Stark",
     "cardPositionOne": "Agent",
     "cardNameTwo": "Bob Xarris",
