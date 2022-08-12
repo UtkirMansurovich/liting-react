@@ -129,36 +129,12 @@
     "serviceHome": "Home maintenance",
     "wholeConstruction": "General construction",
     "restructured": "Restructured",
-    "manageProject": "Project management",
-    "cardTitle": "Flat",
-    "cardText": "Home maintenance",
-    "cardTitleTwo": "Hotels",
-    "cardTextTwo": "General construction",
-    "cardTitleThree": "Building",
-    "cardTextThree": "Restructured",
-    "cardTitleFour": "Apartments",
-    "cardTextFour": "Project management",
-    "cardTitleFive": "Schools",
-    "cardTextFive": "Home maintenance",
-    "cardTitleSix": "Government",
-    "cardTextSix": "General construction",
-    "cardTitleSeven": "Stadiums",
-    "cardTextSeven": "Restructured",
-    "cardTitleEight": "Hospitals",
-    "cardTextEight": "Project management"
+    "manageProject": "Project management"
   },
   "StartTeam": {
     "ourTeam": "OUR MENTORS",
     "title": "Meet our distinguished team",
-    "text": "Our team consists of scientists and specialists with many years of experience. \nOur team has made a significant contribution to the extraction and development of natural raw materials - the national wealth of the Republic of Uzbekistan.\nWe strive to develop the professional potential of each employee, conduct regular practical training, improve qualifications, and support the desire of colleagues to acquire additional knowledge. \nA significant strength of our company is the mentorship of professionals. A lot of successfully completed projects, the well-deserved trust of our customers, thanks to our older generation of employees - this is what we can be proud of today.",
-    "cardNameOne": "Tony Stark",
-    "cardPositionOne": "Agent",
-    "cardNameTwo": "Bob Harris",
-    "cardPositionTwo": "Director of Sales",
-    "cardNameThree": "Jim Carrey",
-    "cardPositionThree": "Builder",
-    "cardNameFour": "Alfred John",
-    "cardPositionFour": "Director of Sales"
+    "text": "Our team consists of scientists and specialists with many years of experience. \nOur team has made a significant contribution to the extraction and development of natural raw materials - the national wealth of the Republic of Uzbekistan.\nWe strive to develop the professional potential of each employee, conduct regular practical training, improve qualifications, and support the desire of colleagues to acquire additional knowledge. \nA significant strength of our company is the mentorship of professionals. A lot of successfully completed projects, the well-deserved trust of our customers, thanks to our older generation of employees - this is what we can be proud of today."
   },
   "StartClient": {
     "title": "Our partners",

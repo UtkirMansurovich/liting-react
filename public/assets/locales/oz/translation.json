@@ -129,36 +129,12 @@
     "serviceHome": "Uyda parvarishlash",
     "wholeConstruction": "Umumiy qurilish",
     "restructured": "Qayta tuzilgan",
-    "manageProject": "Loyihalar boshqaruvi",
-    "cardTitle": "Yassi",
-    "cardText": "Uyda parvarishlash",
-    "cardTitleTwo": "Mehmonxonalar",
-    "cardTextTwo": "Umumiy qurilish",
-    "cardTitleThree": "Bino",
-    "cardTextThree": "Qayta tuzilgan",
-    "cardTitleFour": "Kvartiralar",
-    "cardTextFour": "Loyihalar boshqaruvi",
-    "cardTitleFive": "Maktablar",
-    "cardTextFive": "Uyda parvarishlash",
-    "cardTitleSix": "Hukumat",
-    "cardTextSix": "Umumiy qurilish",
-    "cardTitleSeven": "Stadionlar",
-    "cardTextSeven": "Qayta tuzilgan",
-    "cardTitleEight": "Kasalxonalar",
-    "cardTextEight": "Loyihalar boshqaruvi"
+    "manageProject": "Loyihalar boshqaruvi"
   },
   "StartTeam": {
     "ourTeam": "BIZNING MUSTATBORLARIMIZ",
     "title": "Hurmatli jamoamiz bilan tanishing",
-    "text": "Jamoamiz ko‘p yillik tajribaga ega olim va mutaxassislardan iborat. \nBizning jamoamiz Oʻzbekiston Respublikasining milliy boyligi boʻlgan tabiiy xomashyoni qazib olish va oʻzlashtirishga katta hissa qoʻshdi.\nBiz har bir xodimning kasbiy salohiyatini rivojlantirish, muntazam ravishda amaliy mashgʻulotlar oʻtkazish, malakasini oshirish, ularni qoʻllab-quvvatlashga intilamiz. hamkasblarning qo'shimcha bilim olish istagi. \nKompaniyamizning muhim kuchi - bu mutaxassislarning ustozligi. Muvaffaqiyatli amalga oshirilgan ko'plab loyihalar, mijozlarimizning munosib ishonchi, keksa avlod xodimlarimiz tufayli biz bugun faxrlansak arziydi.",
-    "cardNameOne": "Toni Stark",
-    "cardPositionOne": "Agent",
-    "cardNameTwo": "Bob Xarris",
-    "cardPositionTwo": "Savdo bo'yicha boshqaruvchi",
-    "cardNameThree": "Jim Kerri",
-    "cardPositionThree": "Quruvchi",
-    "cardNameFour": "Alfred Jon",
-    "cardPositionFour": "Savdo bo'yicha boshqaruvchi"
+    "text": "Jamoamiz ko‘p yillik tajribaga ega olim va mutaxassislardan iborat. \nBizning jamoamiz Oʻzbekiston Respublikasining milliy boyligi boʻlgan tabiiy xomashyoni qazib olish va oʻzlashtirishga katta hissa qoʻshdi.\nBiz har bir xodimning kasbiy salohiyatini rivojlantirish, muntazam ravishda amaliy mashgʻulotlar oʻtkazish, malakasini oshirish, ularni qoʻllab-quvvatlashga intilamiz. hamkasblarning qo'shimcha bilim olish istagi. \nKompaniyamizning muhim kuchi - bu mutaxassislarning ustozligi. Muvaffaqiyatli amalga oshirilgan ko'plab loyihalar, mijozlarimizning munosib ishonchi, keksa avlod xodimlarimiz tufayli biz bugun faxrlansak arziydi."
   },
   "StartClient": {
     "title": "Bizning hamkorlarimiz",

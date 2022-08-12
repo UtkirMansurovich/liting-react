@@ -1,13 +1,18 @@
-import React, {useState} from "react";
+import React, {useState, useContext} from "react";
 import {useTranslation} from 'react-i18next';
+import { AppContext } from "../../context";
 import StartServiceModal from "./StartServiceModal";
 
-const StartService = () => {
+const StartService = ({cheifEngineers}) => {
+    
     const [openGip, setOpenGip] = useState(false);
+    const [id, setId] = useState('');
     const { t } = useTranslation();
+    const {getCookie} = useContext(AppContext);
 
-    const openModal = () => {
+    const openModal = (id) => {
         setOpenGip(prev => !prev);
+        setId(id);
     }
 
     return(
@@ -47,83 +52,30 @@ const StartService = () => {
                             </ul>
                         </div> */}
                         <div className="row gallery-grid">
-                            <div className="col-lg-3 col-md-6 filter-box h-main">
-                                <div className="service-item animate-img mb-xl-20" onClick={openModal} style={{cursor: "pointer"}}>
-                                    <img src="../assets/images/services/gipi-1.jpg" className="image-fit" alt="img"/>
-                                    <div className="text-wrapper">
-                                        <h5 className="text-custom-blue no-margin fw-600 fs-20">{t("StartService.cardTitle")}</h5>
-                                        <p className="text-light-white no-margin">{t("StartService.cardText")}</p>
+                            {cheifEngineers && cheifEngineers.map((engineer, index) =>
+                                <div className="col-lg-3 col-md-6 filter-box h-main" key={index}>
+                                    <div className="service-item animate-img mb-xl-20" onClick={()=>openModal(engineer.id)} style={{cursor: "pointer"}}>
+                                        <img src={engineer.image} className="image-fit" alt="img"/>
+                                        <div className="text-wrapper">
+                                            <h5 className="text-custom-blue no-margin fw-600 fs-20">
+                                                {getCookie.i18next === 'en' ? engineer.fullName_en :
+                                                            getCookie.i18next === 'uz' ? engineer.fullName_uz :
+                                                                getCookie.i18next === 'oz' ? engineer.fullName_oz : engineer.fullName_ru }    
+                                            </h5>
+                                            <p className="text-light-white no-margin">
+                                                {getCookie.i18next === 'en' ? engineer.position_en :
+                                                            getCookie.i18next === 'uz' ? engineer.position_uz :
+                                                                getCookie.i18next === 'oz' ? engineer.position_oz : engineer.position_ru }
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-6 filter-box genrl-cons">
-                                <div className="service-item animate-img mb-xl-20" onClick={openModal} style={{cursor: "pointer"}}>
-                                    <img src="../assets/images/services/gipi-2.jpg" className="image-fit" alt="img"/>
-                                    <div className="text-wrapper">
-                                        <h5 className="text-custom-blue no-margin fw-600 fs-20">{t("StartService.cardTitleTwo")}</h5>
-                                        <p className="text-light-white no-margin">{t("StartService.cardTextTwo")}</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-6 filter-box restructured">
-                                <div className="service-item animate-img mb-xl-20" onClick={openModal} style={{cursor: "pointer"}}>
-                                    <img src="../assets/images/services/gipi-3.jpg" className="image-fit" alt="img"/>
-                                    <div className="text-wrapper">
-                                        <h5 className="text-custom-blue no-margin fw-600 fs-20">{t("StartService.cardTitleThree")}</h5>
-                                        <p className="text-light-white no-margin">{t("StartService.cardTextThree")}</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-6 filter-box pro-manage">
-                                <div className="service-item animate-img mb-xl-20" onClick={openModal} style={{cursor: "pointer"}}>
-                                    <img src="../assets/images/services/gipi-4.jpg" className="image-fit" alt="img"/>
-                                    <div className="text-wrapper">
-                                        <h5 className="text-custom-blue no-margin fw-600 fs-20">{t("StartService.cardTitleFour")}</h5>
-                                        <p className="text-light-white no-margin">{t('StartService.cardTextFour')}</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-6 filter-box h-main">
-                                <div className="service-item animate-img mb-md-20" onClick={openModal} style={{cursor: "pointer"}}>
-                                    <img src="../assets/images/services/gipi-5.jpg" className="image-fit" alt="img"/>
-                                    <div className="text-wrapper">
-                                        <h5 className="text-custom-blue no-margin fw-600 fs-20">{t("StartService.cardTitleFive")}</h5>
-                                        <p className="text-light-white no-margin">{t("StartService.cardTextFive")}</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-6 filter-box genrl-cons">
-                                <div className="service-item animate-img mb-md-20" onClick={openModal} style={{cursor: "pointer"}}>
-                                    <img src="../assets/images/services/gipi-6.jpg" className="image-fit" alt="img"/>
-                                    <div className="text-wrapper">
-                                        <h5 className="text-custom-blue no-margin fw-600 fs-20">{t("StartService.cardTitleSix")}</h5>
-                                        <p className="text-light-white no-margin">{t("StartService.cardTextSix")}</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-6 filter-box restructured">
-                                <div className="service-item animate-img mb-sm-20" onClick={openModal} style={{cursor: "pointer"}}>
-                                    <img src="../assets/images/services/gipi-7.jpg" className="image-fit" alt="img"/>
-                                    <div className="text-wrapper">
-                                        <h5 className="text-custom-blue no-margin fw-600 fs-20">{t("StartService.cardTitleSeven")}</h5>
-                                        <p className="text-light-white no-margin">{t("StartService.cardTextSeven")}</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-3 col-md-6 filter-box pro-manage">
-                                <div className="service-item animate-img" onClick={openModal} style={{cursor: "pointer"}}>
-                                    <img src="../assets/images/services/gipi-8.jpg" className="image-fit" alt="img"/>
-                                    <div className="text-wrapper">
-                                        <h5 className="text-custom-blue no-margin fw-600 fs-20">{t("StartService.cardTitleEight")}</h5>
-                                        <p className="text-light-white no-margin">{t("StartService.cardTextEight")}</p>
-                                    </div>
-                                </div>
-                            </div>
+                                </div>                                                                  
+                            )}
                         </div>
                     </div>
                 </div>
             </div>
-            <StartServiceModal openGip={openGip} setOpenGip={setOpenGip}/>
+            <StartServiceModal openGip={openGip} setOpenGip={setOpenGip} cheifEngineers={cheifEngineers} id={id}/>
         </section>
     )
 }
