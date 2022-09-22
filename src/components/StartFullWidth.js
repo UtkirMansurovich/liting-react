@@ -3,6 +3,7 @@ import {useTranslation} from "react-i18next";
 
 const StartFullWidth = () => {
     const { t } = useTranslation();
+
     return(
         <section className="full-services-sec bg-light-white">
             <div className="container-fluid no-padding">
@@ -47,7 +48,6 @@ const StartFullWidth = () => {
                                 {/*        </div>*/}
                                 {/*    </div>*/}
                                 {/*</div>*/}
-                                <a href="#" className="btn-first btn-border">{t("StartFullWidth.buttonMeet")}</a>
                             </div>
                         </div>
                     </div>

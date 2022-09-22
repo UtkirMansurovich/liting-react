@@ -66,7 +66,7 @@ const PageCom = (props) => {
                     </div>
                 </div>
             </div>
-            <section className="section-padding bg-light-white" >
+            <section className="section-padding bg-light-white our-history">
                 <div className="container">
                     <div className="row " >
                         <div className="col-lg-12">
