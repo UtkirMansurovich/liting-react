@@ -1593,8 +1593,8 @@ label.custom-checkbox .checkmark:after {
     left: 0;
     right: 0;
     transform: translateY(-10px);
-    border-bottom: solid 2px #fd5d14;
-    box-shadow: 0 2px 2px 1px rgba(0,0,0,.15);
+    /* border-bottom: solid 2px #fd5d14; */
+    /* box-shadow: 0 2px 2px 1px rgba(0,0,0,.15); */
     background: #fff;
     visibility: hidden;
     opacity: 0;
@@ -1602,7 +1602,9 @@ label.custom-checkbox .checkmark:after {
     width: 500px;
 }
 .menu-item-has-children:hover>.sub-menu{
-    border-top: 1px solid #eee;
+    /* border-top: 1px solid #eee;
+    border-bottom: solid 2px #fd5d14;
+    box-shadow: 0 2px 2px 1px rgba(0,0,0,.15); */
     opacity: 1;
     visibility: visible;
     z-index: 999;
