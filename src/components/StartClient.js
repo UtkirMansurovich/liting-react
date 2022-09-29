@@ -50,7 +50,7 @@ const StartClient = ({sliderClient}) => {
                     <div className="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
                         <div className="section-title wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1s">
                             <h2>{t("StartClient.title")}</h2>
-                            <p>{t("StartClient.text")}</p>
+                            {/* <p>{t("StartClient.text")}</p> */}
                         </div>
                     </div>
                 </div>
