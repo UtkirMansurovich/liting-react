@@ -76,7 +76,7 @@ const PageCom = (props) => {
                                         <div className="blogsParent">
                                             <div className="post-date">
                                                 <p className='post-data-blogs-a' id="date">
-                                                    {blog.createdAt.slice(0, 10)}
+                                                    {blog.publishDate.slice(0, 10)}
                                                     <i style={{marginLeft:"15px"}} className="fas fa-eye"></i>
                                                     <span className="pl-1">{blog.view_count}</span>
                                                 </p>

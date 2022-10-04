@@ -80,14 +80,14 @@ const BlogPagesCom = (props) => {
                                     <img src={BASE_URL_PHOTO + texts.mainImage.hashId} className="card-img-top blogsImage" alt="imagePhoto"/>
                                 </div>
                                 <div className="post-date">
-                                    <a href="#" className="post-data-a">{texts.createdAt.slice(0,10)}</a>
+                                    <p className="post-data-a">{texts.publishDate.slice(0,10)}</p>
                                 </div>
                                 <div className="blogCats">
-                                    <a href="#" className="cats-office">
+                                    <p className="cats-office m-0">
                                         {getCookie.i18next === "en" ? currentItems[0].category.name_en :
                                           getCookie.i18next === "oz" ? currentItems[0].category.name_oz :
                                             getCookie.i18next === "uz" ? currentItems[0].category.name_uz : blogs[0].category.name_ru}
-                                    </a>
+                                    </p>
                                     {/*<a href="#" className="cats-rent">News</a>*/}
                                 </div>
                                 <div className="card-body blogsBody">

@@ -52,7 +52,7 @@ const AppProvider = ({ children }) => {
           .get(BASE_URL + '/api/blog/all')
           .then((res) => {
               setAllBlogs(res.data.object);
-              // console.log(res.data.object);
+              console.log(res.data.object);
           })
           .catch((err) => {
               console.log(err);
