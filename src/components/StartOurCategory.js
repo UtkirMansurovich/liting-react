@@ -114,7 +114,7 @@ const StartOurCategory = ({slidesOurCategory}) => {
                                          <a className="nav-link text-custom-black" data-toggle="tab" href="#home-maintainance">
                                              <span style={{display:'flex', justifyContent:'center', alignItems:'self-end'}}>
                                                  <img src="../assets/images/svg/1.png" className="image-fit" alt="svg"/>
-                                                 <p style={{margin:'0 0 0 5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}>447</p>
+                                                 <p style={{margin:'0 0 0 5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}>443</p>
                                              </span>
                                              {t("StartOurCategory.service")}
                                          </a>
@@ -123,7 +123,7 @@ const StartOurCategory = ({slidesOurCategory}) => {
                                          <a className="nav-link text-custom-black" data-toggle="tab" href="#project-management">
                                              <span style={{display:'flex', justifyContent:'center', alignItems:'self-end'}}>
                                                  <img src="../assets/images/svg/4.png" className="image-fit" alt="svg"/>
-                                                 <p style={{margin:'0 0 0 5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}>443</p>
+                                                 <p style={{margin:'0 0 0 5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}>55</p>
                                              </span>
                                              {t("StartOurCategory.control")}
                                          </a>
@@ -132,7 +132,7 @@ const StartOurCategory = ({slidesOurCategory}) => {
                                          <a className="nav-link text-custom-black" data-toggle="tab" href="#gen-construction">
                                              <span style={{display:'flex', justifyContent:'center', alignItems:'self-end', marginBottom:'-5px'}}>
                                                  <img src="../assets/images/svg/5.svg" className="image-fit" alt="svg" style={{marginTop:"-5px"}}/>
-                                                 <p style={{margin:'0 0 5px 5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}>55</p>
+                                                 <p style={{margin:'0 0 5px 5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}>57</p>
                                              </span>
                                              {t("StartOurCategory.construction")}
                                          </a>
@@ -141,7 +141,7 @@ const StartOurCategory = ({slidesOurCategory}) => {
                                          <a className="nav-link text-custom-black" data-toggle="tab" href="#restructured">
                                              <span style={{display:'flex', justifyContent:'center', alignItems:'self-end'}}>
                                                  <img src="../assets/images/svg/3.png" className="image-fit" alt="svg"/>
-                                                 <p style={{margin:'0 0 0 5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}>57</p>
+                                                 <p style={{margin:'0 0 0 5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}>616</p>
                                              </span>
                                              {t("StartOurCategory.restructured")}
                                          </a>

@@ -29,17 +29,17 @@ const StartOurHistory = () => {
                         <div className="custom-tabs">
                             <ul className="nav nav-tabs custom p-relative mb-xl-40">
                                 <li className="nav-item">
-                                    <a className="nav-link active" data-toggle="tab" href="#start">1990 - 1999</a>
+                                    <a className="nav-link active" data-toggle="tab" href="#start">2008 - 2012</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" data-toggle="tab" href="#setup">2000 - 2009</a>
+                                    <a className="nav-link" data-toggle="tab" href="#setup">2013 - 2017</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" data-toggle="tab" href="#medium">2010 - 2022</a>
+                                    <a className="nav-link" data-toggle="tab" href="#medium">2018 - 2021</a>
                                 </li>
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <a className="nav-link" data-toggle="tab" href="#advance">2022 - {t("StartHistory.and")}</a>
-                                </li>
+                                </li> */}
                             </ul>
                             <div className="tab-content padding-20 bg-custom-white bx-wrapper">
                                 <div className="tab-pane fade show active" id="start">
@@ -76,7 +76,7 @@ const StartOurHistory = () => {
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <a href="#" className="btn-first btn-submit mt-3">{t("StartHistory.readMore")}</a>
+                                                    {/* <a href="#" className="btn-first btn-submit mt-3">{t("StartHistory.readMore")}</a> */}
                                                 </div>
                                             </div>
                                         </div>
@@ -116,7 +116,7 @@ const StartOurHistory = () => {
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <a href="#" className="btn-first btn-submit mt-3">{t("StartHistory.readMore")}</a>
+                                                    {/* <a href="#" className="btn-first btn-submit mt-3">{t("StartHistory.readMore")}</a> */}
                                                 </div>
                                             </div>
                                         </div>
@@ -156,7 +156,7 @@ const StartOurHistory = () => {
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <a href="#" className="btn-first btn-submit mt-3">{t("StartHistory.readMore")}</a>
+                                                    {/* <a href="#" className="btn-first btn-submit mt-3">{t("StartHistory.readMore")}</a> */}
                                                 </div>
                                             </div>
                                         </div>
@@ -196,7 +196,7 @@ const StartOurHistory = () => {
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <a href="#" className="btn-first btn-submit mt-3">{t("StartHistory.readMore")}</a>
+                                                    {/* <a href="#" className="btn-first btn-submit mt-3">{t("StartHistory.readMore")}</a> */}
                                                 </div>
                                             </div>
                                         </div>
