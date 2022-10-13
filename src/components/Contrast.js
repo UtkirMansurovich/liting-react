@@ -6,7 +6,7 @@ const Contrast = () => {
   const {clickContrast, selectContrast, clickFontSmall, clickFontMedium, clickFontBig, selectFontSmall, selectFontBig, openContrast, contrastRef, closeContrast, clickStandard } = useContext(AppContext);
   const { t } = useTranslation();
   return(
-    <div className="containerContrast" ref={contrastRef} onClick={closeContrast}>
+    <div className="containerContrast menu-style" ref={contrastRef} onClick={closeContrast}>
       <div className="containerInside">
         <div className="boxContrast">
           <div className="box-contrast">
