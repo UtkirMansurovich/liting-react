@@ -9,11 +9,17 @@ const StartOurHistory = () => {
             <div className="container">
                 <div className="section-header">
                     <div className="section-heading">
-                        <h5 className="text-custom-blue wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">{t("StartHistory.ourHistory")}</h5>
-                        <h3 className="text-custom-white fw-700">{t("StartHistory.title")}</h3>
+                        {/* <h5 className="text-custom-blue wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">{t("StartHistory.ourHistory")}</h5> */}
+                        <h3 className="text-custom-white fw-700">
+                            {t("StartHistory.ourHistory")}
+                            {/* {t("StartHistory.title")} */}
+                        </h3>
                     </div>
                     <div className="section-description">
-                        <p className="text-custom-white">{t("StartHistory.text")}</p>
+                        <p className="text-custom-white">
+                            {t("StartHistory.title")}
+                            {/* {t("StartHistory.text")} */}
+                        </p>
                     </div>
                 </div>
                 <div className="row">

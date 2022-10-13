@@ -20,7 +20,7 @@ const Training = () => {
               animationDuration: "0.2s",
               animationDelay: "0.3s",
               animationName: "undefined"
-            }}>{t("Training.Enhancing")}</h2>
+            }}>{t("Training.Enhancing")}</h2> 
         <h4 className="wow fadeInUp animated animated"
             data-wow-duration="0.4s"
             data-wow-delay="0.3s"
