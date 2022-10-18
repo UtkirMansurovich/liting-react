@@ -83,7 +83,7 @@ const Training = () => {
           </div>
 
           <div className="box-middle">
-            <p className="box-middle-p">{t("Training.Training")}</p>
+            <a href='https://www.youtube.com/watch?v=XijFy3-IMFY&t=74s' target="_blank" className="box-middle-p">{t("Training.Training")}</a>
           </div>
 
           <div className="box-right">
