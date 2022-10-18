@@ -1397,8 +1397,10 @@ label.custom-checkbox .checkmark:after {
 }
 .menu-style .header>.logo img{
     position: absolute;
-    height: 75px;
-    width: 100px;
+    top: 5px;
+    left: 7px;
+    height: 70px;
+    /* width: 100px; */
     z-index: 10;
 
 }

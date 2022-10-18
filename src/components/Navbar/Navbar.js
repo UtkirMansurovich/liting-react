@@ -89,7 +89,7 @@ const Navbar = () => {
                           <div className="header">
                               <div className="logo">
                                   <Link to="/" >
-                                      <img src="../../assets/images/logo.png" className="logo" alt="Logo"/>
+                                      <img src="../../assets/images/login-logo1.png" className="logo" alt="Logo"/>
                                   </Link>
                               </div>
                               <div className="right-side">
