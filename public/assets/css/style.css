@@ -2960,7 +2960,7 @@ background-position: center;
 }
 /*call-to-action*/
 .bg-call-to-action{
-    background-image: url(../images/homepage-1/free-consultation-bg.jpg);
+    background-image: url(../images/homepage-1/history.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     position: relative;
@@ -3134,7 +3134,7 @@ background-position: center;
 ========================*/
 /*subheader*/
 .subheader{
-    background: url(../images/about-us/banner-1920x265.jpg);
+    background: url(../images/about-us/imageForPage.webp);
     width: 100%;
     background-size: cover;
     background-position: center;

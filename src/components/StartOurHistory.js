@@ -27,8 +27,12 @@ const StartOurHistory = () => {
                         <div className="video-box mb-xl-40">
                             <div className="video_wrapper">
                                 <div className="videoPoster">
-                                    <img src="../assets/images/img.jpg" className="image-fit" alt="#"/>
-                                    <div className="video-inner video-btn-wrapper"> <a href="https://www.youtube.com/watch?v=KH1pcNUTa6U" className="text-custom-blue popup-video"><i className="far fa-play-circle"></i></a></div>
+                                    <img src="../assets/images/imageForVideo.jpg" className="image-fit" alt="#"/>
+                                    <div className="video-inner video-btn-wrapper"> 
+                                        <a href="https://www.youtube.com/watch?v=ZQN1USUggno&t=1s" className="text-custom-blue popup-video" target="_blank">
+                                        <i className="far fa-play-circle"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

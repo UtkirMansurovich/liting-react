@@ -16,16 +16,16 @@ const StartFooter = () => {
                             </div>
                             <ul className="custom links">
                                 <li>
-                                    <a href="index-2.html" className="text-custom-white">{t("StartFooter.linkOne")}</a>
+                                    <a href="https://minenergy.uz/ru" target="_blank" className="text-custom-white">{t("StartFooter.linkOne")}</a>
                                 </li>
                                 <li>
-                                    <a href="about.html" className="text-custom-white">{t("StartFooter.linkTwo")}</a>
+                                    <a href="https://ung.uz/" target="_blank" className="text-custom-white">{t("StartFooter.linkTwo")}</a>
                                 </li>
                                 <li>
-                                    <a href="blog.html" className="text-custom-white">{t("StartFooter.linkThree")}</a>
+                                    <a href="https://www.gov.uz/ru/" target="_blank" className="text-custom-white">{t("StartFooter.linkThree")}</a>
                                 </li>
                                 <li>
-                                    <a href="faqs.html" className="text-custom-white">{t("StartFooter.linkFour")}</a>
+                                    <a href="https://my.gov.uz/ru" target="_blank" className="text-custom-white">{t("StartFooter.linkFour")}</a>
                                 </li>
                             </ul>
                         </div>
@@ -50,25 +50,25 @@ const StartFooter = () => {
                             </div>
                             <ul className="custom links">
                                 <li>
-                                    <a href="portfolio-detail.html" className="text-custom-white">{t("StartFooter.contactOne")}</a>
+                                    <p className="text-custom-white">{t("StartFooter.contactOne")}</p>
                                 </li>
                                 <li>
-                                    <a href="cost-calculator.html" className="text-custom-white">{t("StartFooter.contactTwo")}</a>
+                                    <p href="cost-calculator.html" className="text-custom-white">{t("StartFooter.contactTwo")}</p>
                                 </li>
                                 <li>
-                                    <a href="gallery.html" className="text-custom-white">{t("StartFooter.contactThree")}</a>
+                                    <p href="gallery.html" className="text-custom-white">{t("StartFooter.contactThree")}</p>
                                 </li>
                                 <li>
-                                    <a href="404.html" className="text-custom-white">{t("StartFooter.contactFour")}</a>
+                                    <p href="404.html" className="text-custom-white">{t("StartFooter.contactFour")}</p>
                                 </li>
                                 <li>
-                                    <a href="coming-soon.html" className="text-custom-white">{t("StartFooter.contactFive")}</a>
+                                    <p href="coming-soon.html" className="text-custom-white">{t("StartFooter.contactFive")}</p>
                                 </li>
                                 <li>
-                                    <a href="coming-soon.html" className="text-custom-white">{t("StartFooter.contactSix")}</a>
+                                    <p href="coming-soon.html" className="text-custom-white">{t("StartFooter.contactSix")}</p>
                                 </li>
                                 <li>
-                                    <a href="coming-soon.html" className="text-custom-white">{t("StartFooter.contactSeven")}</a>
+                                    <p href="coming-soon.html" className="text-custom-white">{t("StartFooter.contactSeven")}</p>
                                 </li>
                             </ul>
                         </div>
@@ -81,22 +81,22 @@ const StartFooter = () => {
                             </div>
                             <ul className="custom phoneContact">
                                 <li>
-                                    <a href="portfolio-detail.html" className="text-custom-white">(+998 71) 280-67-00</a>
+                                    <a href="tel:+998712806700" className="text-custom-white">(+998 71) 280-67-00</a>
                                 </li>
                                 <li>
-                                    <a href="cost-calculator.html" className="text-custom-white">(+998 71) 280-67-05</a>
+                                    <a href="tel:+998712806705" className="text-custom-white">(+998 71) 280-67-05</a>
                                 </li>
                                 <li>
-                                    <a href="gallery.html" className="text-custom-white">(+998 71) 280-67-26</a>
+                                    <a href="tel:+998712806726" className="text-custom-white">(+998 71) 280-67-26</a>
                                 </li>
                                 <li>
-                                    <a href="404.html" className="text-custom-white">(+998 71) 280-67-11</a>
+                                    <a href="tel:+998712806711" className="text-custom-white">(+998 71) 280-67-11</a>
                                 </li>
                                 <li>
-                                    <a href="coming-soon.html" className="text-custom-white">(+998 71) 280-67-11</a>
+                                    <a href="tel:+998712806711" className="text-custom-white">(+998 71) 280-67-11</a>
                                 </li>
                                 <li>
-                                    <a href="coming-soon.html" className="text-custom-white">liting@liting.uz</a>
+                                    <a href="mailto:liting@liting.uz" className="text-custom-white" target="_blank">liting@liting.uz</a>
                                 </li>
                                 <li>
                                     <a href="coming-soon.html" className="text-custom-white">{t("StartFooter.workTime")}: 8:00 - 17:00</a>
@@ -111,7 +111,7 @@ const StartFooter = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
-                        <p className="text-custom-white no-margin text-center">{t("StartFooter.footerBelowCopyRight")} © {new Date().getFullYear()} <Link to="/" target="_blank" className="text-custom-white">{t("StartFooter.footerBelowText")}</Link> {t("StartFooter.footerBelowTextOne")} </p>
+                        <p className="text-custom-white no-margin text-center">{t("StartFooter.footerBelowCopyRight")} © {new Date().getFullYear()} <Link to="/" target="_blank" className="text-custom-white">{t("StartFooter.footerBelowText")}</Link> {t("StartFooter.footerBelowTextOne")}</p>
                         <p className="text-custom-white no-margin text-center">{t("StartFooter.footerBelowTextTwo")}</p>
                     </div>
                 </div>
