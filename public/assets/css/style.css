@@ -148,8 +148,8 @@ label.error{
     position: relative;
 }
 .custom-container{
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 .before-none:before,
 .after-none:after,
@@ -1386,7 +1386,7 @@ label.custom-checkbox .checkmark:after {
     height: 80px;
 }
 .logon-parent{
-    width:200px;
+    /* width:200px; */
     height: 100%;
     display: flex;
     justify-content: center;
