@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 .all-contrast{
-  filter: grayscale(100%);
+  filter: grayscale(1);
 }
 
 /*slideHeader*/
@@ -555,6 +555,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 5%;
 }
 .box-left, .box-right{
   display: flex;

@@ -98,7 +98,7 @@ const Navbar = () => {
 
                                       <div className="logo">
                                           <Link to="/">
-                                              <img src="../../assets/images/logo.png" className="img-fluid image-fit" alt="Logo"/>
+                                              <img src="../../assets/images/login-logo1.png" className="img-fluid image-fit" alt="Logo"/>
                                           </Link>
                                       </div>
                                       <nav>
@@ -111,7 +111,7 @@ const Navbar = () => {
 
                                   </div>
                                   <div className="hamburger-menu">
-                                      <div className="menu-btn" onClick={() => setToggle(prev => !prev)}>
+                                      <div className={toggle ? 'menu-btn active' : 'menu-btn'} onClick={() => setToggle(prev => !prev)}>
                                           <span></span>
                                           <span></span>
                                           <span></span>

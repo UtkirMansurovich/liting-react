@@ -1481,7 +1481,7 @@ label.custom-checkbox .checkmark:after {
     transition: 0.3s;
     position: relative;
     top: 7.4px;
-    background-color: #fff;
+    background-color: #111111;
 }
 .menu-style .header .right-side .hamburger-menu .menu-btn.active span:nth-child(2){
     display: none;
@@ -1489,7 +1489,7 @@ label.custom-checkbox .checkmark:after {
 .menu-style .header .right-side .hamburger-menu .menu-btn.active span:last-child{
     transform: rotate(-45deg);
     transition: 0.3s;
-    background-color: #fff;
+    background-color: #111111;
 }
 .navigation{
     display: flex;

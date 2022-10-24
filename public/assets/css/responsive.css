@@ -4,10 +4,35 @@ Author: Slidesigma
 Author URL: https://www.templatemonster.com/vendors/slidesigmathemes/
 Version: 1.0.0
 */
+@media (max-width: 1680px) {
+	.custom-container {
+		padding-right: 60px;
+		padding-left: 60px;
+	}
+}
+@media (max-width: 1600px) {
+	.right-side-2 {
+		display: none;
+	}
+}
+@media (max-width: 1400px) {
+	.main-menu>li.menu-item>a{
+		padding: 18px 10px;	
+	}
+}
+@media (max-width: 1260px) {
+	.custom-container{
+		padding-right: 30px !important;
+    	padding-left: 30px !important;
+	}
+	.fs-14{
+		font-size: 12px;
+	}
+}
 @media (max-width: 1200px) {
 	/*navigation*/
 	.main-menu>li.menu-item>a{
-		padding: 18px 5px;
+		padding: 18px 10px;
 	}
 	.custom-container{
 		padding-right: 60px;
@@ -37,6 +62,90 @@ Version: 1.0.0
 	}
 	.mb-lg-80 {
 		margin-bottom: 80px;
+	}
+}
+@media (max-width: 1073px) {
+	/*navigation*/
+	
+	.main-menu>li.menu-item>a{
+		padding: 18px;
+	}
+	.main-menu>li.menu-item,
+	.menu-item-has-children>.sub-menu>li.menu-item{
+		padding: 0;
+	}
+	.menu-style .header .right-side .navigation .logo,
+	.menu-style .header .right-side .navigation .social-media,
+	.main-menu{
+		display: block;
+	}
+	.menu-style .header .right-side .navigation{
+		position: fixed;
+	    left: -320px;
+	    background: #ffff;
+	    width: 320px;
+	    top: 0;
+	    height: 100vh;
+	    transition: 0.5s all;
+	    overflow: auto;
+	    z-index: 100;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	.menu-style .header .right-side .navigation .logo{
+		margin: 10px auto;
+	}
+	.menu-style .header .right-side .navigation.active .social-media,
+	.menu-style .header .right-side .navigation.active{
+		left: 0;
+	}
+	.menu-style .header .right-side .hamburger-menu{
+		display: flex;
+		margin-right: 20px;
+	}
+	.menu-style .header .right-side .navigation .main-menu>li.menu-item>a{
+		display: flex;
+		justify-content: space-between;
+	}
+	.main-menu>li.menu-item>a:after{
+		bottom: 0;
+	}
+	.menu-style .header .right-side-2,
+	.main-menu>li.menu-item:hover>a:after, .main-menu>li.menu-item.active>a:after{
+		display: none;
+	}
+	.menu-item-has-megamenu:hover>a:after, .menu-item-has-children:hover>a:after {
+	    transform: rotate(0deg);
+	}
+	.menu-item-has-megamenu.open a>arrow:after,
+	.menu-item-has-children.open a>arrow:after{
+		transform: rotate(180deg);
+	}
+	.menu-item-has-children.nav-postion:hover>.sub-menu {
+	    top: 0;
+	    transform: translateY(0%);
+	}
+	.menu-item-has-megamenu>.megamenu,
+	.menu-item-has-children>.sub-menu{
+		width: 100%;
+		position: relative;
+		opacity: 1;
+		transform: translateY(0px);
+	    visibility: visible;
+	    display: none;
+	    border-bottom: none;
+	}
+	.menu-item-has-megamenu.open .megamenu,
+	.menu-item-has-children.open .sub-menu{
+		border-bottom: solid 2px #376bff;
+	}
+	.main-menu li.menu-item-has-children.open>a{
+	    color: #376bff;
+	}
+	.menu-item-has-children .sub-menu li.menu-item-has-children>.sub-menu {
+	    left: 0;
+	    top: 0;
+	    margin-bottom: 10px;
 	}
 }
 @media (max-width: 992px) {
