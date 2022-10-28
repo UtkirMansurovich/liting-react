@@ -85,26 +85,26 @@ const StartBlock = () => {
                                            <img src={BASE_URL_PHOTO + slides.mainImage.hashId} className="slidesOurBlockImg" />
                                        </div>
                                        <div className="post-date">
-                                           <a href="#" className="post-data-a">{slides.createdAt.slice(0,10)}</a>
+                                           <p className="post-data-a">{slides.createdAt.slice(0,10)}</p>
                                        </div>
                                        <div>
                                            <div>
                                                <div className="cats">
-                                                   <a href="#" className="cats-office">{
+                                                   <Link to={/blogs/+slides.category.id} className="cats-office">{
                                                        getCookie.i18next === "en" ? slides.category.name_en.slice(0,20) :
                                                            getCookie.i18next === "uz" ? slides.category.name_uz.slice(0, 20) :
                                                                getCookie.i18next === "oz" ? slides.category.name_oz.slice(0, 20) : slides.category.name_ru.slice(0, 20)
-                                                   }...</a>
+                                                   }...</Link>
                                                    {/*<a href="#" className="cats-rent">{slides.rent}</a>*/}
                                                </div>
                                            </div>
                                            <div className="post-title-parent">
                                                <h2 className="post-title">
-                                                   <a href="#" className="text-theme">{
+                                                   <Link to={/blogs/+slides.category.id+'/'+slides.id} href="#" className="text-theme">{
                                                         getCookie.i18next === "en" ? slides.title_en :
                                                             getCookie.i18next === "uz" ? slides.title_uz :
                                                                 getCookie.i18next === "oz" ? slides.title_oz : slides.title_ru
-                                                   }</a>
+                                                   }</Link>
                                                </h2>
                                                <p className="text-light-white no-margin">{
                                                     getCookie.i18next === "en" ? slides.anons_en :

@@ -165,13 +165,13 @@ body {
   padding: 5px 10px;
   width: fit-content;
   z-index: 1;
-
 }
 .cats-office{
   color: #fff;
   font-size: 16px;
   position: relative;
 }
+
 /*.cats-office:after{*/
 /*  content:'/';*/
 /*  margin: 0 5px;*/
