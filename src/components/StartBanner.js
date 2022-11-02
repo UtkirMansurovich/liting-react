@@ -6,6 +6,9 @@ import {AppContext} from "../context";
 import {BASE_URL_PHOTO} from "../utills/constant";
 import {Link} from 'react-router-dom';
 import {useTranslation} from "react-i18next";
+import lazyImage from '../images/training.jpg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function SampleNextArrow (props) {
     const { className, style, onClick } = props;
@@ -51,20 +54,8 @@ const StartBanner = () => {
     }
     const {slider, getCookie, closeContrast, contrastRef} = useContext(AppContext);
     const { t } = useTranslation();
-    // console.log(slider);
-
-    // const divide = (text,isWhite) => {
-    //
-    //     for(let i = 5; i < 40; i++) {
-    //         if(text && text[i] === ' ') {
-    //             // console.log(text.slice(0, i))
-    //             if (isWhite)
-    //             return text.slice(0, i)
-    //             else return text.slice(i,40)
-    //         }
-    //     }
-    // }
     
+    if(slider.length > 0 ){
     return(
       <Slider {...setting} ref={contrastRef} onClick={closeContrast}>
           {slider && slider.map((slide, index) =>
@@ -76,49 +67,28 @@ const StartBanner = () => {
                     position:'relative'
                 }} >
                     <div style={{
-                        background:`url(${BASE_URL_PHOTO + slide.mainImage.hashId}) no-repeat center center/cover`,
-                        width:'100%',
-                        height:'100%',
-                        animation: 'scale 20s linear infinite',
-                        position:'absolute',
-                        top:'0',
-                        zIndex:'1',
-                    }} >
-
+                            background:`url(${BASE_URL_PHOTO + slide.mainImage.hashId}) no-repeat center center/cover`,
+                            width:'100%',
+                            height:'100%',
+                            animation: 'scale 20s linear infinite',
+                            position:'absolute',
+                            top:'0',
+                            zIndex:'1' }}>
                     </div>
 
                     <div className="divOpacity" >
-                        {/*<img src={TitleImg} alt="titleImg" className="titleLogo"/>*/}
                         <h1 className="titleLogo">АО «O‘ZLITINEFTGAZ»</h1>
                         <div className="divText" >
                             <h1 className="slideH1">
-                                {getCookie.i18next === 'en' ?
-                                  // divide(slide.title_en,true)
-                                  slide.title_en
-                                  :
-                                  getCookie.i18next === 'uz' ?
-                                    // divide(slide.title_uz, true)
-                                    slide.title_uz
-                                    :
-                                    getCookie.i18next === 'oz' ?
-                                      // divide(slide.title_oz, true)
-                                      slide.title_oz
-                                      :
-                                      // divide(slide.title_ru, true)
-                                  slide.title_ru
-                                }
-                                {/*<span className="h1Span">*/}
-                                {/*    {getCookie.i18next === 'en' ? divide(slide.title_en,false) :*/}
-                                {/*      getCookie.i18next === 'uz' ? divide(slide.title_uz, false) :*/}
-                                {/*        getCookie.i18next === 'oz' ? divide(slide.title_oz, false) : divide(slide.title_ru, false) }*/}
-                                {/*</span>*/}
+                                {getCookie.i18next === 'en' ? slide.title_en 
+                                    : getCookie.i18next === 'uz' ? slide.title_uz
+                                    : getCookie.i18next === 'oz' ? slide.title_oz : slide.title_ru}
                             </h1>
                             <p className="slideP">
                                 {getCookie.i18next === 'en' ? slide.anons_en :
                                   getCookie.i18next === 'uz' ? slide.anons_uz :
                                     getCookie.i18next === 'oz' ? slide.anons_oz : slide.anons_ru }
                             </p>
-                            {/*<div className="slideP" dangerouslySetInnerHTML={{__html: slide.text_oz}}/>*/}
                         </div>
                         <div>
                             <Link to={/blogs/+slide.category.id+'/'+slide.id} className="btn-first btn-submit text-custom-white mr-3 mt-4">{t("StartBanner.readMore")}</Link>
@@ -127,14 +97,18 @@ const StartBanner = () => {
                                   getCookie.i18next === 'uz' ? slide.category.name_uz :
                                     getCookie.i18next === 'oz' ? slide.category.name_oz : slide.category.name_ru }
                             </Link>
-
                         </div>
                     </div>
                 </div>
             </div>
           ) }
       </Slider>
-    )
+    )}else { 
+        return (
+            <div className="preloader">
+                <img src="../assets/images/pre-loader-1.svg" alt="img"/>
+            </div>
+        )}
 }
 
 export default StartBanner

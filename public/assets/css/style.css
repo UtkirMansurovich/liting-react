@@ -95,6 +95,9 @@ Version: 1.0.0
 /*======================
 1.General Code
 ========================*/
+::-webkit-scrollbar {
+    display: none;
+}
 html{
     overflow: hidden;
 }
@@ -493,6 +496,7 @@ label.error{
     line-height: 1.5;
     border: 2px solid #eee;
     color: #111111;
+    cursor: pointer;
 }
 .page-item:hover .page-link,
 .page-item.active .page-link{

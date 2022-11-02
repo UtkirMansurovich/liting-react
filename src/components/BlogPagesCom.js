@@ -5,43 +5,46 @@ import axios from "axios";
 import {useTranslation} from "react-i18next";
 import {AppContext} from "../context";
 import ReactPaginate from 'react-paginate';
+import lazyImage from '../images/training.jpg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 
 const BlogPagesCom = (props) => {
+
+    const [total, setTotal] = useState('');
     const [blogs,setBlogs]=useState([]);
     const { t } = useTranslation();
     const {getCookie} = useContext(AppContext);
 
-    const getBlogs = () => {
-        axios.get(BASE_URL+"/api/blog/all/"+props.catId)
+    let limit = 6;
+
+    const getBlogs = async (page) => {
+        await axios.get(BASE_URL+"/api/blog/all/"+props.catId+`?page=${page ? page : 0}&pageSize=${limit}`)
             .then(r=>{
-                // console.log("AAAAAAAA")
-                // console.log(r.data.object)
-                setBlogs(r.data.object?r.data.object:null)
+                // console.log(r.data.totalElements);
+                setTotal(Math.ceil(r.data.totalElements/limit));
+                setBlogs(r.data.object?r.data.object:null);
+                // console.log(total);
             })
     }
     useEffect(async () => {
         await getBlogs();
+        
     }, [props.catId]);
 
-    const [currentItems, setCurrentItems] = useState([]);
-    const [pageCount, setPageCount] = useState(0);
-    const [itemOffset, setItemOffset] = useState(0);
-    const itemsPerPage = 6;
+    const handlerPageClick = async (data) => {
+        let page = data.selected ? data.selected : 0;
+        getBlogs(page);
+        window.scrollTo({top: 100});
+        localStorage.setItem('activ', data.selected);
+    }
 
-    useEffect(() => {
-        const endOffset = itemOffset + itemsPerPage;
-        setCurrentItems(blogs.slice(itemOffset, endOffset));
-        setPageCount(Math.ceil(blogs.length / itemsPerPage));
-    }, [itemOffset, itemsPerPage, blogs]);
-
-    const handlePageClick = (event) => {
-        const newOffset = (event.selected * itemsPerPage) % blogs.length;
-        setItemOffset(newOffset);
-    };
+    console.log(localStorage.getItem('activ'))
 
     return (
       <>
-          <div className="bg-light-white">
+          <div className="bg-light-white pb-5" id="up">
               <div className="subheader section-padding">
                   <div className="container">
                       <div className="row">
@@ -71,24 +74,29 @@ const BlogPagesCom = (props) => {
                       </div>
                   </div>
               </div>
-              <div className="container section-padding">
+              <div className="container section-padding" >
                   <div className="row">
-                      {currentItems && currentItems.map((texts, index) =>
+                      {blogs && blogs.map((texts, index) =>
                         <div className="col-lg-4 col-md-6 col-sm-12" key={index}>
                             <div className="card blogsCard">
                                 <div className='blogsImagePar'>
-                                    <img src={BASE_URL_PHOTO + texts.mainImage.hashId} className="card-img-top blogsImage" alt="imagePhoto"/>
+                                    <LazyLoadImage 
+                                        src={BASE_URL_PHOTO + texts.mainImage.hashId} 
+                                        placeholderSrc={lazyImage} 
+                                        className="card-img-top blogsImage" 
+                                        alt="imagePhoto"
+                                        effect='blur'
+                                        width="100%"/>
                                 </div>
                                 <div className="post-date">
                                     <p className="post-data-a">{texts.publishDate.slice(0,10)}</p>
                                 </div>
                                 <div className="blogCats">
                                     <p className="cats-office m-0">
-                                        {getCookie.i18next === "en" ? currentItems[0].category.name_en :
-                                          getCookie.i18next === "oz" ? currentItems[0].category.name_oz :
-                                            getCookie.i18next === "uz" ? currentItems[0].category.name_uz : blogs[0].category.name_ru}
+                                        {getCookie.i18next === "en" ? blogs[0].category.name_en :
+                                          getCookie.i18next === "oz" ? blogs[0].category.name_oz :
+                                            getCookie.i18next === "uz" ? blogs[0].category.name_uz : blogs[0].category.name_ru}
                                     </p>
-                                    {/*<a href="#" className="cats-rent">News</a>*/}
                                 </div>
                                 <div className="card-body blogsBody">
                                     <h5 className="card-title">
@@ -118,19 +126,24 @@ const BlogPagesCom = (props) => {
               </div>
 
               <ReactPaginate
-                breakLabel="..."
-                nextLabel="next >"
-                onPageChange={handlePageClick}
+                previousLabel={'previous'}
+                nextLabel={'next'}
+                breakLabel={'...'}
+                pageCount={total}
+                marginPagesDisplayed={2}
                 pageRangeDisplayed={3}
-                pageCount={pageCount}
-                previousLabel="< previous"
-                renderOnZeroPageCount={null}
-                containerClassName="pagination"
-                pageClassName="page-num"
-                previousLinkClassName="page-num"
-                nextLinkClassName="page-num"
-                activeClassName="active"
-              />
+                onPageChange={handlerPageClick}
+                containerClassName={'pagination justify-content-center'}
+                pageClassName={'page-item'}
+                pageLinkClassName={'page-link'}
+                previousClassName={'page-item'}
+                previousLinkClassName={'page-link'}
+                nextClassName={'page-item'}
+                nextLinkClassName={'page-link'}
+                breakClassName={'page-item'}
+                breakLinkClassName={'page-link'}
+                activeClassName={'active'}
+             />
 
           </div>
       </>

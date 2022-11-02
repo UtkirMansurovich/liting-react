@@ -11,6 +11,17 @@ body {
 }
 
 /*slideHeader*/
+.header-image-img {
+  width: 100%;
+  height: 100%;
+  animation: scale 20s linear infinite;
+  position:absolute;
+  top: 0;
+  z-index: 1;
+  object-fit: cover;
+  object-position: center;
+  transform: all 0.3s ease-out!important;
+}
 .divOpacity{
   background: rgba(11, 11, 11, 0.43);
   display: flex;
@@ -285,11 +296,11 @@ body {
   margin-bottom: 20px;
 }
 .pageImg{
-  width: 100%;
+  width: 100% !important;
   height: 450px;
   object-fit: cover;
   object-position: center;
-  transition: 0.5s ease;
+  transition: all 0.5s ease !important;
 }
 .pageImg:hover{
   transform: scale(1.08, 1.08);
@@ -328,7 +339,7 @@ body {
   object-fit: cover;
   object-position: center;
   border-radius: 0;
-  transition: 0.5s ease;
+  transition: all 0.5s ease !important;
 }
 .blogsCard:hover .blogsImage{
   transform: scale(1.08, 1.08);
@@ -691,36 +702,6 @@ body {
     margin: 0 0 0 10px;
   }
 
-}
-
-/* Pagination */
-.pagination{
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 5%;
-  font-size: 1.2rem;
-  gap: 5px;
-}
-.pagination .page-num{
-  padding: 8px 15px;
-  cursor: pointer;
-  font-weight: 400;
-  transition: .3s ease-in-out;
-  color: #111111;
-  line-height: 1.65rem;
-}
-.pagination .page-num a{
-  color: inherit;
-}
-.pagination .page-num:hover{
-  background-color: #fd5d14;
-  color: #FFFFFF;
-}
-.pagination .active{
-  background-color: #fd5d14;
-  color: #FFFFFF;
 }
 
 /* StartServiceModal  */

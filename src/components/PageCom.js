@@ -4,6 +4,10 @@ import { BASE_URL_PHOTO, BASE_URL } from '../utills/constant';
 import axios from 'axios';
 import {useTranslation} from "react-i18next";
 import {AppContext} from "../context";
+import lazyImage from '../images/training.jpg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 
 const PageCom = (props) => {
     const [blog,setBlog] = useState(null);
@@ -82,7 +86,13 @@ const PageCom = (props) => {
                                                 </p>
                                             </div>
                                             <div className='pageImgPar'>
-                                                <img src={BASE_URL_PHOTO + blog.mainImage.hashId} alt="imagePhoto" className="pageImg"/>
+                                                <LazyLoadImage 
+                                                    src={BASE_URL_PHOTO + blog.mainImage.hashId} 
+                                                    alt="imagePhoto" 
+                                                    className="pageImg"
+                                                    placeholderSrc={lazyImage} 
+                                                    effect='blur'
+                                                    width="100%"/>
                                             </div>
                                             <h3 className="listing-detail-heading no-margin ">
                                                 {getCookie.i18next === "en" ? blog.title_en :
