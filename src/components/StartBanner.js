@@ -6,9 +6,6 @@ import {AppContext} from "../context";
 import {BASE_URL_PHOTO} from "../utills/constant";
 import {Link} from 'react-router-dom';
 import {useTranslation} from "react-i18next";
-import lazyImage from '../images/training.jpg';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 
 function SampleNextArrow (props) {
     const { className, style, onClick } = props;
