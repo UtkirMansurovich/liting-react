@@ -186,5 +186,9 @@
   "BlogPageCom": {
     "home": "Бош саҳифа",
     "readMore": "Давомини ўқиш"
+  },
+  "Pagination": {
+    "previous": "Аввалгиси",
+    "next": "Кейингиси"
   }
 }

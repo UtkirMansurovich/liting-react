@@ -185,5 +185,9 @@
   "BlogPageCom": {
     "home": "Главная страница",
     "readMore": "Читать далее"
+  },
+  "Pagination": {
+    "previous": "Предыдущая",
+    "next": "Следующая"
   }
 }

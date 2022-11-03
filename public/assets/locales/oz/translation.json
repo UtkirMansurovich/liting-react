@@ -185,5 +185,9 @@
   "BlogPageCom": {
     "home": "Bosh sahifa",
     "readMore": "Davomini o'qish"
+  },
+  "Pagination": {
+    "previous": "Avvalgisi",
+    "next": "Keyingisi"
   }
 }

@@ -27,12 +27,13 @@ const StartOurHistory = () => {
                         <div className="video-box mb-xl-40">
                             <div className="video_wrapper">
                                 <div className="videoPoster">
-                                    <img src="../assets/images/imageForVideo.jpg" className="image-fit" alt="#"/>
+                                    {/* <img src="../assets/images/imageForVideo.jpg" className="image-fit" alt="#"/>
                                     <div className="video-inner video-btn-wrapper"> 
                                         <a href="https://www.youtube.com/watch?v=ZQN1USUggno&t=1s" className="text-custom-blue popup-video" target="_blank">
                                         <i className="far fa-play-circle"></i>
                                         </a>
-                                    </div>
+                                    </div> */}
+                                    <iframe width="560" height="415" src="https://www.youtube.com/embed/ZQN1USUggno" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                             </div>
                         </div>

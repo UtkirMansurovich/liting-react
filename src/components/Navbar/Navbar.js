@@ -11,6 +11,10 @@ const Navbar = () => {
     const [toggle, setToggle] = useState(false);
     const { t } = useTranslation();
 
+    const handlerTop = () => {
+        window.scrollTo({top: 0});
+      }
+
     if(showContrast) {
         return(
           <Contrast/>
@@ -88,7 +92,7 @@ const Navbar = () => {
                       <div className="col-12">
                           <div className="header">
                               <div className="logo">
-                                  <Link to="/" >
+                                  <Link to="/" onClick={handlerTop}>
                                       <img src="../../assets/images/login-logo1.png" className="logo" alt="Logo"/>
                                   </Link>
                               </div>
@@ -97,14 +101,14 @@ const Navbar = () => {
                                   <div className={toggle ? 'navigation active' : 'navigation'}>
 
                                       <div className="logo">
-                                          <Link to="/">
+                                          <Link to="/" onClick={handlerTop}>
                                               <img src="../../assets/images/login-logo1.png" className="img-fluid image-fit" alt="Logo"/>
                                           </Link>
                                       </div>
                                       <nav>
                                           <ul className="custom main-menu" id="navbar-root">
                                               {navParent && navParent.map((navText, index) =>
-                                                <NavbarChild navText={navText} key={index} setToggle={setToggle} />
+                                                <NavbarChild navText={navText} key={index} setToggle={setToggle} handlerTop={handlerTop}/>
                                               )}
                                           </ul>
                                       </nav>

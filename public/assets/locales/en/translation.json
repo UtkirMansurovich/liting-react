@@ -185,5 +185,9 @@
   "BlogPageCom": {
     "home": "Main page",
     "readMore": "Read more"
+  },
+  "Pagination": {
+    "previous": "Previous",
+    "next": "Next"
   }
 }

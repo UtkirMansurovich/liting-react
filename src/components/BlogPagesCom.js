@@ -126,8 +126,8 @@ const BlogPagesCom = (props) => {
               </div>
 
               <ReactPaginate
-                previousLabel={'previous'}
-                nextLabel={'next'}
+                previousLabel={t("Pagination.previous")}
+                nextLabel={t("Pagination.next")}
                 breakLabel={'...'}
                 pageCount={total}
                 marginPagesDisplayed={2}

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import NavbarChildChild from './NavbarChildChild';
 import {AppContext} from "../../context";
 
-const NavbarChild = ({ navText, setToggle }) => {
+const NavbarChild = ({ navText, setToggle, handlerTop }) => {
 
   const {getCookie} = useContext(AppContext);
   // console.log(navText);
@@ -12,10 +12,6 @@ const NavbarChild = ({ navText, setToggle }) => {
   const closeTog = () => {
     setOpenTog(prev => !prev);
     if( navText.type === 'BLOGS' || navText.type === 'PAGE') setToggle(false);
-  }
-
-  const handlerTop = () => {
-    window.scrollTo({top: 0});
   }
 
   return (
