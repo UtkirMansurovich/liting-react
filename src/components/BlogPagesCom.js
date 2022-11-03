@@ -42,6 +42,7 @@ const BlogPagesCom = (props) => {
 
     console.log(localStorage.getItem('activ'))
 
+    if(blogs.length > 0){
     return (
       <>
           <div className="bg-light-white pb-5" id="up">
@@ -147,6 +148,12 @@ const BlogPagesCom = (props) => {
 
           </div>
       </>
-    );
+    );} else {
+        return (
+            <div className="preloader">
+                <img src="../assets/images/pre-loader-1.svg" alt="img"/>
+            </div>
+        )
+    }
 }
 export default BlogPagesCom

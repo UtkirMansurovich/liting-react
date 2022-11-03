@@ -7,6 +7,7 @@ import {AppContext} from "../context";
 import lazyImage from '../images/training.jpg';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+// import BlogPagesCom from './BlogPagesCom';
 
 
 const PageCom = (props) => {
@@ -39,6 +40,8 @@ const PageCom = (props) => {
     useEffect(async () => {
         getBlog();
     }, [props.catId,props.blogId]);
+
+    if( blog ){
     return(
         <div>
             <div className="subheader section-padding">
@@ -110,7 +113,13 @@ const PageCom = (props) => {
                 </div>
             </section>
         </div>
-    )
+    )} else {
+        return (
+            <div className="preloader">
+                <img src="../assets/images/pre-loader-1.svg" alt="img"/>
+            </div>
+        )
+    }
 }
 
 export default PageCom
