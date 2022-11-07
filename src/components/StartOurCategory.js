@@ -4,6 +4,9 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
 import {useTranslation} from "react-i18next";
 import {AppContext} from "../context";
+import CountUp from 'react-countup';
+import ScrollTrigger from "react-scroll-trigger";
+import { useState } from "react";
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -67,6 +70,7 @@ const StartOurCategory = ({slidesOurCategory}) => {
 
         const { t } = useTranslation();
         const { getCookie } = useContext(AppContext);
+        const [ counterOn, setCounterOn ] = useState(false);
 
         return (
             <div>
@@ -111,40 +115,48 @@ const StartOurCategory = ({slidesOurCategory}) => {
                             <div className="categories-tabs">
                                  <ul className="custom nav nav-tabs">
                                      <li className="nav-item">
-                                         <a className="nav-link text-custom-black" data-toggle="tab" href="#home-maintainance">
+                                         <p className="nav-link text-custom-black">
                                              <span style={{display:'flex', justifyContent:'center', alignItems:'self-end'}}>
                                                  <img src="../assets/images/svg/1.png" className="image-fit" alt="svg"/>
-                                                 <p style={{margin:'0 0 0 5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}>443</p>
+                                                 <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
+                                                    {counterOn && <CountUp duration={2.75} end={443} style={{margin:'0 0 0 5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}/>}
+                                                 </ScrollTrigger>
                                              </span>
                                              {t("StartOurCategory.service")}
-                                         </a>
+                                         </p>
                                      </li>
                                      <li className="nav-item">
-                                         <a className="nav-link text-custom-black" data-toggle="tab" href="#project-management">
+                                         <p className="nav-link text-custom-black">
                                              <span style={{display:'flex', justifyContent:'center', alignItems:'self-end'}}>
                                                  <img src="../assets/images/svg/4.png" className="image-fit" alt="svg"/>
-                                                 <p style={{margin:'0 0 0 5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}>55</p>
+                                                 <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
+                                                    {counterOn && <CountUp duration={2.75} end={55} style={{margin:'0 0 0 5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}/>}
+                                                 </ScrollTrigger>
                                              </span>
                                              {t("StartOurCategory.control")}
-                                         </a>
+                                         </p>
                                      </li>
                                      <li className="nav-item">
-                                         <a className="nav-link text-custom-black" data-toggle="tab" href="#gen-construction">
+                                         <p className="nav-link text-custom-black">
                                              <span style={{display:'flex', justifyContent:'center', alignItems:'self-end', marginBottom:'-5px'}}>
                                                  <img src="../assets/images/svg/5.svg" className="image-fit" alt="svg" style={{marginTop:"-5px"}}/>
-                                                 <p style={{margin:'0 0 5px 5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}>57</p>
+                                                 <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
+                                                    {counterOn && <CountUp duration={2.75} end={57} style={{margin:'0 0 15px -5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}/>}
+                                                 </ScrollTrigger>
                                              </span>
                                              {t("StartOurCategory.construction")}
-                                         </a>
+                                         </p>
                                      </li>
                                      <li className="nav-item">
-                                         <a className="nav-link text-custom-black" data-toggle="tab" href="#restructured">
+                                         <p className="nav-link text-custom-black">
                                              <span style={{display:'flex', justifyContent:'center', alignItems:'self-end'}}>
                                                  <img src="../assets/images/svg/3.png" className="image-fit" alt="svg"/>
-                                                 <p style={{margin:'0 0 0 5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}>616</p>
+                                                 <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
+                                                    {counterOn && <CountUp duration={2.75} end={616} style={{margin:'0 0 0 5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}/>}
+                                                 </ScrollTrigger>
                                              </span>
                                              {t("StartOurCategory.restructured")}
-                                         </a>
+                                         </p>
                                      </li>
                                  </ul>
                              </div>

@@ -95,9 +95,6 @@ Version: 1.0.0
 /*======================
 1.General Code
 ========================*/
-::-webkit-scrollbar {
-    display: none;
-}
 html{
     overflow: hidden;
 }
@@ -216,7 +213,7 @@ label.error{
     position: absolute;
     top: 0;
     z-index: 99;
-    overflow: hidden;
+    overflow: visible;
 }
 .preloader img{
     position: absolute;
@@ -1396,8 +1393,8 @@ label.custom-checkbox .checkmark:after {
     justify-content: center;
     align-self: center;
 }
-.logon:last-child{
-    margin-left: 10px;
+.logon:nth-child(2){
+    margin: 0 10px;
 }
 .menu-style .header>.logo img{
     position: absolute;
