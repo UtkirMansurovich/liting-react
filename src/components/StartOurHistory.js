@@ -53,7 +53,7 @@ const StartOurHistory = () => {
                                 </li> */}
                             </ul>
                             <div className="tab-content padding-20 bg-custom-white bx-wrapper">
-                                <div className="tab-pane fade show active h-100" id="start">
+                                <div className="tab-pane fade show active" id="start">
                                     <div className="tab-inner">
                                         <div className="row">
                                             <div className="col-lg-6">
@@ -61,84 +61,412 @@ const StartOurHistory = () => {
                                                     <img src="../assets/images/about-us/history3.jpg" className="full-width" alt="img"/>
                                                 </div>
                                             </div>
-                                            <div className="col-lg-6 align-self-center">
-                                                <div className="content-box">
-                                                    <h4 className="text-custom-black fw-600 text-center">{t("StartHistory.cardTitle")}</h4>
+                                            <div className="col-lg-6 align-self-center" style={{height: '480px', overflow:'hidden', overflowY:'auto'}}>
+                                                <div className="content-box mb-2">
+                                                    <h4 className="text-custom-black fw-600 text-center mb-1">{t("StartHistory.2008")}</h4>
                                                     {/* <p className="text-custom-blue mb-xl-20">{t("StartHistory.cardTextFirst")}</p>
                                                     <p className="text-light-white mb-xl-20">{t("StartHistory.cardTextSecond")}</p>
                                                     <p className="text-light-white mb-xl-20">{t("StartHistory.cardTextThird")}</p> */}
                                                     <div className="list">
-                                                        <ul style={{listStyle: 'block'}}>
+                                                        <ul style={{listStyle: 'block', padding:'0 0 0 20px'}}>
                                                             <li className="fs-14 text-light-white">
-                                                                <span className="text-light-white"> {t("StartHistory.1")}</span>
+                                                                <span className="text-light-white"> {t("StartHistory.2008-1")}</span>
                                                             </li>
                                                             <li className="fs-14 text-light-white">
-                                                                <span className="text-light-white"> {t("StartHistory.2")}</span>
+                                                                <span className="text-light-white"> {t("StartHistory.2008-2")}</span>
                                                             </li>
                                                             <li className="fs-14 text-light-white">
-                                                                <span className="text-light-white"> {t("StartHistory.3")}</span>
+                                                                <span className="text-light-white"> {t("StartHistory.2008-3")}</span>
                                                             </li>
                                                             <li className="fs-14 text-light-white">
-                                                                <span className="text-light-white"> {t("StartHistory.4")}</span>
+                                                                <span className="text-light-white"> {t("StartHistory.2008-4")}</span>
                                                             </li>
                                                             <li className="fs-14 text-light-white">
-                                                                <span className="text-light-white"> {t("StartHistory.5")}</span>
+                                                                <span className="text-light-white"> {t("StartHistory.2008-5")}</span>
                                                             </li>
                                                             <li className="fs-14 text-light-white">
-                                                                <span className="text-light-white"> {t("StartHistory.6")}</span>
+                                                                <span className="text-light-white"> {t("StartHistory.2008-6")}</span>
                                                             </li>
                                                             <li className="fs-14 text-light-white">
-                                                                <span className="text-light-white"> {t("StartHistory.7")}</span>
+                                                                <span className="text-light-white"> {t("StartHistory.2008-7")}</span>
                                                             </li>
                                                             <li className="fs-14 text-light-white">
-                                                                <span className="text-light-white"> {t("StartHistory.8")}</span>
+                                                                <span className="text-light-white"> {t("StartHistory.2008-8")}</span>
                                                             </li>
                                                             <li className="fs-14 text-light-white">
-                                                                <span className="text-light-white"> {t("StartHistory.9")}</span>
+                                                                <span className="text-light-white"> {t("StartHistory.2008-9")}</span>
                                                             </li>
                                                             <li className="fs-14 text-light-white">
-                                                                <span className="text-light-white"> {t("StartHistory.10")}</span>
+                                                                <span className="text-light-white"> {t("StartHistory.2008-10")}</span>
                                                             </li>
                                                             <li className="fs-14 text-light-white">
-                                                                <span className="text-light-white"> {t("StartHistory.11")}</span>
+                                                                <span className="text-light-white"> {t("StartHistory.2008-11")}</span>
                                                             </li>
                                                             <li className="fs-14 text-light-white">
-                                                                <span className="text-light-white"> {t("StartHistory.12")}</span>
+                                                                <span className="text-light-white"> {t("StartHistory.2008-12")}</span>
                                                             </li>
                                                             <li className="fs-14 text-light-white">
-                                                                <span className="text-light-white"> {t("StartHistory.13")}</span>
+                                                                <span className="text-light-white"> {t("StartHistory.2008-13")}</span>
                                                             </li>
                                                             <li className="fs-14 text-light-white">
-                                                                <span className="text-light-white"> {t("StartHistory.14")}</span>
+                                                                <span className="text-light-white"> {t("StartHistory.2008-14")}</span>
                                                             </li>
                                                             <li className="fs-14 text-light-white">
-                                                                <span className="text-light-white"> {t("StartHistory.15")}</span>
+                                                                <span className="text-light-white"> {t("StartHistory.2008-15")}</span>
                                                             </li>
                                                             <li className="fs-14 text-light-white">
-                                                                <span className="text-light-white"> {t("StartHistory.16")}</span>
+                                                                <span className="text-light-white"> {t("StartHistory.2008-16")}</span>
                                                             </li>
                                                             <li className="fs-14 text-light-white">
-                                                                <span className="text-light-white"> {t("StartHistory.17")}</span>
+                                                                <span className="text-light-white"> {t("StartHistory.2008-17")}</span>
                                                             </li>
                                                             <li className="fs-14 text-light-white">
-                                                                <span className="text-light-white"> {t("StartHistory.18")}</span>
+                                                                <span className="text-light-white"> {t("StartHistory.2008-18")}</span>
                                                             </li>
                                                             <li className="fs-14 text-light-white">
-                                                                <span className="text-light-white"> {t("StartHistory.19")}</span>
+                                                                <span className="text-light-white"> {t("StartHistory.2008-19")}</span>
                                                             </li>
                                                             <li className="fs-14 text-light-white">
-                                                                <span className="text-light-white"> {t("StartHistory.20")}</span>
+                                                                <span className="text-light-white"> {t("StartHistory.2008-20")}</span>
                                                             </li>
                                                             <li className="fs-14 text-light-white">
-                                                                <span className="text-light-white"> {t("StartHistory.21")}</span>
+                                                                <span className="text-light-white"> {t("StartHistory.2008-21")}</span>
                                                             </li>
                                                             <li className="fs-14 text-light-white">
-                                                                <span className="text-light-white"> {t("StartHistory.22")}</span>
+                                                                <span className="text-light-white"> {t("StartHistory.2008-22")}</span>
                                                             </li>
                                                         </ul>
                                                     </div>
                                                     {/* <a href="#" className="btn-first btn-submit mt-3">{t("StartHistory.readMore")}</a> */}
                                                 </div>
+
+                                                <div className="content-box mb-2">
+                                                    <h4 className="text-custom-black fw-600 text-center mb-1">{t("StartHistory.2009")}</h4>
+                                                    {/* <p className="text-custom-blue mb-xl-20">{t("StartHistory.cardTextFirst")}</p>
+                                                    <p className="text-light-white mb-xl-20">{t("StartHistory.cardTextSecond")}</p>
+                                                    <p className="text-light-white mb-xl-20">{t("StartHistory.cardTextThird")}</p> */}
+                                                    <div className="list">
+                                                        <ul style={{listStyle: 'block', padding:'0 0 0 20px'}}>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-1")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-2")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-3")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-4")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-5")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-6")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-7")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-8")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-9")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-10")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-11")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-12")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-13")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-14")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-15")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-16")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-17")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-18")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-19")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-20")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-21")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-22")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-23")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-24")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-25")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-26")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-27")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-28")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-29")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-30")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-31")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-32")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-33")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-34")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-35")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2009-36")}</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    {/* <a href="#" className="btn-first btn-submit mt-3">{t("StartHistory.readMore")}</a> */}
+                                                </div>
+
+                                                <div className="content-box mb-2">
+                                                    <h4 className="text-custom-black fw-600 text-center mb-1">{t("StartHistory.2010")}</h4>
+                                                    {/* <p className="text-custom-blue mb-xl-20">{t("StartHistory.cardTextFirst")}</p>
+                                                    <p className="text-light-white mb-xl-20">{t("StartHistory.cardTextSecond")}</p>
+                                                    <p className="text-light-white mb-xl-20">{t("StartHistory.cardTextThird")}</p> */}
+                                                    <div className="list">
+                                                        <ul style={{listStyle: 'block', padding:'0 0 0 20px'}}>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2010-1")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2010-2")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2010-3")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2010-4")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2010-5")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2010-6")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2010-7")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2010-8")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2010-9")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2010-10")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2010-11")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2010-12")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2010-13")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2010-14")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2010-15")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2010-16")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2010-17")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2010-18")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2010-19")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2010-20")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2010-21")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2010-22")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2010-23")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2010-24")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2010-25")}</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    {/* <a href="#" className="btn-first btn-submit mt-3">{t("StartHistory.readMore")}</a> */}
+                                                </div>
+
+                                                <div className="content-box mb-2">
+                                                    <h4 className="text-custom-black fw-600 text-center mb-1">{t("StartHistory.2011")}</h4>
+                                                    {/* <p className="text-custom-blue mb-xl-20">{t("StartHistory.cardTextFirst")}</p>
+                                                    <p className="text-light-white mb-xl-20">{t("StartHistory.cardTextSecond")}</p>
+                                                    <p className="text-light-white mb-xl-20">{t("StartHistory.cardTextThird")}</p> */}
+                                                    <div className="list">
+                                                        <ul style={{listStyle: 'block', padding:'0 0 0 20px'}}>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2011-1")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2011-2")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2011-3")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2011-4")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2011-5")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2011-6")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2011-7")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2011-8")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2011-9")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2011-10")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2011-11")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2011-12")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2011-13")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2011-14")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2011-15")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2011-16")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2011-17")}</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    {/* <a href="#" className="btn-first btn-submit mt-3">{t("StartHistory.readMore")}</a> */}
+                                                </div>
+
+                                                <div className="content-box mb-2">
+                                                    <h4 className="text-custom-black fw-600 text-center mb-1">{t("StartHistory.2012")}</h4>
+                                                    {/* <p className="text-custom-blue mb-xl-20">{t("StartHistory.cardTextFirst")}</p>
+                                                    <p className="text-light-white mb-xl-20">{t("StartHistory.cardTextSecond")}</p>
+                                                    <p className="text-light-white mb-xl-20">{t("StartHistory.cardTextThird")}</p> */}
+                                                    <div className="list">
+                                                        <ul style={{listStyle: 'block', padding:'0 0 0 20px'}}>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2012-1")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2012-2")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2012-3")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2012-4")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2012-5")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2012-6")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2012-7")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2012-8")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2012-9")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2012-10")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2012-11")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2012-12")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2012-13")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2012-14")}</span>
+                                                            </li>
+                                                            <li className="fs-14 text-light-white">
+                                                                <span className="text-light-white"> {t("StartHistory.2012-15")}</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    {/* <a href="#" className="btn-first btn-submit mt-3">{t("StartHistory.readMore")}</a> */}
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
