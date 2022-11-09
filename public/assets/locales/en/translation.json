@@ -13,7 +13,7 @@
     "readMore": "Read more"
   },
   "StartAbout": {
-    "project": "616 successfully completed projects",
+    "project": "2000+ successfully completed projects",
     "about": "About Us",
     "history": "Our history",
     "text": "JSC \"O'ZLITINEFTGAZ\" is an integrated scientific, technological and design company that provides support for the construction and operation of production facilities of the oil and gas complex, including oil and gas processing systems, natural gas transportation.",
@@ -667,6 +667,11 @@
     "fourthYear": "YEARS OF WORK",
 
     "readMore": "Read more"
+  },
+  "Laboratory": {
+    "Title": "AO \"O'ZLITINEFTGAZ\"",
+    "TitleSpan": "ИСПЫТАТЕЛЬНАЯ БАЗА",
+    "Text": "Сложных проблем и все виды услуг. Свяжитесь с нами сегодня для получения сложных проблем и все виды услуг."
   },
   "Training": {
     "Enhancing": "Training and Research Center \"NEFTGAZ MALAKA\"",

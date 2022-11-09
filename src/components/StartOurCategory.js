@@ -119,7 +119,7 @@ const StartOurCategory = ({slidesOurCategory}) => {
                                              <span style={{display:'flex', justifyContent:'center', alignItems:'self-end'}}>
                                                  <img src="../assets/images/svg/1.png" className="image-fit" alt="svg"/>
                                                  <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
-                                                    {counterOn && <CountUp duration={2.75} end={443} style={{margin:'0 0 0 5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}/>}
+                                                    {counterOn && <CountUp duration={2.75} end={426} style={{margin:'0 0 0 5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}/>}
                                                  </ScrollTrigger>
                                              </span>
                                              {t("StartOurCategory.service")}
@@ -130,7 +130,7 @@ const StartOurCategory = ({slidesOurCategory}) => {
                                              <span style={{display:'flex', justifyContent:'center', alignItems:'self-end'}}>
                                                  <img src="../assets/images/svg/4.png" className="image-fit" alt="svg"/>
                                                  <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
-                                                    {counterOn && <CountUp duration={2.75} end={55} style={{margin:'0 0 0 5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}/>}
+                                                    {counterOn && <CountUp duration={2.75} end={57} style={{margin:'0 0 0 5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}/>}
                                                  </ScrollTrigger>
                                              </span>
                                              {t("StartOurCategory.control")}

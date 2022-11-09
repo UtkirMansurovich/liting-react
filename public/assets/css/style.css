@@ -646,6 +646,9 @@ table {
 .fs-12 {
     font-size: 12px;
 }
+.fs-13 {
+    font-size: 13px;
+}
 .fs-14 {
     font-size: 14px;
 }
@@ -672,6 +675,9 @@ table {
 }
 .fw-700 {
     font-weight: 900;
+}
+.lh-15 {
+    line-height: 1.5;
 }
 /*======================
 1.2 Space margins and padding
