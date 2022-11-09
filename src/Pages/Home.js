@@ -18,6 +18,7 @@ import StartFooter from "../components/StartFooter";
 import StartBanner from "../components/StartBanner";
 import {sliderClient, SliderOurCategory, ourMentors, cheifEngineers} from '../components/SliderData';
 import Training from '../components/Training'
+import Laboratory from '../components/Laboratory';
 
 const Home = () => {
         return(
@@ -30,6 +31,7 @@ const Home = () => {
                 <StartFullWidth/>
                 <StartBlock />
                 <StartOurHistory/>
+                <Laboratory/>
                 {/*<StartFullWidthTwo/>*/}
                 <Training/>
                 <StartService cheifEngineers={cheifEngineers}/>
