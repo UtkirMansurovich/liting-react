@@ -158,6 +158,54 @@ export const sliderClient = [
         text_oz: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
         text_en: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
         signature: "../assets/images/signature.png"
+    },
+    {
+        image: "../assets/images/7.webp",
+        fullName_ru: "Гайнаншин Тимур Шамилевич",
+        fullName_uz: "Гайнаншин Тимур Шамилевич",
+        fullName_oz: "Гайнаншин Тимур Шамилевич",
+        fullName_en: "Гайнаншин Тимур Шамилевич",
+        position_ru: "​Генеральный директор «ЛУКОЙЛ Узбекистан Оперейтинг Компани»",
+        position_uz: "​Генеральный директор «ЛУКОЙЛ Узбекистан Оперейтинг Компани»",
+        position_oz: "​Генеральный директор «ЛУКОЙЛ Узбекистан Оперейтинг Компани»",
+        position_en: "​Генеральный директор «ЛУКОЙЛ Узбекистан Оперейтинг Компани»",
+        text_ru: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
+        text_uz: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
+        text_oz: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
+        text_en: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
+        signature: "../assets/images/signature.png"
+    },
+    {
+        image: "../assets/images/8.webp",
+        fullName_ru: "Эшмуратов Баходир Бешимович",
+        fullName_uz: "Эшмуратов Баходир Бешимович",
+        fullName_oz: "Эшмуратов Баходир Бешимович",
+        fullName_en: "Эшмуратов Баходир Бешимович",
+        position_ru: "Председатель Правления АО «Hududgazta’minot»",
+        position_uz: "Председатель Правления АО «Hududgazta’minot»",
+        position_oz: "Председатель Правления АО «Hududgazta’minot»",
+        position_en: "Председатель Правления АО «Hududgazta’minot»",
+        text_ru: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
+        text_uz: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
+        text_oz: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
+        text_en: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
+        signature: "../assets/images/signature.png"
+    },
+    {
+        image: "../assets/images/9.webp",
+        fullName_ru: "Нарматов Бехзот Рахматуллаевич",
+        fullName_uz: "Нарматов Бехзот Рахматуллаевич",
+        fullName_oz: "Нарматов Бехзот Рахматуллаевич",
+        fullName_en: "Нарматов Бехзот Рахматуллаевич",
+        position_ru: "Председатель правления АО «Узтрансгаз»",
+        position_uz: "Председатель правления АО «Узтрансгаз»",
+        position_oz: "Председатель правления АО «Узтрансгаз»",
+        position_en: "Председатель правления АО «Узтрансгаз»",
+        text_ru: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
+        text_uz: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
+        text_oz: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
+        text_en: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
+        signature: "../assets/images/signature.png"
     }
 ]
 

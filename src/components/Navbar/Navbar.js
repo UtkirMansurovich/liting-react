@@ -128,7 +128,7 @@ const Navbar = () => {
                                           <img src="../../assets/images/iqnet.png" className="logon-img" alt="Logo"/>
                                       </div>
                                       <div className="logon">
-                                          <img src="../../assets/images/stz.png" className="logon-img" alt="Logo"/>
+                                          <img src="../../assets/images/stz.webp" className="logon-img" alt="Logo"/>
                                       </div>
                                       <div className="logon">
                                           <img src="../../assets/images/russian.png" className="logon-img" alt="Logo"/>

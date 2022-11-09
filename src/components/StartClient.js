@@ -80,7 +80,7 @@ const StartClient = ({sliderClient}) => {
                                                         <div className="content">
                                                             <div className="author d-flex justify-content-between align-items-center">
                                                                 <div className="name">
-                                                                    <h5>
+                                                                    <h5 style={{textTransform: 'capitalize'}}>
                                                                         {getCookie.i18next === 'en' ? slides.fullName_en :
                                                                             getCookie.i18next === "uz" ? slides.fullName_uz :
                                                                                 getCookie.i18next === "oz" ? slides.fullName_oz : slides.fullName_ru}
