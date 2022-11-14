@@ -37,18 +37,22 @@ const StartAbout = () => {
                             </div>
                             <div className="company-progress">
                                 <div className="progress-item">
-                                    <label className="text-custom-black fs-16 fw-600">{t("StartAbout.development")} <span>1500</span></label>
-                                    <div className="progress">
+                                    <label className="text-custom-black fs-16 fw-600 about-link">{t("StartAbout.development")} 
+                                        {/* <span>1500</span> */}
+                                    </label>
+                                    {/* <div className="progress">
                                         <div className="progress-bar progress-bar-striped active">
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className="progress-item">
-                                    <label className="text-custom-black fs-16 fw-600">{t("StartAbout.design")} <span>2000</span></label>
-                                    <div className="progress">
+                                    <label className="text-custom-black fs-16 fw-600 about-link">{t("StartAbout.design")} 
+                                        {/* <span>2000</span> */}
+                                    </label>
+                                    {/* <div className="progress">
                                         <div className="progress-bar progress-bar-striped active">
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className="progress-item">
                                     {/*<label className="text-custom-black fs-16 fw-600">{t("StartAbout.automation")} <span>75%</span></label>*/}

@@ -141,7 +141,7 @@ const StartOurCategory = ({slidesOurCategory}) => {
                                              <span style={{display:'flex', justifyContent:'center', alignItems:'self-end', marginBottom:'-5px'}}>
                                                  <img src="../assets/images/svg/5.svg" className="image-fit" alt="svg" style={{marginTop:"-5px"}}/>
                                                  <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
-                                                    {counterOn && <CountUp duration={2.75} end={57} style={{margin:'0 0 15px -5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}/>}
+                                                    {counterOn && <CountUp duration={2.75} end={357} style={{margin:'0 0 15px -5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}/>}
                                                  </ScrollTrigger>
                                              </span>
                                              {t("StartOurCategory.construction")}
@@ -151,8 +151,8 @@ const StartOurCategory = ({slidesOurCategory}) => {
                                          <p className="nav-link text-custom-black">
                                              <span style={{display:'flex', justifyContent:'center', alignItems:'self-end'}}>
                                                  <img src="../assets/images/svg/3.png" className="image-fit" alt="svg"/>
-                                                 <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
-                                                    {counterOn && <CountUp duration={2.75} end={616} style={{margin:'0 0 0 5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}/>}
+                                                 <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)} style={{display:"flex", alignItems:'end', position:'relative'}}>
+                                                    {counterOn && <CountUp duration={2.75} end={2000} style={{margin:'0 0 0 5px', fontSize:"28px", color:'#7c8a97', lineHeight:'24px'}}/>}<span style={{fontSize:'28px', margin: '0', position:'absolute', left:'46px', bottom:'-1px', color:'#7c8a97'}}>+</span>
                                                  </ScrollTrigger>
                                              </span>
                                              {t("StartOurCategory.restructured")}
