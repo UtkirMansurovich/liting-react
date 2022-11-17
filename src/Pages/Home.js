@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from "../components/Navbar/Navbar";
 // import Preloader from "../components/Preloader";
 import TopBar from '../components/TopBar';
-import StartAbout from "../components/StartAbout";
+import StartAbout from "../components/StartAbout/StartAbout";
 import StartOurCategory from "../components/StartOurCategory";
 import StartFullWidth from "../components/StartFullWidth";
 import StartBlock from "../components/StartBlock";

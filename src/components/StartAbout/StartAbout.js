@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import {useTranslation} from "react-i18next";
+import StartAboutResearch from "./StartAboutResearch";
+import StartAboutDesign from "./StartAboutDesign";
 
 const StartAbout = () => {
-
+    const [openResearchModal, setOpenResearchModal] = useState(false);
+    const [openDesignModal, setOpenDesignModal] = useState(false);
     const { t } = useTranslation();
+
+    const openModalResearch = () => {
+        setOpenResearchModal(prev => !prev);
+    }
+    const openModalDesign = () => {
+        setOpenDesignModal(prev => !prev);
+    }
     return(
         <section className="section-padding about-us">
             <div className="container">
@@ -37,7 +47,7 @@ const StartAbout = () => {
                             </div>
                             <div className="company-progress">
                                 <div className="progress-item">
-                                    <label className="text-custom-black fs-16 fw-600 about-link">{t("StartAbout.development")} 
+                                    <label onClick={openModalResearch} className="text-custom-black fs-16 fw-600 about-link">{t("StartAbout.development")} 
                                         {/* <span>1500</span> */}
                                     </label>
                                     {/* <div className="progress">
@@ -46,7 +56,7 @@ const StartAbout = () => {
                                     </div> */}
                                 </div>
                                 <div className="progress-item">
-                                    <label className="text-custom-black fs-16 fw-600 about-link">{t("StartAbout.design")} 
+                                    <label onClick={openModalDesign} className="text-custom-black fs-16 fw-600 about-link">{t("StartAbout.design")} 
                                         {/* <span>2000</span> */}
                                     </label>
                                     {/* <div className="progress">
@@ -66,6 +76,8 @@ const StartAbout = () => {
                     </div>
                 </div>
             </div>
+            <StartAboutResearch setOpenResearchModal={setOpenResearchModal} openResearchModal={openResearchModal}/>
+            <StartAboutDesign setOpenDesignModal={setOpenDesignModal} openDesignModal={openDesignModal}/>
         </section>
     )
 }

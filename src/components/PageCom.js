@@ -43,7 +43,7 @@ const PageCom = (props) => {
 
     if( blog ){
     return(
-        <div>
+        <div style={{display:'block'}}>
             <div className="subheader section-padding">
                 <div className="container">
                     <div className="row">

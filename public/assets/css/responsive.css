@@ -11,7 +11,7 @@ Version: 1.0.0
 	}
 }
 
-@media (max-width: 1520px) {
+@media (max-width: 1587px) {
 	.custom-container{
 		padding-right: 2%;
     	padding-left: 2%;
@@ -19,12 +19,15 @@ Version: 1.0.0
 	.main-menu>li.menu-item>a{
 		padding: 18px 10px;	
 	}
-}
-@media (max-width: 1343px) {
 	.fs-14{
 		font-size: 12px;
 	}
 }
+/* @media (max-width: 1343px) {
+	.fs-14{
+		font-size: 12px;
+	}
+} */
 @media (max-width: 1200px) {
 	/*navigation*/
 	.main-menu>li.menu-item>a{

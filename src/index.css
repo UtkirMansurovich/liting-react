@@ -393,6 +393,22 @@ body {
     font-size: 6vw;
   }
 }
+@media(max-height: 850px){
+  .titleLogo{
+    font-size: 8vh;
+  }
+  .slideH1{
+    font-size: 8vh;
+  }
+}
+@media(max-height: 741px){
+  .titleLogo{
+    font-size: 7vh;
+  }
+  .slideH1{
+    font-size: 7vh;
+  }
+}
 
 /* Navbar */
 .up-navbar{
