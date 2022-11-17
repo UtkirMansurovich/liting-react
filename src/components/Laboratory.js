@@ -66,13 +66,14 @@ const Laboratory = ({dataLaboratory}) => {
         <section className="section-padding section-padding bg-light-white bg-light-white our_articles">
             <div className="container">
                 <div className="section-header">
-                    <div className="section-heading title-animate">
-                        <h3 data-text={t("Laboratory.Title")} className="text-theme fw-700 p-0">
+                    <div className="section-heading">
+                        <h3 data-text={t("Laboratory.Title")} className="text-theme fw-700">
                             {t("Laboratory.Title")}
                         </h3>
                     </div>
                     <div className="section-description">
                         <p className="text-light-white">{t("Laboratory.Text")}</p>
+                        <p className="text-light-white">{t("Laboratory.Text-2")}</p>
                     </div>
                 </div>
                 <Slider {...settings}>

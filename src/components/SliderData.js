@@ -1613,7 +1613,7 @@ export const dataLaboratory = [
         text_en: 'more...',
     },
     {
-        image: '../assets/images/services/l7.jpg',
+        image: '../assets/images/services/l14.jpg',
         title_ru: 'Комплексная аналитическая лаборатория физико-химических исследований',
         title_uz: 'Комплексная аналитическая лаборатория физико-химических исследований',
         title_oz: 'Комплексная аналитическая лаборатория физико-химических исследований',
@@ -1624,7 +1624,7 @@ export const dataLaboratory = [
         text_en: 'more...',
     },
     {
-        image: '../assets/images/services/l9.jpg',
+        image: '../assets/images/services/l13.jpg',
         title_ru: 'Испытательная лаборатория буровых и тампонажных работ',
         title_uz: 'Испытательная лаборатория буровых и тампонажных работ',
         title_oz: 'Испытательная лаборатория буровых и тампонажных работ',
