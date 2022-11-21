@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
 import {AppContext} from "../context";
 import {useTranslation} from "react-i18next";
+import {Link} from 'react-router-dom';
+import {BASE_URL_PHOTO} from "../utills/constant";
 
 function SampleNextArrow(props){
     const { className, style, onClick } = props;
@@ -27,9 +29,10 @@ function SamplePrevArrow(props){
     );
 }
 
-const Laboratory = ({dataLaboratory}) => {
+const Laboratory = () => {
 
-    const {getCookie} = useContext(AppContext);
+    const {getCookie, labor} = useContext(AppContext);
+
         const settings = {
             infinite: true,
             slidesToShow: 3,
@@ -77,11 +80,11 @@ const Laboratory = ({dataLaboratory}) => {
                     </div>
                 </div>
                 <Slider {...settings}>
-                        {dataLaboratory && dataLaboratory.map((slides, index) =>
+                        {labor && labor.map((slides, index) =>
                             <div key={index} className="sliderBlockContainer">
                                 <div className="sliderBlockContainerChild">
                                     <div className="slidesOurBlockImgBox">
-                                        <img src={slides.image} className="slidesOurBlockImg" />
+                                        <img src={BASE_URL_PHOTO + slides.mainImage.hashId} className="slidesOurBlockImg" />
                                     </div>
                                     <div className="post-date">
                                         <p className="post-data-a">2022.11.11</p>
@@ -89,21 +92,27 @@ const Laboratory = ({dataLaboratory}) => {
                                     <div>
                                         <div>
                                             <div className="cats">
-                                                <a href="#" className="cats-office">Лаборатория...</a> 
+                                                <Link to={/blogs/+slides.category.id} className="cats-office">{
+                                                       getCookie.i18next === "en" ? slides.category.name_en.slice(0,20) :
+                                                           getCookie.i18next === "uz" ? slides.category.name_uz.slice(0, 20) :
+                                                               getCookie.i18next === "oz" ? slides.category.name_oz.slice(0, 20) : slides.category.name_ru.slice(0, 20)
+                                                   }...</Link> 
                                                 {/* <a href="#" className="cats-rent">{slides.rent}</a> */}
                                             </div>
                                         </div>
-                                        <div className="post-title-parent" style={{height: '180px'}}>
-                                            <h2 className="post-title" style={{color: '#030e27'}}>
-                                                {getCookie.i18next === "en" ? slides.title_en :
-                                                    getCookie.i18next === "uz" ? slides.title_uz :
-                                                        getCookie.i18next === "oz" ? slides.title_oz : slides.title_ru}
+                                        <div className="post-title-parent">
+                                            <h2 className="post-title">
+                                                <Link to={/blogs/+slides.category.id+'/'+slides.id} href="#" className="text-theme">{
+                                                            getCookie.i18next === "en" ? slides.title_en :
+                                                                getCookie.i18next === "uz" ? slides.title_uz :
+                                                                    getCookie.i18next === "oz" ? slides.title_oz : slides.title_ru
+                                                    }</Link>
                                             </h2>
-                                            {/* <p className="text-light-white no-margin">{
-                                                getCookie.i18next === "en" ? slides.anons_en :
-                                                    getCookie.i18next === "uz" ? slides.anons_uz :
-                                                        getCookie.i18next === "oz" ? slides.anons_oz : slides.anons_ru
-                                            }</p> */}
+                                            <p className="text-light-white no-margin">{
+                                                    getCookie.i18next === "en" ? slides.anons_en :
+                                                        getCookie.i18next === "uz" ? slides.anons_uz :
+                                                            getCookie.i18next === "oz" ? slides.anons_oz : slides.anons_ru
+                                            }</p>
                                         </div>
                                         <div className="blog-footer-meta bg-custom-white padding-20">
                                             {/* <div className="post-author">
@@ -115,8 +124,8 @@ const Laboratory = ({dataLaboratory}) => {
                                                 <span className="text-theme fs-14">By <a href="blog-single.html" className="text-theme fw-500">Администратор</a></span>
                                             </div> */}
                                             <div className="post-link d-flex justify-content-between w-100">
-                                                <a href="#" className="link-btn text-custom-blue fw-600 fs-14">{t("StartBlock.readMore")}</a>
-                                                {/* <p className="text-light-white">
+                                                <Link to={/blogs/+slides.category.id+'/'+slides.id} className="link-btn text-custom-blue fw-600 fs-14">{t("StartBlock.readMore")}</Link>
+                                                   {/* <p className="text-light-white">
                                                     <i className="fas fa-eye"></i>
                                                     <span className="pl-1">{slides.view_count}</span>
                                                 </p> */}

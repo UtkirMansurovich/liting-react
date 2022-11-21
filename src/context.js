@@ -14,6 +14,8 @@ const AppProvider = ({ children }) => {
   const [slider, setSlider] = useState([]);
   //All Blogs
   const [allBlogs, setAllBlogs] = useState([]);
+  // Call Laboratory
+  const [labor, setLabor] = useState([]);
   //Language
   const [selectLang, setSelectLang] = useState('ru');
   // Contrast
@@ -49,7 +51,7 @@ const AppProvider = ({ children }) => {
 
   const callAllBlogs = () => {
       axios
-          .get(BASE_URL + '/api/blog/all')
+          .get(BASE_URL + '/api/blog/all/9')
           .then((res) => {
               setAllBlogs(res.data.object);
               console.log(res.data.object);
@@ -57,6 +59,18 @@ const AppProvider = ({ children }) => {
           .catch((err) => {
               console.log(err);
           })
+  }
+
+  const callLobor = () => {
+    axios
+        .get(BASE_URL + '/api/blog/all/56')
+        .then(res => { 
+            setLabor(res.data.object);
+            console.log(res.data.object);
+        })
+        .catch(err => {
+          console.log(err);
+        })
   }
 
     const handlerSelect = (e) => {
@@ -111,6 +125,7 @@ const AppProvider = ({ children }) => {
       navbarList();
       sliderImage();
       callAllBlogs();
+      callLobor();
       document.addEventListener('keydown', keyPress);
       return() => document.addEventListener('keydown', keyPress);
     }, [Title, keyPress, selectContrast]);
@@ -118,7 +133,7 @@ const AppProvider = ({ children }) => {
     const getCookie = Cookie.get();
     // console.log(getCookie)
 
-    const value = { navParent, slider, allBlogs, handlerSelect, getCookie, selectLang, clickContrast, selectContrast, clickFontSmall, clickFontMedium, clickFontBig, selectFontSmall,
+    const value = { navParent, slider, allBlogs, labor, handlerSelect, getCookie, selectLang, clickContrast, selectContrast, clickFontSmall, clickFontMedium, clickFontBig, selectFontSmall,
       selectFontBig, openContrast, showContrast, setShowContrast, contrastRef, closeContrast, clickStandard };
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 };

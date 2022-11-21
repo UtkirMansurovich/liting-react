@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes, } from "react-router-dom";
 import Page from "./Pages/Page";
 import BlogPages from "./Pages/BlogPages";
 import {AppContext} from "./context";
-import Preloader from "./components/Preloader";
+// import Preloader from "./components/Preloader";
 
 function App() {
     const {slider, selectContrast} = useContext(AppContext);

@@ -31,6 +31,8 @@ function SamplePrevArrow(props){
 
 const StartBlock = () => {
     const {allBlogs, getCookie} = useContext(AppContext);
+
+    
         const settings = {
             infinite: true,
             slidesToShow: 3,

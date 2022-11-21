@@ -16,7 +16,7 @@ import StartNewsLetter from "../components/StartNewsLetter";
 import StartFooter from "../components/StartFooter";
 // import LoginRegister from "../components/LoginRegister";
 import StartBanner from "../components/StartBanner";
-import {sliderClient, SliderOurCategory, ourMentors, cheifEngineers, dataLaboratory} from '../components/SliderData';
+import {sliderClient, SliderOurCategory, ourMentors, cheifEngineers} from '../components/SliderData';
 import Training from '../components/Training'
 import Laboratory from '../components/Laboratory';
 
@@ -31,7 +31,7 @@ const Home = () => {
                 <StartFullWidth/>
                 <StartBlock />
                 <StartOurHistory/>
-                <Laboratory dataLaboratory={dataLaboratory}/>
+                <Laboratory/>
                 {/*<StartFullWidthTwo/>*/}
                 <Training/>
                 <StartService cheifEngineers={cheifEngineers}/>

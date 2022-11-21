@@ -17,5 +17,3 @@ ReactDOM.render(
     </Suspense>
     , document.getElementById('root')
 );
-
-

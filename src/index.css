@@ -395,20 +395,29 @@ body {
 }
 @media(max-height: 850px){
   .titleLogo{
-    font-size: 8vh;
+    font-size: 6vh;
   }
   .slideH1{
-    font-size: 8vh;
+    font-size: 6vh;
   }
 }
-@media(max-height: 741px){
+@media(max-width:542px){
+  .titleLogo{
+    font-size: 6vw;
+  }
+  .slideH1{
+    font-size: 6vw;
+  }
+}
+
+/* @media(max-height: 741px){
   .titleLogo{
     font-size: 7vh;
   }
   .slideH1{
     font-size: 7vh;
   }
-}
+} */
 
 /* Navbar */
 .up-navbar{
@@ -563,7 +572,7 @@ body {
 /* Training */
 .full-training{
   width: 100%;
-  min-height: 80vh;
+  /* min-height: 80vh; */
   background: url("./images/training.jpg") no-repeat center center/cover;
 }
 .contentTrain{
@@ -823,44 +832,3 @@ body {
   color: #fd5d14;
   text-decoration: none;
 }
-
-/* LABORATORY */
-
-/* .title-animate {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.title-animate .p-0 {
-  position: relative;
-  color: #f4f4f4;
-  -webkit-text-stroke: 1px #f33;
-}
-
-.title-animate .p-0::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 0;
-  color: rgb(255, 51, 51);
-  -webkit-text-stroke: 0px #f33;
-  overflow: hidden;
-  animation: animate 6s linear infinite;
-}
-
-@keyframes animate {
-  0%,10%,100% {
-    height: 0;
-  }
-  70%, 90% {
-    height: 100%;
-  }
-} */
-
-
-
-
