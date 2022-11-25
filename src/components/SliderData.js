@@ -299,11 +299,11 @@ export const ourMentors = [
         position_en: "Head of the Field Development Group of the Ustyurt GDU of the Department for Design and Monitoring of the Development of Hydrocarbon Fields"
     },
     {
-        image: "../assets/images/homepage-1/pens-9.jpg",
-        fullName_ru: "Бободжанова Рано Васитовна",
-        fullName_uz: "Бободжанова Рано Васитовна",
-        fullName_oz: "Bobodjanova Ra'no Vasitovna",
-        fullName_en: "Bobodzhanova Rano Vasitovna",
+        image: "../assets/images/homepage-1/pens-9.JPG",
+        fullName_ru: "Бободжанова Рано Васидовна",
+        fullName_uz: "Бободжанова Рано Васидовна",
+        fullName_oz: "Bobodjanova Rano Vasidovna",
+        fullName_en: "Bobodzhanova Rano Vasidovna",
         position_ru: "Заведующий  лабораторией физико-химических исследований углеводородных смесей",
         position_uz: "Углеводород аралашмаларини физик-кимёвий тадқиқотлар лабораторияси мудири",
         position_oz: "Uglevodorod aralashmalarini fizik-kimyoviy tadqiqotlar laboratoriyasi mudiri",
