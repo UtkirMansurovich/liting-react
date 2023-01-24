@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 import {AppContext} from "../../context";
 import NavbarChild from "./NavbarChild";
 import Contrast from "../Contrast";
+import Search from '../Search';
 import {useTranslation} from "react-i18next";
 
 const Navbar = () => {
-    const {navParent, showContrast, handlerSelect, getCookie, openContrast} = useContext(AppContext);
+    const {navParent, showContrast, handlerSelect, getCookie, openContrast, showSearch, openSearch} = useContext(AppContext);
     // console.log(navParent);
     const [toggle, setToggle] = useState(false);
     const { t } = useTranslation();
@@ -19,6 +20,8 @@ const Navbar = () => {
         return(
           <Contrast/>
         )
+    }else if(showSearch) {
+        return <Search/>
     }else {
         return(
           <header className="menu-style">
@@ -78,6 +81,11 @@ const Navbar = () => {
                                       <li>
                                           <a href="https://www.facebook.com/uzlitineftgaz/" target="_blank" className="text-custom-white">
                                               <i className="fab fa-facebook-f"></i>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a onClick={openSearch} href="#" className="text-custom-white">
+                                              <i class="fas fa-search"></i>
                                           </a>
                                       </li>
                                   </ul>

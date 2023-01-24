@@ -24,6 +24,9 @@ const AppProvider = ({ children }) => {
   const [selectFontSmall, setSelectFontSmall] = useState(true);
   const [selectFontBig, setSelectFrontBig] = useState(false);
   const contrastRef = useRef();
+  // Search
+  const [showSearch, setShowSearch] = useState(false);
+  const SearchRef = useRef();
 
     const navbarList = () => {
     axios
@@ -84,14 +87,26 @@ const AppProvider = ({ children }) => {
       setShowContrast(prev => !prev);
     }
 
+    const openSearch = () => {
+      setShowSearch(prev => !prev);
+    }
+
     const closeContrast = (e) => {
       if(contrastRef.current === e.target)
         setShowContrast(false);
     }
 
+    const closeSearch = (e) => {
+      if(SearchRef.current === e.target)
+        setShowSearch(false);
+    }
+
     const keyPress = useCallback(e =>{
       if(e.key === "Escape" && showContrast){
         setShowContrast(false);
+      }
+      if(e.key === 'Escape' && showSearch){
+        setShowSearch(false);
       }
     }, [setShowContrast, showContrast])
 
@@ -134,7 +149,8 @@ const AppProvider = ({ children }) => {
     // console.log(getCookie)
 
     const value = { navParent, slider, allBlogs, labor, handlerSelect, getCookie, selectLang, clickContrast, selectContrast, clickFontSmall, clickFontMedium, clickFontBig, selectFontSmall,
-      selectFontBig, openContrast, showContrast, setShowContrast, contrastRef, closeContrast, clickStandard };
+      selectFontBig, openContrast, showContrast, setShowContrast, contrastRef, closeContrast, clickStandard,
+      showSearch, setShowSearch, SearchRef, openSearch, closeSearch };
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 };
 
