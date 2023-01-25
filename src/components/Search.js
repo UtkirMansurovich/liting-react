@@ -16,7 +16,7 @@ const Search = () => {
                 </div>
             </div>
         </div>
-        <p onClick={openSearch} className="btn-close">
+        <p onClick={openSearch} className="btn-close" style={{top:'-10px'}}>
           <i className="fas fa-times"></i>
         </p>
       </div>
