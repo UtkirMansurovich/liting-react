@@ -126,7 +126,7 @@ const StartBlock = () => {
                                                <div className="post-link d-flex justify-content-between w-100">
                                                    <Link to={/blogs/+slides.category.id+'/'+slides.id} className="link-btn text-custom-blue fw-600 fs-14">{t("StartBlock.readMore")}</Link>
                                                    <p className="text-light-white">
-                                                       <i className="fas fa-eye"></i>
+                                                       <i class="fas fa-street-view"></i>
                                                        <span className="pl-1">{slides.view_count}</span>
                                                    </p>
                                                </div>

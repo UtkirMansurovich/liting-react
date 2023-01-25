@@ -116,7 +116,7 @@ const BlogPagesCom = (props) => {
                                           className="link-btn text-custom-blue fw-600 fs-14"
                                     >{t("BlogPageCom.readMore")}</Link>
                                     <p className="text-light-white">
-                                        <i className="fas fa-eye"></i>
+                                        <i class="fas fa-street-view"></i>
                                         <span className="pl-1">{texts.view_count}</span>
                                     </p>
                                 </div>

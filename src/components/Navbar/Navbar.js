@@ -65,7 +65,12 @@ const Navbar = () => {
                                       </li>
                                       <li>
                                           <a onClick={openContrast} href="#" className="text-custom-white">
-                                              <i className="fas fa-binoculars"></i>
+                                              <i className="fas fa-eye"></i>
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a onClick={openSearch} href="#" className="text-custom-white">
+                                              <i class="fas fa-search"></i>
                                           </a>
                                       </li>
                                       <li>
@@ -83,11 +88,7 @@ const Navbar = () => {
                                               <i className="fab fa-facebook-f"></i>
                                           </a>
                                       </li>
-                                      <li>
-                                          <a onClick={openSearch} href="#" className="text-custom-white">
-                                              <i class="fas fa-search"></i>
-                                          </a>
-                                      </li>
+                                
                                   </ul>
                               </div>
                           </div>
@@ -136,7 +137,7 @@ const Navbar = () => {
                                           <img src="../../assets/images/iqnet.png" className="logon-img" alt="Logo"/>
                                       </div>
                                       <div className="logon">
-                                          <img src="../../assets/images/stz.PNG" className="logon-img" alt="Logo"/>
+                                          <img src="../../assets/images/stz.png" className="logon-img" alt="Logo"/>
                                       </div>
                                       <div className="logon">
                                           <img src="../../assets/images/russian.png" className="logon-img" alt="Logo"/>
