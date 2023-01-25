@@ -771,5 +771,9 @@
   "Pagination": {
     "previous": "Avvalgisi",
     "next": "Keyingisi"
+  },
+  "Search": {
+    "search": "Qidirish",
+    "placeholder": "Sayt bo'yicha qidiruv..."
   }
 }

@@ -771,5 +771,9 @@
   "Pagination": {
     "previous": "Предыдущая",
     "next": "Следующая"
+  },
+  "Search": {
+    "search": "Поиск",
+    "placeholder": "Поиск по сайту..."
   }
 }

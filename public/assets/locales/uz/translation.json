@@ -772,5 +772,9 @@
   "Pagination": {
     "previous": "Аввалгиси",
     "next": "Кейингиси"
+  },
+  "Search": {
+    "search": "Қидириш",
+    "placeholder": "Сайт бўйича қидирув..."
   }
 }

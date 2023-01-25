@@ -771,5 +771,9 @@
   "Pagination": {
     "previous": "Previous",
     "next": "Next"
+  },
+  "Search": {
+    "search": "Search",
+    "placeholder": "Search by site..."
   }
 }
