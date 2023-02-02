@@ -1,8 +1,10 @@
-import React from "react";
+import React, {useContext} from "react";
 import {useTranslation} from "react-i18next";
+import { AppContext } from "../context";
 
 const StartFullWidth = () => {
     const { t } = useTranslation();
+    const {selectFontBig, selectFontSmall} = useContext(AppContext);
 
     return(
         <section className="full-services-sec bg-light-white">
@@ -27,7 +29,7 @@ const StartFullWidth = () => {
                         <div className="right-side custom-container wow fadeInRightBig">
                             <div className="text-wrapper">
                                 <h2 className="text-custom-white fw-600 mb-4" style={{fontSize:'30px'}}>{t("StartFullWidth.title")}</h2>
-                                <p className="text-custom-white mb-xl-20 fs-16 fw-600 mb-5 text-justify">{t("StartFullWidth.text")}</p>
+                                <p className={selectFontBig ? "fs-26 text-custom-white mb-xl-20 fw-600 mb-5 text-justify" : selectFontSmall ? "fs-16 text-custom-white mb-xl-20 fw-600 mb-5 text-justify" : "fs-20 text-custom-white mb-xl-20 fw-600 mb-5 text-justify"}>{t("StartFullWidth.text")}</p>
                                 {/*<div className="row">*/}
                                 {/*    <div className="col-sm-6">*/}
                                 {/*        <div className="right-side-box wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">*/}

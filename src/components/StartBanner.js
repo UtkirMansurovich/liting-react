@@ -49,7 +49,7 @@ const StartBanner = () => {
             }
         ]
     }
-    const {slider, getCookie, closeContrast, contrastRef} = useContext(AppContext);
+    const {slider, getCookie, closeContrast, contrastRef, openSearch, selectFontSmall, selectFontBig} = useContext(AppContext);
     const { t } = useTranslation();
     
     if(slider.length > 0 ){
@@ -81,15 +81,15 @@ const StartBanner = () => {
                                     : getCookie.i18next === 'uz' ? slide.title_uz
                                     : getCookie.i18next === 'oz' ? slide.title_oz : slide.title_ru}
                             </h1>
-                            <p className="slideP">
+                            <p className={selectFontBig ? "fs-26 slideP" : selectFontSmall ? 'slideP' : 'fs-20 slideP'}>
                                 {getCookie.i18next === 'en' ? slide.anons_en :
                                   getCookie.i18next === 'uz' ? slide.anons_uz :
                                     getCookie.i18next === 'oz' ? slide.anons_oz : slide.anons_ru }
                             </p>
                         </div>
                         <div>
-                            <Link to={/blogs/+slide.category.id+'/'+slide.id} className="btn-first btn-submit text-custom-white mr-3 mt-4">{t("StartBanner.readMore")}</Link>
-                            <Link to={/blogs/+slide.category.id} className="btn-first btn-border mt-4">
+                            <Link to={/blogs/+slide.category.id+'/'+slide.id} className={selectFontBig ? "fs-26 btn-first btn-submit text-custom-white mr-3 mt-4" : selectFontSmall ? 'btn-first btn-submit text-custom-white mr-3 mt-4' : 'fs-20 btn-first btn-submit text-custom-white mr-3 mt-4'}>{t("StartBanner.readMore")}</Link>
+                            <Link to={/blogs/+slide.category.id} className={selectFontBig ? "fs-26 btn-first btn-border mt-4" : selectFontSmall ? 'btn-first btn-border mt-4' : "fs-20 btn-first btn-border mt-4"}>
                                 {getCookie.i18next === 'en' ? slide.category.name_en :
                                   getCookie.i18next === 'uz' ? slide.category.name_uz :
                                     getCookie.i18next === 'oz' ? slide.category.name_oz : slide.category.name_ru }

@@ -3,7 +3,7 @@ import { AppContext } from '../../context';
 
 const StartServiceModal = ({openGip, setOpenGip, cheifEngineers, id}) => {
 
-    const {getCookie} = useContext(AppContext);
+    const {getCookie, selectFontBig, selectFontSmall} = useContext(AppContext);
 
     const modalRef = useRef();
 
@@ -30,11 +30,11 @@ const StartServiceModal = ({openGip, setOpenGip, cheifEngineers, id}) => {
     return (
             <div className={openGip ? 'popup' : 'popup-close'} ref={modalRef} onClick={closeModal}>
                 <div className={openGip ? 'popup__content' : 'popup__content-close'}>
-                    <div className='popup__right'>
+                    <div className={selectFontBig ? 'fs-26 popup__right' : selectFontSmall ? "popup__right" : "fs-20 popup__right"}>
                         {filtered && filtered.map((engineerText, index) =>
                             <div key={index}>
                                 <i className="fas fa-times popup__icon" onClick={() => setOpenGip(prev => !prev)}></i>
-                                <div dangerouslySetInnerHTML={{__html: getCookie.i18next === 'en' ? engineerText.text_en : getCookie.i18next === 'uz' ? engineerText.text_uz : getCookie.i18next === 'oz' ? engineerText.text_oz : engineerText.text_ru}}/>
+                                <div className={selectFontBig ? 'fs-26' : selectFontSmall ? "" : "fs-20"} dangerouslySetInnerHTML={{__html: getCookie.i18next === 'en' ? engineerText.text_en : getCookie.i18next === 'uz' ? engineerText.text_uz : getCookie.i18next === 'oz' ? engineerText.text_oz : engineerText.text_ru}}/>
                             </div>
                         )}
                     </div>

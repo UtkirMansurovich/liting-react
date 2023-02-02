@@ -10,7 +10,7 @@ function App() {
     const {slider, selectContrast} = useContext(AppContext);
     // if(slider && slider.length > 0) {
         return (
-          <div className={!selectContrast ? "all-contrast" : ""}>
+          <div className={!selectContrast ? "all-contrast all-fontSize" : "all-fontSize"}>
             <Router>
               <Routes>
                 <Route exact path='/' element={<Home/>}/>

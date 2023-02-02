@@ -69,7 +69,7 @@ const StartOurCategory = ({slidesOurCategory}) => {
         }
 
         const { t } = useTranslation();
-        const { getCookie } = useContext(AppContext);
+        const { getCookie, selectFontBig, selectFontSmall } = useContext(AppContext);
         const [ counterOn, setCounterOn ] = useState(false);
 
         return (
@@ -85,7 +85,7 @@ const StartOurCategory = ({slidesOurCategory}) => {
                                 </h3>
                             </div>
                             <div className="section-description">
-                                <p className="text-light-white">{t("StartOurCategory.text")}</p>
+                                <p className={selectFontBig ? "fs-26 text-light-white" : selectFontSmall ? 'text-light-white' : 'fs-20 text-light-white'}>{t("StartOurCategory.text")}</p>
                             </div>
                         </div>
                         <Slider {...settings}>
@@ -94,12 +94,12 @@ const StartOurCategory = ({slidesOurCategory}) => {
                                     <div style={{overflow:'hidden'}}>
                                         <div className="slidesTexts" style={{background: `url(${slides.image}) no-repeat center center/cover`}}>
                                             <div className="slidesTextsChild">
-                                                <h5 className="text-custom-blue no-margin fw-600 fs-20 ourCategorySlideH5">
+                                                <h5 className={selectFontBig ? "fs-26 text-custom-blue no-margin fw-600 fs-20 ourCategorySlideH5" : selectFontSmall ? 'text-custom-blue no-margin fw-600 fs-20 ourCategorySlideH5' : 'fs-20 text-custom-blue no-margin fw-600 fs-20 ourCategorySlideH5'}>
                                                     {getCookie.i18next === 'en' ? slides.title_en :
                                                         getCookie.i18next === 'uz' ? slides.title_uz :
                                                             getCookie.i18next === 'oz' ? slides.title_oz : slides.title_ru }
                                                 </h5>
-                                                <p className="text-light-white no-margin ourCategorySlideP">
+                                                <p className={selectFontBig ? "fs-26 text-light-white no-margin ourCategorySlideP" : selectFontSmall ? "text-light-white no-margin ourCategorySlideP" : "fs-20 text-light-white no-margin ourCategorySlideP"}>
                                                     {slides.text}
                                                     {getCookie.i18next === 'en' ? slides.text_en :
                                                         getCookie.i18next === 'uz' ? slides.text_uz :
@@ -115,7 +115,7 @@ const StartOurCategory = ({slidesOurCategory}) => {
                             <div className="categories-tabs">
                                  <ul className="custom nav nav-tabs">
                                      <li className="nav-item">
-                                         <p className="nav-link text-custom-black">
+                                         <p className={selectFontBig ? "fs-26 nav-link text-custom-black" : selectFontSmall ? "nav-link text-custom-black" : 'fs-20 nav-link text-custom-black'}>
                                              <span style={{display:'flex', justifyContent:'center', alignItems:'self-end'}}>
                                                  <img src="../assets/images/svg/1.png" className="image-fit" alt="svg"/>
                                                  <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
@@ -126,7 +126,7 @@ const StartOurCategory = ({slidesOurCategory}) => {
                                          </p>
                                      </li>
                                      <li className="nav-item">
-                                         <p className="nav-link text-custom-black">
+                                         <p className={selectFontBig ? "fs-26 nav-link text-custom-black" : selectFontSmall ? "nav-link text-custom-black" : 'fs-20 nav-link text-custom-black'}>
                                              <span style={{display:'flex', justifyContent:'center', alignItems:'self-end'}}>
                                                  <img src="../assets/images/svg/4.png" className="image-fit" alt="svg"/>
                                                  <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
@@ -137,7 +137,7 @@ const StartOurCategory = ({slidesOurCategory}) => {
                                          </p>
                                      </li>
                                      <li className="nav-item">
-                                         <p className="nav-link text-custom-black">
+                                         <p className={selectFontBig ? "fs-26 nav-link text-custom-black" : selectFontSmall ? "nav-link text-custom-black" : 'fs-20 nav-link text-custom-black'}>
                                              <span style={{display:'flex', justifyContent:'center', alignItems:'self-end', marginBottom:'-5px'}}>
                                                  <img src="../assets/images/svg/5.svg" className="image-fit" alt="svg" style={{marginTop:"-5px"}}/>
                                                  <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
@@ -148,7 +148,7 @@ const StartOurCategory = ({slidesOurCategory}) => {
                                          </p>
                                      </li>
                                      <li className="nav-item">
-                                         <p className="nav-link text-custom-black">
+                                         <p className={selectFontBig ? "fs-26 nav-link text-custom-black" : selectFontSmall ? "nav-link text-custom-black" : 'fs-20 nav-link text-custom-black'}>
                                              <span style={{display:'flex', justifyContent:'center', alignItems:'self-end'}}>
                                                  <img src="../assets/images/svg/3.png" className="image-fit" alt="svg"/>
                                                  <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)} style={{display:"flex", alignItems:'end', position:'relative'}}>

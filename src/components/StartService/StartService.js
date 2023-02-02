@@ -8,7 +8,7 @@ const StartService = ({cheifEngineers}) => {
     const [openGip, setOpenGip] = useState(false);
     const [id, setId] = useState('');
     const { t } = useTranslation();
-    const {getCookie} = useContext(AppContext);
+    const {getCookie, selectFontBig, selectFontSmall} = useContext(AppContext);
 
     const openModal = (id) => {
         setOpenGip(prev => !prev);
@@ -27,7 +27,7 @@ const StartService = ({cheifEngineers}) => {
                         </h3>
                     </div>
                     <div className="section-description">
-                        <p className="text-light-white">{t("StartService.text")}</p>
+                        <p className={selectFontBig ? "fs-26 text-light-white" : selectFontSmall ? "text-light-white" : "fs-20 text-light-white"}>{t("StartService.text")}</p>
                     </div>
                 </div>
                 <div className="row">
@@ -57,12 +57,12 @@ const StartService = ({cheifEngineers}) => {
                                     <div className="service-item animate-img mb-xl-20" onClick={()=>openModal(engineer.id)} style={{cursor: "pointer"}}>
                                         <img src={engineer.image} className="image-fit" alt="img"/>
                                         <div className="text-wrapper">
-                                            <h5 className="text-custom-blue no-margin fw-600 fs-20">
+                                            <h5 className={selectFontBig ? "text-custom-blue no-margin fw-600 fs-26" : selectFontSmall ? "text-custom-blue no-margin fw-600 fs-20" : "text-custom-blue no-margin fw-600 fs-20"}>
                                                 {getCookie.i18next === 'en' ? engineer.fullName_en :
                                                             getCookie.i18next === 'uz' ? engineer.fullName_uz :
                                                                 getCookie.i18next === 'oz' ? engineer.fullName_oz : engineer.fullName_ru }    
                                             </h5>
-                                            <p className="text-light-white no-margin">
+                                            <p className={selectFontBig ? "fs-26 text-light-white no-margin" : selectFontSmall ? "text-light-white no-margin" : "fs-20 text-light-white no-margin"}>
                                                 {getCookie.i18next === 'en' ? engineer.position_en :
                                                             getCookie.i18next === 'uz' ? engineer.position_uz :
                                                                 getCookie.i18next === 'oz' ? engineer.position_oz : engineer.position_ru }

@@ -104,7 +104,7 @@ const StartClient = ({sliderClient}) => {
                                                                     getCookie.i18next === "uz" ? slides.text_uz :
                                                                         getCookie.i18next === "oz" ? slides.text_oz : slides.text_ru}
                                                             </p>
-                                                            <img src={slides.signature} alt="Signature"/>
+                                                            {/* <img src={slides.signature} alt="Signature"/> */}
                                                         </div>
                                                     </div>
                                                 </div>

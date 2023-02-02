@@ -24,10 +24,30 @@ const AppProvider = ({ children }) => {
   const [selectFontSmall, setSelectFontSmall] = useState(true);
   const [selectFontBig, setSelectFrontBig] = useState(false);
   const contrastRef = useRef();
+  const [fontSize, setFontSize] = useState({
+    ten: 10,
+    twelve: 12,
+    threeten: 13,
+    fourteen: 14,
+    fifeteen: 15,
+    sixteen: 16,
+    seventen: 17,
+    eighteen: 18,
+    nineteen: 19,
+    twenty: 20,
+    twentyOne: 21,
+    twentyTwo: 22,
+    twentyThree: 23,
+    twentyFour: 24,
+    twentyFife: 25,
+    twentySix: 26,
+    Thirty: 30
+  });
+  
   // Search
   const [showSearch, setShowSearch] = useState(false);
   const SearchRef = useRef();
-
+  
     const navbarList = () => {
     axios
       .get(BASE_URL + '/api/category/all/sort')

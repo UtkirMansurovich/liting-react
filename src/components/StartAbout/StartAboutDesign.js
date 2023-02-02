@@ -1,6 +1,6 @@
 import React, {useRef, useEffect, useCallback} from 'react';
 
-export default function StartAboutDesign({setOpenDesignModal, openDesignModal}) {
+export default function StartAboutDesign({setOpenDesignModal, openDesignModal, selectFontBig, selectFontSmall}) {
     const modalRef = useRef();
 
     const closeModal = (e) => {
@@ -26,8 +26,8 @@ export default function StartAboutDesign({setOpenDesignModal, openDesignModal}) 
             <div className='popup__right'>
                 <div>
                     <i className="fas fa-times popup__icon" onClick={() => setOpenDesignModal(prev => !prev)}></i>
-                    <p className='popup__text popup__bold'>НАУЧНО-ТЕХНОЛОГИЧЕСКАЯ ДЕЯТЕЛЬНОСТЬ</p>
-                    <ul>
+                    <p className={selectFontBig ? 'fs-26 popup__text popup__bold': selectFontSmall ? "popup__text popup__bold" : "fs-20 popup__text popup__bold"}>НАУЧНО-ТЕХНОЛОГИЧЕСКАЯ ДЕЯТЕЛЬНОСТЬ</p>
+                    <ul className={selectFontBig ? 'fs-26' : selectFontSmall ? '' : 'fs-20'}>
                         <li>прогнозирование уровня добычи нефти, газа и конденсата по месторождениям;</li>
                         <li>проектирование разработки нефтяных, газовых и нефтегазо-конденсатных месторождений и подземных хранилищ газа, с применением трехмерного моделирования резервуаров углеводородов;</li>
                         <li>содействие эффективной разработке и эксплуатации месторождений нефти и газа, включая месторождения с аномально высокими пластовыми давлениями, трудно извлекаемыми запасами в сложных горно-геологических условиях, истощенные месторождения, а также моделирования эксплуатации подземного хранилища газа в сезонах возрастания потребления газа;</li>

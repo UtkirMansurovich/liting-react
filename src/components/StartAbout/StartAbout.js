@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import {useTranslation} from "react-i18next";
 import StartAboutResearch from "./StartAboutResearch";
 import StartAboutDesign from "./StartAboutDesign";
+import { AppContext } from "../../context";
 
 const StartAbout = () => {
     const [openResearchModal, setOpenResearchModal] = useState(false);
     const [openDesignModal, setOpenDesignModal] = useState(false);
     const { t } = useTranslation();
+    const {selectFontBig, selectFontSmall} = useContext(AppContext);
 
     const openModalResearch = () => {
         setOpenResearchModal(prev => !prev);
@@ -26,7 +28,7 @@ const StartAbout = () => {
                                     <img src="../assets/images/banner-icon-01.png" className="full-width" alt="img"/>
                                 </div>
                                 <div className="meta-text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                                    <h4 className="text-custom-white no-margin fs-20">{t("StartAbout.project")}</h4>
+                                    <h4 className={selectFontBig ? "fs-26 text-custom-white no-margin" : selectFontSmall ? "text-custom-white no-margin fs-20" : "fs-20 text-custom-white no-margin"}>{t("StartAbout.project")}</h4>
                                 </div>
                             </div>
                         </div>
@@ -43,11 +45,11 @@ const StartAbout = () => {
                                 </div>
                             </div>
                             <div className="about-desc">
-                                <p className="text-light-white mb-xl-20">{t("StartAbout.text")}</p>
+                                <p className={selectFontBig ? "fs-26 text-light-white mb-xl-20" : selectFontSmall ? "text-light-white mb-xl-20" : "fs-20 text-light-white mb-xl-20"}>{t("StartAbout.text")}</p>
                             </div>
                             <div className="company-progress">
                                 <div className="progress-item">
-                                    <label onClick={openModalResearch} className="text-custom-black fs-16 fw-600 about-link">{t("StartAbout.development")} 
+                                    <label onClick={openModalResearch} className={selectFontBig ? "fs-26 text-custom-black fs-16 fw-600 about-link" : selectFontSmall ? "text-custom-black fs-16 fw-600 about-link" : 'fs-20 text-custom-black fs-16 fw-600 about-link'}>{t("StartAbout.development")} 
                                         {/* <span>1500</span> */}
                                     </label>
                                     {/* <div className="progress">
@@ -56,7 +58,7 @@ const StartAbout = () => {
                                     </div> */}
                                 </div>
                                 <div className="progress-item">
-                                    <label onClick={openModalDesign} className="text-custom-black fs-16 fw-600 about-link">{t("StartAbout.design")} 
+                                    <label onClick={openModalDesign} className={selectFontBig ? "fs-26 text-custom-black fs-16 fw-600 about-link" : selectFontSmall ? "text-custom-black fs-16 fw-600 about-link" : 'fs-20 text-custom-black fs-16 fw-600 about-link'}>{t("StartAbout.design")} 
                                         {/* <span>2000</span> */}
                                     </label>
                                     {/* <div className="progress">
@@ -76,8 +78,8 @@ const StartAbout = () => {
                     </div>
                 </div>
             </div>
-            <StartAboutResearch setOpenResearchModal={setOpenResearchModal} openResearchModal={openResearchModal}/>
-            <StartAboutDesign setOpenDesignModal={setOpenDesignModal} openDesignModal={openDesignModal}/>
+            <StartAboutResearch setOpenResearchModal={setOpenResearchModal} openResearchModal={openResearchModal} selectFontBig={selectFontBig} selectFontSmall={selectFontSmall}/>
+            <StartAboutDesign setOpenDesignModal={setOpenDesignModal} openDesignModal={openDesignModal} selectFontBig={selectFontBig} selectFontSmall={selectFontSmall}/>
         </section>
     )
 }

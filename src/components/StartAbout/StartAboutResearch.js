@@ -1,6 +1,6 @@
 import React, {useRef, useEffect, useCallback} from 'react';
 
-export default function StartAboutResearch({setOpenResearchModal, openResearchModal}) {
+export default function StartAboutResearch({setOpenResearchModal, openResearchModal, selectFontBig, selectFontSmall}) {
 
     const modalRef = useRef();
 
@@ -27,9 +27,9 @@ export default function StartAboutResearch({setOpenResearchModal, openResearchMo
             <div className='popup__right'>
                 <div>
                     <i className="fas fa-times popup__icon" onClick={() => setOpenResearchModal(prev => !prev)}></i>
-                    <p className='popup__text popup__bold'>ПРОЕКТНО-ТЕХНИЧЕСКАЯ ДЕЯТЕЛЬНОСТЬ</p>
-                    <p className='popup__text'>Полный комплекс сквозного проектирования обустройства месторождений нефти и газа, а также инженерных коммуникаций нефтегазохимических производств, других объектов нефтегазовой отрасли с использованием BIM технологий, включая::</p>
-                    <ul>
+                    <p className={selectFontBig ? 'fs-26 popup__text popup__bold' : selectFontSmall ? 'popup__text popup__bold' : 'fs-20 popup__text popup__bold'}>ПРОЕКТНО-ТЕХНИЧЕСКАЯ ДЕЯТЕЛЬНОСТЬ</p>
+                    <p className={selectFontBig ? 'fs-26 popup__text' : selectFontSmall ? 'popup__text' : 'fs-20 popup__text'}>Полный комплекс сквозного проектирования обустройства месторождений нефти и газа, а также инженерных коммуникаций нефтегазохимических производств, других объектов нефтегазовой отрасли с использованием BIM технологий, включая::</p>
+                    <ul className={selectFontBig ? 'fs-26' : selectFontSmall ? '' : 'fs-20'}>
                         <li>инженерно-технические изыскания;</li>
                         <li>технико-экономические обоснования;</li>
                         <li>архитектурно-строительные и конструкторские решения;</li>

@@ -65,7 +65,7 @@ Version: 1.0.0
 }
 @keyframes shine {
     100% {
-            left: 125%;
+        left: 125%;
     }
 }
 @keyframes fadeHeaderInDown {
@@ -110,7 +110,7 @@ body {
     font-family: 'Rubik',sans-serif;
     margin: 0px;
     padding: 0px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.8;
     font-weight: 400;
     color: #000000;
@@ -560,7 +560,7 @@ h6 {
     font-size: 16px;
 }
 p {
-    font-size: 14px;
+    /* font-size: 14px; */
     line-height: 1.8;
     margin-bottom: 10px;
     font-family: 'Rubik',sans-serif;
@@ -659,7 +659,13 @@ table {
     font-size: 18px;
 }
 .fs-20 {
-    font-size: 20px;
+    font-size: 20px !important;
+}
+.fs-22 {
+    font-size: 22px;
+}
+.fs-32 {
+    font-size: 32px !important;
 }
 .fw-100 {
     font-weight: 100;
@@ -1328,7 +1334,7 @@ label.custom-checkbox .checkmark:after {
 }
 .topbar .right-side ul{
     display: flex;
-    align-self: flex-end;
+    align-items: center;
     justify-content: flex-end;
 }
 .topbar .right-side li{
@@ -3603,7 +3609,7 @@ background-position: center;
     flex-wrap: wrap;
 }
 .comment-box .comments li article .comment-content .comment-meta .comment-meta-reply .comment-reply-link{
-        font-size: 20px;
+    font-size: 20px;
     padding: 0 15px;
 }
 .comment-box .comments li article .comment-content .comment-meta .comment-meta-header .post-date .date {
@@ -3633,7 +3639,7 @@ background-position: center;
 }
 .sidebar_wrap .sidebar .listing-categories li:after{
     content: "\f162";
-       font-family: "Flaticon";
+    font-family: "Flaticon";
     font-weight: 900;
     position: absolute;
     left: 0;
@@ -3959,7 +3965,7 @@ background-position: center;
     top: 0%;
     text-align: center;
     z-index: 10;
-        height: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
