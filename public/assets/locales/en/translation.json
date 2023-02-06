@@ -775,5 +775,12 @@
   "Search": {
     "search": "Search",
     "placeholder": "Search by site..."
+  },
+  "Visitors": {
+    "visit": "Visits",
+    "year": "Year",
+    "month": "Month",
+    "day": "Day",
+    "total": "Total"
   }
 }

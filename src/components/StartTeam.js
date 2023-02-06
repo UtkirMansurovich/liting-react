@@ -5,7 +5,7 @@ import { AppContext } from "../context";
 const StartTeam = ({ourMentors}) => {
     
     const { t } = useTranslation();
-    const {getCookie} = useContext(AppContext);
+    const {getCookie, } = useContext(AppContext);
 
     return(
         <section className="section-padding our-team arrow-shape-1">

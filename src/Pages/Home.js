@@ -19,6 +19,7 @@ import StartBanner from "../components/StartBanner";
 import {sliderClient, SliderOurCategory, ourMentors, cheifEngineers} from '../components/SliderData';
 import Training from '../components/Training'
 import Laboratory from '../components/Laboratory';
+import Visitors from '../components/Visitors';
 
 const Home = () => {
         return(
@@ -38,6 +39,7 @@ const Home = () => {
                 <StartTeam ourMentors={ourMentors}/>
                 <StartClient sliderClient={sliderClient}/>
                 {/* <StartFaqs/> */}
+                <Visitors/>
                 <StartNewsLetter/>
                 <StartFooter/>
                 {/*<LoginRegister/>*/}

@@ -775,5 +775,12 @@
   "Search": {
     "search": "Поиск",
     "placeholder": "Поиск по сайту..."
+  },
+  "Visitors": {
+    "visit": "Посещения",
+    "year": "Год",
+    "month": "Месяц",
+    "day": "День",
+    "total": "Общий"
   }
 }

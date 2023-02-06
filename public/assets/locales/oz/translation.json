@@ -775,5 +775,12 @@
   "Search": {
     "search": "Qidirish",
     "placeholder": "Sayt bo'yicha qidiruv..."
+  },
+  "Visitors": {
+    "visit": "Tashriflar",
+    "year": "Yil",
+    "month": "Oy",
+    "day": "Kun",
+    "total": "Jami"
   }
 }
