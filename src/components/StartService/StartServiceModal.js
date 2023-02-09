@@ -25,7 +25,7 @@ const StartServiceModal = ({openGip, setOpenGip, cheifEngineers, id}) => {
     }, [keyPress]);
 
     const filtered = cheifEngineers.filter(el => el.id === id);
-    console.log(filtered)
+    // console.log(filtered)
 
     return (
             <div className={openGip ? 'popup' : 'popup-close'} ref={modalRef} onClick={closeModal}>

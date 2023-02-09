@@ -24,29 +24,27 @@ const AppProvider = ({ children }) => {
   const [selectFontSmall, setSelectFontSmall] = useState(true);
   const [selectFontBig, setSelectFrontBig] = useState(false);
   const contrastRef = useRef();
-  const [fontSize, setFontSize] = useState({
-    ten: 10,
-    twelve: 12,
-    threeten: 13,
-    fourteen: 14,
-    fifeteen: 15,
-    sixteen: 16,
-    seventen: 17,
-    eighteen: 18,
-    nineteen: 19,
-    twenty: 20,
-    twentyOne: 21,
-    twentyTwo: 22,
-    twentyThree: 23,
-    twentyFour: 24,
-    twentyFife: 25,
-    twentySix: 26,
-    Thirty: 30
-  });
-  
+    
   // Search
   const [showSearch, setShowSearch] = useState(false);
   const SearchRef = useRef();
+  const [searchItem, setSearchItem] = useState('');
+  const [searchedItem, setSearchedItem] = useState([]);
+    
+  const handlerSubmit = (e) => {
+    e.preventDefault();
+    axios.post(BASE_URL + '/api/blog/search?keyword='+searchItem
+    ).then(res => {
+      window.localStorage.setItem('arr', JSON.stringify(res.data.object));
+      window.location.href = '/search?keyword='+searchItem;
+    }).catch(err => {
+      console.log(err)
+    })
+  }
+  
+  const handlerChange = (e) => {
+    setSearchItem(e.target.value);
+  }
   
     const navbarList = () => {
     axios
@@ -77,7 +75,7 @@ const AppProvider = ({ children }) => {
           .get(BASE_URL + '/api/blog/all/9')
           .then((res) => {
               setAllBlogs(res.data.object);
-              console.log(res.data.object);
+              // console.log(res.data.object);
           })
           .catch((err) => {
               console.log(err);
@@ -89,7 +87,7 @@ const AppProvider = ({ children }) => {
         .get(BASE_URL + '/api/blog/all/56')
         .then(res => { 
             setLabor(res.data.object);
-            console.log(res.data.object);
+            // console.log(res.data.object);
         })
         .catch(err => {
           console.log(err);
@@ -146,10 +144,20 @@ const AppProvider = ({ children }) => {
     const clickFontMedium = () => {
       setSelectFontSmall(false);
       setSelectFrontBig(false);
+        var children = document.getElementById('alkash').children;
+        for(var i=0; i<children.length; i++){
+            var child = children[i];
+            child.style.cssText = "font-size: px !important;";
+        }
     }
     const clickFontBig = () => {
       setSelectFontSmall(false);
       setSelectFrontBig(true);
+        var children = document.getElementById('alkash').children;
+        for(var i=0; i<children.length; i++){
+            var child = children[i];
+            child.style.cssText = "font-size: px !important;";
+        }
     }
 
     const { t } = useTranslation();
@@ -170,7 +178,7 @@ const AppProvider = ({ children }) => {
 
     const value = { navParent, slider, allBlogs, labor, handlerSelect, getCookie, selectLang, clickContrast, selectContrast, clickFontSmall, clickFontMedium, clickFontBig, selectFontSmall,
       selectFontBig, openContrast, showContrast, setShowContrast, contrastRef, closeContrast, clickStandard,
-      showSearch, setShowSearch, SearchRef, openSearch, closeSearch };
+      showSearch, setShowSearch, SearchRef, openSearch, closeSearch, handlerSubmit, handlerChange, searchItem, searchedItem, setSearchedItem };
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 };
 

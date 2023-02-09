@@ -13,7 +13,7 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 const PageCom = (props) => {
     const [blog,setBlog] = useState(null);
     const { t } = useTranslation();
-    const {getCookie} = useContext(AppContext);
+    const {getCookie, selectFontBig, selectFontSmall} = useContext(AppContext);
     // console.log(page[0]);
     const getBlog = () => {
         if (props.blogId){
@@ -37,6 +37,10 @@ const PageCom = (props) => {
         }
 
     }
+
+    
+    
+
     useEffect(async () => {
         getBlog();
     }, [props.catId,props.blogId]);
@@ -58,10 +62,10 @@ const PageCom = (props) => {
                                     </h1>
                                 </div>
                                 <ul className="custom breadcrumb">
-                                    <li>
+                                    <li className={selectFontBig ? "fs-26" : selectFontSmall ? "" : "fs-20"}>
                                         <Link to="/">{t("BlogPageCom.home")}</Link>
                                     </li>
-                                    <li className="active">
+                                    <li className={selectFontBig ? "fs-26 active" : selectFontSmall ? "active" : "fs-20 active"}>
                                         {blog && getCookie.i18next === "en" ? blog.category.name_en :
                                             blog && getCookie.i18next === "oz" ? blog.category.name_oz :
                                                 blog && getCookie.i18next === "uz" ? blog.category.name_uz :
@@ -102,7 +106,7 @@ const PageCom = (props) => {
                                                     getCookie.i18next === "oz" ? blog.title_oz :
                                                         getCookie.i18next === "uz" ? blog.title_uz : blog.title_ru}
                                             </h3>
-                                            <div dangerouslySetInnerHTML={{__html: getCookie.i18next === "en" ? blog.text_en : getCookie.i18next === "oz" ? blog.text_oz : getCookie.i18next === "uz" ? blog.text_uz : blog.text_ru}} className="textDecorate flex-column mb-xl-20 p-4"/>
+                                            <div id='alkash' dangerouslySetInnerHTML={{__html: getCookie.i18next === "en" ? blog.text_en : getCookie.i18next === "oz" ? blog.text_oz : getCookie.i18next === "uz" ? blog.text_uz : blog.text_ru}} className={selectFontBig ? "fs-26 textDecorate flex-column mb-xl-20 p-4" : selectFontSmall ? "textDecorate flex-column mb-xl-20 p-4" : "fs-20 textDecorate flex-column mb-xl-20 p-4"}/>
                                         </div>:""
                                     }
                                 </div>

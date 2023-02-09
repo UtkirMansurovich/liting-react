@@ -1,19 +1,22 @@
-import React from "react";
+import React, {useContext} from "react";
 import {useTranslation} from "react-i18next";
+import { AppContext } from "../context";
 
 const StartNewsLetter = () => {
     const { t } = useTranslation();
+    const {selectFontBig, selectFontSmall} = useContext(AppContext);
+
     return(
         <section className="section-padding bg-call-to-action">
             <div className="overlay overlay-bg"></div>
             <div className="container">
                 <div className="section-header">
                     <div className="section-heading">
-                        <h5 className="text-custom-blue wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">{t("StartNewsLetter.freeConsultation")}</h5>
+                        <h5 className={selectFontBig ? "fs-26 text-custom-blue wow fadeInUp" : selectFontSmall ? "text-custom-blue wow fadeInUp" : "fs-20 text-custom-blue wow fadeInUp"} data-wow-duration="1s" data-wow-delay="0.3s">{t("StartNewsLetter.freeConsultation")}</h5>
                         <h3 className="text-custom-white fw-700">{t("StartNewsLetter.title")}</h3>
                     </div>
                     <div className="section-description">
-                        <p className="text-custom-white">{t("StartNewsLetter.text")}</p>
+                        <p className={selectFontBig ? "fs-26 text-custom-white" : selectFontSmall ? "text-custom-white" : "fs-20 text-custom-white"}>{t("StartNewsLetter.text")}</p>
                     </div>
                 </div>
                 <div className="row consult-form">
@@ -57,7 +60,7 @@ const StartNewsLetter = () => {
                     </div>
                     <div className="col-lg-4 col-md-6 col-12">
                         <div className="form-group">
-                            <button type="submit" className="btn-first btn-submit full-width btn-height">{t("StartNewsLetter.send")}</button>
+                            <button type="submit" className={selectFontBig ? "fs-26 btn-first btn-submit full-width btn-height" : selectFontSmall ? "btn-first btn-submit full-width btn-height" : "fs-20 btn-first btn-submit full-width btn-height"}>{t("StartNewsLetter.send")}</button>
                         </div>
                     </div>
                 </div>

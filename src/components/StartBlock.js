@@ -108,7 +108,7 @@ const StartBlock = () => {
                                                                 getCookie.i18next === "oz" ? slides.title_oz : slides.title_ru
                                                    }</Link>
                                                </h2>
-                                               <p className="text-light-white no-margin">{
+                                               <p className={selectFontBig ? "fs-26 text-light-white no-margin" : selectFontSmall ? "text-light-white no-margin" : "fs-20 text-light-white no-margin"}>{
                                                     getCookie.i18next === "en" ? slides.anons_en :
                                                         getCookie.i18next === "uz" ? slides.anons_uz :
                                                             getCookie.i18next === "oz" ? slides.anons_oz : slides.anons_ru
@@ -125,7 +125,7 @@ const StartBlock = () => {
                                                {/*</div>*/}
                                                <div className="post-link d-flex justify-content-between w-100">
                                                    <Link to={/blogs/+slides.category.id+'/'+slides.id} className={selectFontBig ? "fs-26 link-btn text-custom-blue fw-600" : selectFontSmall ? "link-btn text-custom-blue fw-600 fs-14" : "fs-20 link-btn text-custom-blue fw-600"}>{t("StartBlock.readMore")}</Link>
-                                                   <p className="text-light-white">
+                                                   <p className={selectFontBig ? "fs-26 text-light-white" : selectFontSmall ? "text-light-white" : "fs-20 text-light-white"}>
                                                        <i class="fas fa-street-view"></i>
                                                        <span className="pl-1">{slides.view_count}</span>
                                                    </p>

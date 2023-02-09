@@ -169,10 +169,10 @@ export const sliderClient = [
         position_uz: "​Генеральный директор «ЛУКОЙЛ Узбекистан Оперейтинг Компани»",
         position_oz: "​Генеральный директор «ЛУКОЙЛ Узбекистан Оперейтинг Компани»",
         position_en: "​Генеральный директор «ЛУКОЙЛ Узбекистан Оперейтинг Компани»",
-        text_ru: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
-        text_uz: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
-        text_oz: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
-        text_en: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
+        text_ru: "Отличная компания! На протяжении нескольких лет ведем совместные работы, делимся опытом и развиваемся.",
+        text_uz: "Ажойиб компания! Биз бир неча йилдан бери бирга ишлаб келяпмиз, тажрибамиз билан ўртоқлашамиз ва биргаликда ривожланамиз.",
+        text_oz: "Ajoyib kompaniya! Biz bir necha yildan beri birga ishlab kelyapmiz, tajribamiz bilan o‘rtoqlashamiz va birgalikda rivojlanamiz.",
+        text_en: "Great company! For several years we have been working together, sharing experience and developing.",
         signature: "../assets/images/signature.png"
     },
     {
@@ -185,10 +185,10 @@ export const sliderClient = [
         position_uz: "Председатель Правления АО «Hududgazta’minot»",
         position_oz: "Председатель Правления АО «Hududgazta’minot»",
         position_en: "Председатель Правления АО «Hududgazta’minot»",
-        text_ru: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
-        text_uz: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
-        text_oz: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
-        text_en: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
+        text_ru: "На протяжении нескольких лет АО «O‘ZLITINEFTGAZ» является центром по реализации инновационно-инвестиционных проектов нефтегазовой отрасли нашей республики",
+        text_uz: "\"O‘ZLITINEFTGAZ\" АЖ бир неча йиллардан буён республикамиз нефть ва газ саноатида инновацион инвестиция лойиҳаларини амалга ошириш маркази бўлиб келмоқда",
+        text_oz: "\"O‘ZLITINEFTGAZ\" AJ bir necha yillardan buyon respublikamiz neft va gaz sanoatida innovatsion investitsiya loyihalarini amalga oshirish markazi bo‘lib kelmoqda",
+        text_en: "For several years JSC \"O‘ZLITINEFTGAZ\" has been the center for the implementation of innovative and investment projects in the oil and gas industry of our republic",
         signature: "../assets/images/signature.png"
     },
     {
@@ -201,10 +201,10 @@ export const sliderClient = [
         position_uz: "Председатель правления АО «Узтрансгаз»",
         position_oz: "Председатель правления АО «Узтрансгаз»",
         position_en: "Председатель правления АО «Узтрансгаз»",
-        text_ru: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
-        text_uz: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
-        text_oz: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
-        text_en: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris",
+        text_ru: "Мы рады совместным проектам с компанией АО «O‘ZLITINEFTGAZ» во благо развития нефтегазовой отрасли нашей страны",
+        text_uz: "Мамлакатимиз нефть ва газ саноатини ривожлантириш учун \"O‘ZLITINEFTGAZ\" АЖ билан ҳамкорликдаги лойиҳалар амалга оширилаётганидан хурсандмиз",
+        text_oz: "Mamlakatimiz neft va gaz sanoatini rivojlantirish uchun \"O‘ZLITINEFTGAZ\" AJ bilan hamkorlikdagi loyihalar amalga oshirilayotganidan xursandmiz",
+        text_en: "We are glad to joint projects with JSC \"O'ZLITINEFTGAZ\" for the benefit of the development of the oil and gas industry of our country",
         signature: "../assets/images/signature.png"
     }
 ]

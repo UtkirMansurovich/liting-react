@@ -40,7 +40,7 @@ const StartClient = ({sliderClient}) => {
         prevArrow: <SamplePrevArrow/>,
     }
 
-    const {getCookie} = useContext(AppContext);
+    const {getCookie, selectFontBig, selectFontSmall} = useContext(AppContext);
     const { t } = useTranslation();
 
     return(
@@ -80,12 +80,12 @@ const StartClient = ({sliderClient}) => {
                                                         <div className="content">
                                                             <div className="author d-flex justify-content-between align-items-center">
                                                                 <div className="name">
-                                                                    <h5 style={{textTransform: 'capitalize'}}>
+                                                                    <h5 className={selectFontBig ? "fs-26" : selectFontSmall ? "" : "fs-20"} style={{textTransform: 'capitalize'}}>
                                                                         {getCookie.i18next === 'en' ? slides.fullName_en :
                                                                             getCookie.i18next === "uz" ? slides.fullName_uz :
                                                                                 getCookie.i18next === "oz" ? slides.fullName_oz : slides.fullName_ru}
                                                                     </h5>
-                                                                    <p className="designation">
+                                                                    <p className={selectFontBig ? "fs-26 designation" : selectFontSmall ? "designation" : "fs-20 designation"}>
                                                                         {getCookie.i18next === "en" ? slides.position_en :
                                                                             getCookie.i18next === "uz" ? slides.position_uz :
                                                                                 getCookie.i18next === "oz" ? slides.position_oz : slides.position_ru}
@@ -99,7 +99,7 @@ const StartClient = ({sliderClient}) => {
                                                                     <li style={{listStyle: 'none'}}><i className="fas fa-star"></i></li>
                                                                 </ul>
                                                             </div>
-                                                            <p>
+                                                            <p className={selectFontBig ? "fs-26" : selectFontSmall ? "" : "fs-20"}>
                                                                 {getCookie.i18next === "en" ? slides.text_en :
                                                                     getCookie.i18next === "uz" ? slides.text_uz :
                                                                         getCookie.i18next === "oz" ? slides.text_oz : slides.text_ru}
