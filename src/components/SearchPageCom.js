@@ -2,12 +2,12 @@ import React, {useContext, useEffect} from 'react';
 import { useTranslation } from 'react-i18next';
 import { AppContext } from '../context';
 import {Link} from "react-router-dom";
-import {BASE_URL, BASE_URL_PHOTO} from '../utills/constant';
+import {BASE_URL_PHOTO} from '../utills/constant';
 import lazyImage from '../images/training.jpg';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-function SearchPageCom({props}) {
+function SearchPageCom() {
     const {getCookie, searchedItem, setSearchedItem, selectFontBig, selectFontSmall} = useContext(AppContext);
     
     const { t } = useTranslation();
@@ -77,7 +77,7 @@ function SearchPageCom({props}) {
                                     </p>
                                 </div>
                                 <div className="post-link d-flex justify-content-between w-100" style={{padding:'1.25rem'}}>
-                                    <Link to='/' 
+                                    <Link to={/blogs/+texts.category.id+'/'+texts.id} 
                                           className={selectFontBig ? "link-btn text-custom-blue fw-600 fs-26" : selectFontSmall ? "link-btn text-custom-blue fw-600 fs-14" : "link-btn text-custom-blue fw-600 fs-20"}
                                     >{t("BlogPageCom.readMore")}</Link>
                                     <p className={selectFontBig ? "fs-26 text-light-white" : selectFontSmall ? "text-light-white" : "fs-20 text-light-white"}>
