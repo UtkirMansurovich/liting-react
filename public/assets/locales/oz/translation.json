@@ -774,7 +774,10 @@
   },
   "Search": {
     "search": "Qidirish",
-    "placeholder": "Sayt bo'yicha qidiruv..."
+    "placeholder": "Sayt bo'yicha qidiruv...",
+    "notFound1": "",
+    "notFound2": "kalit so‘zi bo‘yicha ma'lumot topilmadi",
+    "notFound3": "Qayta urinib ko‘ring ..."
   },
   "Visitors": {
     "visit": "Tashriflar",

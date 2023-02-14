@@ -16,7 +16,7 @@ const BlogPagesCom = (props) => {
     const { t } = useTranslation();
     const {getCookie, selectFontBig, selectFontSmall} = useContext(AppContext);
 
-    let limit = 6;
+    let limit = 9;
 
     const getBlogs = async (page) => {
         await axios.get(BASE_URL+"/api/blog/all/"+props.catId+`?page=${page ? page : 0}&pageSize=${limit}`)
@@ -39,7 +39,7 @@ const BlogPagesCom = (props) => {
         localStorage.setItem('activ', data.selected);
     }
 
-    console.log(localStorage.getItem('activ'))
+    // console.log(localStorage.getItem('activ'))
 
     if(blogs.length > 0){
     return (

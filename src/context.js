@@ -30,18 +30,21 @@ const AppProvider = ({ children }) => {
   const SearchRef = useRef();
   const [searchItem, setSearchItem] = useState('');
   const [searchedItem, setSearchedItem] = useState([]);
-    
+
   const handlerSubmit = (e) => {
     e.preventDefault();
-    axios.post(BASE_URL + '/api/blog/search?keyword='+searchItem
+    axios.post(BASE_URL + '/api/blog/search?page=0&pageSize=9&keyword='+searchItem
     ).then(res => {
       window.localStorage.setItem('arr', JSON.stringify(res.data.object));
       window.location.href = '/search?keyword='+searchItem;
     }).catch(err => {
       console.log(err)
     })
+    window.localStorage.setItem('arrNot', searchItem)
   }
-  
+  let query = window.location.search.substring();
+  console.log(query);
+   
   const handlerChange = (e) => {
     setSearchItem(e.target.value);
   }

@@ -774,7 +774,10 @@
   },
   "Search": {
     "search": "Search",
-    "placeholder": "Search by site..."
+    "placeholder": "Search by site...",
+    "notFound1": "By keyword",
+    "notFound2": "found nothing",
+    "notFound3": "Try again ..."
   },
   "Visitors": {
     "visit": "Visits",

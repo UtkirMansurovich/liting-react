@@ -6,9 +6,10 @@ import {BASE_URL_PHOTO} from '../utills/constant';
 import lazyImage from '../images/training.jpg';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import ReactPaginate from 'react-paginate';
 
 function SearchPageCom() {
-    const {getCookie, searchedItem, setSearchedItem, selectFontBig, selectFontSmall} = useContext(AppContext);
+    const {getCookie, searchedItem, setSearchedItem, selectFontBig, selectFontSmall, searchItem} = useContext(AppContext);
     
     const { t } = useTranslation();
     
@@ -16,7 +17,11 @@ function SearchPageCom() {
         const data = window.localStorage.getItem('arr');
         setSearchedItem(JSON.parse(data));
     }, [])
-    console.log(searchedItem);
+    // console.log(searchedItem.length);
+    const dataNot = window.localStorage.getItem('arrNot');
+    // console.log(dataNot);
+    
+  if(searchedItem.length > 0 && searchedItem !== null) {
 
   return (
     <>
@@ -40,7 +45,7 @@ function SearchPageCom() {
                       </div>
                   </div>
               </div>
-              <div className="container section-padding" >
+              <div className="container section-padding">
                   <div className="row">
                       {searchedItem && searchedItem.map((texts, index) =>
                         <div className="col-lg-4 col-md-6 col-sm-12" key={index}>
@@ -93,6 +98,54 @@ function SearchPageCom() {
           </div>
     </>
   )
+}else {
+    return (
+        <>
+        <div className="bg-light-white pb-5" id="up">
+              <div className="subheader section-padding">
+                  <div className="container">
+                      <div className="row">
+                          <div className="col-lg-6">
+                              <div className="breadcrumb-wrapper">
+                                  <div className="page-title">
+                                      <h1 className="text-theme fw-500">{t("Search.search")}</h1>
+                                  </div>
+                                  <ul className="custom breadcrumb">
+                                      <li className={selectFontBig ? "fs-26" : selectFontSmall ? "" : "fs-20"}>
+                                          <Link to="/">{t("BlogPageCom.home")}</Link>
+                                      </li>
+                                      <li className={selectFontBig ? "fs-26 active" : selectFontSmall ? "active" : "fs-20 active"}>{t("Search.search")}</li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <section className="section-padding bg-light-white our-history">
+                <div className="container">
+                    <div className="row " >
+                        <div className="col-lg-12">
+                            <div className="row">
+                                <div className="col-lg-12">
+                                        <div className="blogsParent">
+                                            <h3 className="listing-detail-heading no-margin">{t("Search.notFound1")} <b>"{dataNot}"</b> {t("Search.notFound2")}</h3>
+                                            <div className={selectFontBig ? "fs-26 textDecorate flex-column mb-xl-20 p-4" : selectFontSmall ? "textDecorate flex-column mb-xl-20 p-4" : "fs-20 textDecorate flex-column mb-xl-20 p-4"}>
+                                                <p>{t("Search.notFound3")}</p>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+          </div>
+        </>
+    )
+}
+ 
 }
 
 export default SearchPageCom
