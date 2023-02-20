@@ -8,32 +8,43 @@ import ReactPaginate from 'react-paginate';
 import lazyImage from '../images/training.jpg';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import {useNavigate} from 'react-router-dom';
 
 const BlogPagesCom = (props) => {
 
+    const navigate = useNavigate ();
     const [total, setTotal] = useState('');
     const [blogs,setBlogs]=useState([]);
     const { t } = useTranslation();
     const {getCookie, selectFontBig, selectFontSmall} = useContext(AppContext);
 
+    const myKeysValues = window.location.search;
+    const urlParams = new URLSearchParams(myKeysValues);
+    const page = urlParams.get('page');
+    const [paged, setPaged] = useState(page);
+    
     let limit = 9;
-
+    
     const getBlogs = async (page) => {
-        await axios.get(BASE_URL+"/api/blog/all/"+props.catId+`?page=${page ? page : 0}&pageSize=${limit}`)
+        await axios.get(BASE_URL+"/api/blog/all/"+props.catId+`?page=${page || page == 0 ? page : paged ? paged : 0}&pageSize=${limit}`)
             .then(r=>{
                 // console.log(r.data.totalElements);
                 setTotal(Math.ceil(r.data.totalElements/limit));
                 setBlogs(r.data.object?r.data.object:null);
                 // console.log(total);
+                navigate({
+                    pathname: '/blogs/'+props.catId,
+                    search: `?page=${page || page == 0 ? page : paged ? paged : 0}`
+                })
             })
     }
     useEffect(async () => {
         await getBlogs();
-        
+        setPaged(page);
     }, [props.catId]);
 
     const handlerPageClick = async (data) => {
-        let page = data.selected ? data.selected : 0;
+        let page = (data.selected ? data.selected : 0);
         getBlogs(page);
         window.scrollTo({top: 100});
         localStorage.setItem('activ', data.selected);
@@ -41,10 +52,9 @@ const BlogPagesCom = (props) => {
 
     // console.log(localStorage.getItem('activ'))
 
-    if(blogs.length > 0){
+    if(blogs.length > 0 && blogs !== null){
     return (
-      <>
-          <div className="bg-light-white pb-5" id="up">
+          <div className="bg-light-white pb-5" id="up" style={{display:'block !important'}}>
               <div className="subheader section-padding">
                   <div className="container">
                       <div className="row">
@@ -133,6 +143,8 @@ const BlogPagesCom = (props) => {
                 marginPagesDisplayed={2}
                 pageRangeDisplayed={3}
                 onPageChange={handlerPageClick}
+                forcePage={paged}
+                renderOnZeroPageCount={null}
                 containerClassName={'pagination justify-content-center'}
                 pageClassName={'page-item'}
                 pageLinkClassName={selectFontBig ? 'fs-26 page-link' : selectFontSmall ? 'page-link' : 'fs-20 page-link'}
@@ -146,8 +158,8 @@ const BlogPagesCom = (props) => {
              />
 
           </div>
-      </>
-    );} else {
+    );
+} else {
         return (
             <div className="preloader">
                 <img src="../assets/images/pre-loader-1.svg" alt="img"/>

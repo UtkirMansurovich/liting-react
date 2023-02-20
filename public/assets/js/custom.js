@@ -8,7 +8,7 @@ Version: 1.0.0
   'use strict';
   // preloader
   	$(window).on('load', function(){
-      $('.preloader').hide();
+    //   $('.preloader').hide();
       $('.loader').removeClass();
       $('html').addClass('overflow');
     });

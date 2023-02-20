@@ -28,25 +28,46 @@ const AppProvider = ({ children }) => {
   // Search
   const [showSearch, setShowSearch] = useState(false);
   const SearchRef = useRef();
+
+  const myKeysValues = window.location.search;
+  const urlParams = new URLSearchParams(myKeysValues);
+  const searchedKeyword = urlParams.get('keyword');
+  const page = urlParams.get('page');
+
   const [searchItem, setSearchItem] = useState('');
-  const [searchedItem, setSearchedItem] = useState([]);
+
+  console.log(searchedKeyword, page);
+  console.log(searchItem);
+
+  const limitPage = 9;
 
   const handlerSubmit = (e) => {
     e.preventDefault();
-    axios.post(BASE_URL + '/api/blog/search?page=0&pageSize=9&keyword='+searchItem
+    changePaginatePage();
+  }
+
+  const changePaginatePage = async (page) => {
+    await axios.post(BASE_URL + `/api/blog/search?page=${page ? page : 0}&pageSize=${limitPage}&keyword=${searchItem}`
     ).then(res => {
       window.localStorage.setItem('arr', JSON.stringify(res.data.object));
-      window.location.href = '/search?keyword='+searchItem;
+      window.localStorage.setItem('pageNumber', Math.ceil(res.data.totalElements/limitPage));
+      window.location.href = `/search?page=${page ? page : 0}&keyword=${searchItem}`;
     }).catch(err => {
       console.log(err)
     })
-    window.localStorage.setItem('arrNot', searchItem)
+    window.localStorage.setItem('arrNot', searchItem);
   }
-  let query = window.location.search.substring();
-  console.log(query);
-   
+  
   const handlerChange = (e) => {
     setSearchItem(e.target.value);
+    // console.log(searchItem);
+  }
+
+  const handlerPageClicked = async (data) => {
+    let page = data.selected ? data.selected : 0;
+    changePaginatePage(page);
+    window.localStorage.setItem('activNumber', data.selected);
+    window.scrollTo({top: 100});
   }
   
     const navbarList = () => {
@@ -166,7 +187,7 @@ const AppProvider = ({ children }) => {
     const { t } = useTranslation();
     const Title = document.title = t("Title");
 
-    useEffect(() => {
+    useEffect(async () => {
       setSelectContrast(!localStorage.getItem('selectCont'));
       navbarList();
       sliderImage();
@@ -181,7 +202,7 @@ const AppProvider = ({ children }) => {
 
     const value = { navParent, slider, allBlogs, labor, handlerSelect, getCookie, selectLang, clickContrast, selectContrast, clickFontSmall, clickFontMedium, clickFontBig, selectFontSmall,
       selectFontBig, openContrast, showContrast, setShowContrast, contrastRef, closeContrast, clickStandard,
-      showSearch, setShowSearch, SearchRef, openSearch, closeSearch, handlerSubmit, handlerChange, searchItem, searchedItem, setSearchedItem };
+      showSearch, setShowSearch, SearchRef, openSearch, closeSearch, handlerSubmit, handlerChange, handlerPageClicked, searchItem };
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 };
 

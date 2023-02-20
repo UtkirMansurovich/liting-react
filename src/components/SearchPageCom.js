@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import { useTranslation } from 'react-i18next';
 import { AppContext } from '../context';
 import {Link} from "react-router-dom";
@@ -9,19 +9,23 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 import ReactPaginate from 'react-paginate';
 
 function SearchPageCom() {
-    const {getCookie, searchedItem, setSearchedItem, selectFontBig, selectFontSmall, searchItem} = useContext(AppContext);
+    const {getCookie, selectFontBig, selectFontSmall, handlerPageClicked} = useContext(AppContext);
     
     const { t } = useTranslation();
-    
+    const [searchedItem, setSearchedItem] = useState([]);
+
     useEffect(() => {
         const data = window.localStorage.getItem('arr');
         setSearchedItem(JSON.parse(data));
     }, [])
-    // console.log(searchedItem.length);
+    // console.log(searchedItem);
     const dataNot = window.localStorage.getItem('arrNot');
+    const pageNumber = window.localStorage.getItem('pageNumber');
     // console.log(dataNot);
+    const activNumber = window.localStorage.getItem('activNumber');
+  
     
-  if(searchedItem.length > 0 && searchedItem !== null) {
+  if(searchedItem.length > 0) {
 
   return (
     <>
@@ -95,6 +99,27 @@ function SearchPageCom() {
                       )}
                   </div>
               </div>
+              <ReactPaginate
+                previousLabel={t("Pagination.previous")}
+                nextLabel={t("Pagination.next")}
+                breakLabel={'...'}
+                pageCount={pageNumber}
+                marginPagesDisplayed={2}
+                pageRangeDisplayed={3}
+                onPageChange={handlerPageClicked}
+                forcePage={activNumber}
+                renderOnZeroPageCount={null}
+                containerClassName={'pagination justify-content-center'}
+                pageClassName={'page-item'}
+                pageLinkClassName={selectFontBig ? 'fs-26 page-link' : selectFontSmall ? 'page-link' : 'fs-20 page-link'}
+                previousClassName={'page-item'}
+                previousLinkClassName={selectFontBig ? 'fs-26 page-link' : selectFontSmall ? 'page-link' : 'fs-20 page-link'}
+                nextClassName={'page-item'}
+                nextLinkClassName={selectFontBig ? 'fs-26 page-link' : selectFontSmall ? 'page-link' : 'fs-20 page-link'}
+                breakClassName={'page-item'}
+                breakLinkClassName={'page-link'}
+                activeClassName={'active'}
+             />
           </div>
     </>
   )

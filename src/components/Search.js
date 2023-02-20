@@ -1,10 +1,12 @@
-import React, {useContext } from 'react';
+import React, {useContext} from 'react';
 import {AppContext} from "../context";
 import {useTranslation} from "react-i18next";
 
 const Search = () => {
+
   const {SearchRef, openSearch, closeSearch, handlerSubmit, handlerChange, searchItem } = useContext(AppContext);
   const { t } = useTranslation();
+
   return(
     <div className="containerContrast menu-style" ref={SearchRef} onClick={closeSearch}>
       <div className="containerInside">
