@@ -4,6 +4,7 @@ import { BASE_URL } from './utills/constant';
 import i18next from "i18next";
 import Cookie from "js-cookie";
 import {useTranslation} from "react-i18next";
+import { keyboard } from '@testing-library/user-event/dist/keyboard';
 
 const AppContext = createContext();
 
@@ -44,20 +45,24 @@ const AppProvider = ({ children }) => {
   const handlerSubmit = (e) => {
     e.preventDefault();
     changePaginatePage();
+    setSearchItem('');
   }
-
+  
   const changePaginatePage = async (page) => {
-    await axios.post(BASE_URL + `/api/blog/search?page=${page ? page : 0}&pageSize=${limitPage}&keyword=${searchItem}`
+    await axios.post(BASE_URL + `/api/blog/search?page=${page ? page : 0}&pageSize=${limitPage}&keyword=${searchItem ? searchItem : searchedKeyword ? searchedKeyword : searchedKeywords}`
     ).then(res => {
       window.localStorage.setItem('arr', JSON.stringify(res.data.object));
       window.localStorage.setItem('pageNumber', Math.ceil(res.data.totalElements/limitPage));
-      window.location.href = `/search?page=${page ? page : 0}&keyword=${searchItem}`;
+      window.location.href = `/search?page=${page ? page : 0}&keyword=${searchItem ? searchItem : searchedKeyword ? searchedKeyword : searchedKeywords}`;
     }).catch(err => {
       console.log(err)
     })
     window.localStorage.setItem('arrNot', searchItem);
+    window.localStorage.setItem('keywordSearch', searchedKeyword);
   }
-  
+
+  const searchedKeywords = window.localStorage.getItem('keywordSearch')
+
   const handlerChange = (e) => {
     setSearchItem(e.target.value);
     // console.log(searchItem);
