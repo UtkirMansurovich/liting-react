@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 // import Preloader from "../components/Preloader";
-import TopBar from '../components/TopBar';
+import TopBar from "../components/TopBar";
 import StartAbout from "../components/StartAbout/StartAbout";
 import StartOurCategory from "../components/StartOurCategory";
 import StartFullWidth from "../components/StartFullWidth";
@@ -16,34 +16,39 @@ import StartNewsLetter from "../components/StartNewsLetter";
 import StartFooter from "../components/StartFooter";
 // import LoginRegister from "../components/LoginRegister";
 import StartBanner from "../components/StartBanner";
-import {sliderClient, SliderOurCategory, ourMentors, cheifEngineers} from '../components/SliderData';
-import Training from '../components/Training'
-import Laboratory from '../components/Laboratory';
-import Visitors from '../components/Visitors';
+import {
+  sliderClient,
+  SliderOurCategory,
+  ourMentors,
+  cheifEngineers,
+} from "../components/SliderData";
+import Training from "../components/Training";
+import Laboratory from "../components/Laboratory";
+import Visitors from "../components/Visitors";
 
 const Home = () => {
-        return(
-            <div>
-                {/*<TopBar />*/}
-                <Navbar/>
-                <StartBanner/>
-                <StartAbout/>
-                <StartOurCategory slidesOurCategory={SliderOurCategory}/>
-                <StartFullWidth/>
-                <StartBlock />
-                <StartOurHistory/>
-                <Laboratory/>
-                {/*<StartFullWidthTwo/>*/}
-                <Training/>
-                <StartService cheifEngineers={cheifEngineers}/>
-                <StartTeam ourMentors={ourMentors}/>
-                <StartClient sliderClient={sliderClient}/>
-                {/* <StartFaqs/> */}
-                <Visitors/>
-                <StartNewsLetter/>
-                <StartFooter/>
-                {/*<LoginRegister/>*/}
-            </div>
-        )
-}
-export default Home
+  return (
+    <div>
+      {/*<TopBar />*/}
+      <Navbar />
+      <StartBanner />
+      <StartAbout />
+      <StartOurCategory slidesOurCategory={SliderOurCategory} />
+      <StartFullWidth />
+      <StartBlock />
+      <StartOurHistory />
+      <Laboratory />
+      {/*<StartFullWidthTwo/>*/}
+      <Training />
+      <StartService cheifEngineers={cheifEngineers} />
+      <StartTeam ourMentors={ourMentors} />
+      <StartClient sliderClient={sliderClient} />
+      {/* <StartFaqs/> */}
+      <Visitors />
+      <StartNewsLetter />
+      <StartFooter />
+      {/*<LoginRegister/>*/}
+    </div>
+  );
+};
+export default Home;
