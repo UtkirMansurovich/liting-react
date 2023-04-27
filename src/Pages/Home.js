@@ -22,7 +22,7 @@ import {
   ourMentors,
   cheifEngineers,
 } from "../components/SliderData";
-import Training from "../components/Training";
+import Training from "../components/Training/Training";
 import Laboratory from "../components/Laboratory";
 import Visitors from "../components/Visitors";
 
