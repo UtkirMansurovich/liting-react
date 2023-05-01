@@ -33,7 +33,7 @@ body {
 }
 .slideH1{
   color: #fd5d14;
-  font-size: 4rem;
+  font-size: 3.2rem;
   width: 60%;
   text-transform: uppercase;
   opacity: 0.7;
@@ -387,6 +387,7 @@ body {
   letter-spacing: 5px;
   color: #FFFFFF;
   font-weight: 700;
+  font-size: 4.5rem;
 }
 @media(max-width:1135px){
   .titleLogo{

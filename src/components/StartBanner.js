@@ -32,7 +32,7 @@ const StartBanner = () => {
         infinitive: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 10000,
         speed: 2000,
         pauseOnHover: false,
@@ -49,6 +49,7 @@ const StartBanner = () => {
             }
         ]
     }
+
     const {slider, getCookie, closeContrast, contrastRef, openSearch, selectFontSmall, selectFontBig} = useContext(AppContext);
     const { t } = useTranslation();
     
