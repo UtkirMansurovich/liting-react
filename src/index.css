@@ -621,6 +621,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+.new-hire-a:hover .new-hire-p, .mentored-a:hover .mentored-p{
+  color: #fd5d14;
+  transition: 0.3s ease-in-out;
 }
 .new-hire-p{
   margin: 0 10px 0 0;

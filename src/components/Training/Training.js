@@ -7,6 +7,7 @@ import projectBased from "../../images/icon_project.png";
 import jobProf from "../../images/icon_job_profile.png";
 import { useTranslation } from "react-i18next";
 import { AppContext } from "../../context";
+import TrainingModal from "./TrainingModal";
 
 const Training = () => {
   const [openCourse, setOpenCourse] = useState(false);
@@ -15,10 +16,11 @@ const Training = () => {
   const { t } = useTranslation();
   const { selectFontBig, selectFontSmall, training } = useContext(AppContext);
 
-  const openCourseModal = () => {
+  const openCourseModal = (id) => {
     setOpenCourse((prev) => !prev);
-    setCourseId(courseId);
+    setCourseId(id);
   };
+
   return (
     <section className="full-training">
       <div className="container pt-5 text-center">
@@ -75,7 +77,7 @@ const Training = () => {
         <div className="contentTrain">
           <div className="box-left">
             <div className="new-hire">
-              <a href="#" className="new-hire-a">
+              <a onClick={() => openCourseModal(120)} className="new-hire-a">
                 <p
                   className={
                     selectFontBig
@@ -104,7 +106,7 @@ const Training = () => {
               </a>
             </div>
             <div className="new-hire">
-              <a href="#" className="new-hire-a">
+              <a onClick={() => openCourseModal(121)} className="new-hire-a">
                 <p
                   className={
                     selectFontBig
@@ -133,7 +135,7 @@ const Training = () => {
               </a>
             </div>
             <div className="new-hire">
-              <a href="#" className="new-hire-a">
+              <a onClick={() => openCourseModal(122)} className="new-hire-a">
                 <p
                   className={
                     selectFontBig
@@ -181,7 +183,7 @@ const Training = () => {
 
           <div className="box-right">
             <div className="mentored">
-              <a href="#" className="mentored-a">
+              <a onClick={() => openCourseModal(123)} className="mentored-a">
                 <div className="mentored-a-img">
                   <img src={mentored} alt="new hire" />
                 </div>
@@ -210,7 +212,7 @@ const Training = () => {
               </a>
             </div>
             <div className="mentored">
-              <a href="#" className="mentored-a">
+              <a onClick={() => openCourseModal(125)} className="mentored-a">
                 <div className="mentored-a-img">
                   <img src={projectBased} alt="new hire" />
                 </div>
@@ -239,7 +241,7 @@ const Training = () => {
               </a>
             </div>
             <div className="mentored">
-              <a href="#" className="mentored-a">
+              <a onClick={() => openCourseModal(126)} className="mentored-a">
                 <div className="mentored-a-img">
                   <img src={jobProf} alt="new hire" />
                 </div>
@@ -270,6 +272,7 @@ const Training = () => {
           </div>
         </div>
       </div>
+      <TrainingModal openCourse={openCourse} setOpenCourse={setOpenCourse} training={training} courseId={courseId}/>
     </section>
   );
 };
