@@ -84,7 +84,7 @@ const StartBlock = () => {
                                <div key={index} className="sliderBlockContainer">
                                    <div className="sliderBlockContainerChild">
                                        <div className="slidesOurBlockImgBox">
-                                           <img src={BASE_URL_PHOTO + slides.mainImage.hashId} className="slidesOurBlockImg" />
+                                           <img src={BASE_URL_PHOTO + slides?.mainImage?.hashId} className="slidesOurBlockImg" />
                                        </div>
                                        <div className="post-date">
                                            <p className="post-data-a">{slides.createdAt.slice(0,10)}</p>

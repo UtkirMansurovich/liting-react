@@ -80,11 +80,11 @@ const Laboratory = () => {
                     </div>
                 </div>
                 <Slider {...settings}>
-                        {labor && labor.map((slides, index) =>
+                        {labor && labor?.map((slides, index) =>
                             <div key={index} className="sliderBlockContainer">
                                 <div className="sliderBlockContainerChild">
                                     <div className="slidesOurBlockImgBox">
-                                        <img src={BASE_URL_PHOTO + slides.mainImage.hashId} className="slidesOurBlockImg" />
+                                        <img src={BASE_URL_PHOTO + slides?.mainImage?.hashId} className="slidesOurBlockImg" />
                                     </div>
                                     <div className="post-date">
                                         <p className="post-data-a">2022.11.11</p>
@@ -92,26 +92,26 @@ const Laboratory = () => {
                                     <div>
                                         <div>
                                             <div className="cats">
-                                                <Link to={/blogs/+slides.category.id} className="cats-office">{
-                                                       getCookie.i18next === "en" ? slides.category.name_en.slice(0,20) :
-                                                           getCookie.i18next === "uz" ? slides.category.name_uz.slice(0, 20) :
-                                                               getCookie.i18next === "oz" ? slides.category.name_oz.slice(0, 20) : slides.category.name_ru.slice(0, 20)
+                                                <Link to={/blogs/+slides?.category?.id} className="cats-office">{
+                                                       getCookie?.i18next === "en" ? slides?.category?.name_en.slice(0,20) :
+                                                           getCookie?.i18next === "uz" ? slides?.category?.name_uz.slice(0, 20) :
+                                                               getCookie?.i18next === "oz" ? slides?.category?.name_oz.slice(0, 20) : slides?.category?.name_ru.slice(0, 20)
                                                    }...</Link> 
-                                                {/* <a href="#" className="cats-rent">{slides.rent}</a> */}
+                                                {/* <a href="#" className="cats-rent">{slides?.rent}</a> */}
                                             </div>
                                         </div>
                                         <div className="post-title-parent">
                                             <h2 className={selectFontBig ? "fs-26 post-title" : selectFontSmall ? "post-title" : "post-title fs-20"}>
-                                                <Link to={/blogs/+slides.category.id+'/'+slides.id} href="#" className="text-theme">{
-                                                            getCookie.i18next === "en" ? slides.title_en :
-                                                                getCookie.i18next === "uz" ? slides.title_uz :
-                                                                    getCookie.i18next === "oz" ? slides.title_oz : slides.title_ru
+                                                <Link to={/blogs/+slides?.category?.id+'/'+slides?.id} href="#" className="text-theme">{
+                                                            getCookie?.i18next === "en" ? slides?.title_en :
+                                                                getCookie?.i18next === "uz" ? slides?.title_uz :
+                                                                    getCookie?.i18next === "oz" ? slides?.title_oz : slides?.title_ru
                                                     }</Link>
                                             </h2>
                                             <p className={selectFontBig ? "fs-26 text-light-white no-margin" : selectFontSmall ? "text-light-white no-margin" : "text-light-white no-margin fs-20"}>{
-                                                    getCookie.i18next === "en" ? slides.anons_en :
-                                                        getCookie.i18next === "uz" ? slides.anons_uz :
-                                                            getCookie.i18next === "oz" ? slides.anons_oz : slides.anons_ru
+                                                    getCookie?.i18next === "en" ? slides?.anons_en :
+                                                        getCookie?.i18next === "uz" ? slides?.anons_uz :
+                                                            getCookie?.i18next === "oz" ? slides?.anons_oz : slides?.anons_ru
                                             }</p>
                                         </div>
                                         <div className="blog-footer-meta bg-custom-white padding-20">
@@ -124,10 +124,10 @@ const Laboratory = () => {
                                                 <span className="text-theme fs-14">By <a href="blog-single.html" className="text-theme fw-500">Администратор</a></span>
                                             </div> */}
                                             <div className="post-link d-flex justify-content-between w-100">
-                                                <Link to={/blogs/+slides.category.id+'/'+slides.id} className={selectFontBig ? "fs-26 link-btn text-custom-blue fw-600" : selectFontSmall ? "link-btn text-custom-blue fw-600 fs-14" : "link-btn text-custom-blue fw-600 fs-20"}>{t("StartBlock.readMore")}</Link>
+                                                <Link to={/blogs/+slides?.category?.id+'/'+slides?.id} className={selectFontBig ? "fs-26 link-btn text-custom-blue fw-600" : selectFontSmall ? "link-btn text-custom-blue fw-600 fs-14" : "link-btn text-custom-blue fw-600 fs-20"}>{t("StartBlock.readMore")}</Link>
                                                    {/* <p className="text-light-white">
                                                     <i className="fas fa-eye"></i>
-                                                    <span className="pl-1">{slides.view_count}</span>
+                                                    <span className="pl-1">{slides?.view_count}</span>
                                                 </p> */}
                                             </div>
                                         </div>

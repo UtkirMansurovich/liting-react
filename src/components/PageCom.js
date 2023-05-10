@@ -52,14 +52,14 @@ const PageCom = (props) => {
                 <div className="breadcrumb-wrapper">
                   <div className="page-title">
                     <h1 className="text-theme fw-500 text-capitalize">
-                      {blog && getCookie.i18next === "en"
-                        ? blog.category.name_en
-                        : blog && getCookie.i18next === "oz"
-                        ? blog.category.name_oz
-                        : blog && getCookie.i18next === "uz"
-                        ? blog.category.name_uz
-                        : blog && getCookie.i18next === "ru"
-                        ? blog.category.name_ru
+                      {blog && getCookie?.i18next === "en"
+                        ? blog?.category?.name_en
+                        : blog && getCookie?.i18next === "oz"
+                        ? blog?.category?.name_oz
+                        : blog && getCookie?.i18next === "uz"
+                        ? blog?.category?.name_uz
+                        : blog && getCookie?.i18next === "ru"
+                        ? blog?.category?.name_ru
                         : ""}
                     </h1>
                   </div>
@@ -80,14 +80,14 @@ const PageCom = (props) => {
                           : "fs-20 active"
                       }
                     >
-                      {blog && getCookie.i18next === "en"
-                        ? blog.category.name_en
-                        : blog && getCookie.i18next === "oz"
-                        ? blog.category.name_oz
-                        : blog && getCookie.i18next === "uz"
-                        ? blog.category.name_uz
-                        : blog && getCookie.i18next === "ru"
-                        ? blog.category.name_ru
+                      {blog && getCookie?.i18next === "en"
+                        ? blog?.category?.name_en
+                        : blog && getCookie?.i18next === "oz"
+                        ? blog?.category?.name_oz
+                        : blog && getCookie?.i18next === "uz"
+                        ? blog?.category?.name_uz
+                        : blog && getCookie?.i18next === "ru"
+                        ? blog?.category?.name_ru
                         : ""}
                     </li>
                   </ul>
@@ -106,17 +106,17 @@ const PageCom = (props) => {
                       <div className="blogsParent">
                         <div className="post-date">
                           <p className="post-data-blogs-a" id="date">
-                            {blog.publishDate.slice(0, 10)}
+                            {blog?.publishDate?.slice(0, 10)}
                             <i
                               style={{ marginLeft: "15px" }}
                               className="fas fa-eye"
                             ></i>
-                            <span className="pl-1">{blog.view_count}</span>
+                            <span className="pl-1">{blog?.view_count}</span>
                           </p>
                         </div>
                         <div className="pageImgPar">
                           <LazyLoadImage
-                            src={BASE_URL_PHOTO + blog.mainImage.hashId}
+                            src={BASE_URL_PHOTO + blog?.mainImage?.hashId}
                             alt="imagePhoto"
                             className="pageImg"
                             placeholderSrc={lazyImage}
@@ -125,25 +125,25 @@ const PageCom = (props) => {
                           />
                         </div>
                         <h3 className="listing-detail-heading no-margin ">
-                          {getCookie.i18next === "en"
-                            ? blog.title_en
-                            : getCookie.i18next === "oz"
-                            ? blog.title_oz
-                            : getCookie.i18next === "uz"
-                            ? blog.title_uz
-                            : blog.title_ru}
+                          {getCookie?.i18next === "en"
+                            ? blog?.title_en
+                            : getCookie?.i18next === "oz"
+                            ? blog?.title_oz
+                            : getCookie?.i18next === "uz"
+                            ? blog?.title_uz
+                            : blog?.title_ru}
                         </h3>
                         <div
                           id="alkash"
                           dangerouslySetInnerHTML={{
                             __html:
-                              getCookie.i18next === "en"
-                                ? blog.text_en
-                                : getCookie.i18next === "oz"
-                                ? blog.text_oz
-                                : getCookie.i18next === "uz"
-                                ? blog.text_uz
-                                : blog.text_ru,
+                              getCookie?.i18next === "en"
+                                ? blog?.text_en
+                                : getCookie?.i18next === "oz"
+                                ? blog?.text_oz
+                                : getCookie?.i18next === "uz"
+                                ? blog?.text_uz
+                                : blog?.text_ru,
                           }}
                           className={
                             selectFontBig
