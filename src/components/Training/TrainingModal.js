@@ -28,7 +28,7 @@ const TrainingModal = ({openCourse, setOpenCourse, training, courseId}) => {
       filteredTraining.push(training[i]);
     }
   }
-  console.log(filteredTraining);
+  // console.log(filteredTraining);
 
   return (
       <div className={openCourse ? 'popup' : 'popup-close'} ref={modalRef} onClick={closeModal}>

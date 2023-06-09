@@ -29,7 +29,7 @@ const Navbar = () => {
                   <div className="container-fluid custom-container">
                       <div className="row">
                           <div className="col-md-8">
-                              <div className="left-side ">
+                              <div className="left-side">
                                   <ul className="custom">
                                       <li>
                                           <a href="tel:+998712806705" className={selectFontBig ? "fs-26 text-custom-white" : selectFontSmall ? "text-custom-white" : 'fs-20 text-custom-white'}>

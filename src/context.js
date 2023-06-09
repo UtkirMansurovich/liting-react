@@ -46,8 +46,8 @@ const AppProvider = ({ children }) => {
 
   const [searchItem, setSearchItem] = useState("");
 
-  console.log(searchedKeyword, page);
-  console.log(searchItem);
+  // console.log(searchedKeyword, page);
+  // console.log(searchItem);
 
   const limitPage = 9;
 
@@ -159,7 +159,7 @@ const AppProvider = ({ children }) => {
       .get(BASE_URL + "/api/blog/all/57?isText=true")
       .then((res) => {
         setTraining(res.data.object);
-        console.log(res.data.object);
+        // console.log(res.data.object);
       })
       .catch((err) => {
         console.log(err);
