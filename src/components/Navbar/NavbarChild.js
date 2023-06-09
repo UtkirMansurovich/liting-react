@@ -14,7 +14,6 @@ const NavbarChild = ({ navText, setToggle, handlerTop }) => {
     if( navText?.type === 'BLOGS' || navText?.type === 'PAGE') setToggle(false);
   }
 
-
   return (
     <li onClick={closeTog} className='menu-item menu-item-has-children'>
       <Link to={ navText?.type === 'PAGE'
@@ -30,7 +29,8 @@ const NavbarChild = ({ navText, setToggle, handlerTop }) => {
                 getCookie?.i18next === 'oz' ? navText?.name_oz : navText?.name_ru }
       </Link>
       <ul className={openTog ? "custom sub-menu openNavChild" : "custom sub-menu"}>
-        {navText?.children && navText?.children.map((sub, number) => (
+        {navText?.children &&
+          navText?.children.map((sub, number) => (
             <NavbarChildChild sub={sub} key={number} getCookie={getCookie} setToggle={setToggle} handlerTop={handlerTop} selectFontBig={selectFontBig} selectFontSmall={selectFontSmall}/>
           ))}
       </ul>

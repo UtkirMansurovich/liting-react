@@ -67,7 +67,7 @@ const StartClient = ({sliderClient}) => {
                                                 <div className="swiper-wrapper">
                                                     <div className="swiper-slide">
                                                         <div className="image">
-                                                            <img src={slides.image} alt="" className="image__client"/>
+                                                            <img src={slides?.image} alt="" className="image__client"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -81,14 +81,14 @@ const StartClient = ({sliderClient}) => {
                                                             <div className="author d-flex justify-content-between align-items-center">
                                                                 <div className="name">
                                                                     <h5 className={selectFontBig ? "fs-26" : selectFontSmall ? "" : "fs-20"} style={{textTransform: 'capitalize'}}>
-                                                                        {getCookie.i18next === 'en' ? slides.fullName_en :
-                                                                            getCookie.i18next === "uz" ? slides.fullName_uz :
-                                                                                getCookie.i18next === "oz" ? slides.fullName_oz : slides.fullName_ru}
+                                                                        {getCookie.i18next === 'en' ? slides?.fullName_en :
+                                                                            getCookie.i18next === "uz" ? slides?.fullName_uz :
+                                                                                getCookie.i18next === "oz" ? slides?.fullName_oz : slides?.fullName_ru}
                                                                     </h5>
                                                                     <p className={selectFontBig ? "fs-26 designation" : selectFontSmall ? "designation" : "fs-20 designation"}>
-                                                                        {getCookie.i18next === "en" ? slides.position_en :
-                                                                            getCookie.i18next === "uz" ? slides.position_uz :
-                                                                                getCookie.i18next === "oz" ? slides.position_oz : slides.position_ru}
+                                                                        {getCookie.i18next === "en" ? slides?.position_en :
+                                                                            getCookie.i18next === "uz" ? slides?.position_uz :
+                                                                                getCookie.i18next === "oz" ? slides?.position_oz : slides?.position_ru}
                                                                     </p>
                                                                 </div>
                                                                 <ul className="rating d-flex">
@@ -100,9 +100,9 @@ const StartClient = ({sliderClient}) => {
                                                                 </ul>
                                                             </div>
                                                             <p className={selectFontBig ? "fs-26" : selectFontSmall ? "" : "fs-20"}>
-                                                                {getCookie.i18next === "en" ? slides.text_en :
-                                                                    getCookie.i18next === "uz" ? slides.text_uz :
-                                                                        getCookie.i18next === "oz" ? slides.text_oz : slides.text_ru}
+                                                                {getCookie.i18next === "en" ? slides?.text_en :
+                                                                    getCookie.i18next === "uz" ? slides?.text_uz :
+                                                                        getCookie.i18next === "oz" ? slides?.text_oz : slides?.text_ru}
                                                             </p>
                                                             {/* <img src={slides.signature} alt="Signature"/> */}
                                                         </div>
