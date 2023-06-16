@@ -31,8 +31,7 @@ const Navbar = () => {
       for (let l = 0; l < navParent[i]?.children.length; l++) {
         if (
           navParent[i]?.children[l]?.id === 58 ||
-          navParent[i]?.children[l]?.id === 57 ||
-          navParent[i]?.children[l]?.id === 56
+          navParent[i]?.children[l]?.id === 57
         ) {
           delete navParent[i].children[l];
         }
