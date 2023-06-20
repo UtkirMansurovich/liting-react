@@ -8,6 +8,7 @@ import lazyImage from "../images/training.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 // import BlogPagesCom from './BlogPagesCom';
+import Reloading from '../images/pre-loader-1.svg'
 
 const PageCom = (props) => {
   const [blog, setBlog] = useState(null);
@@ -52,43 +53,21 @@ const PageCom = (props) => {
                 <div className="breadcrumb-wrapper">
                   <div className="page-title">
                     <h1 className="text-theme fw-500 text-capitalize">
-                      {blog && getCookie?.i18next === "en"
-                        ? blog?.category?.name_en
-                        : blog && getCookie?.i18next === "oz"
-                        ? blog?.category?.name_oz
-                        : blog && getCookie?.i18next === "uz"
-                        ? blog?.category?.name_uz
-                        : blog && getCookie?.i18next === "ru"
-                        ? blog?.category?.name_ru
-                        : ""}
+                      {blog && getCookie?.i18next === "en" ? blog?.category?.name_en :
+                          blog && getCookie?.i18next === "oz" ? blog?.category?.name_oz :
+                              blog && getCookie?.i18next === "uz" ? blog?.category?.name_uz :
+                                  blog && getCookie?.i18next === "ru" ? blog?.category?.name_ru : ''}
                     </h1>
                   </div>
                   <ul className="custom breadcrumb">
-                    <li
-                      className={
-                        selectFontBig ? "fs-26" : selectFontSmall ? "" : "fs-20"
-                      }
-                    >
+                    <li className={selectFontBig ? "fs-26" : selectFontSmall ? "" : "fs-20"}>
                       <Link to="/">{t("BlogPageCom.home")}</Link>
                     </li>
-                    <li
-                      className={
-                        selectFontBig
-                          ? "fs-26 active"
-                          : selectFontSmall
-                          ? "active"
-                          : "fs-20 active"
-                      }
-                    >
-                      {blog && getCookie?.i18next === "en"
-                        ? blog?.category?.name_en
-                        : blog && getCookie?.i18next === "oz"
-                        ? blog?.category?.name_oz
-                        : blog && getCookie?.i18next === "uz"
-                        ? blog?.category?.name_uz
-                        : blog && getCookie?.i18next === "ru"
-                        ? blog?.category?.name_ru
-                        : ""}
+                    <li className={selectFontBig ? "fs-26 active" : selectFontSmall ? "active" : "fs-20 active"}>
+                      {blog && getCookie?.i18next === "en" ? blog?.category?.name_en :
+                          blog && getCookie?.i18next === "oz" ? blog?.category?.name_oz :
+                              blog && getCookie?.i18next === "uz" ? blog?.category?.name_uz :
+                                  blog && getCookie?.i18next === "ru" ? blog?.category?.name_ru : ""}
                     </li>
                   </ul>
                 </div>
@@ -168,7 +147,7 @@ const PageCom = (props) => {
   } else {
     return (
       <div className="preloader">
-        <img src="../assets/images/pre-loader-1.svg" alt="img" />
+        <img src={Reloading} alt="img" />
       </div>
     );
   }

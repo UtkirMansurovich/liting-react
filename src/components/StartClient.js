@@ -108,22 +108,13 @@ const StartClient = ({sliderClient}) => {
                                                                     <li style={{listStyle: 'none'}}><i className="fas fa-star"></i></li>
                                                                 </ul>
                                                             </div>
-                                                            {/*<p className={selectFontBig ? "fs-26" : selectFontSmall ? "" : "fs-20"}>*/}
-                                                            {/*    {getCookie.i18next === "en" ? slides?.text_en :*/}
-                                                            {/*        getCookie.i18next === "uz" ? slides?.text_uz :*/}
-                                                            {/*            getCookie.i18next === "oz" ? slides?.text_oz : slides?.text_ru}*/}
-                                                            {/*</p>*/}
                                                             <div className={selectFontBig ? "fs-26" : selectFontSmall ? "" : "fs-20"}
                                                                  dangerouslySetInnerHTML={{
                                                                     __html:
-                                                                    getCookie?.i18next === "en"
-                                                                    ? slides?.text_en
-                                                                    : getCookie?.i18next === "oz"
-                                                                    ? slides?.text_oz
-                                                                    : getCookie?.i18next === "uz"
-                                                                    ? slides?.text_uz
-                                                                    : slides?.text_ru,
-                                                                }} />
+                                                                    getCookie?.i18next === "en" ? slides?.text_en :
+                                                                        getCookie?.i18next === "oz" ? slides?.text_oz :
+                                                                            getCookie?.i18next === "uz" ? slides?.text_uz : slides?.text_ru}}
+                                                            />
                                                             {/* <img src={slides.signature} alt="Signature"/> */}
                                                         </div>
                                                     </div>

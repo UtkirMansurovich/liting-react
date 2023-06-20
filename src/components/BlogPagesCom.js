@@ -9,6 +9,7 @@ import lazyImage from '../images/training.jpg';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import {useNavigate} from 'react-router-dom';
+import Reloading from '../images/pre-loader-1.svg'
 
 const BlogPagesCom = (props) => {
 
@@ -162,7 +163,7 @@ const BlogPagesCom = (props) => {
 } else {
         return (
             <div className="preloader">
-                <img src="../assets/images/pre-loader-1.svg" alt="img"/>
+                <img src={Reloading} alt="img"/>
             </div>
         )
     }

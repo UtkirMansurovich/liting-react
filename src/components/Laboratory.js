@@ -6,6 +6,8 @@ import {AppContext} from "../context";
 import {useTranslation} from "react-i18next";
 import {Link} from 'react-router-dom';
 import {BASE_URL_PHOTO} from "../utills/constant";
+import lazyImage from "../images/training.jpg";
+import {LazyLoadImage} from "react-lazy-load-image-component";
 
 function SampleNextArrow(props){
     const { className, style, onClick } = props;
@@ -84,10 +86,16 @@ const Laboratory = () => {
                             <div key={index} className="sliderBlockContainer">
                                 <div className="sliderBlockContainerChild">
                                     <div className="slidesOurBlockImgBox">
-                                        <img src={BASE_URL_PHOTO + slides?.mainImage?.hashId} className="slidesOurBlockImg" />
+                                        <LazyLoadImage
+                                            src={BASE_URL_PHOTO + slides?.mainImage?.hashId}
+                                            placeholderSrc={lazyImage}
+                                            className="slidesOurBlockImg"
+                                            alt="imagePhoto"
+                                            effect='blur'
+                                            width="100%"/>
                                     </div>
                                     <div className="post-date">
-                                        <p className="post-data-a">2022.11.11</p>
+                                        <p className="post-data-a">{slides?.createdAt?.slice(0,10)}</p>
                                     </div>
                                     <div>
                                         <div>
@@ -115,20 +123,8 @@ const Laboratory = () => {
                                             }</p>
                                         </div>
                                         <div className="blog-footer-meta bg-custom-white padding-20">
-                                            {/* <div className="post-author">
-                                                <div className="author-img">
-                                                   <a href="blog-single.html">
-                                                       <img src="../assets/images/homepage-1/admin-1-40x40.jpg" className="rounded-circle" alt="#"/>
-                                                   </a>
-                                                </div>
-                                                <span className="text-theme fs-14">By <a href="blog-single.html" className="text-theme fw-500">Администратор</a></span>
-                                            </div> */}
                                             <div className="post-link d-flex justify-content-between w-100">
                                                 <Link to={/blogs/+slides?.category?.id+'/'+slides?.id} className={selectFontBig ? "fs-26 link-btn text-custom-blue fw-600" : selectFontSmall ? "link-btn text-custom-blue fw-600 fs-14" : "link-btn text-custom-blue fw-600 fs-20"}>{t("StartBlock.readMore")}</Link>
-                                                   {/* <p className="text-light-white">
-                                                    <i className="fas fa-eye"></i>
-                                                    <span className="pl-1">{slides?.view_count}</span>
-                                                </p> */}
                                             </div>
                                         </div>
                                     </div>

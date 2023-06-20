@@ -37,7 +37,9 @@ const TrainingModal = ({openCourse, setOpenCourse, training, courseId}) => {
             {filteredTraining && filteredTraining.map((engineerText, index) =>
                 <div key={index}>
                   <i className="fas fa-times popup__icon" onClick={() => setOpenCourse(prev => !prev)}></i>
-                  <div className={selectFontBig ? 'fs-26' : selectFontSmall ? "" : "fs-20"} dangerouslySetInnerHTML={{__html: getCookie.i18next === 'en' ? engineerText.text_en : getCookie.i18next === 'uz' ? engineerText.text_uz : getCookie.i18next === 'oz' ? engineerText.text_oz : engineerText.text_ru}}/>
+                  <div className={selectFontBig ? 'fs-26' : selectFontSmall ? "" : "fs-20"} dangerouslySetInnerHTML={{__html: getCookie.i18next === 'en' && engineerText.text_en ? engineerText.text_en :
+                        getCookie.i18next === 'uz' && engineerText.text_uz ? engineerText.text_uz :
+                            getCookie.i18next === 'oz' && engineerText.text_oz ? engineerText.text_oz : engineerText.text_ru}}/>
                 </div>
             )}
           </div>
