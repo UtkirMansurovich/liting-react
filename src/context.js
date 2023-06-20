@@ -39,6 +39,9 @@ const AppProvider = ({ children }) => {
   // NEFTGAZMALAKA
   const [training, setTraining] = useState([]);
 
+  // PARTNERS
+  const [partners, setPartners] = useState([]);
+
   const myKeysValues = window.location.search;
   const urlParams = new URLSearchParams(myKeysValues);
   const searchedKeyword = urlParams.get("keyword");
@@ -165,6 +168,18 @@ const AppProvider = ({ children }) => {
       });
   };
 
+  const callPatrners = () => {
+    axios
+        .get(BASE_URL + "/api/blog/all/58?isText=true")
+        .then(res=>{
+          setPartners(res.data.object);
+          console.log(res.data.object);
+        })
+        .catch(err=>{
+          console.log(err);
+        })
+  }
+
   const handlerSelect = (e) => {
     setSelectLang(e.target.value);
     // console.log(e.target.value);
@@ -241,6 +256,7 @@ const AppProvider = ({ children }) => {
     callAllBlogs();
     callLobor();
     callTraining();
+    callPatrners();
     document.addEventListener("keydown", keyPress);
     return () => document.addEventListener("keydown", keyPress);
   }, [Title, keyPress, selectContrast]);
@@ -279,6 +295,7 @@ const AppProvider = ({ children }) => {
     handlerPageClicked,
     searchItem,
     training,
+    partners,
   };
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 };

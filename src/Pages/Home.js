@@ -42,7 +42,7 @@ const Home = () => {
       <Training />
       <StartService cheifEngineers={cheifEngineers} />
       <StartTeam ourMentors={ourMentors} />
-      <StartClient sliderClient={sliderClient} />
+      <StartClient/>
       {/* <StartFaqs/> */}
       <Visitors />
       <StartNewsLetter />
