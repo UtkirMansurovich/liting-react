@@ -47,7 +47,7 @@ const BlogPagesCom = (props) => {
     const handlerPageClick = async (data) => {
         let page = (data.selected ? data.selected : 0);
         getBlogs(page);
-        window.scrollTo({top: 100});
+        window.scrollTo({top: 100, behavior:'smooth'});
         localStorage.setItem('activ', data.selected);
     }
 

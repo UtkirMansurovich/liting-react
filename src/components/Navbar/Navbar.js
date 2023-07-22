@@ -23,7 +23,7 @@ const Navbar = () => {
   const { t } = useTranslation();
 
   const handlerTop = () => {
-    window.scrollTo({ top: 0 });
+    window.scrollTo({ top: 0, behavior:'smooth' });
   };
 
   const removeItem = () => {

@@ -24,7 +24,7 @@ function SearchPageCom() {
     // console.log(dataNot);
     const activNumber = window.localStorage.getItem('activNumber');
   
-    
+
   if(searchedItem.length > 0) {
 
   return (
@@ -56,7 +56,7 @@ function SearchPageCom() {
                             <div className="card blogsCard">
                                 <div className='blogsImagePar'>
                                     <LazyLoadImage 
-                                        src={BASE_URL_PHOTO + texts.mainImage.hashId} 
+                                        src={BASE_URL_PHOTO + texts?.mainImage?.hashId}
                                         placeholderSrc={lazyImage} 
                                         className="card-img-top blogsImage" 
                                         alt="imagePhoto"
@@ -68,30 +68,30 @@ function SearchPageCom() {
                                 </div>
                                 <div className="blogCats">
                                     <p className="cats-office m-0">
-                                        {getCookie.i18next === "en" ? texts.category.name_en :
-                                          getCookie.i18next === "oz" ? texts.category.name_oz :
-                                            getCookie.i18next === "uz" ? texts.category.name_uz : texts.category.name_ru}
+                                        {getCookie?.i18next === "en" ? texts.category?.name_en :
+                                          getCookie?.i18next === "oz" ? texts.category?.name_oz :
+                                            getCookie?.i18next === "uz" ? texts.category?.name_uz : texts.category?.name_ru}
                                     </p>
                                 </div>
                                 <div className="card-body blogsBody">
                                     <h5 className={selectFontBig ? "fs-26 card-title" : selectFontSmall ? "card-title" : "fs-20 card-title"}>
-                                        {getCookie.i18next === "en" ? texts.title_en :
-                                          getCookie.i18next === "oz" ? texts.title_oz :
-                                            getCookie.i18next === "uz" ? texts.title_uz : texts.title_ru}
+                                        {getCookie?.i18next === "en" ? texts?.title_en :
+                                          getCookie?.i18next === "oz" ? texts?.title_oz :
+                                            getCookie?.i18next === "uz" ? texts?.title_uz : texts?.title_ru}
                                     </h5>
                                     <p className={selectFontBig ? "fs-26 card-text" : selectFontSmall ? "card-text" : "fs-20 card-text"}>
-                                        {getCookie.i18next === "en" ? texts.anons_en :
-                                          getCookie.i18next === "oz" ? texts.anons_oz :
-                                            getCookie.i18next === "uz" ? texts.anons_uz :texts.anons_ru}
+                                        {getCookie?.i18next === "en" ? texts?.anons_en :
+                                          getCookie?.i18next === "oz" ? texts?.anons_oz :
+                                            getCookie?.i18next === "uz" ? texts?.anons_uz :texts?.anons_ru}
                                     </p>
                                 </div>
                                 <div className="post-link d-flex justify-content-between w-100" style={{padding:'1.25rem'}}>
-                                    <Link to={/blogs/+texts.category.id+'/'+texts.id} 
+                                    <Link to={/blogs/+texts?.category.id+'/'+texts?.id}
                                           className={selectFontBig ? "link-btn text-custom-blue fw-600 fs-26" : selectFontSmall ? "link-btn text-custom-blue fw-600 fs-14" : "link-btn text-custom-blue fw-600 fs-20"}
                                     >{t("BlogPageCom.readMore")}</Link>
                                     <p className={selectFontBig ? "fs-26 text-light-white" : selectFontSmall ? "text-light-white" : "fs-20 text-light-white"}>
                                         <i class="fas fa-street-view"></i>
-                                        <span className="pl-1">{texts.view_count}</span>
+                                        <span className="pl-1">{texts?.view_count}</span>
                                     </p>
                                 </div>
                             </div>
