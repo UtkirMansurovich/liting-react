@@ -64,7 +64,9 @@ function SearchPageCom() {
                                         width="100%"/>
                                 </div>
                                 <div className="post-date">
-                                    <p className="post-data-a">{texts.publishDate.slice(0,10)}</p>
+                                    <p className="post-data-a">
+                                        {new Date(texts?.publishDate)?.toLocaleString("ru-Ru", {day:'numeric', month:'numeric', year:'numeric'})}
+                                    </p>
                                 </div>
                                 <div className="blogCats">
                                     <p className="cats-office m-0">

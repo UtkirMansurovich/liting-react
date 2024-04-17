@@ -85,7 +85,7 @@ const PageCom = (props) => {
                       <div className="blogsParent">
                         <div className="post-date">
                           <p className="post-data-blogs-a" id="date">
-                            {blog?.publishDate?.slice(0, 10)}
+                            {new Date(blog?.publishDate)?.toLocaleString("ru-Ru", {day:'numeric', month:'numeric', year:'numeric'})}
                             <i
                               style={{ marginLeft: "15px" }}
                               className="fas fa-eye"

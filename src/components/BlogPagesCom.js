@@ -10,12 +10,16 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import {useNavigate} from 'react-router-dom';
 import Reloading from '../images/pre-loader-1.svg'
+import '../index.css';
+import PreComLoader from "./PreComLoader";
 
 const BlogPagesCom = (props) => {
 
     const navigate = useNavigate ();
     const [total, setTotal] = useState('');
     const [blogs,setBlogs]=useState([]);
+    const [isLoading, setIsLoading] = useState(false);
+    const [error, setError] = useState('');
     const { t } = useTranslation();
     const {getCookie, selectFontBig, selectFontSmall} = useContext(AppContext);
 
@@ -27,17 +31,28 @@ const BlogPagesCom = (props) => {
     let limit = 9;
 
     const getBlogs = async (page) => {
-        await axios.get(BASE_URL+"/api/blog/all/"+props.catId+`?page=${page || page == 0 ? page : paged ? paged : 0}&pageSize=${limit}`)
-            .then(r=>{
-                // console.log(r.data.totalElements);
-                setTotal(Math.ceil(r.data.totalElements/limit));
-                setBlogs(r.data.object?r.data.object:null);
-                // console.log(total);
-                navigate({
-                    pathname: '/blogs/'+props.catId,
-                    search: `?page=${page || page == 0 ? page : paged ? paged : 0}`
-                })
-            })
+        try{
+            setIsLoading(true);
+            setError("");
+
+            await axios.get(BASE_URL+"/api/blog/all/"+props.catId+`?page=${page || page == 0 ? page : paged ? paged : 0}&pageSize=${limit}`)
+                .then(r=>{
+                    // console.log(r.data.totalElements);
+                    setTotal(Math.ceil(r.data.totalElements/limit));
+                    setBlogs(r.data.object?r.data.object:null);
+                    // console.log(total);
+                    navigate({
+                        pathname: '/blogs/'+props.catId,
+                        search: `?page=${page || page == 0 ? page : paged ? paged : 0}`
+                    })
+                });
+
+            setError("")
+        }catch (e){
+            setError(e);
+        }finally {
+            setIsLoading(false);
+        }
     }
     useEffect(async () => {
         await getBlogs();
@@ -62,7 +77,7 @@ const BlogPagesCom = (props) => {
                             <div className="col-lg-6">
                                 <div className="breadcrumb-wrapper">
                                     <div className="page-title">
-                                        <h1 className="text-theme fw-500">
+                                        <h1 className="text-theme fw-500 text-justify">
                                             {blogs[0] && getCookie?.i18next === "en" ? blogs[0]?.category?.name_en :
                                                 blogs[0] && getCookie?.i18next === "oz" ? blogs[0]?.category?.name_oz :
                                                     blogs[0] && getCookie?.i18next === "uz" ? blogs[0]?.category?.name_uz :
@@ -86,6 +101,8 @@ const BlogPagesCom = (props) => {
                     </div>
                 </div>
                 <div className="container section-padding" >
+                    {isLoading && <PreComLoader/>}
+                    {!isLoading && !error &&
                     <div className="row">
                         {blogs && blogs?.map((texts, index) =>
                             <div className="col-lg-4 col-md-6 col-sm-12" key={index}>
@@ -100,7 +117,9 @@ const BlogPagesCom = (props) => {
                                             width="100%"/>
                                     </div>
                                     <div className="post-date">
-                                        <p className="post-data-a">{texts?.publishDate?.slice(0,10)}</p>
+                                        <p className="post-data-a">
+                                            {new Date(texts?.publishDate)?.toLocaleString("ru-Ru", {day:'numeric', month:'numeric', year:'numeric'})}
+                                        </p>
                                     </div>
                                     <div className="blogCats">
                                         <p className="cats-office m-0">
@@ -115,11 +134,11 @@ const BlogPagesCom = (props) => {
                                                 getCookie?.i18next === "oz" ? texts?.title_oz :
                                                     getCookie?.i18next === "uz" ? texts?.title_uz : texts?.title_ru}
                                         </h5>
-                                        <p className={selectFontBig ? "fs-26 card-text" : selectFontSmall ? "card-text" : "fs-20 card-text"}>
+                                        <div className={selectFontBig ? "fs-26 card-text cardText" : selectFontSmall ? "card-text cardText" : "fs-20 card-text cardText"}>
                                             {getCookie?.i18next === "en" ? texts?.anons_en :
                                                 getCookie?.i18next === "oz" ? texts?.anons_oz :
                                                     getCookie?.i18next === "uz" ? texts?.anons_uz :texts?.anons_ru}
-                                        </p>
+                                        </div>
                                     </div>
                                     <div className="post-link d-flex justify-content-between w-100" style={{padding:'1.25rem'}}>
                                         <Link to={`/blogs/${props.catId}/${texts?.id}`}
@@ -134,6 +153,10 @@ const BlogPagesCom = (props) => {
                             </div>
                         )}
                     </div>
+                    }
+                    {error && <div className="loader-box">
+                        <p className="errorColor">⛔ Что-то пошло не так!</p>
+                    </div>}
                 </div>
 
                 <ReactPaginate
