@@ -95,7 +95,9 @@ const Laboratory = () => {
                                             width="100%"/>
                                     </div>
                                     <div className="post-date">
-                                        <p className="post-data-a">{slides?.createdAt?.slice(0,10)}</p>
+                                        <p className="post-data-a">
+                                            {new Date(slides?.publishDate)?.toLocaleString("ru-Ru", {day:'numeric', month:'numeric', year:'numeric'})}
+                                        </p>
                                     </div>
                                     <div>
                                         <div>

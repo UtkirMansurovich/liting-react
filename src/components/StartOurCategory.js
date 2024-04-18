@@ -91,7 +91,7 @@ const StartOurCategory = ({slidesOurCategory}) => {
                         <Slider {...settings}>
                             {slidesOurCategory && slidesOurCategory.map((slides, index) =>
                                 <a href="#" key={index}>
-                                    <div style={{overflow:'hidden'}}>
+                                    <div style={{overflow:'hidden', padding:'0 10px'}}>
                                         <div className="slidesTexts" style={{background: `url(${slides.image}) no-repeat center center/cover`}}>
                                             <div className="slidesTextsChild">
                                                 <h5 className={selectFontBig ? "fs-26 text-custom-blue no-margin fw-600 fs-20 ourCategorySlideH5" : selectFontSmall ? 'text-custom-blue no-margin fw-600 fs-20 ourCategorySlideH5' : 'fs-20 text-custom-blue no-margin fw-600 fs-20 ourCategorySlideH5'}>
@@ -111,7 +111,7 @@ const StartOurCategory = ({slidesOurCategory}) => {
                                 </a>
                             )}
                         </Slider>
-                        <div className="col-12 p-0">
+                        <div className="col-12 p-0" style={{marginTop:'70px'}}>
                             <div className="categories-tabs">
                                  <ul className="custom nav nav-tabs">
                                      <li className="nav-item">

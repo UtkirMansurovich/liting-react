@@ -109,6 +109,7 @@ const Navbar = () => {
                   <ul className="custom">
                     <li className="language">
                       <select
+                          style={{padding:'0 7px 5px 7px'}}
                         className={
                           selectFontBig
                             ? "fs-26"
