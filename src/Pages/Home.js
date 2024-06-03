@@ -25,6 +25,8 @@ import {
 import Training from "../components/Training/Training";
 import Laboratory from "../components/Laboratory";
 import Visitors from "../components/Visitors";
+import UsefulResources from "../components/UsefulResources";
+import {UsefulResourcesData} from "../components/UsefulResourcesData"
 
 const Home = () => {
   return (
@@ -43,6 +45,7 @@ const Home = () => {
       <StartService cheifEngineers={cheifEngineers} />
       <StartTeam ourMentors={ourMentors} />
       <StartClient/>
+      <UsefulResources UsefulResourcesData={UsefulResourcesData}/>
       {/* <StartFaqs/> */}
       <Visitors />
       <StartNewsLetter />

@@ -785,5 +785,8 @@
     "month": "Month",
     "day": "Day",
     "total": "Total"
+  },
+  "UsefulResources": {
+    "title": "Useful resources"
   }
 }

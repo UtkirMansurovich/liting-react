@@ -12,7 +12,7 @@ function Visitors() {
         
   return (
     <div>
-    <section style={{paddingTop:'35px'}} className="bg-light-white">
+    <section style={{paddingTop:'35px'}}>
         <div className="container">
             <div className="section-header">
                 <div className="section-heading">

@@ -222,6 +222,34 @@ body {
   color:#fd5d14 !important;
   font-size: 40px !important;
 }
+
+/** USEFUL RESOURCES **/
+.useful-resources-container{
+  .slick-slide{
+    height: 100%;
+  }
+
+}
+.useful-resources-container__card{
+  text-align: center;
+  vertical-align: middle;
+}
+.useful-resources-container__img{
+  margin: 0 auto 10px auto;
+  width: 100px;
+  height: 100px;
+}
+.useful-resources-container__name{
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+
+
+
 /*footer*/
 .phoneContact li{
   font-size: 14px;

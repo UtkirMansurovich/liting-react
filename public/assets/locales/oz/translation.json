@@ -785,5 +785,8 @@
     "month": "Oy",
     "day": "Kun",
     "total": "Jami"
+  },
+  "UsefulResources": {
+    "title": "Foydali manbalar"
   }
 }
