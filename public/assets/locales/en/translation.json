@@ -788,5 +788,9 @@
   },
   "UsefulResources": {
     "title": "Useful resources"
+  },
+  "LoadingText" : {
+    "title": "JSC «O‘ZLITINEFTGAZ»",
+    "text": "Scientific and engineering company"
   }
 }

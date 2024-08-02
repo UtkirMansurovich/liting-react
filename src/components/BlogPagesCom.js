@@ -12,6 +12,7 @@ import {useNavigate} from 'react-router-dom';
 import Reloading from '../images/pre-loader-1.svg'
 import '../index.css';
 import PreComLoader from "./PreComLoader";
+import Preloader from "./Preloader";
 
 const BlogPagesCom = (props) => {
 
@@ -185,9 +186,7 @@ const BlogPagesCom = (props) => {
         );
     } else {
         return (
-            <div className="preloader">
-                <img src={Reloading} alt="img"/>
-            </div>
+            <Preloader/>
         )
     }
 }

@@ -788,5 +788,9 @@
   },
   "UsefulResources": {
     "title": "Полезные ресурсы"
+  },
+  "LoadingText" : {
+    "title": "АО «O‘ZLITINEFTGAZ»",
+    "text": "Научно-инжиниринговая компания"
   }
 }

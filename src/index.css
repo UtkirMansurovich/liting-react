@@ -953,3 +953,106 @@ body {
     box-shadow: 0em -2.6em 0em 0em rgba(63, 63, 63, 0.2), 1.8em -1.8em 0 0em rgba(63, 63, 63, 0.2), 2.5em 0em 0 0em rgba(63, 63, 63, 0.2), 1.75em 1.75em 0 0em rgba(63, 63, 63, 0.2), 0em 2.5em 0 0em rgba(63, 63, 63, 0.2), -1.8em 1.8em 0 0em rgba(63, 63, 63, 0.5), -2.6em 0em 0 0em rgba(63, 63, 63, 0.7), -1.8em -1.8em 0 0em #3F3F3F;
   }
 }
+
+/* PAGE PRELOADER */
+.preloader-container{
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fd5d14;
+  z-index: 9999;
+}
+.preloader-container-title{
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 60px;
+  margin: 0;
+}
+
+.preloader-container-text{
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 32px;
+  margin: 0;
+}
+@media (max-width: 690px) {
+  .preloader-container-title{
+    font-size: 40px;
+  }
+  .preloader-container-text{
+    font-size: 22px;
+  }
+}
+@media (max-width: 490px) {
+  .preloader-container-title{
+    font-size: 28px;
+  }
+  .preloader-container-text{
+    font-size: 14px;
+  }
+}
+@media (max-width: 330px) {
+  .preloader-container-title{
+    font-size: 18px;
+  }
+  .preloader-container-text{
+    font-size: 10px;
+  }
+}
+.preloader-container span {
+  display: inline-block;
+  vertical-align: middle;
+  width: .6em;
+  height: .6em;
+  margin: .19em;
+  background: #fff;
+  border-radius: .6em;
+  animation: preloader-container 1s infinite alternate;
+}
+
+/*
+ * Dots Colors
+ * Smarter targeting vs nth-of-type?
+ */
+.preloader-container span:nth-of-type(2) {
+  background: #fff;
+  animation-delay: 0.2s;
+}
+.preloader-container span:nth-of-type(3) {
+  background: #fff;
+  animation-delay: 0.4s;
+}
+.preloader-container span:nth-of-type(4) {
+  background: #fff;
+  animation-delay: 0.6s;
+}
+.preloader-container span:nth-of-type(5) {
+  background: #fff;
+  animation-delay: 0.8s;
+}
+.preloader-container span:nth-of-type(6) {
+  background: #fff;
+  animation-delay: 1.0s;
+}
+.preloader-container span:nth-of-type(7) {
+  background: #fff;
+  animation-delay: 1.2s;
+}
+
+/*
+ * Animation keyframes
+ * Use transition opacity instead of keyframes?
+ */
+@keyframes preloader-container {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -19,6 +19,8 @@ const AppProvider = ({ children }) => {
   const [navParent, setNavParent] = useState([]);
   //Main Slider
   const [slider, setSlider] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState('');
   //All Blogs
   const [allBlogs, setAllBlogs] = useState([]);
   // Call Laboratory
@@ -120,16 +122,26 @@ const AppProvider = ({ children }) => {
         console.log(err);
       });
   };
-  const sliderImage = () => {
-    axios
-      .get(BASE_URL + "/api/blog/all/main_slider")
-      .then((res) => {
-        setSlider(res.data.object);
-        // console.log(res.data.object)
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+  const sliderImage = async () => {
+    try {
+      setIsLoading(true);
+      setError("");
+
+      await axios
+        .get(BASE_URL + "/api/blog/all/main_slider")
+        .then((res) => {
+          setSlider(res.data.object);
+          // console.log(res.data.object)
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+      setError("");
+    }catch(err) {
+      setError(err);
+    }finally {
+      setIsLoading(false);
+    }
   };
 
   const callAllBlogs = () => {
@@ -267,6 +279,8 @@ const AppProvider = ({ children }) => {
   const value = {
     navParent,
     slider,
+    isLoading,
+    error,
     allBlogs,
     labor,
     handlerSelect,
