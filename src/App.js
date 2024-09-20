@@ -5,8 +5,27 @@ import Page from "./Pages/Page";
 import BlogPages from "./Pages/BlogPages";
 import {AppContext} from "./context";
 import SearchPage from './Pages/SearchPage';
+import StartFooter from "./components/StartFooter";
+import Navbar from "./components/Navbar/Navbar";
 // import Preloader from "./components/Preloader";
 
+function QuizRedirect() {
+    return (
+        <div>
+            <Navbar />
+            <div style={{width:"100%", height:'100%'}}>
+                <iframe
+                    src="https://form.jotform.com/242628953144461"
+                    style={{width:`100%`, height:`2500px`, border:`none`}}
+                >
+                </iframe>
+            </div>
+            <StartFooter />
+        </div>
+    );
+
+
+}
 function App() {
     const {selectContrast, searchItem} = useContext(AppContext);
     // if(slider && slider.length > 0) {
@@ -19,6 +38,8 @@ function App() {
                 <Route exact path='/blogs/:catId' element={<BlogPages/>}/>
                 <Route exact path='/blogs/:catId/:blogId' element={<Page/>}/>
                 <Route exact path='/search' element={<SearchPage/>}/>
+
+                  <Route exact path='/quiz' element={<QuizRedirect/>}/>
               </Routes>
             </Router>
           </div>

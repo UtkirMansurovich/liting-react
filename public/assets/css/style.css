@@ -1643,7 +1643,7 @@ label.custom-checkbox .checkmark:after {
     font-weight: 500;
     border-bottom: 1px solid #eee;
     transition: 0.5s;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
 }
 .menu-item-has-children>.sub-menu>li.menu-item:last-child>a{
     border:none;
