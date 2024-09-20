@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState} from 'react';
 import Home from './Pages/Home';
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Page from "./Pages/Page";
@@ -7,16 +7,21 @@ import {AppContext} from "./context";
 import SearchPage from './Pages/SearchPage';
 import StartFooter from "./components/StartFooter";
 import Navbar from "./components/Navbar/Navbar";
+import PreComLoader from "./components/PreComLoader";
 // import Preloader from "./components/Preloader";
 
 function QuizRedirect() {
+    const [loading,setLoading] =useState(true)
+    console.log(loading)
     return (
         <div>
             <Navbar />
-            <div style={{width:"100%", height:'100%'}}>
+            {loading && <PreComLoader/>}
+            <div style={{width: "100%", height: '100%'}}>
                 <iframe
+                    onLoad={() => setLoading(false)}
                     src="https://form.jotform.com/242628953144461"
-                    style={{width:`100%`, height:`2500px`, border:`none`}}
+                    style={{width: `100%`, height: `2500px`, border: `none`}}
                 >
                 </iframe>
             </div>
