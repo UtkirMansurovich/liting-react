@@ -17,13 +17,14 @@ function QuizRedirect() {
         <div>
             <Navbar />
             {loading && <PreComLoader/>}
-            <div style={{width: "100%", height: '100%'}}>
+            <div style={{width: "100%", height: '100%', position:'relative'}}>
                 <iframe
                     onLoad={() => setLoading(false)}
                     src="https://form.jotform.com/242628953144461"
                     style={{width: `100%`, height: `2500px`, border: `none`}}
                 >
                 </iframe>
+                <div style={{position:"absolute", bottom:'0', width:'100%', height:'70px', backgroundColor:'#f3f3fe', zIndex:'1'}}></div>
             </div>
             <StartFooter />
         </div>
