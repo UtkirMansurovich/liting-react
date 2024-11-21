@@ -56,7 +56,7 @@ const Navbar = () => {
                   <ul className="custom">
                     <li>
                       <a
-                        href="tel:+998712806705"
+                        href="tel:+998712806726"
                         className={
                           selectFontBig
                             ? "fs-26 text-custom-white"
@@ -66,7 +66,7 @@ const Navbar = () => {
                         }
                       >
                         <i className="fas fa-phone-alt text-custom-blue"></i>
-                        (+998 71) 280-67-05
+                        (+998 71) 280-67-26
                       </a>
                     </li>
                     <li>

@@ -12,7 +12,7 @@ import PreComLoader from "./components/PreComLoader";
 
 function QuizRedirect() {
     const [loading,setLoading] =useState(true)
-    console.log(loading)
+
     return (
         <div>
             <Navbar />
