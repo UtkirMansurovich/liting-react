@@ -98,7 +98,7 @@ const StartFooter = () => {
                                     <a href="tel:+998712806711" className="text-custom-white">(+998 71) 280-67-11</a>
                                 </li>
                                 <li className={selectFontBig ? "fs-26" : selectFontSmall ? "" : "fs-20"}>
-                                    <a href="mailto:liting@liting.uz" className="text-custom-white" target="_blank">liting@liting.uz</a>
+                                    <a href="mailto:devonxona@liting.uz" className="text-custom-white" target="_blank">devonxona@liting.uz</a>
                                 </li>
                                 <li className={selectFontBig ? "fs-26" : selectFontSmall ? "" : "fs-20"}>
                                     <a href="coming-soon.html" className="text-custom-white">{t("StartFooter.workTime")}: 8:00 - 17:00</a>

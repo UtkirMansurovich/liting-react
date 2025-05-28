@@ -71,7 +71,7 @@ const Navbar = () => {
                     </li>
                     <li>
                       <a
-                        href="mailto:liting@liting.com"
+                        href="mailto:devonxona@liting.uz"
                         className={
                           selectFontBig
                             ? "fs-26 text-custom-white"
@@ -82,7 +82,7 @@ const Navbar = () => {
                         target="_blank"
                       >
                         <i className="fas fa-envelope text-custom-blue"></i>
-                        liting@liting.uz
+                        devonxona@liting.uz
                       </a>
                     </li>
                     <li>

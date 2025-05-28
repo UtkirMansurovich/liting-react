@@ -20,9 +20,9 @@ const TopBar = () => {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="mailto:liting@liting.com" className="text-custom-white" target="_blank">
+                                    <a href="mailto:devonxona@liting.uz" className="text-custom-white" target="_blank">
                                         <i className="fas fa-envelope text-custom-blue"></i>
-                                        liting@liting.uz
+                                        devonxona@liting.uz
                                     </a>
                                 </li>
                                 <li>
