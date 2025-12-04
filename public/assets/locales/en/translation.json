@@ -792,5 +792,13 @@
   "LoadingText" : {
     "title": "JSC «O‘ZLITINEFTGAZ»",
     "text": "Scientific and engineering company"
+  },
+  "SearchCertificate": {
+    "placeholder": "Enter your PINFI...",
+    "result": "Result",
+    "fullName": "Full name",
+    "pinfi": "PINFI",
+    "certificate": "certificate",
+    "download": "Download"
   }
 }

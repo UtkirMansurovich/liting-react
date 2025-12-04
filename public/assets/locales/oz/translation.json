@@ -792,5 +792,13 @@
   "LoadingText" : {
     "title": "«O‘ZLITINEFTGAZ» AJ",
     "text": "Ilmiy-muhandislik kompaniyasi"
+  },
+  "SearchCertificate": {
+    "placeholder": "JSHSHIR kiriting...",
+    "result": "Natija",
+    "fullName": "FISH",
+    "pinfi": "JSHSHIR",
+    "certificate": "sertifikat",
+    "download": "Yuklab olish"
   }
 }

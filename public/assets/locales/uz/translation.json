@@ -793,5 +793,13 @@
   "LoadingText" : {
     "title": "«O‘ZLITINEFTGAZ» АЖ",
     "text": "Илмий-муҳандислик компанияси"
+  },
+  "SearchCertificate": {
+    "placeholder": "ЖШШИР киритинг...",
+    "result": "Натижа",
+    "fullName": "ФИШ",
+    "pinfi": "ЖШШИР",
+    "certificate": "Сертификат",
+    "download": "Юклаб олиш"
   }
 }

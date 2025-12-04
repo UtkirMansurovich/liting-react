@@ -792,5 +792,13 @@
   "LoadingText" : {
     "title": "АО «O‘ZLITINEFTGAZ»",
     "text": "Научно-инжиниринговая компания"
+  },
+  "SearchCertificate": {
+    "placeholder": "Введите ваш ПИНФЛ...",
+    "result": "Результат",
+    "fullName": "ФИО",
+    "pinfi": "ПИНФЛ",
+    "certificate": "Сертификат",
+    "download": "Скачать"
   }
 }
