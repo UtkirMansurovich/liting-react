@@ -1,5 +1,4 @@
-import React, {useContext} from "react";
-import {AppContext} from "../../context";
+import React from "react";
 import {useTranslation} from "react-i18next";
 import {ImWarning} from "react-icons/im";
 

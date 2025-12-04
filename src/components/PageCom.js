@@ -8,7 +8,6 @@ import lazyImage from "../images/training.jpg";
 import {LazyLoadImage} from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 // import BlogPagesCom from './BlogPagesCom';
-import Reloading from '../images/pre-loader-1.svg'
 import Preloader from "./Preloader";
 import DownloadCertificateForm from "./DownloadCertificateForm";
 
@@ -25,7 +24,7 @@ const PageCom = (props) => {
                     // console.log(r)
                     setBlog(r.data.object ? r.data.object : null);
                 })
-                .catch((e) => {
+                .catch(() => {
                     setBlog(null);
                 });
         } else {
@@ -35,7 +34,7 @@ const PageCom = (props) => {
                     // console.log(r)
                     setBlog(r.data.object ? r.data.object[0] : null);
                 })
-                .catch((e) => {
+                .catch(() => {
                     setBlog(null);
                 });
         }
