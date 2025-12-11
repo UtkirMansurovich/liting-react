@@ -799,7 +799,11 @@
     "result": "Натижа",
     "fullName": "ФИШ",
     "pinfi": "ЖШШИР",
-    "certificate": "Сертификат",
+    "certificate": "Сертификат рақами",
+    "course": "Курс номи",
+    "action": "Ҳаракат",
+    "notCertificate": "Сертификат мавжуд эмас",
+    "loading": "Юкланмоқда...",
     "download": "Юклаб олиш"
   }
 }

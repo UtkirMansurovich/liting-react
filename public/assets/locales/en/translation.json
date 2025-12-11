@@ -798,7 +798,11 @@
     "result": "Result",
     "fullName": "Full name",
     "pinfi": "PINFI",
-    "certificate": "certificate",
+    "certificate": "Certificate number",
+    "course": "Course name",
+    "action": "Action",
+    "notCertificate": "Certificate not available",
+    "loading": "Loading...",
     "download": "Download"
   }
 }

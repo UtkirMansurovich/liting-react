@@ -800,6 +800,20 @@ body {
   transition: all .5s .2s;
 }
 
+.popup__content-pdf{
+  width: max-content;
+  height: 97vh;
+  background-color: #fff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  display: flex;
+  padding: 2%;
+  overflow-y: auto;
+  position: relative;
+  opacity: 1;
+  transform: scale(1);
+  transition: all .5s .2s;
+}
+
 .popup__content-close {
   opacity: 0;
   transform: scale(.25);
@@ -832,6 +846,7 @@ body {
     top: 5px;
     right: 10px;
     font-size: 20px;
+    z-index: 9999;
   }
 }
 
@@ -1055,4 +1070,118 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+/* Certificate pdf */
+.pdf-container{
+  box-shadow: 2px 2px 8px 0 rgba(0,0,0,.2);
+  width: 800px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.certificate {
+  width: 800px;
+  background: #fff;
+  position: relative;
+  /*margin: 20px auto;*/
+  padding: 35px;
+  /*border: 1px solid #2c73d2;*/
+}
+.blue-border{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #2c73d2;
+  padding: 1px;
+}
+.blue-border-2{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #2c73d2;
+}
+
+.header-img {
+  text-align: center;
+  margin: 20px 0 10px 0;
+
+}
+
+.header-img img {
+  width: 180px;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 60px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 10px;
+  font-weight: 600;
+  /*text-decoration: underline;*/
+}
+
+.red {
+  color: red;
+  font-size: 28px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.center {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 18px;
+}
+.center-text{
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.line {
+  width: 80%;
+  /*border-bottom: 1px solid #000;*/
+  margin: 0 auto 15px auto;
+  /*padding-bottom: 5px;*/
+  text-align: center;
+}
+.line-text{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.footer-certificate {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+}
+
+.qr{
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translate(50%, -40%);
+
+}
+
+.footer-certificate div {
+  text-align: center;
+  width: 33%;
+}
+
+.date-block {
+  width: max-content;
+  margin: 20px 70px 100px auto;
+  font-size: 18px;
 }

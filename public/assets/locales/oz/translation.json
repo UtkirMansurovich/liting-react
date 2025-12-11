@@ -798,7 +798,11 @@
     "result": "Natija",
     "fullName": "FISH",
     "pinfi": "JSHSHIR",
-    "certificate": "sertifikat",
+    "certificate": "Sertifikat raqami",
+    "course": "Kurs nomi",
+    "action": "Harakat",
+    "notCertificate": "Sertifikat mavjud emas",
+    "loading": "Yuklanmoqda...",
     "download": "Yuklab olish"
   }
 }

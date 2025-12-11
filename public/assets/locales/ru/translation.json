@@ -798,7 +798,11 @@
     "result": "Результат",
     "fullName": "ФИО",
     "pinfi": "ПИНФЛ",
-    "certificate": "Сертификат",
+    "certificate": "Номер сертификата",
+    "course": "Название курса",
+    "action": "Действие",
+    "notCertificate": "Сертификат недоступен",
+    "loading": "Загрузка...",
     "download": "Скачать"
   }
 }
