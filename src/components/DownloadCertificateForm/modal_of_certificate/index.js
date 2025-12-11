@@ -82,16 +82,18 @@ const ModalOfCertificate = ({openModal, setOpenModal, certificateNum}) => {
                 <div className='popup__right'>
                     <div>
                         <i className="fas fa-times popup__icon" onClick={() => setOpenModal(prev => !prev)}></i>
-                        <button style={{
-                            backgroundColor: "#fd5d14",
-                            padding: "5px 15px",
-                            color: "#fff",
-                            letterSpacing: ".5px",
-                            fontSize: "16px",
-                            fontWeight: "600",
-                            marginBottom: "10px",
-                            float:"right",
-                        }} onClick={downloadPDF}>{t("SearchCertificate.download")}</button>
+                        <div style={{display: "flex", justifyContent: "end", alignItems: "center"}}>
+                            <button style={{
+                                backgroundColor: "#fd5d14",
+                                padding: "5px 15px",
+                                color: "#fff",
+                                letterSpacing: ".5px",
+                                fontSize: "16px",
+                                fontWeight: "600",
+                                marginBottom: "10px",
+                                textAlign: "right",
+                            }} onClick={downloadPDF}>{t("SearchCertificate.download")}</button>
+                        </div>
                         <AntDesingStyle>
                             <Spin spinning={isLoading} tip={t("SearchCertificate.loading")} size="large">
                                 <CertificatePdf pdRef={pdRef} data={data}/>
