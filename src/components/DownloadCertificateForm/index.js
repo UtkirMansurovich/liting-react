@@ -27,8 +27,8 @@ const DownloadCertificateForm = () => {
         // Update URL like ?pin=12345
         setSearchParams({pnfl});
         if (pnfl) {
-            setIsLoading(true);
             try {
+                setIsLoading(true);
                 const res = await axios.get(`${BASE_URL}/api/certificate/pnfl/${pnfl}`);
                 if (res?.data?.success) {
                     setData(res?.data?.object);

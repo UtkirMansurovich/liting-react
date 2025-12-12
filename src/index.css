@@ -1073,6 +1073,11 @@ body {
 }
 
 /* Certificate pdf */
+.cursor-not-allowed{
+  cursor: not-allowed;
+  opacity: .5;
+}
+
 .pdf-container{
   box-shadow: 2px 2px 8px 0 rgba(0,0,0,.2);
   width: 800px;
