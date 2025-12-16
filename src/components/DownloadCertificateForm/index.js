@@ -53,6 +53,12 @@ const DownloadCertificateForm = () => {
         setCertificateNum(certificateNumber);
     }
 
+    useEffect(() => {
+        if(certificateNum){
+            setOpenModal(prev => !prev);
+        }
+    }, []);
+
     return (
         <AntDesingStyle>
             <Spin spinning={isLoading} tip={t("SearchCertificate.loading")} size="large">
