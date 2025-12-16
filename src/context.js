@@ -64,7 +64,7 @@ const AppProvider = ({ children }) => {
 
   const changePaginatePage = async (page) => {
     await axios
-      .post(
+      .get(
         BASE_URL +
           `/api/blog/search?page=${
             page ? page : 0

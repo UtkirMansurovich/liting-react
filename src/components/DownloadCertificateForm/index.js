@@ -16,7 +16,7 @@ const DownloadCertificateForm = () => {
     const [pnfl, setPnfl] = useState(searchParams.get('pnfl') || "");
     const [openModal, setOpenModal] = useState(false);
     const [data, setData] = useState([]);
-    const [certificateNum, setCertificateNum] = useState("");
+    const [certificateNum, setCertificateNum] = useState(searchParams.get('certificateNumber') || "");
     const [isLoading, setIsLoading] = useState(false);
 
     const handleSubmit = async (e) => {
