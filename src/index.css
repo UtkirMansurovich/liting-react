@@ -1132,12 +1132,11 @@ body {
 }
 
 .red {
-  color: red;
-  font-size: 28px;
+  color: rgb(239, 68, 68);
+  font-size: 60px;
   letter-spacing: 2px;
   font-weight: bold;
   text-align: center;
-  margin-top: 5px;
 }
 
 .center {
@@ -1175,13 +1174,13 @@ body {
 
 .qr{
   position: absolute;
-  top: 0;
+  top: 11px;
   right: 50%;
   transform: translate(50%, -40%);
 
 }
 
-.footer-certificate div {
+.footer-certificate p {
   text-align: center;
   width: 33%;
 }
@@ -1189,5 +1188,5 @@ body {
 .date-block {
   width: max-content;
   margin: 20px 70px 100px auto;
-  font-size: 18px;
+  font-size: 16px;
 }

@@ -1,5 +1,5 @@
 import certificate from "../../images/certificate.jpg";
-import React from "react";
+import React, {useEffect} from "react";
 import dayjs from "dayjs";
 import localeData from "dayjs/plugin/localeData";
 
@@ -26,12 +26,12 @@ const CertificatePdf = ({pdRef, data}) => {
                             <img src={certificate} alt="Emblem" style={{width: "300px"}}/>
                         </div>
 
-                        <div className="title">O‘ZBEKISTON RESPUBLIKASI</div>
+                        <h2 className="title">O‘ZBEKISTON RESPUBLIKASI</h2>
 
-                        <div className="subtitle">Malaka oshirish haqida</div>
-                        <div className="red">SERTIFIKAT</div>
+                        <h3 className="subtitle">Malaka oshirish haqida</h3>
+                        <h1 className="red">SERTIFIKAT</h1>
 
-                        <div style={{fontWeight: "600"}} className="center">KMO № {data?.certificateNumber}</div>
+                        <p style={{fontWeight: "600"}} className="center">KMO № {data?.certificateNumber}</p>
 
                         {/*FISH*/}
                         <div className="line">
@@ -43,35 +43,35 @@ const CertificatePdf = ({pdRef, data}) => {
                             <p className="center-text">{dayjs(data?.endedAt).format("YYYY [yil] D MMMM") }gacha</p>
                         </div>
 
-                        <div className="center">
+                        <h4 className="center">
                             “O‘ZLITINEFTGAZ” AJ qoshidagi
-                        </div>
+                        </h4>
 
-                        <div className="center">
+                        <h4 className="center">
                             “NEFTGAZ-MALAKA” o‘quv-tadqiqot markazi
-                        </div>
+                        </h4>
 
-                        <div className="center">
+                        <p className="center">
                             jami {data?.hour} soatli
-                        </div>
+                        </p>
 
                         <div className="line">
                            <p className="center-text">{data?.courseName}</p>
                         </div>
 
-                        <div className="center">Bo‘yicha malaka oshirdi</div>
+                        <p className="center">Bo‘yicha malaka oshirdi</p>
 
                         <div className="footer-certificate">
-                            <div>Mudir</div>
+                            <p>Mudir</p>
                             <div className="qr">
-                                <img src={`data:image/png;base64, ${data?.qrCodeBase64}`} alt="QR Code" style={{width:200, height:200}}/>
+                                <img src={`data:image/png;base64, ${data?.qrCodeBase64}`} alt="QR Code" style={{width:100, height:100}}/>
                             </div>
-                            <div>Azimov S. X.</div>
+                            <p className="signer">Azimov S. X.</p>
                         </div>
 
-                        <div className="date-block">
+                        <p className="date-block">
                             {dayjs(data?.date).format("DD.MM.YYYY")}
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
