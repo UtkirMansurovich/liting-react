@@ -14,16 +14,16 @@ dayjs.locale({
     weekStart: 1
 }, null, true);
 dayjs.locale("uz-latn");
-const CertificatePdf = ({pdRef, data}) => {
+const CertificatePdf = ({data}) => {
 
     return(
-        <div className="pdf-container" ref={pdRef}>
+        <div className="pdf-container">
             <div className="certificate">
                 <div className="blue-border">
                     <div className="blue-border-2">
                         {/*Emblem*/}
                         <div className="header-img">
-                            <img src={certificate} alt="Emblem" style={{width: "300px"}}/>
+                            <img src={certificate} alt="Emblem"/>
                         </div>
 
                         <h2 className="title">O‘ZBEKISTON RESPUBLIKASI</h2>
@@ -31,7 +31,7 @@ const CertificatePdf = ({pdRef, data}) => {
                         <h3 className="subtitle">Malaka oshirish haqida</h3>
                         <h1 className="red">SERTIFIKAT</h1>
 
-                        <p style={{fontWeight: "600"}} className="center">KMO № {data?.certificateNumber}</p>
+                        <p style={{fontWeight: "bold", color: "black"}} className="center">KMO № {data?.certificateNumber}</p>
 
                         {/*FISH*/}
                         <div className="line">
@@ -40,7 +40,7 @@ const CertificatePdf = ({pdRef, data}) => {
 
                         <div className="center">
                             <p className="center-text">{dayjs(data?.startedAt).format("YYYY [yil] D MMMM")}dan</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <p className="center-text">{dayjs(data?.endedAt).format("YYYY [yil] D MMMM") }gacha</p>
+                            <p className="center-text">{dayjs(data?.endedAt).format("YYYY [yil] D MMMM")}gacha</p>
                         </div>
 
                         <h4 className="center">

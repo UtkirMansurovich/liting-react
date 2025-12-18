@@ -64,7 +64,7 @@ const DownloadCertificateForm = () => {
             <Spin spinning={isLoading} tip={t("SearchCertificate.loading")} size="large">
                 <div style={{padding: "25px"}} className="textDecorate">
                     <form style={{display: "flex"}} className="mb-4" onSubmit={handleSubmit}>
-                        <input type="search" className="form-control form-control-custom w-50"
+                        <input type="search" className="form-control form-control-custom certificate-search-input w-50"
                                placeholder={t("SearchCertificate.placeholder")} value={pnfl}
                                onChange={(e) => setPnfl(e.target.value)} required/>
                         <div className="input-group-append">
