@@ -1378,7 +1378,7 @@ body {
   width: 33%;
   min-width: max-content;
 }
-_
+
 .date-block {
   width: max-content;
   margin: 10px clamp(20px, 8.75vw, 70px) clamp(40px, 12.5vw, 100px) auto;
