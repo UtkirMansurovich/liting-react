@@ -335,7 +335,7 @@ const ModalOfCertificate = ({openModal, setOpenModal, certificateNum}) => {
             // ===== RAQAM =====
             doc.setFontSize(16);
             doc.setFont("DejaVu", "bold");
-            doc.text(`${t("SearchCertificate.kmoNumber")}${data?.certificateNumber}`, centerX, 125, { align: "center" });
+            doc.text(`${t("SearchCertificate.kmoNumber")} ${data?.certificateNumber}`, centerX, 125, { align: "center" });
 
             doc.setFont("DejaVu", "normal");
 
