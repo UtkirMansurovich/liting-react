@@ -803,6 +803,20 @@
     "action": "Harakat",
     "notCertificate": "Sertifikat mavjud emas",
     "loading": "Yuklanmoqda...",
-    "download": "Yuklab olish"
+    "download": "Yuklab olish",
+    "republic": "O‘ZBEKISTON RESPUBLIKASI",
+    "aboutTraining": "Malaka oshirish haqida",
+    "textCertificate": "SERTIFIKAT",
+    "kmoNumber": "KMO N",
+    "underAuspices": "“O‘ZLITINEFTGAZ” AJ qoshidagi",
+    "trainingResearch": "“NEFTGAZ-MALAKA” o‘quv-tadqiqot markazi",
+    "all": "jami",
+    "hours": "soatli",
+    "trainingIn": "bo‘yicha malaka oshirdi",
+    "manager": "Mudir",
+    "signer": "Azimov S.X.",
+    "saveCertificate": "sertifikati",
+    "errorPDF:": "PDF yaratishda xatolik:",
+    "errorOccurred": "PDF yaratishda xatolik yuz berdi. Iltimos, qayta urinib ko‘ring."
   }
 }

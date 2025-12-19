@@ -803,6 +803,20 @@
     "action": "Action",
     "notCertificate": "Certificate not available",
     "loading": "Loading...",
-    "download": "Download"
+    "download": "Download",
+    "republic": "REPUBLIC OF UZBEKISTAN",
+    "aboutTraining": "About advanced training",
+    "textCertificate": "CERTIFICATE",
+    "kmoNumber": "KMO NO",
+    "underAuspices": "Under the auspices of “O‘ZLITINEFTGAZ” JSC",
+    "trainingResearch": "“NEFTGAZ-MALAKA” Training and Research Center",
+    "all": "in total",
+    "hours": "hours",
+    "trainingIn": "advanced training in",
+    "manager": "Manager",
+    "signer": "Azimov S.X.",
+    "saveCertificate": "certificate",
+    "errorPDF:": "Error while creating PDF:",
+    "errorOccurred": "An error occurred while creating the PDF. Please try again."
   }
 }

@@ -803,6 +803,20 @@
     "action": "Действие",
     "notCertificate": "Сертификат недоступен",
     "loading": "Загрузка...",
-    "download": "Скачать"
+    "download": "Скачать",
+    "republic": "РЕСПУБЛИКА УЗБЕКИСТАН",
+    "aboutTraining": "О повышении квалификации",
+    "textCertificate": "СЕРТИФИКАТ",
+    "kmoNumber": "KMO N",
+    "underAuspices": "Под эгидой АО «O‘ZLITINEFTGAZ»",
+    "trainingResearch": "Учебно-исследовательский центр «NEFTGAZ-MALAKA»",
+    "all": "всего",
+    "hours": "часов",
+    "trainingIn": "повышение квалификации в",
+    "manager": "Менеджер",
+    "signer": "Азимов С.Х.",
+    "saveCertificate": "сертификат",
+    "errorPDF:": "Ошибка при создании PDF-файла:",
+    "errorOccurred": "Произошла ошибка при создании PDF-файла. Пожалуйста, попробуйте еще раз."
   }
 }

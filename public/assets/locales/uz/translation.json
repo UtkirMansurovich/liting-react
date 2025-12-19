@@ -804,6 +804,20 @@
     "action": "Ҳаракат",
     "notCertificate": "Сертификат мавжуд эмас",
     "loading": "Юкланмоқда...",
-    "download": "Юклаб олиш"
+    "download": "Юклаб олиш",
+    "republic": "ЎЗБEКИСТОН РEСПУБЛИКАСИ",
+    "aboutTraining": "Малака ошириш ҳақида",
+    "textCertificate": "СEРТИФИКАТ",
+    "kmoNumber": "KMO N",
+    "underAuspices": "“O‘ZLITINEFTGAZ” АЖ қошидаги",
+    "trainingResearch": "“NEFTGAZ-MALAKA” ўқув-тадқиқот маркази",
+    "all": "жами",
+    "hours": "соатли",
+    "trainingIn": "бўйича малака оширди",
+    "manager": "Мудир",
+    "signer": "Азимов С.Х.",
+    "saveCertificate": "сертификати",
+    "errorPDF:": "PDF яратишда хатолик:",
+    "errorOccurred": "PDF яратишда хатолик юз берди. Илтимос, қайта уриниб кўринг."
   }
 }
