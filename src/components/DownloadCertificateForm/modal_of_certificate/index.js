@@ -1,4 +1,4 @@
-import React, {useRef, useEffect, useCallback, useState, useContext} from 'react';
+import React, {useRef, useEffect, useCallback, useState} from 'react';
 import CertificatePdf from "../../CertificatePdf";
 import jsPDF from "jspdf";
 import { loadFonts } from "../../../utills/loadFonts";
@@ -12,10 +12,10 @@ import {useSearchParams} from "react-router-dom";
 import gerbImg from '../../../images/certificate.jpg';
 
 import dayjs from "dayjs";
-import localeData from "dayjs/plugin/localeData";
+// import localeData from "dayjs/plugin/localeData";
 // import "dayjs/locale/en";
 // import "dayjs/locale/ru";
-import {AppContext} from "../../../context";
+// import {AppContext} from "../../../context";
 
 // dayjs.extend(localeData);
 dayjs.locale("uz-latn");
