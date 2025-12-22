@@ -1,4 +1,4 @@
-import React, {useRef, useEffect, useCallback, useState} from 'react';
+import React, {useRef, useEffect, useCallback, useState, useContext} from 'react';
 import CertificatePdf from "../../CertificatePdf";
 import jsPDF from "jspdf";
 import { loadFonts } from "../../../utills/loadFonts";
@@ -12,23 +12,23 @@ import {useSearchParams} from "react-router-dom";
 import gerbImg from '../../../images/certificate.jpg';
 
 import dayjs from "dayjs";
-// import localeData from "dayjs/plugin/localeData";
+import localeData from "dayjs/plugin/localeData";
 // import "dayjs/locale/en";
 // import "dayjs/locale/ru";
-// import {AppContext} from "../../../context";
+import {AppContext} from "../../../context";
 
-// dayjs.extend(localeData);
-dayjs.locale("uz-latn");
+dayjs.extend(localeData);
 
 // Uzbek Latin
-// dayjs.locale({
-//     name: "uz-latn",
-//     weekdays: "dushanba_seshanba_chorshanba_payshanba_juma_shanba_yakshanba".split("_"),
-//     months: "yanvar_fevral_mart_aprel_may_iyun_iyul_avgust_sentyabr_oktabr_noyabr_dekabr".split("_"),
-//     weekdaysShort: "du_se_ch_pa_ju_sh_ya".split("_"),
-//     monthsShort: "yan_fev_mar_apr_may_iyu_iyu_avg_sen_okt_noy_dek".split("_"),
-//     weekStart: 1
-// }, null, true);
+dayjs.locale({
+    name: "uz-latn",
+    weekdays: "dushanba_seshanba_chorshanba_payshanba_juma_shanba_yakshanba".split("_"),
+    months: "yanvar_fevral_mart_aprel_may_iyun_iyul_avgust_sentyabr_oktabr_noyabr_dekabr".split("_"),
+    weekdaysShort: "du_se_ch_pa_ju_sh_ya".split("_"),
+    monthsShort: "yan_fev_mar_apr_may_iyu_iyu_avg_sen_okt_noy_dek".split("_"),
+    weekStart: 1
+}, null, true);
+dayjs.locale("uz-latn");
 
 // Uzbek Cyrillic
 // dayjs.locale({
