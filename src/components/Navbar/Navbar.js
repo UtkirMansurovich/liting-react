@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, {useContext, useRef, useState} from "react";
 import { Link } from "react-router-dom";
 import { AppContext } from "../../context";
 import NavbarChild from "./NavbarChild";
@@ -14,13 +14,16 @@ const Navbar = () => {
     getCookie,
     openContrast,
     showSearch,
-    openSearch,
+    // openSearch,
     selectFontSmall,
     selectFontBig,
   } = useContext(AppContext);
   // console.log(navParent);
-  const [toggle, setToggle] = useState(false);
+
   const { t } = useTranslation();
+
+  const [toggle, setToggle] = useState(false);
+  const [openSearch, setOpenSearch] = useState(false);
 
   const handlerTop = () => {
     window.scrollTo({ top: 0, behavior:'smooth' });
@@ -43,8 +46,8 @@ const Navbar = () => {
 
   if (showContrast) {
     return <Contrast />;
-  } else if (showSearch) {
-    return <Search />;
+  } else if (openSearch) {
+    return <Search setOpenSearch={setOpenSearch} openSearch={openSearch}/>;
   } else {
     return (
       <header className="menu-style">
@@ -143,7 +146,7 @@ const Navbar = () => {
                     </li>
                     <li>
                       <a
-                        onClick={openSearch}
+                        onClick={() => setOpenSearch(prev => !prev)}
                         href="#"
                         className={
                           selectFontBig

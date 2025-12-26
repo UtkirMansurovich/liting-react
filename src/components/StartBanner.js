@@ -54,8 +54,6 @@ const StartBanner = () => {
     const {slider, isLoading, error, getCookie, closeContrast, contrastRef, openSearch, selectFontSmall, selectFontBig} = useContext(AppContext);
     const { t } = useTranslation();
 
-    console.log(isLoading)
-    
     return(
         <>
         {isLoading && <Preloader/>}

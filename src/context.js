@@ -10,7 +10,6 @@ import { BASE_URL } from "./utills/constant";
 import i18next from "i18next";
 import Cookie from "js-cookie";
 import { useTranslation } from "react-i18next";
-import { keyboard } from "@testing-library/user-event/dist/keyboard";
 
 const AppContext = createContext();
 
@@ -34,82 +33,11 @@ const AppProvider = ({ children }) => {
   const [selectFontBig, setSelectFrontBig] = useState(false);
   const contrastRef = useRef();
 
-  // Search
-  const [showSearch, setShowSearch] = useState(false);
-  const SearchRef = useRef();
-
   // NEFTGAZMALAKA
   const [training, setTraining] = useState([]);
 
   // PARTNERS
   const [partners, setPartners] = useState([]);
-
-  const myKeysValues = window.location.search;
-  const urlParams = new URLSearchParams(myKeysValues);
-  const searchedKeyword = urlParams.get("keyword");
-  const page = urlParams.get("page");
-
-  const [searchItem, setSearchItem] = useState("");
-
-  console.log(searchedKeyword, page);
-  console.log(searchItem);
-
-  const limitPage = 9;
-
-  const handlerSubmit = (e) => {
-    e.preventDefault();
-    changePaginatePage();
-    setSearchItem("");
-  };
-
-  const changePaginatePage = async (page) => {
-    await axios
-      .get(
-        BASE_URL +
-          `/api/blog/search?page=${
-            page ? page : 0
-          }&pageSize=${limitPage}&keyword=${
-            searchItem
-              ? searchItem
-              : searchedKeyword
-              ? searchedKeyword
-              : searchedKeywords
-          }`
-      )
-      .then((res) => {
-        window.localStorage.setItem("arr", JSON.stringify(res.data.object));
-        window.localStorage.setItem(
-          "pageNumber",
-          Math.ceil(res.data.totalElements / limitPage)
-        );
-        window.location.href = `/search?page=${page ? page : 0}&keyword=${
-          searchItem
-            ? searchItem
-            : searchedKeyword
-            ? searchedKeyword
-            : searchedKeywords
-        }`;
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-    window.localStorage.setItem("arrNot", searchItem);
-    window.localStorage.setItem("keywordSearch", searchedKeyword);
-  };
-
-  const searchedKeywords = window.localStorage.getItem("keywordSearch");
-
-  const handlerChange = (e) => {
-    setSearchItem(e.target.value);
-    // console.log(searchItem);
-  };
-
-  const handlerPageClicked = async (data) => {
-    let page = data.selected ? data.selected : 0;
-    changePaginatePage(page);
-    window.localStorage.setItem("activNumber", data.selected);
-    window.scrollTo({ top: 100 });
-  };
 
   const navbarList = () => {
     axios
@@ -185,7 +113,6 @@ const AppProvider = ({ children }) => {
         .get(BASE_URL + "/api/blog/all/58?isText=true")
         .then(res=>{
           setPartners(res.data.object);
-          console.log(res.data.object);
         })
         .catch(err=>{
           console.log(err);
@@ -202,25 +129,18 @@ const AppProvider = ({ children }) => {
     setShowContrast((prev) => !prev);
   };
 
-  const openSearch = () => {
-    setShowSearch((prev) => !prev);
-  };
+  // const openSearch = () => {
+  //   setShowSearch((prev) => !prev);
+  // };
 
   const closeContrast = (e) => {
     if (contrastRef.current === e.target) setShowContrast(false);
-  };
-
-  const closeSearch = (e) => {
-    if (SearchRef.current === e.target) setShowSearch(false);
   };
 
   const keyPress = useCallback(
     (e) => {
       if (e.key === "Escape" && showContrast) {
         setShowContrast(false);
-      }
-      if (e.key === "Escape" && showSearch) {
-        setShowSearch(false);
       }
     },
     [setShowContrast, showContrast]
@@ -264,7 +184,7 @@ const AppProvider = ({ children }) => {
   useEffect(async () => {
     setSelectContrast(!localStorage.getItem("selectCont"));
     navbarList();
-    sliderImage();
+    await sliderImage();
     callAllBlogs();
     callLobor();
     callTraining();
@@ -299,15 +219,6 @@ const AppProvider = ({ children }) => {
     contrastRef,
     closeContrast,
     clickStandard,
-    showSearch,
-    setShowSearch,
-    SearchRef,
-    openSearch,
-    closeSearch,
-    handlerSubmit,
-    handlerChange,
-    handlerPageClicked,
-    searchItem,
     training,
     partners,
   };

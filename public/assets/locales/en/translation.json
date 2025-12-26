@@ -777,7 +777,8 @@
     "placeholder": "Search by site...",
     "notFound1": "By keyword",
     "notFound2": "found nothing",
-    "notFound3": "Try again ..."
+    "notFound3": "Try again ...",
+    "noResultsFound": "No results found"
   },
   "Visitors": {
     "visit": "Visits",

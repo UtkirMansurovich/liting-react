@@ -777,7 +777,8 @@
     "placeholder": "Sayt bo'yicha qidiruv...",
     "notFound1": "",
     "notFound2": "kalit so‘zi bo‘yicha ma'lumot topilmadi",
-    "notFound3": "Qayta urinib ko‘ring ..."
+    "notFound3": "Qayta urinib ko‘ring ...",
+    "noResultsFound": "Hech qanday natija topilmadi"
   },
   "Visitors": {
     "visit": "Tashriflar",
