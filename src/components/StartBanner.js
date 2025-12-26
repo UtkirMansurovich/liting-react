@@ -54,6 +54,10 @@ const StartBanner = () => {
     const {slider, isLoading, error, getCookie, closeContrast, contrastRef, openSearch, selectFontSmall, selectFontBig} = useContext(AppContext);
     const { t } = useTranslation();
 
+    const shortLetters = (letters) => {
+        if(letters) return `${letters?.split('')?.slice(0, 81)?.join("")}${letters?.length > 81 ? "..." : ""}`;
+    }
+
     return(
         <>
         {isLoading && <Preloader/>}
@@ -74,16 +78,16 @@ const StartBanner = () => {
                                 animation: 'scale 20s linear infinite',
                                 position:'absolute',
                                 top:'0',
-                                zIndex:'1' }}>
+                                zIndex:'1'}}>
                         </div>
 
                         <div className="divOpacity" >
-                            <h1 className="titleLogo">АО «O‘ZLITINEFTGAZ»</h1>
+                            <h1 className="titleLogo">{t("Title")}</h1>
                             <div className="divText" >
                                 <h1 className="slideH1">
                                     {getCookie.i18next === 'en' ? slide.title_en
                                         : getCookie.i18next === 'uz' ? slide.title_uz
-                                        : getCookie.i18next === 'oz' ? slide.title_oz : slide.title_ru}
+                                        : getCookie.i18next === 'oz' ? slide.title_oz : shortLetters(slide.title_ru)}
                                 </h1>
                                 <p className={selectFontBig ? "fs-26 slideP" : selectFontSmall ? 'slideP' : 'fs-20 slideP'}>
                                     {getCookie.i18next === 'en' ? slide.anons_en :
