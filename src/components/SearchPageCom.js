@@ -51,6 +51,8 @@ function SearchPageCom() {
         window.scrollTo({top: 100});
     }
 
+    console.log(searchData?.object)
+
     return (
         <div className="bg-light-white pb-5" id="up">
             <div className="subheader section-padding">
