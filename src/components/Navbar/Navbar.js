@@ -57,21 +57,21 @@ const Navbar = () => {
               <div className="col-md-8">
                 <div className="left-side">
                   <ul className="custom">
-                    <li>
-                      <a
-                        href="tel:+998712806700"
-                        className={
-                          selectFontBig
-                            ? "fs-26 text-custom-white"
-                            : selectFontSmall
-                            ? "text-custom-white"
-                            : "fs-20 text-custom-white"
-                        }
-                      >
-                        <i className="fas fa-phone-alt text-custom-blue"></i>
-                        (+998 71) 280-67-00
-                      </a>
-                    </li>
+                    {/*<li>*/}
+                    {/*  <a*/}
+                    {/*    href="tel:+998712806700"*/}
+                    {/*    className={*/}
+                    {/*      selectFontBig*/}
+                    {/*        ? "fs-26 text-custom-white"*/}
+                    {/*        : selectFontSmall*/}
+                    {/*        ? "text-custom-white"*/}
+                    {/*        : "fs-20 text-custom-white"*/}
+                    {/*    }*/}
+                    {/*  >*/}
+                    {/*    <i className="fas fa-phone-alt text-custom-blue"></i>*/}
+                    {/*    (+998 71) 280-67-00*/}
+                    {/*  </a>*/}
+                    {/*</li>*/}
                     <li>
                       <a
                         href="mailto:liting@liting.uz"
